@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/YehimyRincón/OneDrive - Raona/**)",
+      "PowerShell([System.IO.Directory]::GetFileSystemEntries\\(\"c:\\\\Users\\\\YehimyRincón\\\\OneDrive - Raona\\\\[1-GCO] Estrategia de Adopción de GitHub Copilot\\\\\"\\) | Select-Object -First 50)"
+    ]
+  }
+}

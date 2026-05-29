@@ -1,0 +1,2010 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estrategia de Adopción GitHub Copilot — GCO</title>
+<link rel="icon" type="image/svg+xml" href="Manual de marca/logotipo/isotypo_catalana-occidente.svg">
+<style>
+
+/* ── FUENTES CORPORATIVAS ─────────────────────────────────────────── */
+@font-face {
+  font-family: 'CO';
+  src: url('Manual de marca/CatalanaFonts/CO-Rg.woff') format('woff'),
+       url('Manual de marca/CatalanaFonts/CO-Rg.ttf') format('truetype');
+  font-weight: 400; font-style: normal;
+}
+@font-face {
+  font-family: 'CO';
+  src: url('Manual de marca/CatalanaFonts/CO-RgIt.woff') format('woff'),
+       url('Manual de marca/CatalanaFonts/CO-RgIt.ttf') format('truetype');
+  font-weight: 400; font-style: italic;
+}
+@font-face {
+  font-family: 'CO';
+  src: url('Manual de marca/CatalanaFonts/CO-Md.woff') format('woff'),
+       url('Manual de marca/CatalanaFonts/CO-Md.ttf') format('truetype');
+  font-weight: 500; font-style: normal;
+}
+@font-face {
+  font-family: 'CO';
+  src: url('Manual de marca/CatalanaFonts/CO-Bd.woff') format('woff'),
+       url('Manual de marca/CatalanaFonts/CO-Bd.ttf') format('truetype');
+  font-weight: 700; font-style: normal;
+}
+@font-face {
+  font-family: 'CO';
+  src: url('Manual de marca/CatalanaFonts/CO-BdIt.woff') format('woff'),
+       url('Manual de marca/CatalanaFonts/CO-BdIt.ttf') format('truetype');
+  font-weight: 700; font-style: italic;
+}
+
+/* ── TOKENS DE MARCA ──────────────────────────────────────────────── */
+:root {
+  /* Marca */
+  --red:        #DA1F2A;
+  --red-dark:   #B51822;
+
+  /* Pasteles (extraídos de website_particulares) */
+  --rose:       #FCEEF0;   /* coral suave — comunidad */
+  --sky:        #EEF3FD;   /* azul cielo — soporte */
+  --mint:       #EEF7EF;   /* verde menta — Casos de uso */
+  --lavender:   #F3EEFE;   /* lavanda — evolución */
+  --peach:      #FEF2EB;   /* durazno — fase 1 */
+  --lemon:      #FEF9E7;   /* AMA "Ask Me Anything"rillo suave — fase 3 */
+  --blush:      #FDE8EC;   /* rosa suave — fase 4 */
+  --ice:        #EBF5FB;   /* azul hielo — fase 2 */
+
+  /* Pasteles fuertes para íconos (ligeramente más saturados) */
+  --rose-ico:     #F8D0D5;
+  --sky-ico:      #C9DDFA;
+  --mint-ico:     #C5E8C8;
+  --lavender-ico: #D9C8F8;
+  --peach-ico:    #F8D5BE;
+  --ice-ico:      #BAE6FD;
+  --lemon-ico:    #FDE68A;
+
+  /* Neutros */
+  --black:      #383838;
+  --text:       #444444;
+  --gray:       #666666;
+  --muted:      #888888;
+  --border:     #E0E0E0;
+  --bg-alt:     #F7F7F7;
+  --white:      #FFFFFF;
+
+  --max: 1100px;
+  --radius: 8px;
+}
+
+/* ── RESET ────────────────────────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'CO', 'Open Sans', Arial, sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  background: var(--white);
+  font-size: 16px;
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── LAYOUT ───────────────────────────────────────────────────────── */
+.wrap {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+/* ── TOPBAR ───────────────────────────────────────────────────────── */
+.topbar {
+  background: var(--bg-alt);
+  border-bottom: 1px solid var(--border);
+  padding: 7px 0;
+}
+.topbar-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+.topbar span { font-size: 12px; color: var(--muted); font-weight: 500; }
+.topbar .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  background: var(--rose);
+  color: var(--red);
+  font-size: 11px;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.topbar .chip::before {
+  content: '';
+  width: 5px; height: 5px;
+  background: var(--red);
+  border-radius: 50%;
+}
+
+/* ── HEADER ───────────────────────────────────────────────────────── */
+header {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+.header-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.logo-wrap { display: flex; align-items: center; flex-shrink: 0; }
+.logo-wrap img { height: 30px; width: auto; display: block; }
+.logo-fallback {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: -0.01em;
+}
+nav {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+}
+nav a {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--gray);
+  text-decoration: none;
+  padding: 6px 13px;
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: color 0.15s;
+}
+nav a:hover { color: var(--red); }
+nav a.active {
+  color: var(--red);
+  background: var(--rose);
+  border-radius: 3px;
+}
+
+/* ── SCROLL TO TOP ────────────────────────────────────────────────── */
+.back-to-top {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 46px;
+  height: 46px;
+  background: var(--red);
+  color: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(12px);
+  transition: opacity 0.22s, transform 0.22s, background 0.15s;
+  z-index: 400;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+}
+.back-to-top.visible { opacity: 1; pointer-events: auto; transform: translateY(0); }
+.back-to-top:hover { background: var(--red-dark); }
+.back-to-top svg { width: 20px; height: 20px; }
+
+/* ── HERO ─────────────────────────────────────────────────────────── */
+.hero { background: var(--bg-alt); border-bottom: 1px solid var(--border); }
+.hero-grid {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: center;
+  min-height: 480px;
+}
+.hero-illustration {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 0;
+}
+.hero-center { padding: 72px 0; }
+.hero-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+.hero-eyebrow::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--red);
+  flex-shrink: 0;
+}
+h1 {
+  font-size: 52px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.13;
+  margin-bottom: 22px;
+  letter-spacing: -0.02em;
+}
+h1 em { font-style: normal; color: var(--red); }
+.hero-lead { display: none; }
+.btn-row { display: flex; align-items: center; justify-content: flex-start; gap: 20px; flex-wrap: wrap; }
+.btn-red {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--red);
+  color: var(--white);
+  font-family: 'CO', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 13px 28px;
+  border-radius: 3px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+.btn-red:hover { background: var(--red-dark); }
+.btn-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--red);
+  font-size: 14px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.15s;
+}
+.btn-link:hover { border-color: var(--red); }
+
+/* ── STATS BAR ────────────────────────────────────────────────────── */
+.stats-bar { display: none; }
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.stat-item {
+  text-align: center;
+  padding: 44px 16px;
+  border-right: 1px solid var(--border);
+}
+.stat-item:last-child { border-right: none; }
+.stat-num {
+  display: block;
+  font-size: 52px;
+  font-weight: 700;
+  color: var(--red);
+  line-height: 1;
+  margin-bottom: 10px;
+}
+.stat-label { display: block; font-size: 14px; color: var(--gray); line-height: 1.45; }
+
+/* ── SECCIONES ────────────────────────────────────────────────────── */
+section {
+  padding: 72px 0;
+  scroll-margin-top: 70px;
+}
+section.bg-alt { background: var(--bg-alt); }
+
+.sec-tag {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 56px;
+  font-weight: 500;
+  color: #3e3e3e;
+  line-height: 1.2;
+  margin-bottom: 14px;
+  letter-spacing: -0.01em;
+  max-width: 75%;
+}
+@media (max-width: 960px) {
+  h2 { max-width: 100%; }
+}
+h3 { font-size: 17px; font-weight: 500; color: var(--black); margin-bottom: 8px; }
+.sec-lead {
+  font-size: 16px;
+  color: var(--gray);
+  line-height: 1.7;
+  max-width: 740px;
+  margin-bottom: 36px;
+}
+
+/* ── CALLOUT ──────────────────────────────────────────────────────── */
+.callout {
+  background: var(--rose);
+  border-left: 3px solid var(--red);
+  padding: 16px 22px;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  margin: 20px 0;
+}
+.callout p { font-size: 15px; color: var(--black); font-weight: 500; font-style: italic; line-height: 1.6; }
+.callout-neutral {
+  background: var(--bg-alt);
+  border-left-color: var(--border);
+}
+.callout-neutral p { color: var(--gray); font-style: normal; }
+
+/* ── CATEGORY CARDS (estilo website_particulares) ─────────────────── */
+/* Card con fondo pastel completo, sin borde, corners redondeados      */
+.cat-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+.cat-grid-2 { grid-template-columns: repeat(2, 1fr); }
+.cat-grid-4 { grid-template-columns: repeat(4, 1fr); }
+
+.cat-card {
+  border-radius: var(--radius);
+  padding: 28px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  /* Sin borde — solo fondo pastel, igual que particulares */
+}
+.cat-card .ico-wrap {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.cat-card .ico-wrap svg { width: 24px; height: 24px; }
+.cat-card h4 { font-size: 18px; font-weight: 500; color: var(--black); margin: 0; }
+.cat-card p  { font-size: 14px; color: var(--gray); line-height: 1.6; margin: 0; flex: 1; }
+.cat-card .tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; padding-top: 4px; }
+.cat-card .tag {
+  background: rgba(255,255,255,0.65);
+  color: var(--gray);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+/* Colores pastel por pillar */
+.c-rose     { background: var(--rose); }
+.c-sky      { background: var(--sky); }
+.c-mint     { background: var(--mint); }
+.c-lavender { background: var(--lavender); }
+.c-peach    { background: var(--peach); }
+.c-lemon    { background: var(--lemon); }
+.c-blush    { background: var(--blush); }
+.c-ice      { background: var(--ice); }
+
+/* Colores íconos internos */
+.i-rose     { background: var(--rose-ico); }
+.i-sky      { background: var(--sky-ico); }
+.i-mint     { background: var(--mint-ico); }
+.i-lavender { background: var(--lavender-ico); }
+.i-peach    { background: var(--peach-ico); }
+.i-ice      { background: var(--ice-ico); }
+.i-lemon    { background: var(--lemon-ico); }
+
+/* ── CARD BLANCA (para tablas y contenido estructurado) ───────────── */
+.card-white {
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+.card-grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+/* ── TABLE ────────────────────────────────────────────────────────── */
+.table-wrap {
+  margin: 24px 0;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--white);
+}
+table { width: 100%; border-collapse: collapse; }
+thead tr { background: var(--ice); }
+thead th {
+  padding: 12px 18px;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  text-align: left;
+}
+tbody tr { border-bottom: 1px solid var(--border); }
+tbody tr:last-child { border-bottom: none; }
+tbody tr:nth-child(even) { background: #FAFAFA; }
+tbody tr:hover { background: var(--rose); }
+tbody td {
+  padding: 13px 18px;
+  font-size: 14px;
+  color: var(--text);
+  vertical-align: top;
+  line-height: 1.5;
+}
+tbody td strong { color: var(--black); font-weight: 700; }
+.badge {
+  display: inline-block;
+  font-size: 11px;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+.badge-red  { background: var(--rose);   color: var(--red); }
+.badge-dark { background: var(--bg-alt); color: var(--gray); }
+
+/* ── PHASES — cada fase como cat-card pastel ─────────────────────── */
+.phase-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-top: 36px;
+}
+.phase-card {
+  border-radius: var(--radius);
+  padding: 26px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.phase-card .ico-wrap {
+  width: 52px; height: 52px;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+.phase-card .ico-wrap svg { width: 24px; height: 24px; }
+.phase-card h3 { font-size: 15px; margin: 0; }
+.phase-card p  { font-size: 13px; color: var(--gray); line-height: 1.55; margin: 0; flex: 1; }
+.phase-card .tag-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: auto; }
+.phase-card .tag {
+  display: inline-block;
+  background: rgba(255,255,255,0.65);
+  color: var(--gray);
+  font-size: 11px;
+  font-weight: 500;
+  padding: 3px 9px;
+  border-radius: 3px;
+  border: 1px solid rgba(0,0,0,0.06);
+}
+
+/* ── STATUS LIST ──────────────────────────────────────────────────── */
+.status-list { border-top: 1px solid var(--border); }
+.status-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  padding: 15px 0;
+  border-bottom: 1px solid var(--border);
+}
+.status-item:last-child { border-bottom: none; }
+.dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; margin-top: 6px; }
+.dot-done    { background: #22C55E; }
+.dot-pending { background: #F59E0B; }
+.status-item p { font-size: 14px; color: var(--text); line-height: 1.5; }
+.status-item strong { color: var(--black); font-weight: 700; }
+
+/* ── DECISIONES ───────────────────────────────────────────────────── */
+.decision-list { border-top: 1px solid var(--border); margin-top: 28px; }
+.decision {
+  display: flex;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 22px 0;
+  border-bottom: 1px solid var(--border);
+}
+.decision:last-child { border-bottom: none; }
+.dec-n {
+  width: 34px; height: 34px;
+  background: var(--red);
+  color: var(--white);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 14px; font-weight: 700;
+  flex-shrink: 0;
+}
+.decision h4 { font-size: 15px; font-weight: 500; color: var(--black); margin-bottom: 5px; }
+.decision p  { font-size: 14px; color: var(--gray); line-height: 1.5; }
+
+/* ── SIGUIENTES PASOS ─────────────────────────────────────────────── */
+.steps-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 32px;
+}
+@media (max-width: 768px) { .steps-grid { grid-template-columns: 1fr; } }
+.next-step {
+  display: flex;
+  gap: 14px;
+  align-items: flex-start;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+}
+.next-step.full-row { grid-column: 1 / -1; }
+.step-icon { width: 28px; height: 28px; flex-shrink: 0; padding-top: 2px; }
+.step-icon svg { width: 28px; height: 28px; display: block; }
+.step-tag {
+  font-size: 10.5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--red);
+  margin-bottom: 5px;
+}
+.next-step h4 { font-size: 14.5px; font-weight: 600; color: var(--black); margin-bottom: 6px; }
+.next-step p  { font-size: 13.5px; color: var(--gray); line-height: 1.55; }
+
+/* ── GANTT ────────────────────────────────────────────────────────── */
+.gantt-wrap {
+  margin-top: 40px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 28px 28px 20px;
+  overflow-x: auto;
+}
+.gantt-title { font-size: 16px; font-weight: 600; color: var(--black); margin-bottom: 5px; }
+.gantt-sub   { font-size: 13px; color: var(--gray); margin-bottom: 22px; }
+.gantt-table { display: flex; flex-direction: column; gap: 5px; min-width: 560px; }
+.gantt-header, .gantt-row {
+  display: grid;
+  grid-template-columns: 88px repeat(5, 1fr);
+  gap: 5px;
+}
+.gantt-label {
+  font-size: 11.5px;
+  font-weight: 600;
+  color: var(--gray);
+  display: flex;
+  align-items: center;
+  padding-right: 6px;
+}
+.gantt-day-head {
+  font-size: 11px;
+  font-weight: 600;
+  text-align: center;
+  padding: 7px 4px;
+  background: #f4f4f5;
+  border-radius: 6px;
+  color: var(--black);
+}
+.gantt-day-head span { display: block; font-size: 10px; font-weight: 400; color: var(--gray); margin-top: 1px; }
+.gantt-day-head.val-h { background: #FEF2F2; color: var(--red); }
+.gantt-cell {
+  border-radius: 7px;
+  padding: 8px 5px;
+  text-align: center;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 1.3;
+}
+.gantt-cell small { display: block; font-size: 10px; font-weight: 400; margin-top: 2px; opacity: 0.85; }
+.gantt-cell.empty { background: #fafafa; border: 1px dashed #e4e4e7; }
+.gantt-cell.val   { background: #FEF2F2; color: var(--red); border: 1px solid #FECACA; font-weight: 600; }
+.gantt-cell.c1 { background: #2563EB; color: #fff; }
+.gantt-cell.c2 { background: #7C3AED; color: #fff; }
+.gantt-cell.c3 { background: #059669; color: #fff; }
+.gantt-cell.c4 { background: #D97706; color: #fff; }
+.gantt-cell.c5 { background: #0284C7; color: #fff; }
+.gantt-cell.c6 { background: #475569; color: #fff; }
+.gantt-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--border);
+}
+.gl-item {
+  font-size: 11px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 500;
+}
+.gl-item.val { background: #FEF2F2; color: var(--red); }
+.gl-item.c1  { background: #2563EB; color: #fff; }
+.gl-item.c2  { background: #7C3AED; color: #fff; }
+.gl-item.c3  { background: #059669; color: #fff; }
+.gl-item.c4  { background: #D97706; color: #fff; }
+.gl-item.c5  { background: #0284C7; color: #fff; }
+.gl-item.c6  { background: #475569; color: #fff; }
+
+/* ── EQUIPO ───────────────────────────────────────────────────────── */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 32px;
+}
+.team-card {
+  border-radius: var(--radius);
+  padding: 32px 24px;
+  text-align: center;
+}
+.avatar {
+  width: 60px; height: 60px;
+  border-radius: 50%;
+  background: var(--black);
+  color: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 18px; font-weight: 700;
+  margin: 0 auto 14px;
+}
+.team-card h4 { font-size: 16px; font-weight: 500; color: var(--black); margin-bottom: 3px; }
+.team-role {
+  font-size: 11px; font-weight: 700;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 10px;
+}
+.team-card p { font-size: 13px; color: var(--gray); line-height: 1.55; }
+
+/* ── ACCORDION ────────────────────────────────────────────────────── */
+.accordion { border-top: 1px solid var(--border); margin-top: 28px; }
+.acc-item { border-bottom: 1px solid var(--border); }
+.acc-q {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 0;
+  font-size: 15px; font-weight: 500;
+  color: var(--black);
+  cursor: pointer;
+  gap: 16px;
+  user-select: none;
+}
+.acc-q .plus { color: var(--red); font-size: 22px; font-weight: 300; flex-shrink: 0; transition: transform 0.2s; }
+.acc-item.open .acc-q .plus { transform: rotate(45deg); }
+.acc-a {
+  display: none;
+  padding: 0 0 18px;
+  font-size: 14px; color: var(--gray);
+  line-height: 1.7;
+}
+.acc-item.open .acc-a { display: block; }
+
+/* ── CIERRE — blanco/gris, sin rojo de fondo ─────────────────────── */
+.closing {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  padding: 80px 0;
+  text-align: center;
+}
+.closing .sec-tag { color: var(--muted); }
+.closing h2 { font-size: 32px; color: var(--black); margin-bottom: 14px; }
+.closing p {
+  font-size: 17px;
+  color: var(--gray);
+  max-width: 580px;
+  margin: 0 auto 32px;
+  line-height: 1.7;
+}
+
+/* ── FOOTER ───────────────────────────────────────────────────────── */
+footer {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  padding: 24px 0;
+}
+.footer-grid {
+  display: grid;
+  grid-template-columns: 220px 1fr 1fr 1fr;
+  gap: 48px;
+  margin-bottom: 40px;
+}
+.footer-logo img { height: 26px; width: auto; margin-bottom: 12px; }
+.footer-logo p { font-size: 13px; color: var(--muted); line-height: 1.6; }
+.footer-col h5 {
+  font-size: 11px; font-weight: 700;
+  color: var(--black);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 14px;
+}
+.footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.footer-col ul a { font-size: 13px; color: var(--gray); text-decoration: none; }
+.footer-col ul a:hover { color: var(--red); }
+.footer-bottom {
+ /*  border-top: 1px solid var(--border);
+  padding-top: 22px;*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  position: relative;
+}
+.footer-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 13px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+.footer-bottom p { font-size: 12px; color: var(--muted); }
+
+/* ── RETO BANNER ──────────────────────────────────────────────────── */
+.reto-banner {
+  background:
+    linear-gradient(rgba(255,255,255,0.97), rgba(255,255,255,0.86)),
+    url('images/catalana_building.jpg') center / cover no-repeat;
+  padding: 88px 0;
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+}
+.reto-label {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--red);
+  text-transform: uppercase;
+  letter-spacing: .12em;
+  margin-bottom: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.reto-label::before {
+  content: '';
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--red);
+  flex-shrink: 0;
+}
+.reto-heading {
+  font-size: 46px;
+  font-weight: 500;
+  color: var(--black);
+  line-height: 1.12;
+  letter-spacing: -.025em;
+  margin-bottom: 24px;
+  max-width: 680px;
+}
+.reto-heading em { font-style: normal; color: var(--red); }
+.reto-desc {
+  font-size: 17px;
+  color: var(--gray);
+  max-width: 600px;
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+.reto-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+.reto-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255,255,255,0.72);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 7px 16px;
+  border-radius: 3px;
+}
+.reto-pill::before {
+  content: '';
+  width: 6px;
+  height: 6px;
+  background: var(--red);
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+.reto-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--white);
+  font-family: 'CO', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: none;
+  background: var(--red);
+  padding: 13px 28px;
+  border-radius: 3px;
+  transition: background .15s;
+}
+.reto-cta:hover { background: var(--red-dark); }
+@media (max-width: 640px) {
+  .reto-heading { font-size: 28px; }
+  .reto-banner  { padding: 60px 0; }
+}
+
+/* ── UTILS ────────────────────────────────────────────────────────── */
+.mt-8  { margin-top: 8px; }
+.mt-16 { margin-top: 16px; }
+.mt-24 { margin-top: 24px; }
+.mt-32 { margin-top: 32px; }
+.mt-48 { margin-top: 48px; }
+
+/* ── TABS DE CONTENIDO EDITORIAL ──────────────────────────────────── */
+.etab-bar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 32px; }
+.etab {
+  padding: 8px 18px;
+  font: 600 12px/1 'CO', sans-serif;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gray);
+  background: none;
+  border: 1.5px solid var(--border);
+  border-radius: 100px;
+  cursor: pointer;
+  transition: border-color 0.15s, color 0.15s;
+}
+.etab.active, .etab:hover { border-color: var(--red); color: var(--red); }
+.etab-content { display: none; }
+.etab-content.active {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  animation: fadeIn 0.3s ease;
+}
+@keyframes fadeIn { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+.ecard {
+  background: var(--white);
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 24px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  transition: border-color 0.15s;
+}
+.ecard:hover { border-color: var(--red); }
+.ecard-tag {
+  font: 600 11px/1 'CO', sans-serif;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--red);
+}
+.ecard h3 { font-size: 17px; color: var(--black); line-height: 1.35; }
+.ecard p { font-size: 15px; color: var(--gray); line-height: 1.65; flex: 1; }
+.ecard-cta {
+  font-size: 13px;
+  color: var(--muted);
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+.ecard-cta::before { content: '→  '; color: var(--red); }
+.ecard-canal {
+  display: inline-block;
+  width:fit-content;
+  font: 500 11px/1 'CO', sans-serif;
+  letter-spacing: 0.02em;
+  color: var(--gray);
+  border-radius: 20px;
+  padding: 3px 10px;
+  margin-top: -2px;
+  background: var(--bg-alt);
+  border: 1px solid var(--border);
+}
+.canal-general   { background: var(--peach);    border-color: var(--peach-ico); }
+.canal-anuncios  { background: var(--sky);       border-color: var(--sky-ico); }
+.canal-primeros  { background: var(--mint);      border-color: var(--mint-ico); }
+.canal-casos     { background: var(--lavender);  border-color: var(--lavender-ico); }
+.canal-foro      { background: var(--rose);      border-color: var(--rose-ico); }
+
+/* ── HOJA DE RUTA — TRES HORIZONTES ──────────────────────────────── */
+.rmap-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+.rmap-card { border: 1.5px solid var(--border); border-radius: var(--radius); overflow: hidden; }
+.rmap-header { padding: 20px 22px; }
+.rmap-horizon {
+  font: 700 10px/1 'CO', sans-serif;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 8px;
+}
+.rmap-header h3 { font-size: 18px; color: var(--black); line-height: 1.3; margin: 0; }
+.rmap-body { padding: 4px 0; }
+.rmap-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 11px 20px;
+  font-size: 14px;
+  color: var(--text);
+  line-height: 1.5;
+  border-bottom: 1px solid var(--border);
+}
+.rmap-row:last-child { border-bottom: none; }
+.rmap-row::before { content: '—'; color: var(--red); flex-shrink: 0; font-weight: 700; }
+
+/* ── RESPONSIVE ───────────────────────────────────────────────────── */
+@media (max-width: 960px) {
+  .hero-grid       { grid-template-columns: 1fr; }
+  .hero-illustration { display: none; }
+  h1               { font-size: 34px; }
+  .hero-center     { padding: 56px 0 48px; }
+  .stats-grid  { grid-template-columns: 1fr 1fr; }
+  .stat-item:nth-child(2) { border-right: none; }
+  .cat-grid    { grid-template-columns: 1fr 1fr; }
+  .cat-grid-4  { grid-template-columns: 1fr 1fr; }
+  .phase-grid  { grid-template-columns: 1fr 1fr; }
+  .card-grid-2 { grid-template-columns: 1fr; }
+  .team-grid   { grid-template-columns: 1fr; }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+  .rmap-grid { grid-template-columns: 1fr; }
+  .etab-content.active { grid-template-columns: 1fr; }
+  nav a { font-size: 12px; padding: 5px 9px; }
+}
+@media (max-width: 640px) {
+  .wrap         { padding: 0 20px; }
+  .hero-grid    { padding: 0 20px; }
+  h1            { font-size: 26px; }
+  section       { padding: 52px 0; }
+  .cat-grid     { grid-template-columns: 1fr; }
+  .cat-grid-2   { grid-template-columns: 1fr; }
+  .phase-grid   { grid-template-columns: 1fr; }
+  .team-grid    { grid-template-columns: 1fr; }
+  .footer-grid  { grid-template-columns: 1fr; gap: 28px; }
+  .stats-grid   { grid-template-columns: 1fr 1fr; }
+  nav a         { display: none; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<!-- <div class="topbar">
+  <div class="topbar-inner">
+    <span>GCO × Raona · Uso interno</span>
+    <span class="chip">Confidencial</span>
+    <span style="color:var(--border)">|</span>
+    <span>Mayo 2026</span>
+  </div>
+</div> -->
+
+<!-- HEADER -->
+<header>
+  <div class="header-inner">
+    <a href="#" class="logo-wrap" aria-label="Catalana Occidente">
+      <img src="Manual de marca/logotipo/logo_catalana-occidente.svg"
+          alt="Catalana Occidente"
+          onerror="this.style.display='none';this.nextElementSibling.style.display='block';">
+      <span class="logo-fallback" style="display:none;">Occident</span>
+    </a>
+    <nav>
+      <a href="#contexto">Contexto</a>
+      <a href="#propuesta">Propuesta</a>
+      <a href="#canal">Comunidad</a>
+      <a href="#fases">Fases</a>
+      <a href="#contenidos">Contenidos</a>
+      <a href="#soporte">Soporte</a>
+      <a href="#plan">Hoja de ruta</a>
+      <a href="#decisiones">Siguientes pasos</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-grid">
+
+    <div class="hero-illustration">
+      <img src="images/hero.jpg" alt="Estrategia de adopción GitHub Copilot" style="width:100%;max-width:460px;border-radius:var(--radius);display:block;">
+    </div>
+
+    <!-- Texto: columna derecha -->
+    <div class="hero-center">
+      <div class="hero-eyebrow">Estrategia de adopción continua · Grupo Catalana Occidente</div>
+      <h1>La formación fue<br>el punto de partida.<br><em>La adopción empieza ahora.</em></h1>
+      <p class="hero-lead">GCO tiene en marcha un proceso de formación técnica con GitHub Copilot —impartido por Raona y Pasiona— y el reto siguiente es convertir ese conocimiento en una práctica visible y habitual en el día a día de los equipos.</p>
+      <div class="btn-row">
+        <a href="#propuesta" class="btn-red">Ver la propuesta &rarr;</a>
+        <a href="#decisiones" class="btn-link">Siguientes pasos &darr;</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- EL RETO — sección de impacto que crea expectativa -->
+<div class="reto-banner">
+  <div class="wrap">
+    <div class="reto-label">El reto</div>
+    <div class="reto-heading">Convertir conocimiento<br>en <em>uso diario</em></div>
+    <p class="reto-desc">
+      Mediante el ciclo de la formación, los equipos conocen GitHub Copilot, han trabajado con Casos de uso de COBOL, DB2, PL/SQL y .NET.<br>El nuevo reto empieza aquí: cuando cada developer lo abra en su trabajo diario — no solo como un ejercicio.
+    </p>
+    <div class="reto-pills">
+      <span class="reto-pill">Sin refuerzo continuo, el conocimiento se diluye</span>
+      <span class="reto-pill">La resistencia no es falta de conocimiento, es falta de hábito</span>
+      <span class="reto-pill">GitHub Copilot funciona con COBOL — ya lo demostramos</span>
+    </div>
+    <a href="#propuesta" class="reto-cta">Ver cómo lo resolvemos &rarr;</a>
+  </div>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 01 · RESUMEN EJECUTIVO                                            -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="resumen">
+  <div class="wrap">
+    <span class="sec-tag">01 / Resumen ejecutivo</span>
+    <h2>El punto de partida y el reto que sigue</h2>
+    <p class="sec-lead">
+      La fase de formación técnica en GitHub Copilot marca el inicio de la adopción. Los equipos ya han trabajado con Casos de uso en COBOL, DB2, PL/SQL y .NET, y han explorado capacidades avanzadas como MCP conectado a Jira y Confluence.
+    </p>
+    <p class="sec-lead" style="margin-bottom:0;">
+      El reto ahora es convertir ese aprendizaje en uso habitual. Sin un sistema de adopción continua, GitHub Copilot puede quedar como una herramienta vista en formación, pero no integrada en el día a día.
+    </p>
+
+    <div class="callout mt-24">
+      <p>Por eso, la siguiente fase debe centrarse en acompañar, activar y demostrar valor con casos concretos del trabajo real de GCO. La propuesta se articula en acciones de comunicación, soporte y acompañamiento continuo que mantengan vivo el uso de GitHub Copilot antes y después de la formación.</p>
+    </div>
+
+    <!-- 3 cards pasteles — como "Encuentra la protección" en particulares -->
+    <div class="cat-grid mt-32">
+      <div class="cat-card c-rose">
+        <div class="ico-wrap i-rose">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#DA1F2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <h4>Comunidad activa en Teams</h4>
+        <p>Canal de comunicación continua con contenidos breves, tips y Casos de uso para que GitHub Copilot esté presente en el día a día.</p>
+      </div>
+      <div class="cat-card c-sky">
+        <div class="ico-wrap i-sky">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/>
+          </svg>
+        </div>
+        <h4>Soporte cuando se necesita</h4>
+        <p>Foro permanente, sesiones AMA "Ask Me Anything" con expertos y reservas 1:1 de 15–30 minutos para resolver bloqueos reales en el momento exacto.</p>
+      </div>
+      <div class="cat-card c-mint">
+        <div class="ico-wrap i-mint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 11 12 14 22 4"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+        </div>
+        <h4>Contenido conectado a GCO</h4>
+        <p>Cada pieza parte de casos ya demostrados en las sesiones: COBOL, DB2, SQLCODE, PL/SQL, .NET y Jira.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 02 · CONTEXTO                                                     -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="contexto" class="bg-alt">
+  <div class="wrap">
+    <span class="sec-tag">02 / Contexto y punto de partida</span>
+    <h2>Lo que ya existe y lo que sigue</h2>
+
+    <div class="card-grid-2">
+      <div class="card-white">
+        <h3>Lo que ya existe en GCO</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:14px;">
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--red);font-weight:700;flex-shrink:0;">✓</span>Licencias activas de GitHub Copilot</li>
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--red);font-weight:700;flex-shrink:0;">✓</span>Sesiones técnicas recurrentes</li>
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--red);font-weight:700;flex-shrink:0;">✓</span>Casos de uso demostrados en el stack de GCO</li>
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--red);font-weight:700;flex-shrink:0;">✓</span>Canal de Teams creado y estructurado</li>
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--red);font-weight:700;flex-shrink:0;">✓</span>Equipos de Raona y Pasiona dedicados al proyecto</li>
+        </ul>
+      </div>
+      <div class="card-white">
+        <h3>Stack de los equipos de desarrollo</h3>
+        <ul style="list-style:none;display:flex;flex-direction:column;gap:10px;margin-top:14px;">
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--muted);flex-shrink:0;">→</span>Visual Studio (entorno principal)</li>
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--muted);flex-shrink:0;">→</span>COBOL y mainframe legacy</li>
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--muted);flex-shrink:0;">→</span>.NET para capa de aplicación</li>
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--muted);flex-shrink:0;">→</span>DB2 y PL/SQL para base de datos</li>
+          <li style="display:flex;gap:11px;font-size:14px;color:var(--text);"><span style="color:var(--muted);flex-shrink:0;">→</span>Jira y Confluence (Atlassian)</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- <h3 class="mt-32" style="margin-bottom:0;">Temario de las 18 sesiones</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th style="width:210px;">Sesión</th><th>Contenido cubierto</th><th style="width:110px;">Grupos</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Sesión 1</strong><br><span style="font-size:12px;color:var(--muted);">Conceptos básicos</span></td>
+            <td>Funcionamiento de LLMs, prompting estructurado (Rol + Contexto + Tarea + Restricciones + Formato), ventana de contexto, ecosistema GitHub Copilot 2026, atajos @workspace, #file, #selection</td>
+            <td>G1M – G6M</td>
+          </tr>
+          <tr>
+            <td><strong>Sesión 2</strong><br><span style="font-size:12px;color:var(--muted);">Uso práctico</span></td>
+            <td>GitHub Copilot-instructions.md, carpeta .github, .GitHub Copilotignore, Agent Loop (Preguntar → Planificar → Generar → Validar), Casos de uso con tickets de Jira</td>
+            <td>G1M – G6M</td>
+          </tr>
+          <tr>
+            <td><strong>Sesión 3</strong><br><span style="font-size:12px;color:var(--muted);">Personalización avanzada</span></td>
+            <td>Prompt files (.prompt.md), Skills, Multi-agents, MCP con conexión a Jira, Confluence y Elastic</td>
+            <td>G1M – G6M</td>
+          </tr>
+        </tbody>
+      </table>
+    </div> -->
+
+    <!-- <h3 class="mt-32" style="margin-bottom:0;">Casos de uso en las sesiones de GCO</h3>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Definición CU</th><th style="width:160px;">Sesión / Grupo</th><th style="width:130px;">Tecnología</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Convertir JSON a Copybook COBOL completo</td><td>Sesión 1 – G4M</td><td><span class="badge badge-red">COBOL</span></td></tr>
+          <tr><td>Generar scripts SQL de creación de tablas desde un Excel</td><td>Sesión 1 – G5M</td><td><span class="badge badge-red">SQL</span></td></tr>
+          <tr><td>Refactorizar consulta DB2 con múltiples CASE anidados a COBOL</td><td>Sesión 1 – G4M</td><td><span class="badge badge-red">DB2 / COBOL</span></td></tr>
+          <tr><td>Automatizar control de errores COBOL tras sentencia SQL (SQLCODE)</td><td>Sesión 2 – G4M, G5M</td><td><span class="badge badge-red">COBOL</span></td></tr>
+          <tr><td>Crear método de inserción en capa .NET con modo agente</td><td>Sesión 2 – G5M</td><td><span class="badge badge-red">.NET</span></td></tr>
+          <tr><td>Generar README con diagrAMA "Ask Me Anything"s Mermaid automáticamente</td><td>Sesión 2 – G1M, G3M, G6M</td><td><span class="badge badge-dark">General</span></td></tr>
+          <tr><td>Optimizar PL/SQL de migración de millones de pólizas (de 24h a tiempo reducido)</td><td>Sesión 3 – G1M</td><td><span class="badge badge-red">PL/SQL</span></td></tr>
+          <tr><td>Análisis de impacto de cambios en Copybooks COBOL</td><td>Sesión 3 – G3M</td><td><span class="badge badge-red">COBOL</span></td></tr>
+          <tr><td>Analizar ticket Jira sobre prima negativa — Jira + Confluence vía MCP</td><td>Sesión 3 – G4M</td><td><span class="badge badge-red">COBOL + Atlassian</span></td></tr>
+        </tbody>
+      </table>
+    </div> -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 03 La oportunidad                                                -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="problema">
+  <div class="wrap">
+    <span class="sec-tag">03 / La oportunidad</span>
+    <h2>Convertir la formación en uso real</h2>
+    <p class="sec-lead">
+      Los equipos ya conocen GitHub Copilot y han probado su valor con casos cercanos a su día a día. El siguiente paso es facilitar que ese aprendizaje se transforme en hábito: usar GitHub Copilot como apoyo práctico para resolver dudas, acelerar tareas y ganar contexto en el trabajo diario.
+    </p>
+
+    <div class="callout">
+      <p>La adopción crece cuando la IA deja de verse como una novedad y empieza a sentirse como una ayuda disponible justo cuando el equipo la necesita.</p>
+    </div>
+
+<!--     <h3 class="mt-32">¿Por qué ocurre la resistencia?</h3>
+    <p style="font-size:14px;color:var(--gray);margin-bottom:4px;">El developer vuelve a su trabajo diario y encuentra estas barreras reales:</p>
+
+    <div class="accordion">
+      <div class="acc-item open">
+        <div class="acc-q" onclick="toggle(this.parentElement)">
+          No recuerda cuándo y cómo usar GitHub Copilot en su trabajo concreto
+          <span class="plus">+</span>
+        </div>
+        <div class="acc-a">Sin un sistema de recordatorio y refuerzo continuo, el conocimiento de la formación se diluye rápidamente al volver a la rutina. El canal de comunidad actúa como ese recordatorio.</div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-q" onclick="toggle(this.parentElement)">
+          Percibe que GitHub Copilot no es para COBOL ni para entornos legacy
+          <span class="plus">+</span>
+        </div>
+        <div class="acc-a">Los casos ya demostrados en las sesiones —convertir JSON a Copybook, analizar SQLCODE, refactorizar DB2— prueban exactamente lo contrario. El contenido del canal debe hacer eso visible de forma continua.</div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-q" onclick="toggle(this.parentElement)">
+          No tiene un canal para resolver dudas rápidas sin sentirse expuesto
+          <span class="plus">+</span>
+        </div>
+        <div class="acc-a">El foro de ayuda y las sesiones AMA "Ask Me Anything" crean un espacio seguro donde preguntar es parte de la dinámica, no una señal de ignorancia.</div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-q" onclick="toggle(this.parentElement)">
+          No ve Casos de uso de compañeros o equipos similares que lo usen
+          <span class="plus">+</span>
+        </div>
+        <div class="acc-a">El canal «Casos de Uso Reales» convierte cada caso demostrado en contenido visible para toda la comunidad. Ver que alguien en tu equipo resolvió un problema real con GitHub Copilot tiene más impacto que cualquier estadística.</div>
+      </div>
+      <div class="acc-item">
+        <div class="acc-q" onclick="toggle(this.parentElement)">
+          Miedo a perder el control del código o a ser reemplazado
+          <span class="plus">+</span>
+        </div>
+        <div class="acc-a">El tono de todo el contenido es clave: colega que comparte un descubrimiento útil, nunca experto que enseña. GitHub Copilot se presenta como herramienta de control y eficiencia, no de sustitución.</div>
+      </div>
+    </div> -->
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 04 · PROPUESTA                                                    -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="propuesta" class="bg-alt">
+  <div class="wrap">
+    <span class="sec-tag">04 / La propuesta</span>
+    <h2>Ecosistema de adopción continua</h2>
+    <p class="sec-lead">
+      Proponemos complementar la capacitación técnica con un ecosistema de adopción continua que mantenga vivo el aprendizaje y facilite su aplicación en el día a día. La comunidad, los contenidos prácticos y los espacios de soporte ayudarán a que cada equipo avance con más confianza, según su contexto y ritmo de adopción.
+    </p>
+
+    <div class="callout callout-neutral">
+      <p>La formación da la base. El ecosistema de adopción ayuda a convertir esa base en práctica habitual, acompañada y visible dentro de GCO.</p>
+    </div>
+
+    <!-- 4 pillar cards con pasteles — igual que las categorías de particulares -->
+    <div class="cat-grid cat-grid-2 mt-32">
+      <div class="cat-card c-rose">
+        <div class="ico-wrap i-rose">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#DA1F2A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;color:var(--red);text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Línea 1</p>
+          <h4>Comunidad y contenidos</h4>
+        </div>
+        <p>Canal activo en MS Teams con tips prácticos, infografías, micro-vídeos y Casos de uso — siempre conectados al stack de GCO: COBOL, DB2, PL/SQL, .NET.</p>
+        <div class="tag-row">
+          <span class="tag">Canal Teams</span>
+          <span class="tag">Tips semanales</span>
+          <span class="tag">Infografías</span>
+          <span class="tag">Micro-vídeos</span>
+        </div>
+      </div>
+
+      <div class="cat-card c-sky">
+        <div class="ico-wrap i-sky">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#2563EB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;color:#2563EB;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Línea 2</p>
+          <h4>Soporte continuo</h4>
+        </div>
+        <p>Sistema para resolver bloqueos reales: foro permanente, sesiones AMA "Ask Me Anything" periódicas con expertos y reservas 1:1 de 15–30 min vía Microsoft Bookings.</p>
+        <div class="tag-row">
+          <span class="tag">Foro de ayuda</span>
+          <span class="tag">Sesiones AMA "Ask Me Anything"</span>
+          <span class="tag">Reservas 1:1</span>
+        </div>
+      </div>
+
+      <div class="cat-card c-mint">
+        <div class="ico-wrap i-mint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/>
+            <line x1="12" y1="11" x2="12" y2="17"/><polyline points="9 14 12 17 15 14"/>
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;color:#059669;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Línea 3</p>
+          <h4>Repositorio de recursos y configuración</h4>
+        </div>
+        <p>Comunicar y centralizar los archivos de configuración ya creados que mejoran el uso de GitHub Copilot en casos de uso concretos del stack de GCO. Los equipos sabrán qué existe, para qué sirve y dónde descargarlo — sin depender de que alguien se los envíe.</p>
+        <div class="tag-row">
+          <span class="tag">Archivos de configuración</span>
+          <span class="tag">Recursos descargables</span>
+          <span class="tag">COBOL · DB2 · .NET</span>
+          <span class="tag">Casos de uso reales</span>
+        </div>
+      </div>
+
+      <div class="cat-card c-lavender">
+        <div class="ico-wrap i-lavender">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/>
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;color:#7C3AED;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Línea 4</p>
+          <h4>Evolución progresiva</h4>
+        </div>
+        <p>Construir una ruta de adopción que empiece por necesidades reales del día a día y avance gradualmente hacia usos más técnicos. La IA se está convirtiendo en una capacidad clave del trabajo tecnológico: amplifica el criterio, acelera la ejecución y prepara a los equipos para un mercado que ya valora saber trabajar con ella.</p>
+        <div class="tag-row">
+          <span class="tag">Valor desde lo básico</span>
+          <span class="tag">Capacidades para el futuro</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 05 · COMUNIDAD EN TEAMS                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="canal">
+  <div class="wrap">
+    <span class="sec-tag">05 / Comunidad en Teams</span>
+    <h2>La comunidad como motor de adopción</h2>
+    <p class="sec-lead">
+      Teams será el punto de encuentro para sostener la adopción en el tiempo. No solo como espacio de consulta, sino como una comunidad viva donde cada persona del equipo encontrará datos concretos sobre lo que gana al incorporar la IA, ejemplos de su entorno real y acompañamiento cercano. Cada canal tiene un propósito claro, una audiencia definida y contenido que responde a una necesidad real del equipo de GCO.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th style="width:200px;">Canal</th><th style="width:160px;">Audiencia</th><th>Objetivo</th><th>Qué encontrarás</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>General</strong></td>
+            <td>Toda la comunidad</td>
+            <td>Dar contexto oficial y orientar a los usuarios desde el primer día</td>
+            <td>Bienvenida, mapa de canales, mensajes institucionales</td>
+          </tr>
+          <tr>
+            <td><strong>Anuncios y Tips Ágiles</strong></td>
+            <td>Todo el equipo</td>
+            <td>Canal editorial principal — el lugar donde se publica el valor: métricas de productividad reales, tendencias del sector, tips de uso, casos de GCO y retos prácticos. El objetivo es que cada persona del equipo vea con datos concretos qué gana al adoptar GitHub Copilot en su día a día</td>
+            <td>
+              Por valor: <code>#MétricasIA</code> <code>#Tendencias</code> <code>#CasoReal</code><br>
+              Por acción: <code>#TipÁgil</code> <code>#PruebaHoy</code> <code>#Novedad</code><br>
+              Por tecnología: <code>#COBOL</code> <code>#NET</code> <code>#DB2</code> <code>#PLSQL</code><br>
+              Por fase: <code>#Fase1</code> <code>#Fase2</code>…
+            </td>
+          </tr>
+          <tr>
+            <td><strong>Casos de Uso Reales</strong></td>
+            <td>Personas del equipo con GitHub Copilot activo</td>
+            <td>Documentar en profundidad problemas reales de GCO resueltos con IA — para que otros developers repliquen el resultado</td>
+            <td>Problema → prompt → resultado → aprendizaje</td>
+          </tr>
+          <tr>
+            <td><strong>Foro de Ayuda / AMA "Ask Me Anything"</strong></td>
+            <td>Cualquier nivel</td>
+            <td>Resolver dudas abiertas, desbloquear resistencias y conectar a expertos con usuarios con problemas reales</td>
+            <td>Preguntas abiertas, FAQs, convocatorias AMA "Ask Me Anything", respuestas de expertos</td>
+          </tr>
+          <tr>
+            <td><strong>Primeros Pasos</strong></td>
+            <td>Personas del equipo que aún no han activado GitHub Copilot</td>
+            <td>Guiar a usuarios que necesitan empezar sin fricción, desde cero y sin tecnicismos</td>
+            <td>Confirmar licencia, abrir GitHub Copilot, primera pregunta útil</td>
+          </tr>
+          <tr>
+            <td><strong>Reservas 1:1 con Expertos</strong></td>
+            <td>Cualquier persona del equipo con una duda concreta</td>
+            <td>Facilitar acompañamiento personalizado para casos que no encajan en el canal general</td>
+            <td>Enlace a Bookings, instrucciones, tipos de dudas ideales para la sesión</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 06 · FASES                                                        -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="fases" class="bg-alt">
+  <div class="wrap">
+    <span class="sec-tag">06 / Estrategia de contenidos</span>
+    <h2>Cuatro fases progresivas de adopción</h2>
+    <p class="sec-lead">
+      El orden de las fases es obligatorio. Nunca se salta a configuraciones avanzadas sin consolidar las anteriores. La confianza se construye de menos a más.
+    </p>
+
+    <!-- Fases como cards pasteles individuales, igual que categorías de particulares -->
+    <div class="phase-grid">
+      <div class="phase-card c-ice">
+        <div class="ico-wrap i-ice">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#0284C7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M11 5 6 9H2v6h4l5 4V5z"/>
+            <path d="M15.54 8.46a5 5 0 0 1 0 7.07"/>
+            <path d="M19.07 4.93a10 10 0 0 1 0 14.14"/>
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;color:#0284C7;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Fase 1</p>
+          <h3>Concienciación</h3>
+        </div>
+        <p>Recordar que GitHub Copilot es la herramienta corporativa disponible y mostrar valor inicial concreto.</p>
+        <div class="tag-row">
+          <span class="tag">¿Tienes licencia activa?</span>
+          <span class="tag">Métricas productividad</span>
+          <span class="tag">Novedades útiles</span>
+        </div>
+      </div>
+      <div class="phase-card c-mint">
+        <div class="ico-wrap i-mint">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#059669" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2"/>
+            <line x1="8" y1="21" x2="16" y2="21"/>
+            <line x1="12" y1="17" x2="12" y2="21"/>
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;color:#059669;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Fase 2</p>
+          <h3>Visual Studio primero</h3>
+        </div>
+        <p>Llevar GitHub Copilot al entorno real de trabajo — donde los developers de GCO trabajan hoy.</p>
+        <div class="tag-row">
+          <span class="tag">Dónde está GitHub Copilot en VS</span>
+          <span class="tag">Modo pregunta vs. agente</span>
+          <span class="tag">Resolver bug con log</span>
+        </div>
+      </div>
+      <div class="phase-card c-lemon">
+        <div class="ico-wrap i-lemon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#CA8A04" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 2 7 12 12 22 7 12 2"/>
+            <polyline points="2 17 12 22 22 17"/>
+            <polyline points="2 12 12 17 22 12"/>
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;color:#CA8A04;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Fase 3</p>
+          <h3>Multi-entorno</h3>
+        </div>
+        <p>Ampliar el uso hacia VS Code y terminal CLI sin forzar el cambio de entorno. <em>La incorporación de VS Code requiere confirmación con IT — se activará cuando esté validada la infraestructura.</em></p>
+        <div class="tag-row">
+          <span class="tag">VS Code vs. Visual Studio</span>
+          <span class="tag">GitHub Copilot CLI</span>
+          <span class="tag">Pendiente validación IT</span>
+        </div>
+      </div>
+      <div class="phase-card c-lavender">
+        <div class="ico-wrap i-lavender">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="21" x2="4" y2="14"/>
+            <line x1="4" y1="10" x2="4" y2="3"/>
+            <line x1="12" y1="21" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12" y2="3"/>
+            <line x1="20" y1="21" x2="20" y2="16"/>
+            <line x1="20" y1="12" x2="20" y2="3"/>
+            <line x1="1" y1="14" x2="7" y2="14"/>
+            <line x1="9" y1="8" x2="15" y2="8"/>
+            <line x1="17" y1="16" x2="23" y2="16"/>
+          </svg>
+        </div>
+        <div>
+          <p style="font-size:10px;font-weight:700;color:#7C3AED;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px;">Fase 4</p>
+          <h3>Customización avanzada</h3>
+        </div>
+        <p>Personalización cuando ya exista uso básico consolidado — nunca antes.</p>
+        <div class="tag-row">
+          <span class="tag">GitHub Copilot-instructions.md</span>
+          <span class="tag">Carpeta .github</span>
+          <span class="tag">Documentación automática</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- CONTENIDOS LISTOS PARA PUBLICAR                                    -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="contenidos">
+  <div class="wrap">
+    <span class="sec-tag">Bocetos de contenidos</span>
+    <h2>Cuatro tipos de contenido. Cada semana, los cuatro.</h2>
+    <p class="sec-lead">No hay semanas temáticas. Desde la primera semana, cada publicación pertenece a uno de estos cuatro tipos — y los cuatro conviven en el mismo feed. Así el equipo recibe valor práctico desde el día uno: un dato contextualizado, un tip accionable, un caso de uso real y una tendencia relevante.</p>
+
+    <div class="etab-bar">
+      <button class="etab active" onclick="switchETab('semana1', this)">Tipo 1 · Contexto GCO</button>
+      <button class="etab" onclick="switchETab('tipagil', this)">Tipo 2 · Tip de prompt</button>
+      <button class="etab" onclick="switchETab('casos', this)">Tipo 3 · Caso de uso real</button>
+      <button class="etab" onclick="switchETab('novedades', this)">Tipo 4 · Tendencias</button>
+    </div>
+
+    <!-- TIPO 1: Datos y contexto adaptados a GCO — no noticias genéricas de McKinsey -->
+    <div id="semana1" class="etab-content active">
+      <div class="ecard">
+        <span class="ecard-tag">#Contexto GCO · Código heredado</span>
+        <span class="ecard-canal canal-anuncios">Anuncios y Tips Ágiles</span>
+        <h3>El mayor impacto no está en código nuevo — está en el tuyo</h3>
+        <p>Los equipos que trabajan con código heredado son los que más se benefician de GitHub Copilot en las primeras semanas. Entender un programa de 3.000 líneas que lleva años sin tocar puede pasar de horas a minutos. En GCO, COBOL, DB2 y PL/SQL son exactamente ese escenario.</p>
+        <span class="ecard-cta">¿Qué programa tienes pendiente de entender? Empieza por ahí.</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Contexto GCO · Sector seguros y mainframe</span>
+        <span class="ecard-canal canal-anuncios">Anuncios y Tips Ágiles</span>
+        <h3>Otras aseguradoras ya lo usan en mainframe y COBOL. GCO tiene la misma herramienta.</h3>
+        <p>Bancos y aseguradoras con entornos mainframe han reducido carga en análisis de impacto y documentación usando GitHub Copilot — exactamente los mismos casos de uso que existen en GCO. La diferencia no está en tener la licencia. Está en empezar a usarla.</p>
+        <span class="ecard-cta">GCO tiene las licencias activas. La ventaja es empezar antes.</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Contexto GCO · Por qué ahora</span>
+        <span class="ecard-canal canal-general">General</span>
+        <h3>La ventaja no está en tener IA. Está en aprender antes a usarla bien.</h3>
+        <p>Las herramientas de IA están disponibles para todos. Lo que distinguirá a los equipos en los próximos años no es el acceso, sino quién aprende antes a integrarlas con criterio en su flujo diario. En GCO ese momento empieza ahora — con el stack real que ya usan.</p>
+        <span class="ecard-cta">Empieza por una tarea pequeña esta semana</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Contexto GCO · Licencias activas</span>
+        <span class="ecard-canal canal-anuncios">Anuncios y Tips Ágiles</span>
+        <h3>GitHub Copilot ya está disponible en tu entorno. No hay nada que instalar.</h3>
+        <p>GCO tiene licencias activas y el equipo de Raona y Pasiona ha configurado GitHub Copilot para Visual Studio, VS Code y CLI. Si no lo has probado todavía, el primer paso es abrirlo hoy y hacer una sola pregunta sobre el código en el que estés trabajando.</p>
+        <span class="ecard-cta">Una pregunta. Hoy. Eso es todo lo que hace falta para empezar.</span>
+      </div>
+    </div>
+
+    <!-- TIPO 2: Prompt engineering básico y universal -->
+    <div id="tipagil" class="etab-content">
+      <div class="ecard">
+        <span class="ecard-tag">#Tip de prompt · Estructura</span>
+        <span class="ecard-canal canal-primeros">Primeros Pasos con GitHub Copilot</span>
+        <h3>Una buena pregunta a GitHub Copilot tiene tres partes</h3>
+        <p>Rol + Contexto + Tarea. "Actúa como revisor de código. Tengo este bloque que hace X. Necesito entender si puede fallar bajo condición Y." Sin las tres partes, GitHub Copilot trabaja a ciegas. Con ellas, trabaja con criterio y da respuestas accionables.</p>
+        <span class="ecard-cta">Reformula tu próxima pregunta con estas tres partes</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Tip de prompt · Contexto</span>
+        <span class="ecard-canal canal-primeros">Primeros Pasos con GitHub Copilot</span>
+        <h3>Menos código, mejor respuesta</h3>
+        <p>GitHub Copilot responde mejor cuando recibe solo lo relevante. En vez de "revísame todo este archivo", selecciona únicamente el bloque que te interesa. GitHub Copilot leerá exactamente lo que necesita y dará una respuesta más precisa y accionable.</p>
+        <span class="ecard-cta">Selecciona solo el bloque que quieres revisar antes de preguntar</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Tip de prompt · Errores</span>
+        <span class="ecard-canal canal-anuncios">Anuncios y Tips Ágiles</span>
+        <h3>Pega el error — no lo describas</h3>
+        <p>Cuando GitHub Copilot recibe el mensaje de error exacto, trabaja con los datos reales. Cuando tú lo describes con palabras, trabaja con tu interpretación. La diferencia en la calidad de la respuesta es significativa. Copia el log tal como aparece y pégalo directamente.</p>
+        <span class="ecard-cta">Pruébalo con el próximo error que veas en tu consola</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Tip de prompt · Criterio</span>
+        <span class="ecard-canal canal-primeros">Primeros Pasos con GitHub Copilot</span>
+        <h3>GitHub Copilot no reemplaza tu criterio — lo amplifica</h3>
+        <p>GitHub Copilot genera primeras versiones, no versiones finales. Su valor está en reducir el tiempo de arranque: entender código, proponer estructuras, detectar riesgos. La validación, el contexto de negocio y la decisión final siguen siendo tuyas. Úsalo como un par técnico, no como una respuesta definitiva.</p>
+        <span class="ecard-cta">Trata cada respuesta de GitHub Copilot como un punto de partida</span>
+      </div>
+    </div>
+
+    <!-- TIPO 3: Casos de uso reales — desde semana 1, no después de 5 semanas -->
+    <div id="casos" class="etab-content">
+      <div class="ecard">
+        <span class="ecard-tag">#Caso de uso · Log de error</span>
+        <span class="ecard-canal canal-casos">Casos de Uso Reales</span>
+        <h3>Copiar el log. Pegar. Preguntar.</h3>
+        <p>Tienes un error en consola. En vez de buscarlo o preguntar a un compañero, pégalo en GitHub Copilot Chat: "¿Qué significa este error y cómo puedo resolverlo?" GitHub Copilot leerá el mensaje exacto y te dará una respuesta en segundos. Sin instalaciones extra. Sin configuración.</p>
+        <span class="ecard-cta">Pruébalo con el próximo error que aparezca</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Caso de uso · Comprensión de código</span>
+        <span class="ecard-canal canal-casos">Casos de Uso Reales</span>
+        <h3>¿Qué hace este bloque?</h3>
+        <p>Selecciona un bloque de código que no entiendas del todo. Abre GitHub Copilot Chat. Pregunta: "Explícame qué hace este código, qué parámetros recibe y qué podría salir mal." En menos de un minuto tendrás una descripción clara que antes habría requerido revisar documentación o preguntar a quien lo escribió.</p>
+        <span class="ecard-cta">Elige un bloque de hoy y pruébalo ahora</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Caso de uso · Documentación</span>
+        <span class="ecard-canal canal-casos">Casos de Uso Reales</span>
+        <h3>Documenta una función antes de entregarla</h3>
+        <p>Selecciona una función o procedimiento que tengas que entregar. Pídele a GitHub Copilot: "Genera un comentario de cabecera con: qué hace, parámetros de entrada y salida, y posibles errores." En 30 segundos tienes documentación base lista para revisar.</p>
+        <span class="ecard-cta">Aplícalo al siguiente artefacto que tengas que entregar</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Caso de uso COBOL · Comprensión</span>
+        <span class="ecard-canal canal-casos">Casos de Uso Reales</span>
+        <h3>COBOL: deja que GitHub Copilot te lo explique</h3>
+        <p>Si tienes un programa COBOL que llevas tiempo sin tocar, selecciona la sección PROCEDURE DIVISION o el bloque principal. Pregunta: "Explícame qué hace este bloque y qué datos modifica." No necesitas dar más contexto que eso para empezar. El valor aparece en la primera lectura.</p>
+        <span class="ecard-cta">Elige un programa heredado que tengas pendiente de entender</span>
+      </div>
+    </div>
+
+    <!-- TIPO 4: Tendencias adaptadas al contexto de GCO — no noticias genéricas -->
+    <div id="novedades" class="etab-content">
+      <div class="ecard">
+        <span class="ecard-tag">#Tendencia · GitHub Copilot en 2025–2026</span>
+        <span class="ecard-canal canal-anuncios">Anuncios y Tips Ágiles</span>
+        <h3>GitHub Copilot ya no es solo completado de código</h3>
+        <p>GitHub Copilot ha evolucionado hacia un asistente completo: modo agente, integración con terminal CLI, plugins gestionados por empresa y nuevos modelos disponibles. Lo que se aprendió en las sesiones de formación es el punto de partida — la herramienta sigue creciendo y GCO tiene acceso a todo eso.</p>
+        <span class="ecard-cta">¿Qué funcionalidad de GitHub Copilot aún no has explorado?</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Tendencia · Mercado laboral developer</span>
+        <span class="ecard-canal canal-anuncios">Anuncios y Tips Ágiles</span>
+        <h3>El perfil del developer que sabe usar IA ya es diferente</h3>
+        <p>Los developers que integran IA en su flujo diario reportan mayor satisfacción profesional, menos bloqueos en tareas repetitivas y más tiempo para trabajo de valor. La IA no está quitando trabajo — está cambiando qué trabajo hace cada persona. Eso aplica igual en COBOL que en .NET.</p>
+        <span class="ecard-cta">¿Qué trabajo de valor querías hacer más y GitHub Copilot podría desbloquear?</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Tendencia · Control y transparencia</span>
+        <span class="ecard-canal canal-foro">Foro de Ayuda</span>
+        <h3>El código que produces con GitHub Copilot sigue siendo tuyo</h3>
+        <p>GitHub asegura que cada developer tiene control explícito sobre si incluye IA como co-autor en sus commits. GitHub Copilot es el asistente, no el programador. GCO tiene configuración corporativa para gestionar eso a nivel de organización.</p>
+        <span class="ecard-cta">Si tienes dudas sobre propiedad del código, el foro de ayuda está abierto</span>
+      </div>
+      <div class="ecard">
+        <span class="ecard-tag">#Tendencia · Próximas capacidades</span>
+        <span class="ecard-canal canal-anuncios">Anuncios y Tips Ágiles</span>
+        <h3>Lo que viene a GitHub Copilot en los próximos meses</h3>
+        <p>GitHub Copilot Workspace (agente que trabaja sobre repositorios completos), mejoras en GitHub Copilot para Visual Studio y plugins gestionados por empresa en public preview. Traducido a GCO: GitHub Copilot podrá analizar proyectos enteros, no solo bloques aislados.</p>
+        <span class="ecard-cta">¿Quieres que lo exploremos en la próxima sesión AMA (Ask Me Anything)?</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 07 · SOPORTE                                                      -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="soporte">
+  <div class="wrap">
+    <span class="sec-tag">07 / Soporte continuo</span>
+    <h2>Resolver bloqueos cuando ocurren</h2>
+    <p class="sec-lead">
+      El bloqueo real aparece cuando el developer está delante de su código e intenta usar GitHub Copilot sin saber cómo pedir ayuda. El modelo de soporte existe para resolver ese momento.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th style="width:210px;">Mecanismo</th><th>Objetivo</th><th>Formato</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Foro de Ayuda</strong></td><td>Resolver dudas abiertas y detectar temas recurrentes</td><td>Canal de Teams activo permanentemente</td></tr>
+          <tr><td><strong>Sesiones AMA "Ask Me Anything"</strong></td><td>Espacios periódicos de pregunta abierta con expertos de Raona y Pasiona</td><td>Reuniones en Teams (frecuencia a definir)</td></tr>
+          <tr><td><strong>Reservas 1:1</strong></td><td>Acompañamiento individual para bloqueos específicos</td><td>Sesiones 15–30 min vía Microsoft Bookings</td></tr>
+          <tr><td><strong>Casos de Uso Reales</strong></td><td>Convertir dudas repetidas en contenido reutilizable</td><td>Posts en canal "Casos de Uso Reales"</td></tr>
+          <tr><td><strong>Repositorio de configuración</strong></td><td>Comunicar la existencia de archivos de configuración descargables y dónde encontrarlos en el canal de Teams o Confluence</td><td>Anuncio en canal · Enlace directo al recurso</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 08 · MÉTRICAS                                                     -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section class="bg-alt">
+  <div class="wrap">
+    <span class="sec-tag">08 / Métricas de seguimiento</span>
+    <h2>Medir lo justo para aprender</h2>
+    <p class="sec-lead">
+      Las primeras mediciones no buscan demostrar ROI definitivo. Buscan aprender qué mueve a la comunidad y qué acciones reforzar.
+    </p>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Métrica</th><th style="width:180px;">Fuente</th><th>Para qué sirve</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><strong>Reacciones por publicación</strong></td><td>Teams</td><td>Identificar qué temas generan más interés real</td></tr>
+          <tr><td><strong>Comentarios y preguntas</strong></td><td>Teams</td><td>Detectar qué dudas reales aparecen en la comunidad</td></tr>
+          <tr><td><strong>Participación en el foro</strong></td><td>Teams</td><td>Verificar si el canal funciona como espacio vivo</td></tr>
+          <tr><td><strong>Reservas 1:1 solicitadas</strong></td><td>Microsoft Bookings</td><td>Medir el nivel de acompañamiento necesario</td></tr>
+          <tr><td><strong>Asistencia a sesiones AMA "Ask Me Anything"</strong></td><td>Teams / Calendario</td><td>Validar si existe demanda de soporte grupal</td></tr>
+          <tr><td><strong>Casos de uso detectados</strong></td><td>Foro, sesiones 1:1</td><td>Decidir qué contenidos priorizar</td></tr>
+          <tr><td><strong>Uso de GitHub Copilot</strong></td><td>GitHub Copilot Dashboard</td><td>Tendencia de adopción real (si hay acceso)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 09 · HOJA DE RUTA                                                  -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="plan">
+  <div class="wrap">
+    <span class="sec-tag">09 / Hoja de ruta</span>
+    <h2>Próximos pasos en tres horizontes.</h2>
+    <p class="sec-lead">Lo que se activa en cada etapa, en orden. El arranque empieza en las dos primeras semanas.</p>
+
+    <div class="rmap-grid">
+      <div class="rmap-card">
+        <div class="rmap-header" style="background:var(--peach);">
+          <div class="rmap-horizon">Corto plazo · Semanas 1–3</div>
+          <h3>Activación y prompt básico</h3>
+        </div>
+        <div class="rmap-body">
+          <div class="rmap-row">Publicar mensaje de bienvenida en canal General</div>
+          <div class="rmap-row">Lanzar contenidos de activación competitiva: datos de mercado, por qué ahora</div>
+          <div class="rmap-row">Publicar guía de licencia en Primeros Pasos</div>
+          <div class="rmap-row">Abrir pregunta inicial en Foro de Ayuda</div>
+          <div class="rmap-row">Configurar Microsoft Bookings para sesiones 1:1</div>
+          <div class="rmap-row">Introducir prompt básico universal (sin COBOL/DB2 todavía)</div>
+        </div>
+      </div>
+      <div class="rmap-card">
+        <div class="rmap-header" style="background:var(--mint);">
+          <div class="rmap-horizon">Medio plazo · Semanas 4–5</div>
+          <h3>Tendencias y primer caso</h3>
+        </div>
+        <div class="rmap-body">
+          <div class="rmap-row">Activar contenidos de tendencias del sector: mercado, competitividad, evolución de GitHub Copilot</div>
+          <div class="rmap-row">Publicar primeros casos simples: log de error, comprensión de código</div>
+          <div class="rmap-row">Primer caso COBOL: entender un programa heredado</div>
+          <div class="rmap-row">Realizar primeras sesiones AMA "Ask Me Anything" con expertos</div>
+          <div class="rmap-row">Publicar repositorio de recursos: archivos de configuración disponibles para descarga</div>
+        </div>
+      </div>
+      <div class="rmap-card">
+        <div class="rmap-header" style="background:var(--lavender);">
+          <div class="rmap-horizon">Largo plazo · +5 semanas</div>
+          <h3>Madurez y casos avanzados</h3>
+        </div>
+        <div class="rmap-body">
+          <div class="rmap-row">Publicar casos avanzados: COBOL SQLCODE, DB2, .NET, PL/SQL</div>
+          <div class="rmap-row">Planificar hackathon con Microsoft (Madrid y Barcelona)</div>
+          <div class="rmap-row">Formalizar repositorio de aprendizajes y FAQs</div>
+          <div class="rmap-row">Medir adopción con datos del GitHub Copilot Dashboard</div>
+          <div class="rmap-row">Evaluar personalización corporativa avanzada (Fase 4)</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 10 · SIGUIENTES PASOS                                             -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<section id="decisiones" class="bg-alt">
+  <div class="wrap">
+    <span class="sec-tag">10 / Siguientes pasos</span>
+    <h2>Lo que activamos para arrancar</h2>
+    <p class="sec-lead">Cinco acciones concretas para poner en marcha el ecosistema. Cada una tiene un responsable y un resultado esperado.</p>
+
+    <div class="steps-grid">
+
+      <!-- 1 -->
+      <div class="next-step">
+        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path transform="matrix(1 0 0 -1 0 960)" fill="#dc0028" d="M996.267 554.667c12.8-8.533 14.933-27.733 6.4-38.4s-27.733-14.933-38.4-6.4l-452.267 341.333-450.133-343.467c-4.267-4.267-10.667-6.4-17.067-6.4-8.533 0-17.067 4.267-21.333 10.667-8.533 12.8-6.4 29.867 4.267 40.533l465.067 356.267c10.667 8.533 23.467 8.533 34.133 0l469.333-354.133zM844.8 535.467c0 0 0 0 0 0-14.933 0-27.733-12.8-27.733-27.733l2.133-467.2-307.2-2.133c0 0 0 0 0 0h-309.333v467.2c0 14.933-12.8 27.733-27.733 27.733s-27.733-12.8-27.733-27.733v-494.933c0-14.933 12.8-27.733 27.733-27.733h334.933c0 0 0 0 0 0s0 0 0 0l337.067 2.133c6.4 0 14.933 2.133 19.2 8.533 4.267 4.267 8.533 12.8 8.533 19.2v492.8c0 17.067-12.8 29.867-29.867 29.867zM313.6 206.933v-128c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v128c0 14.933-12.8 27.733-27.733 27.733s-27.733-12.8-27.733-27.733zM230.4 279.467c0-14.933 12.8-27.733 27.733-27.733h362.667c14.933 0 27.733 12.8 27.733 27.733s-12.8 27.733-27.733 27.733h-362.667c-17.067 0-27.733-12.8-27.733-27.733zM416 328.533c0 0 2.133 0 2.133 0 14.933 2.133 27.733 14.933 25.6 29.867l-23.467 243.2c-2.133 14.933-14.933 27.733-29.867 25.6s-27.733-14.933-25.6-29.867l23.467-243.2c2.133-14.933 14.933-25.6 27.733-25.6zM330.667 405.333l-57.6-40.533c-12.8-8.533-14.933-25.6-6.4-38.4 6.4-8.533 14.933-12.8 23.467-12.8 6.4 0 10.667 2.133 17.067 4.267l57.6 40.533c12.8 8.533 14.933 25.6 6.4 38.4-10.667 14.933-29.867 17.067-40.533 8.533zM520.533 343.467c4.267-10.667 14.933-17.067 25.6-17.067 4.267 0 8.533 0 12.8 2.133l149.333 68.267v-162.133h-168.533c-14.933 0-27.733-12.8-27.733-27.733v-128c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v100.267h168.533c14.933 0 27.733 12.8 27.733 27.733v234.667c0 0 0 0 0 0 0 2.133 0 4.267 0 4.267 0 2.133 0 4.267-2.133 6.4 0 0 0 0 0 0 0 2.133-2.133 2.133-2.133 2.133-2.133 2.133-2.133 4.267-4.267 6.4s-2.133 2.133-4.267 2.133-2.133 2.133-4.267 2.133c-2.133 0-4.267 0-6.4 2.133-2.133 0-2.133 0-4.267 0 0 0 0 0 0 0-2.133 0-4.267 0-4.267-2.133-2.133 0-4.267 0-6.4-2.133 0 0 0 0 0 0l-192-83.2c-12.8-6.4-19.2-21.333-12.8-36.267zM716.8 494.933c6.4-6.4 12.8-8.533 19.2-8.533s14.933 2.133 19.2 8.533c17.067 17.067 27.733 40.533 27.733 64s-8.533 46.933-27.733 64c-17.067 17.067-40.533 27.733-64 27.733v0c-23.467 0-46.933-8.533-64-27.733-36.267-36.267-36.267-93.867 0-130.133 10.667-10.667 29.867-10.667 40.533 0s10.667 29.867 0 40.533c-12.8 12.8-12.8 36.267 0 49.067s36.267 12.8 49.067 0c6.4-6.4 10.667-14.933 10.667-25.6 0-8.533-4.267-19.2-10.667-25.6-10.667-6.4-10.667-25.6 0-36.267z"/></svg></div>
+        <div class="step-body">
+          <div class="step-tag">GCO · Infraestructura</div>
+          <h4>Crear el canal de Teams en el entorno de Catalana</h4>
+          <p>Catalana Occidente crea el equipo de Teams en su tenant y otorga permisos de edición a Raona para configurar los 6 canales, añadir pestañas y gestionar el contenido de forma ágil desde el primer día.</p>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="next-step">
+        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path transform="matrix(1 0 0 -1 0 960)" fill="#dc0028" d="M768 409.6c0-14.933-12.8-29.867-29.867-29.867s-29.867 12.8-29.867 29.867 12.8 29.867 29.867 29.867 29.867-12.8 29.867-29.867zM836.267 409.6c0 14.933-12.8 29.867-29.867 29.867s-29.867-12.8-29.867-29.867 12.8-29.867 29.867-29.867 29.867 14.933 29.867 29.867zM646.4 147.2h-27.733c-14.933 0-27.733-12.8-27.733-27.733s12.8-27.733 27.733-27.733v-68.267c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v98.133c0 12.8-10.667 25.6-27.733 25.6zM420.267 520.533c-74.667-51.2-91.733-155.733-40.533-228.267 17.067-23.467 40.533-42.667 66.133-55.467 14.933-6.4 29.867 0 36.267 14.933s0 29.867-14.933 36.267c-17.067 8.533-32 21.333-44.8 36.267-34.133 49.067-21.333 117.333 27.733 151.467s117.333 21.333 151.467-27.733c34.133-49.067 21.333-117.333-27.733-151.467-6.4-4.267-12.8-8.533-19.2-10.667-14.933-6.4-21.333-23.467-14.933-36.267 4.267-10.667 14.933-17.067 25.6-17.067 4.267 0 8.533 0 10.667 2.133 10.667 4.267 19.2 10.667 29.867 17.067 74.667 51.2 91.733 155.733 40.533 228.267-46.933 74.667-151.467 91.733-226.133 40.533zM279.467 140.8v-151.467c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v151.467c0 14.933 12.8 25.6 25.6 25.6h61.867l64-89.6c4.267-6.4 12.8-12.8 21.333-12.8s17.067 4.267 23.467 10.667l70.4 91.733h61.867c14.933 0 25.6-12.8 25.6-25.6v-151.467c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v151.467c0 44.8-36.267 83.2-83.2 83.2h-74.667c-8.533 0-17.067-4.267-21.333-10.667l-53.333-72.533-49.067 70.4c-4.267 8.533-14.933 12.8-23.467 12.8h-76.8c-44.8 0-83.2-36.267-83.2-83.2zM900.267 842.667c-23.467 34.133-59.733 57.6-100.267 64s-83.2-2.133-117.333-25.6c-34.133-23.467-57.6-59.733-64-100.267s2.133-83.2 25.6-117.333c14.933-23.467 38.4-40.533 64-53.333 14.933-6.4 29.867 0 36.267 14.933s0 29.867-14.933 36.267c-17.067 6.4-29.867 19.2-40.533 34.133-14.933 21.333-21.333 49.067-17.067 74.667s19.2 49.067 40.533 64c21.333 14.933 49.067 21.333 74.667 17.067s49.067-19.2 64-40.533c2.133-2.133 2.133-4.267 4.267-6.4h-130.133c-14.933 0-27.733-12.8-27.733-27.733s12.8-29.867 27.733-29.867h147.2c0-4.267 0-8.533 0-12.8-4.267-25.6-19.2-49.067-40.533-64-6.4-4.267-10.667-6.4-17.067-10.667-14.933-6.4-21.333-23.467-14.933-36.267 4.267-10.667 14.933-17.067 25.6-17.067 4.267 0 8.533 0 10.667 2.133 10.667 4.267 19.2 8.533 27.733 14.933 34.133 23.467 57.6 59.733 64 100.267 2.133 6.4 2.133 14.933 2.133 21.333h36.267c14.933 0 27.733 12.8 27.733 27.733s-12.8 27.733-27.733 27.733h-44.8c-6.4 17.067-12.8 29.867-21.333 42.667zM701.867 603.733v0c-6.4 6.4-14.933 12.8-23.467 12.8s-17.067-4.267-23.467-12.8h-23.467c-14.933 0-27.733-12.8-27.733-27.733s12.8-27.733 27.733-27.733h19.2v-25.6c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v25.6c12.8 2.133 23.467 12.8 23.467 27.733s-12.8 27.733-27.733 27.733zM313.6 678.4c-6.4-4.267-10.667-6.4-17.067-10.667-14.933-6.4-21.333-23.467-14.933-36.267 4.267-10.667 14.933-17.067 25.6-17.067 4.267 0 8.533 0 10.667 2.133 10.667 4.267 19.2 8.533 27.733 14.933 34.133 23.467 57.6 59.733 64 100.267s-2.133 83.2-25.6 117.333c-49.067 68.267-145.067 87.467-215.467 38.4-34.133-23.467-57.6-59.733-64-100.267s2.133-83.2 25.6-117.333c14.933-23.467 38.4-40.533 64-53.333 14.933-6.4 29.867 0 36.267 14.933s0 29.867-14.933 36.267c-17.067 6.4-29.867 19.2-40.533 34.133-14.933 21.333-21.333 49.067-17.067 74.667s19.2 49.067 40.533 64c21.333 14.933 49.067 21.333 74.667 17.067s49.067-19.2 64-40.533c14.933-21.333 21.333-49.067 17.067-74.667-4.267-27.733-19.2-49.067-40.533-64zM64 362.667c14.933 0 27.733 12.8 27.733 27.733v140.8c0 12.8 10.667 23.467 23.467 23.467h40.533c6.4-40.533 36.267-74.667 74.667-85.333v-166.4c0-23.467-17.067-25.6-23.467-25.6-4.267 0-23.467 2.133-23.467 25.6 0 14.933-12.8 27.733-27.733 27.733s-27.733-12.8-27.733-27.733c0-53.333 42.667-81.067 81.067-81.067 40.533 0 78.933 27.733 78.933 81.067v166.4c38.4 10.667 68.267 44.8 74.667 85.333h34.133c14.933 0 27.733 12.8 27.733 27.733s-12.8 27.733-27.733 27.733h-70.4c-14.933 0-27.733-12.8-27.733-27.733 0-8.533 4.267-14.933 8.533-19.2-4.267-23.467-23.467-40.533-49.067-40.533-27.733 0-49.067 21.333-49.067 49.067 2.133 0 4.267 4.267 4.267 10.667 0 14.933-12.8 27.733-27.733 27.733h-70.4c-42.667 0-78.933-36.267-78.933-78.933v-140.8c0-17.067 12.8-27.733 27.733-27.733zM738.133 507.733c-14.933 0-27.733-12.8-27.733-27.733s12.8-27.733 27.733-27.733h102.4v-149.333c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v177.067c0 2.133 0 4.267-2.133 6.4 0 2.133 2.133 4.267 2.133 6.4v55.467h14.933c12.8 0 23.467-10.667 23.467-23.467v-140.8c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v140.8c0 42.667-36.267 78.933-78.933 78.933h-21.333c-4.267 6.4-12.8 12.8-23.467 12.8s-17.067-4.267-23.467-12.8h-4.267c-14.933 0-27.733-12.8-27.733-27.733s12.8-27.733 25.6-27.733v-40.533h-98.133z"/></svg></div>
+        <div class="step-body">
+          <div class="step-tag">Raona · Operaciones</div>
+          <h4>Canal paralelo de gestión de contenidos</h4>
+          <p>Canal interno Raona para trabajo asíncrono: preparación de piezas, ajustes, validaciones y feedback. Así la reunión semanal con GCO se concentra en acuerdos y nuevas ideas —máximo 30 minutos los lunes—, sin consumir tiempo en revisiones operativas.</p>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="next-step">
+        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path transform="matrix(1 0 0 -1 0 960)" fill="#dc0028" d="M881.92 340.053v169.387c0 193.28-165.973 350.72-369.92 350.72s-369.92-157.44-369.92-350.72v-175.36s0.853-3.84 1.28-5.973c2.56-26.453 14.507-51.627 34.987-69.973 21.333-19.627 49.493-30.293 78.933-30.293 3.84 0 7.68 0 11.52 0.427 57.6 5.547 102.827 55.467 102.827 113.493v51.2c0 53.76-45.227 97.28-101.12 97.28h-64v18.773c0 157.867 137.387 286.72 305.92 286.72s305.92-128.427 305.92-286.72v-18.773h-64c-55.893 0-101.12-43.52-101.12-97.28v-51.2c0-58.453 45.227-107.947 102.827-113.493 3.84 0 7.68-0.427 11.52-0.427 12.373 0 24.747 2.133 36.267 5.973-10.667-34.987-28.587-70.4-59.733-90.027-40.96-26.027-100.267-22.187-176.213 10.24-0.427 29.867-25.173 54.187-55.040 54.187s-55.467-24.747-55.467-55.467 24.747-55.467 55.467-55.467c6.4 0 11.947 1.707 17.92 3.413 55.467-25.173 105.387-38.4 149.333-38.4 37.12 0 69.973 8.96 98.56 26.88 109.227 69.12 104.533 242.347 104.533 250.027zM270.080 426.667c20.48 0 37.12-14.933 37.12-33.28v-51.2c0-25.6-19.627-47.36-44.8-49.92-15.36-1.707-30.293 3.413-41.387 13.227-9.387 8.533-14.507 20.053-14.507 32 0 1.707 0 3.84-0.427 5.547v83.627h64zM761.6 292.267c-25.173 2.56-44.8 24.32-44.8 49.92v51.2c0 18.347 16.64 33.28 37.12 33.28h64v-83.627s-0.427-3.413-0.427-5.547c0-11.947-5.12-23.467-14.507-32-10.667-9.813-26.027-14.507-41.387-13.227z"/></svg></div>
+        <div class="step-body">
+          <div class="step-tag">Soporte · Modelo técnico</div>
+          <h4>Definir el modelo técnico de soporte</h4>
+          <p>El foro de dudas y las sesiones AMA siguen en Teams como canal activo. Para las sesiones 1:1 se propone implementar <strong>Microsoft Bookings</strong> sobre el calendario del experto: cualquier developer reserva un slot disponible sin invadir la agenda, y el experto controla su disponibilidad real para que las citas se cumplan.</p>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="next-step">
+        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path transform="matrix(1 0 0 -1 0 960)" fill="#dc0028" d="M128 85.333c-6.4 6.4-10.667 14.933-8.533 25.6l21.333 136.533c0 6.4 4.267 10.667 6.4 14.933l405.333 448c10.667 10.667 27.733 12.8 40.533 2.133 10.667-10.667 12.8-27.733 2.133-40.533l-401.067-441.6-12.8-85.333 83.2 21.333 64 72.533c10.667 10.667 27.733 12.8 40.533 2.133 10.667-10.667 12.8-27.733 2.133-40.533l-70.4-76.8c-4.267-4.267-8.533-6.4-12.8-8.533l-134.4-36.267c-2.133 0-4.267 0-6.4 0-8.533-2.133-14.933 0-19.2 6.4zM381.867 253.867c6.4-4.267 12.8-6.4 19.2-6.4 8.533 0 14.933 2.133 21.333 8.533l471.467 520.533c6.4 8.533 8.533 17.067 6.4 27.733-19.2 57.6-66.133 102.4-125.867 119.467l-6.4 2.133c-10.667 2.133-21.333 0-27.733-8.533l-128-140.8c-10.667-10.667-8.533-29.867 2.133-40.533s29.867-8.533 40.533 2.133l115.2 128c32-10.667 55.467-34.133 70.4-64l-460.8-509.867c-10.667-10.667-8.533-29.867 2.133-38.4zM736 78.933c64 91.733 38.4 162.133-2.133 196.267-42.667 34.133-100.267 32-136.533-4.267-27.733-29.867-32-57.6-29.867-76.8 4.267-49.067 44.8-81.067 49.067-83.2 12.8-8.533 29.867-6.4 38.4 4.267s6.4 29.867-4.267 40.533c-6.4 6.4-25.6 23.467-27.733 44.8 0 10.667 4.267 23.467 14.933 34.133 14.933 17.067 42.667 12.8 59.733 0 23.467-19.2 32-59.733-8.533-119.467-68.267-104.533-283.733-57.6-360.533-29.867-14.933 4.267-29.867-2.133-36.267-17.067-4.267-14.933 2.133-29.867 17.067-36.267 6.4-2.133 110.933-38.4 219.733-38.4 81.067 0 162.133 19.2 206.933 85.333zM776.533 44.8c2.133-2.133 61.867-36.267 149.333-51.2 2.133 0 4.267 0 4.267 0 12.8 0 25.6 10.667 27.733 23.467 2.133 14.933-8.533 29.867-23.467 32-76.8 12.8-130.133 42.667-130.133 44.8-12.8 8.533-29.867 4.267-38.4-10.667-8.533-12.8-4.267-29.867 10.667-38.4z"/></svg></div>
+        <div class="step-body">
+          <div class="step-tag">Marca · Materiales — Responsable: Guillermo</div>
+          <h4>Solicitar el material de marca de Occident</h4>
+          <p>Para que las publicaciones hablen en el tono y lenguaje de la empresa se necesita recibir: <strong>manual de marca</strong> (colores, tipografía, iconografía), <strong>ejemplos de publicaciones internas</strong> si existen, y cualquier <strong>guía editorial o política de contenidos</strong> que regule el tipo de comunicaciones internas. Con este material se configura el design system y se garantiza coherencia visual desde el día uno.</p>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="next-step full-row">
+        <div class="step-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path transform="matrix(1 0 0 -1 0 960)" fill="#dc0028" d="M1000.533 145.067v-81.067c0-14.933-12.8-27.733-27.733-27.733h-921.6c-14.933 0-27.733 12.8-27.733 27.733v460.8c0 14.933 12.8 27.733 27.733 27.733s27.733-12.8 27.733-27.733v-433.067h866.133v53.333c0 14.933 12.8 27.733 27.733 27.733s27.733-12.8 27.733-27.733zM51.2 646.4c14.933 0 27.733 12.8 27.733 27.733v53.333h123.733c14.933 0 27.733 12.8 27.733 27.733s-12.8 27.733-27.733 27.733h-151.467c-14.933 0-27.733-12.8-27.733-27.733v-81.067c0-14.933 12.8-27.733 27.733-27.733zM616.533 755.2c0 14.933-12.8 27.733-27.733 27.733h-155.733c-14.933 0-27.733-12.8-27.733-27.733s12.8-27.733 27.733-27.733h155.733c14.933 0 27.733 12.8 27.733 27.733zM972.8 782.933h-153.6c-14.933 0-27.733-12.8-27.733-27.733s12.8-27.733 27.733-27.733h125.867v-433.067c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733v460.8c0 14.933-12.8 27.733-27.733 27.733zM347.733 674.133v157.867c0 14.933-12.8 27.733-27.733 27.733s-27.733-12.8-27.733-27.733v-157.867c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733zM731.733 674.133v157.867c0 14.933-12.8 27.733-27.733 27.733s-27.733-12.8-27.733-27.733v-157.867c0-14.933 12.8-27.733 27.733-27.733s27.733 12.8 27.733 27.733zM279.467 561.067c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32c2.133 17.067-12.8 32-32 32zM279.467 405.333c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32-12.8 32-32 32zM279.467 251.733c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32-12.8 32-32 32zM435.2 561.067c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32c0 17.067-14.933 32-32 32zM435.2 405.333c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32-14.933 32-32 32zM435.2 251.733c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32-14.933 32-32 32zM588.8 561.067c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32c2.133 17.067-12.8 32-32 32zM588.8 405.333c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32-12.8 32-32 32zM588.8 251.733c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32-12.8 32-32 32zM744.533 561.067c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32c0 17.067-14.933 32-32 32zM744.533 405.333c-17.067 0-32-14.933-32-32s12.8-32 32-32 32 14.933 32 32-14.933 32-32 32zM744.533 251.733c-17.067 0-32-14.933-32-32s14.933-32 32-32 32 14.933 32 32-14.933 32-32 32z"/></svg></div>
+        <div class="step-body">
+          <div class="step-tag">Cadencia · Contenidos</div>
+          <h4>Dos publicaciones semanales · Todos los canales activos al mes</h4>
+          <p>Se proponen dos publicaciones por semana, rotando entre canales para que ninguno quede sin actividad durante el mes. Los lunes: sesión de validación de 15–30 min con GCO para acordar el bloque siguiente y recoger nuevas propuestas.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- GANTT -->
+    <div class="gantt-wrap">
+      <div class="gantt-title">Propuesta de cadencia semanal · Mes 1</div>
+      <p class="gantt-sub">2 publicaciones / semana · Validación cada lunes · Los 6 canales activos al mes</p>
+
+      <div class="gantt-table">
+        <!-- Cabecera -->
+        <div class="gantt-header">
+          <div class="gantt-label"></div>
+          <div class="gantt-day-head val-h">Lunes<span>Validación</span></div>
+          <div class="gantt-day-head">Martes</div>
+          <div class="gantt-day-head">Miércoles</div>
+          <div class="gantt-day-head">Jueves</div>
+          <div class="gantt-day-head">Viernes</div>
+        </div>
+
+        <!-- Semana 1 -->
+        <div class="gantt-row">
+          <div class="gantt-label">Semana 1</div>
+          <div class="gantt-cell val">✓ Check-in<small>15–30 min</small></div>
+          <div class="gantt-cell c1">Pub. 1<small>Anuncios & Tips</small></div>
+          <div class="gantt-cell empty"></div>
+          <div class="gantt-cell c2">Pub. 2<small>Primeros Pasos</small></div>
+          <div class="gantt-cell empty"></div>
+        </div>
+
+        <!-- Semana 2 -->
+        <div class="gantt-row">
+          <div class="gantt-label">Semana 2</div>
+          <div class="gantt-cell val">✓ Revisión<small>15–30 min</small></div>
+          <div class="gantt-cell c3">Pub. 3<small>Casos de Uso</small></div>
+          <div class="gantt-cell empty"></div>
+          <div class="gantt-cell c1">Pub. 4<small>Anuncios & Tips</small></div>
+          <div class="gantt-cell empty"></div>
+        </div>
+
+        <!-- Semana 3 -->
+        <div class="gantt-row">
+          <div class="gantt-label">Semana 3</div>
+          <div class="gantt-cell val">✓ Ajustes<small>15–30 min</small></div>
+          <div class="gantt-cell c4">Pub. 5<small>Foro AMA</small></div>
+          <div class="gantt-cell empty"></div>
+          <div class="gantt-cell c2">Pub. 6<small>Primeros Pasos</small></div>
+          <div class="gantt-cell empty"></div>
+        </div>
+
+        <!-- Semana 4 -->
+        <div class="gantt-row">
+          <div class="gantt-label">Semana 4</div>
+          <div class="gantt-cell val">✓ Retro<small>Planif. Mes 2</small></div>
+          <div class="gantt-cell c3">Pub. 7<small>Casos de Uso</small></div>
+          <div class="gantt-cell empty"></div>
+          <div class="gantt-cell c5">Pub. 8<small>Reservas 1:1</small></div>
+          <div class="gantt-cell empty"></div>
+        </div>
+      </div>
+
+      <!-- Leyenda -->
+      <div class="gantt-legend">
+        <div class="gl-item val">Lunes · Validación GCO (15–30 min)</div>
+        <div class="gl-item c1">Anuncios & Tips Ágiles</div>
+        <div class="gl-item c2">Primeros Pasos con Copilot</div>
+        <div class="gl-item c3">Casos de Uso Reales</div>
+        <div class="gl-item c4">Foro de Ayuda / AMA</div>
+        <div class="gl-item c5">Reservas 1:1 con Expertos</div>
+        <div class="gl-item c6">General</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- 11 · EQUIPO                                                       -->
+<!-- ═══════════════════════════════════════════════════════════════════ -->
+<!-- <section id="equipo">
+  <div class="wrap">
+    <span class="sec-tag">11 / Equipo del proyecto</span>
+    <h2>Las personas detrás de la propuesta</h2>
+
+    <div class="team-grid">
+      <div class="team-card c-rose">
+        <div class="avatar" style="background:var(--red);">YR</div>
+        <h4>Yehimy Rincón</h4>
+        <div class="team-role">Estrategia y Contenidos</div>
+        <p>Interlocutora principal. Creación de contenidos, diseño visual y gestión del canal de Teams en GCO.</p>
+      </div>
+      <div class="team-card c-sky">
+        <div class="avatar" style="background:#2563EB;">NB</div>
+        <h4>Nibaldo</h4>
+        <div class="team-role" style="color:#2563EB;">Experto Técnico GitHub Copilot</div>
+        <p>Valida contenidos técnicos, imparte sesiones de formación y define los casos de uso aplicados al stack de GCO.</p>
+      </div>
+      <div class="team-card c-mint">
+        <div class="avatar" style="background:var(--black);">GU</div>
+        <h4>Guillermo</h4>
+        <div class="team-role" style="color:#059669;">Lead de Cuenta GCO</div>
+        <p>Gestiona la relación con el cliente. Aporta el manual de marca de Occident y presenta la propuesta a dirección.</p>
+      </div>
+    </div>
+  </div>
+</section> -->
+
+
+
+
+<!-- BOTÓN SCROLL TO TOP -->
+<button class="back-to-top" aria-label="Volver arriba" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <polyline points="18 15 12 9 6 15"/>
+  </svg>
+</button>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="footer-bottom">
+      <img src="Manual de marca/logotipo/raona-brand_dark.png"
+           alt="Raona"
+           style="height:20px;width:auto;"
+           onerror="this.style.display='none';">
+      <span class="footer-center">Estrategia de Adopción GitHub Copilot · 2026</span>
+      <img src="Manual de marca/logotipo/logo_catalana-occidente.svg"
+           alt="Catalana Occidente"
+           style="height:22px;width:auto;"
+           onerror="this.style.display='none';">
+    </div>
+  </div>
+</footer>
+
+<script>
+  function toggle(item) { item.classList.toggle('open'); }
+  function switchETab(id, btn) {
+    document.querySelectorAll('.etab-content').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.etab').forEach(b => b.classList.remove('active'));
+    document.getElementById(id).classList.add('active');
+    btn.classList.add('active');
+  }
+
+  // Scroll to top button
+  const btt = document.querySelector('.back-to-top');
+  window.addEventListener('scroll', () => {
+    btt.classList.toggle('visible', window.scrollY > 400);
+  }, { passive: true });
+
+  // Active nav link on scroll
+  const navLinks = document.querySelectorAll('nav a[href^="#"]');
+  const sections = Array.from(document.querySelectorAll('section[id]'));
+  const OFFSET = 80;
+
+  function updateActive() {
+    const scrollY = window.scrollY + OFFSET;
+    let current = sections[0];
+    for (const s of sections) {
+      if (s.offsetTop <= scrollY) current = s;
+    }
+    navLinks.forEach(a => {
+      a.classList.toggle('active', a.getAttribute('href') === '#' + current.id);
+    });
+  }
+
+  window.addEventListener('scroll', updateActive, { passive: true });
+  updateActive();
+</script>
+</body>
+</html>

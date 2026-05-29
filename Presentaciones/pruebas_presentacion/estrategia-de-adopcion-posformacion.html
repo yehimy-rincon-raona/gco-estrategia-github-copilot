@@ -1,0 +1,1796 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estrategia de adopción GitHub Copilot · GCO</title>
+
+  <style>
+    :root {
+      --red: #dc0028;
+      --red-dark: #b80022;
+      --gray: #828282;
+      --gray-dark: #4f4f4f;
+      --black: #1a1a1a;
+      --white: #ffffff;
+      --off-white: #f7f6f4;
+      --soft-gray: #ededed;
+      --soft-red: #fff1f3;
+      --soft-purple: #f7eefb;
+      --soft-sand: #f5f0eb;
+      --soft-pink: #fff4f4;
+      --orange: #fa9600;
+      --shadow: 0 20px 45px rgba(0, 0, 0, 0.06);
+      --radius-lg: 28px;
+      --radius-md: 18px;
+      --radius-sm: 10px;
+      --max: 1180px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.55;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: Georgia, "Times New Roman", serif;
+      font-weight: 500;
+      line-height: 1.05;
+      color: var(--gray-dark);
+    }
+
+    h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      letter-spacing: -2px;
+    }
+
+    h2 {
+      font-size: clamp(34px, 5vw, 56px);
+      margin-bottom: 24px;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin-bottom: 14px;
+    }
+
+    h4 {
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #404040;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,0.92);
+      backdrop-filter: blur(18px);
+      border-bottom: 1px solid #eee;
+    }
+
+    .topbar-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 18px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-weight: 700;
+      color: var(--red);
+    }
+
+    .brand-mark {
+      width: 34px;
+      height: 26px;
+      background: var(--red);
+      border-radius: 60% 40% 55% 45%;
+      transform: rotate(-18deg);
+      position: relative;
+    }
+
+    .brand-mark::after {
+      content: "";
+      position: absolute;
+      width: 13px;
+      height: 13px;
+      background: var(--white);
+      border-radius: 50%;
+      left: 9px;
+      top: 7px;
+      opacity: 0.35;
+    }
+
+    .nav {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .nav button {
+      border: 0;
+      background: transparent;
+      color: #555;
+      padding: 10px 12px;
+      border-radius: 999px;
+      cursor: pointer;
+      font-size: 14px;
+      transition: all .2s ease;
+    }
+
+    .nav button:hover,
+    .nav button.active {
+      background: var(--red);
+      color: white;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #fafafa 0%, #fff 100%);
+      padding: 80px 24px 60px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .hero-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1.1fr .9fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--red);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      font-size: 12px;
+      margin-bottom: 22px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 2px;
+      background: var(--red);
+      display: inline-block;
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin-top: 22px;
+      font-size: 20px;
+      color: #4b4b4b;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 34px;
+    }
+
+    .btn {
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 22px;
+      cursor: pointer;
+      font-weight: 700;
+      transition: all .2s ease;
+      font-size: 15px;
+    }
+
+    .btn-primary {
+      background: var(--red);
+      color: white;
+    }
+
+    .btn-primary:hover {
+      background: var(--red-dark);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: white;
+      color: var(--red);
+      border: 1px solid #f0c8d0;
+    }
+
+    .btn-secondary:hover {
+      background: var(--soft-red);
+      transform: translateY(-2px);
+    }
+
+    .hero-visual {
+      min-height: 430px;
+      position: relative;
+      display: grid;
+      place-items: center;
+    }
+
+    .umbrella {
+      width: 340px;
+      height: 340px;
+      border: 5px solid #b65bea;
+      border-bottom: 0;
+      border-radius: 340px 340px 0 0;
+      transform: rotate(2deg);
+      opacity: .92;
+      position: relative;
+    }
+
+    .umbrella::before,
+    .umbrella::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      top: -20px;
+      height: 360px;
+      width: 6px;
+      background: linear-gradient(180deg, #444, #bbb, #333);
+      border-radius: 8px;
+      transform: translateX(-50%);
+    }
+
+    .umbrella::after {
+      width: 70px;
+      height: 70px;
+      top: 315px;
+      background: transparent;
+      border: 6px solid #b65bea;
+      border-top: 0;
+      border-left: 0;
+      border-radius: 0 0 60px 0;
+      transform: translateX(-20%) rotate(10deg);
+    }
+
+    .ribs span {
+      position: absolute;
+      width: 5px;
+      height: 170px;
+      background: #b65bea;
+      top: 5px;
+      left: 50%;
+      transform-origin: bottom center;
+      opacity: .75;
+    }
+
+    .ribs span:nth-child(1){ transform: translateX(-50%) rotate(-62deg); }
+    .ribs span:nth-child(2){ transform: translateX(-50%) rotate(-35deg); }
+    .ribs span:nth-child(3){ transform: translateX(-50%) rotate(0deg); }
+    .ribs span:nth-child(4){ transform: translateX(-50%) rotate(35deg); }
+    .ribs span:nth-child(5){ transform: translateX(-50%) rotate(62deg); }
+
+    .floating-card {
+      position: absolute;
+      background: white;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow);
+      padding: 18px;
+      border: 1px solid #f2f2f2;
+    }
+
+    .floating-card.one {
+      left: 0;
+      bottom: 30px;
+      width: 220px;
+    }
+
+    .floating-card.two {
+      right: 0;
+      top: 50px;
+      width: 240px;
+      background: var(--soft-red);
+    }
+
+    .floating-card strong {
+      display: block;
+      color: var(--red);
+      margin-bottom: 5px;
+      font-size: 24px;
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .section {
+      padding: 80px 24px;
+    }
+
+    .section.alt {
+      background: var(--off-white);
+    }
+
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+    }
+
+    .section-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 30px;
+      align-items: flex-end;
+      margin-bottom: 38px;
+    }
+
+    .section-header p {
+      max-width: 520px;
+      color: #555;
+    }
+
+    .grid {
+      display: grid;
+      gap: 22px;
+    }
+
+    .grid-2 {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .grid-3 {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+
+    .grid-4 {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+
+    .card {
+      background: white;
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      border: 1px solid #eeeeee;
+      box-shadow: 0 12px 28px rgba(0,0,0,.03);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow);
+    }
+
+    .card.purple { background: var(--soft-purple); }
+    .card.red { background: var(--soft-red); }
+    .card.sand { background: var(--soft-sand); }
+    .card.pink { background: var(--soft-pink); }
+
+    .card-number {
+      font-size: 54px;
+      color: var(--red);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1;
+      margin-bottom: 18px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      border-radius: 999px;
+      padding: 7px 11px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--red);
+      background: #fff;
+      border: 1px solid #f2d2d8;
+      margin-bottom: 16px;
+    }
+
+    .list {
+      display: grid;
+      gap: 12px;
+      margin-top: 18px;
+    }
+
+    .list li {
+      list-style: none;
+      padding-left: 24px;
+      position: relative;
+      color: #444;
+      font-size: 15px;
+    }
+
+    .list li::before {
+      content: "•";
+      color: var(--red);
+      font-size: 22px;
+      position: absolute;
+      left: 0;
+      top: -4px;
+    }
+
+    .quote-block {
+      background: var(--black);
+      color: white;
+      border-radius: var(--radius-lg);
+      padding: 42px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quote-block::before {
+      content: "“";
+      position: absolute;
+      right: 30px;
+      top: -40px;
+      font-size: 220px;
+      color: rgba(255,255,255,.07);
+      font-family: Georgia, "Times New Roman", serif;
+    }
+
+    .quote-block p {
+      color: white;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(28px, 4vw, 46px);
+      line-height: 1.15;
+      max-width: 900px;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border-radius: var(--radius-md);
+      border: 1px solid #eee;
+      background: white;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 760px;
+    }
+
+    th {
+      text-align: left;
+      background: #fafafa;
+      color: var(--red);
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      padding: 18px;
+      border-bottom: 1px solid #eee;
+    }
+
+    td {
+      padding: 18px;
+      border-bottom: 1px solid #f1f1f1;
+      vertical-align: top;
+      color: #444;
+      font-size: 15px;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .tabs-panel {
+      display: none;
+      animation: fade .25s ease;
+    }
+
+    .tabs-panel.active {
+      display: block;
+    }
+
+    @keyframes fade {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .phase-timeline {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+      counter-reset: phase;
+    }
+
+    .phase {
+      background: white;
+      border-radius: var(--radius-md);
+      padding: 24px;
+      border-top: 5px solid var(--red);
+      min-height: 280px;
+    }
+
+    .phase::before {
+      counter-increment: phase;
+      content: "Fase " counter(phase);
+      color: var(--red);
+      font-weight: 700;
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      display: block;
+      margin-bottom: 14px;
+    }
+
+    .channel-card {
+      min-height: 260px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .channel-card h3 {
+      color: var(--red);
+    }
+
+    .tag-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .tag {
+      background: white;
+      color: var(--gray-dark);
+      border: 1px solid #e9e9e9;
+      border-radius: 999px;
+      padding: 6px 10px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .tag.red {
+      background: var(--red);
+      color: white;
+      border-color: var(--red);
+    }
+
+    .accordion {
+      display: grid;
+      gap: 12px;
+    }
+
+    .accordion-item {
+      background: white;
+      border: 1px solid #eee;
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    .accordion-title {
+      width: 100%;
+      padding: 20px 22px;
+      background: white;
+      border: 0;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-weight: 700;
+      color: var(--gray-dark);
+      text-align: left;
+    }
+
+    .accordion-title span {
+      color: var(--red);
+      font-size: 22px;
+    }
+
+    .accordion-content {
+      display: none;
+      padding: 0 22px 22px;
+    }
+
+    .accordion-item.open .accordion-content {
+      display: block;
+    }
+
+    .week-card {
+      border-left: 5px solid var(--red);
+    }
+
+    .metric-number {
+      font-size: 44px;
+      font-family: Georgia, "Times New Roman", serif;
+      color: var(--red);
+      margin-bottom: 8px;
+    }
+
+    .footer {
+      background: #f1f1f1;
+      padding: 54px 24px;
+      color: #555;
+    }
+
+    .footer-inner {
+      max-width: var(--max);
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 40px;
+    }
+
+    .footer small {
+      color: #777;
+    }
+
+    .mini-nav {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .mini-nav h4 {
+      font-size: 16px;
+      color: var(--red);
+      margin-bottom: 8px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: 700;
+    }
+
+    .mini-nav p {
+      font-size: 13px;
+      color: #666;
+    }
+
+    .highlight {
+      color: var(--red);
+      font-weight: 700;
+    }
+
+    .code {
+      display: block;
+      background: #1f1f1f;
+      color: #f8f8f8;
+      padding: 18px;
+      border-radius: var(--radius-sm);
+      font-family: Consolas, "Courier New", monospace;
+      font-size: 14px;
+      margin: 14px 0;
+      overflow-x: auto;
+    }
+
+    .mobile-hint {
+      display: none;
+      margin-top: 10px;
+      color: #777;
+      font-size: 13px;
+    }
+
+    @media (max-width: 980px) {
+      .hero-inner,
+      .grid-2,
+      .grid-3,
+      .grid-4,
+      .phase-timeline,
+      .footer-inner,
+      .mini-nav {
+        grid-template-columns: 1fr;
+      }
+
+      .section-header {
+        display: block;
+      }
+
+      .hero-visual {
+        min-height: 330px;
+      }
+
+      .umbrella {
+        width: 260px;
+        height: 260px;
+      }
+
+      .floating-card {
+        position: static;
+        margin-top: 18px;
+        width: 100% !important;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .mobile-hint {
+        display: block;
+      }
+
+      table {
+        min-width: 680px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#inicio" aria-label="Inicio">
+        <span class="brand-mark"></span>
+        <span>Occident · GitHub Copilot GCO</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegación principal">
+        <button class="active" data-target="inicio">Inicio</button>
+        <button data-target="contexto">Contexto</button>
+        <button data-target="estrategia">Propuesta</button>
+        <button data-target="teams">Teams</button>
+        <button data-target="semana1">Semana 1</button>
+        <button data-target="medicion">Medición</button>
+        <button data-target="decisiones">Decisiones</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-inner">
+        <div>
+          <span class="eyebrow">Estrategia de adopción post-formación</span>
+          <h1>De la formación al uso real de GitHub Copilot</h1>
+          <p>
+            GCO ya cuenta con una base técnica. El siguiente paso es convertir GitHub Copilot
+            en una práctica visible, útil y acompañada dentro del día a día de los equipos.
+          </p>
+
+          <div class="hero-actions">
+            <button class="btn btn-primary" data-target="estrategia">Ver propuesta estratégica</button>
+            <button class="btn btn-secondary" data-target="teams">Ver canales de Teams</button>
+          </div>
+
+          <p class="mobile-hint">
+            Consejo: en escritorio puedes navegar por las secciones desde el menú superior.
+          </p>
+        </div>
+
+        <div class="hero-visual" aria-hidden="true">
+          <div class="umbrella">
+            <div class="ribs">
+              <span></span><span></span><span></span><span></span><span></span>
+            </div>
+          </div>
+
+          <div class="floating-card one">
+            <strong>8 semanas</strong>
+            <p>Arranque progresivo para sostener la adopción.</p>
+          </div>
+
+          <div class="floating-card two">
+            <strong>6 canales</strong>
+            <p>Un sistema de comunidad, soporte y contenidos prácticos.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="quote-block">
+          <p>
+            La formación fue el punto de partida. La adopción empieza cuando Copilot se usa
+            para resolver una tarea real.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contexto" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Objetivo y contexto</span>
+            <h2>El reto ya no es explicar Copilot. Es activar su uso.</h2>
+          </div>
+          <p>
+            El proyecto busca reforzar la adopción real de GitHub Copilot en GCO, pasando de una etapa de formación técnica
+            a un modelo sostenido de uso, acompañamiento y generación de valor.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card purple">
+            <div class="card-number">01</div>
+            <h3>Base técnica creada</h3>
+            <p>
+              Los equipos ya participaron en sesiones sobre IA, prompting estructurado, contexto, Copilot Chat,
+              modo agente, instrucciones, prompt files, Skills, multi-agentes y MCP.
+            </p>
+          </article>
+
+          <article class="card red">
+            <div class="card-number">02</div>
+            <h3>Resistencia activa</h3>
+            <p>
+              Parte de la audiencia puede percibir la IA como lejana a su stack, poco aplicable a entornos legacy
+              o como una amenaza al control sobre el código.
+            </p>
+          </article>
+
+          <article class="card sand">
+            <div class="card-number">03</div>
+            <h3>Contexto técnico GCO</h3>
+            <p>
+              Los equipos trabajan principalmente con Visual Studio, COBOL, .NET, DB2 y PL/SQL. La adopción debe
+              conectarse con este entorno, no con ejemplos genéricos.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Problema que resolvemos</span>
+            <h2>El riesgo es que Copilot quede como una herramienta conocida, pero poco utilizada.</h2>
+          </div>
+          <p>
+            Después de la formación, cada developer vuelve a su día a día. Ahí se decide si Copilot se convierte
+            en hábito o si queda como un recuerdo de la capacitación.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Lo que puede frenar la adopción</h3>
+            <ul class="list">
+              <li>No recordar cuándo usar Copilot.</li>
+              <li>No saber cómo aplicarlo a un caso concreto.</li>
+              <li>Percibirlo como una herramienta pensada para otros lenguajes.</li>
+              <li>No encontrar ejemplos cercanos a COBOL, DB2, PL/SQL o .NET.</li>
+              <li>No tener un espacio donde resolver dudas rápidas.</li>
+              <li>No ver casos reales de compañeros o equipos similares.</li>
+            </ul>
+          </article>
+
+          <article class="card pink">
+            <h3>La oportunidad</h3>
+            <p>
+              La adopción se acelera cuando Copilot se conecta con tareas reales: entender código heredado,
+              revisar un error, analizar un log, trabajar con SQLCODE, documentar un cambio o preparar una
+              primera versión de código.
+            </p>
+            <span class="code">Selecciona un bloque COBOL y pregunta:
+"Explícame qué hace este código, qué riesgos ves y qué parte debería revisar primero."</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="estrategia" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Propuesta estratégica</span>
+            <h2>Un ecosistema de adopción post-formación.</h2>
+          </div>
+          <p>
+            La propuesta combina comunicación, soporte, contenidos prácticos, detección de casos reales y una ruta de evolución
+            gradual. No se plantea como más formación, sino como un sistema para sostener el uso.
+          </p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="card">
+            <span class="pill">Línea 1</span>
+            <h3>Comunidad y contenidos</h3>
+            <p>
+              Mantener visible el valor de Copilot después de la formación con Teams, tips, infografías,
+              micro-vídeos, mensajes breves y casos aplicados.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="pill">Línea 2</span>
+            <h3>Soporte continuo</h3>
+            <p>
+              Resolver bloqueos reales cuando el usuario intenta usar Copilot mediante foro, sesiones AMA
+              y reservas 1:1 con especialistas.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="pill">Línea 3</span>
+            <h3>Casos reales y líderes</h3>
+            <p>
+              Generar credibilidad interna con ejemplos del propio contexto GCO, embajadores, Product Owners,
+              Managers y casos de éxito.
+            </p>
+          </article>
+
+          <article class="card">
+            <span class="pill">Línea 4</span>
+            <h3>Evolución futura</h3>
+            <p>
+              Mostrar una ruta de madurez sin forzar temas avanzados al inicio: customización,
+              Spec-Driven Development y nuevas prácticas con IA.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Principios de contenido</span>
+            <h2>Cómo comunicaremos para reducir resistencia.</h2>
+          </div>
+          <p>
+            La estrategia debe sentirse útil, cercana y aplicable. La comunicación no puede sonar a marketing ni a teoría
+            de inteligencia artificial.
+          </p>
+        </div>
+
+        <div class="grid grid-4">
+          <article class="card purple">
+            <h3>De menos a más</h3>
+            <p>
+              Primero uso básico y valor inmediato. Después personalización, instrucciones, MCP o modelos avanzados.
+            </p>
+          </article>
+
+          <article class="card red">
+            <h3>Contenido breve</h3>
+            <p>
+              Tips de 3 puntos, mensajes de impacto, infografías, micro-vídeos y casos de uso claros.
+            </p>
+          </article>
+
+          <article class="card sand">
+            <h3>Casos reales</h3>
+            <p>
+              COBOL, DB2, PL/SQL, .NET, Copybooks, SQLCODE, Jira y logs antes que ejemplos genéricos.
+            </p>
+          </article>
+
+          <article class="card pink">
+            <h3>Tono cercano</h3>
+            <p>
+              “Esto te puede ahorrar tiempo hoy”, no “la IA va a transformar todo tu trabajo”.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Ruta progresiva</span>
+            <h2>Fases de contenido para construir confianza.</h2>
+          </div>
+          <p>
+            La adopción se construye con confianza progresiva. Primero utilidad inmediata, después profundidad técnica.
+          </p>
+        </div>
+
+        <div class="phase-timeline">
+          <article class="phase">
+            <h3>Concienciación</h3>
+            <p>
+              Recordar que Copilot es la herramienta corporativa disponible y mostrar valor inicial.
+            </p>
+            <ul class="list">
+              <li>Licencia activa.</li>
+              <li>Métricas aplicables.</li>
+              <li>Ventaja de adoptar IA con criterio.</li>
+              <li>Novedades útiles.</li>
+            </ul>
+          </article>
+
+          <article class="phase">
+            <h3>Visual Studio primero</h3>
+            <p>
+              Llevar Copilot al entorno real de trabajo antes de abrir más frentes.
+            </p>
+            <ul class="list">
+              <li>Dónde está Copilot.</li>
+              <li>Cómo invocarlo.</li>
+              <li>Modo pregunta vs. modo agente.</li>
+              <li>Resolver bugs con logs.</li>
+            </ul>
+          </article>
+
+          <article class="phase">
+            <h3>Multi-entorno</h3>
+            <p>
+              Ampliar hacia VS Code y terminal cuando el uso básico ya esté activo.
+            </p>
+            <ul class="list">
+              <li>VS Code.</li>
+              <li>Copilot CLI.</li>
+              <li>Comparativa de entornos.</li>
+              <li>Flujo integrado.</li>
+            </ul>
+          </article>
+
+          <article class="phase">
+            <h3>Customización</h3>
+            <p>
+              Introducir personalización cuando ya exista uso y demanda.
+            </p>
+            <ul class="list">
+              <li>copilot-instructions.md.</li>
+              <li>Carpeta .github.</li>
+              <li>Documentación automática.</li>
+              <li>Instrucciones corporativas.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Actualidad útil</span>
+            <h2>Las novedades se traducen en acciones concretas.</h2>
+          </div>
+          <p>
+            GitHub Copilot está cambiando rápido. El canal debe filtrar la actualidad para convertirla en algo que un developer
+            pueda probar o entender sin ruido.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>Copilot CLI evoluciona</h3>
+            <p>
+              GitHub ha publicado mejoras recientes en Copilot CLI, incluyendo plugins gestionados por empresa en public preview
+              y soporte de más modelos en experiencias tipo Rubber Duck. Esto permite hablar de terminal y automatización
+              cuando la comunidad esté preparada.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Más métricas de uso</h3>
+            <p>
+              GitHub ha seguido ampliando capacidades de medición en Copilot, incluyendo reportes y señales de uso por funcionalidades.
+              Esto abre una oportunidad para tomar decisiones con datos cuando GCO tenga acceso al dashboard.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Control y transparencia</h3>
+            <p>
+              La controversia por atribuciones automáticas de Copilot en commits refuerza un mensaje clave para GCO:
+              la IA debe usarse con criterio, trazabilidad y control del developer.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="teams" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Zoom en Teams</span>
+            <h2>El Teams será una comunidad, no un repositorio.</h2>
+          </div>
+          <p>
+            Los canales ya están creados. No se cambia la estructura. Se define el rol de cada canal para que funcione
+            como un sistema de comunicación, soporte y activación.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card channel-card">
+            <div>
+              <h3>General</h3>
+              <p>
+                Entrada oficial de la comunidad. Bienvenida, propósito, reglas básicas y mapa de canales.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag red">Bienvenida</span>
+              <span class="tag">Mapa</span>
+              <span class="tag">Mensajes oficiales</span>
+            </div>
+          </article>
+
+          <article class="card channel-card purple">
+            <div>
+              <h3>Anuncios y Tips Ágiles</h3>
+              <p>
+                Activación continua con tips breves, métricas aplicables, novedades útiles y buenas prácticas
+                sobre contexto, tokens y productividad.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag red">#TipÁgil</span>
+              <span class="tag">#DatoÚtil</span>
+              <span class="tag">#MejorContexto</span>
+            </div>
+          </article>
+
+          <article class="card channel-card">
+            <div>
+              <h3>Casos de Uso Reales</h3>
+              <p>
+                Evidencia práctica con problema, prompt, resultado esperado y aprendizaje.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag red">COBOL</span>
+              <span class="tag">DB2</span>
+              <span class="tag">.NET</span>
+              <span class="tag">PL/SQL</span>
+            </div>
+          </article>
+
+          <article class="card channel-card red">
+            <div>
+              <h3>Foro de Ayuda - Ask Me Anything</h3>
+              <p>
+                Espacio de dudas abiertas, preguntas frecuentes, preparación de AMAs y soporte comunitario.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag red">Dudas</span>
+              <span class="tag">FAQs</span>
+              <span class="tag">AMAs</span>
+            </div>
+          </article>
+
+          <article class="card channel-card">
+            <div>
+              <h3>Primeros Pasos</h3>
+              <p>
+                Ruta guiada para activar Copilot, ubicarlo en el entorno y empezar sin fricción.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag red">Licencia</span>
+              <span class="tag">Visual Studio</span>
+              <span class="tag">Primer prompt</span>
+            </div>
+          </article>
+
+          <article class="card channel-card sand">
+            <div>
+              <h3>Reservas 1-1 con Expertos</h3>
+              <p>
+                Acceso a sesiones breves de acompañamiento personalizado con especialistas.
+              </p>
+            </div>
+            <div class="tag-list">
+              <span class="tag red">Bookings</span>
+              <span class="tag">15-30 min</span>
+              <span class="tag">Desbloqueo</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Canal prioritario</span>
+            <h2>Anuncios y Tips Ágiles.</h2>
+          </div>
+          <p>
+            Este canal debe despertar interés sin sonar a marketing. Su promesa es simple:
+            aprender en 1 minuto algo que ayude a usar mejor Copilot hoy.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card purple">
+            <h3>Línea editorial</h3>
+            <p>
+              Pequeños hábitos para usar mejor Copilot, ahorrar tiempo y ganar control sobre el código.
+            </p>
+
+            <ul class="list">
+              <li>Métricas de productividad aterrizadas a acciones concretas.</li>
+              <li>Uso inteligente de contexto y tokens.</li>
+              <li>Novedades aplicables, no boletines genéricos.</li>
+              <li>Ventaja competitiva de adoptar IA con criterio.</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Filtro editorial</h3>
+            <p>
+              Antes de publicar cualquier contenido, el equipo debe validar:
+            </p>
+            <span class="code">¿Un developer de GCO puede probar esto hoy en Visual Studio, COBOL, DB2, PL/SQL o .NET?</span>
+            <p>
+              Si la respuesta es no, el contenido se reformula o no se publica.
+            </p>
+          </article>
+        </div>
+
+        <div style="height: 34px;"></div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Etiqueta</th>
+                <th>Objetivo</th>
+                <th>Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>#TipÁgil</strong></td>
+                <td>Consejo práctico de 1 minuto.</td>
+                <td>Pega el log, no empieces de cero.</td>
+              </tr>
+              <tr>
+                <td><strong>#DatoÚtil</strong></td>
+                <td>Métrica o insight de productividad aplicable.</td>
+                <td>Dónde se nota primero Copilot: entender código heredado.</td>
+              </tr>
+              <tr>
+                <td><strong>#MejorContexto</strong></td>
+                <td>Buenas prácticas sobre prompts, contexto y tokens.</td>
+                <td>Menos ruido, mejor respuesta.</td>
+              </tr>
+              <tr>
+                <td><strong>#NovedadAplicable</strong></td>
+                <td>Actualidad de Copilot traducida al día a día del developer.</td>
+                <td>Qué probar esta semana en Copilot Chat.</td>
+              </tr>
+              <tr>
+                <td><strong>#PruebaHoy</strong></td>
+                <td>Mini reto para usar Copilot ese mismo día.</td>
+                <td>Selecciona una consulta DB2 y pide riesgos antes de tocarla.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section id="semana1" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Primera semana</span>
+            <h2>Activar interés, reducir fricción y abrir conversación.</h2>
+          </div>
+          <p>
+            No todos los canales necesitan contenido desde el primer día. Es mejor activar pocos mensajes con intención
+            que llenar todos los espacios sin claridad.
+          </p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Canal</th>
+                <th>Contenido sugerido</th>
+                <th>Objetivo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>General</strong></td>
+                <td>Mensaje de bienvenida: “De la formación al uso real de Copilot”.</td>
+                <td>Explicar el propósito de la comunidad y orientar a los usuarios.</td>
+              </tr>
+              <tr>
+                <td><strong>Anuncios y Tips Ágiles</strong></td>
+                <td>Post 1: “GitHub Copilot ya está en tu entorno de trabajo”.</td>
+                <td>Recordar que la herramienta está disponible y conectarla con el día a día.</td>
+              </tr>
+              <tr>
+                <td><strong>Anuncios y Tips Ágiles</strong></td>
+                <td>Post 2: “La ventaja no está solo en tener IA, sino en aprender a usarla bien”.</td>
+                <td>Persuadir desde la idea de vanguardia y ventaja competitiva.</td>
+              </tr>
+              <tr>
+                <td><strong>Anuncios y Tips Ágiles</strong></td>
+                <td>Post 3: “Menos ruido, mejor respuesta: cómo dar contexto justo”.</td>
+                <td>Introducir el paradigma de tokens y contexto sin tecnicismos.</td>
+              </tr>
+              <tr>
+                <td><strong>Primeros Pasos</strong></td>
+                <td>Publicación breve: “Cómo confirmar si tienes la licencia activa”.</td>
+                <td>Reducir fricción inicial.</td>
+              </tr>
+              <tr>
+                <td><strong>Foro de Ayuda - Ask Me Anything</strong></td>
+                <td>Pregunta inicial: “¿Qué tarea te gustaría probar primero con Copilot?”.</td>
+                <td>Empezar conversación y detectar intereses.</td>
+              </tr>
+              <tr>
+                <td><strong>Casos de Uso Reales</strong></td>
+                <td>Preparar primer caso sobre bug/log o SQLCODE.</td>
+                <td>Dejar listo el contenido para Semana 2.</td>
+              </tr>
+              <tr>
+                <td><strong>Reservas 1-1 con Expertos</strong></td>
+                <td>Preparar enlace y texto de publicación.</td>
+                <td>Activar cuando Bookings esté confirmado.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div style="height: 34px;"></div>
+
+        <div class="grid grid-2">
+          <article class="card week-card">
+            <span class="pill">Post inicial</span>
+            <h3>GitHub Copilot ya está en tu entorno de trabajo</h3>
+            <p>
+              Copilot no es una herramienta externa ni algo reservado para otros perfiles. Está pensado para ayudarte
+              dentro del flujo diario: entender código, revisar errores, generar primeras versiones y desbloquear tareas repetitivas.
+            </p>
+            <p><strong>CTA:</strong> Hoy prueba con una pregunta sencilla sobre un bloque de código que te tome tiempo entender.</p>
+          </article>
+
+          <article class="card week-card purple">
+            <span class="pill">Ventaja competitiva</span>
+            <h3>La ventaja no está solo en tener IA</h3>
+            <p>
+              Las herramientas de IA están cambiando la forma de trabajar en desarrollo. La diferencia no estará únicamente
+              en quién tiene acceso a ellas, sino en quién aprende antes a integrarlas con criterio en su día a día.
+            </p>
+            <p><strong>CTA:</strong> Empieza por una tarea real, pequeña y repetitiva. Ahí suele aparecer el primer valor.</p>
+          </article>
+
+          <article class="card week-card sand">
+            <span class="pill">Contexto y tokens</span>
+            <h3>Menos ruido, mejor respuesta</h3>
+            <p>
+              Copilot responde mejor cuando recibe el contexto adecuado. Más información no siempre significa mejor respuesta.
+            </p>
+            <span class="code">En vez de:
+"Revísame todo este programa"
+
+Prueba:
+"Analiza solo este bloque. Quiero entender por qué puede devolver SQLCODE negativo y qué validaciones faltan antes de modificarlo."</span>
+          </article>
+
+          <article class="card week-card red">
+            <span class="pill">Novedad aplicable</span>
+            <h3>Copilot cambia rápido: lo importante es saber qué probar</h3>
+            <p>
+              GitHub está incorporando mejoras frecuentes en Copilot. En este canal se filtrará solo lo que pueda tener
+              impacto real en el trabajo diario de GCO.
+            </p>
+            <p><strong>CTA:</strong> Esta semana revisa una tarea que normalmente te tome tiempo y pregúntate si Copilot podría ayudarte a preparar una primera versión.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Casos y soporte</span>
+            <h2>La ayuda debe aparecer cuando el usuario se bloquea.</h2>
+          </div>
+          <p>
+            La formación no resuelve todos los bloqueos. El momento crítico aparece delante del código,
+            cuando el usuario intenta usar Copilot y necesita orientación.
+          </p>
+        </div>
+
+        <div class="grid grid-2">
+          <article class="card">
+            <h3>Modelo de soporte continuo</h3>
+            <ul class="list">
+              <li>Foro de Ayuda - Ask Me Anything para dudas abiertas.</li>
+              <li>Sesiones AMA para resolver preguntas recurrentes con expertos.</li>
+              <li>Reservas 1-1 para acompañar casos concretos de 15 a 30 minutos.</li>
+              <li>Casos de Uso Reales para convertir dudas repetidas en contenido reutilizable.</li>
+              <li>Product Owners y Managers como detectores de casos de éxito.</li>
+            </ul>
+          </article>
+
+          <article class="card pink">
+            <h3>Product Owners y Managers</h3>
+            <p>
+              Su participación no debe limitarse a pedirles que detecten casos de éxito. Primero hay que mostrarles
+              valor para su propio trabajo.
+            </p>
+            <ul class="list">
+              <li>Redactar criterios de aceptación.</li>
+              <li>Preparar documentación funcional.</li>
+              <li>Analizar tickets.</li>
+              <li>Resumir conversaciones.</li>
+              <li>Identificar patrones de dudas en sus equipos.</li>
+              <li>Convertir casos reales en contenido para la comunidad.</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="medicion" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Medición</span>
+            <h2>Medir para decidir qué reforzar.</h2>
+          </div>
+          <p>
+            En el corto plazo no se busca demostrar un ROI definitivo. Se busca entender qué mueve a la comunidad,
+            qué dudas aparecen y qué acciones conviene priorizar.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <div class="metric-number">01</div>
+            <h3>Interés</h3>
+            <p>Reacciones por publicación, visualizaciones y consumo de contenidos.</p>
+          </article>
+
+          <article class="card">
+            <div class="metric-number">02</div>
+            <h3>Conversación</h3>
+            <p>Comentarios, preguntas, participación en el foro y dudas recurrentes.</p>
+          </article>
+
+          <article class="card">
+            <div class="metric-number">03</div>
+            <h3>Acompañamiento</h3>
+            <p>Reservas 1-1, asistencia a AMAs y casos que requieren ayuda experta.</p>
+          </article>
+
+          <article class="card">
+            <div class="metric-number">04</div>
+            <h3>Casos</h3>
+            <p>Casos de uso detectados desde el foro, sesiones, POs, Managers o embajadores.</p>
+          </article>
+
+          <article class="card">
+            <div class="metric-number">05</div>
+            <h3>Uso real</h3>
+            <p>Tendencia de uso en GitHub Copilot Dashboard si GCO tiene acceso.</p>
+          </article>
+
+          <article class="card">
+            <div class="metric-number">06</div>
+            <h3>Ajuste</h3>
+            <p>Decisiones sobre cadencia, temas y soporte según las señales recogidas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Próximos pasos</span>
+            <h2>Ruta de acción por horizonte.</h2>
+          </div>
+          <p>
+            La comunidad debe empezar con un arranque controlado, práctico y medible. Después se amplía hacia casos,
+            soporte y evolución avanzada.
+          </p>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion-item open">
+            <button class="accordion-title">
+              Corto plazo · Primeras 2 semanas
+              <span>+</span>
+            </button>
+            <div class="accordion-content">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Acción</th>
+                      <th>Objetivo</th>
+                      <th>Indicador inicial</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Publicar mensaje de bienvenida en General.</td>
+                      <td>Activar oficialmente la comunidad.</td>
+                      <td>Visualizaciones y reacciones.</td>
+                    </tr>
+                    <tr>
+                      <td>Lanzar primeros tips en Anuncios y Tips Ágiles.</td>
+                      <td>Despertar interés y mostrar utilidad inmediata.</td>
+                      <td>Reacciones y comentarios.</td>
+                    </tr>
+                    <tr>
+                      <td>Publicar guía de licencia en Primeros Pasos.</td>
+                      <td>Reducir fricción inicial.</td>
+                      <td>Preguntas resueltas.</td>
+                    </tr>
+                    <tr>
+                      <td>Abrir pregunta inicial en Foro de Ayuda.</td>
+                      <td>Detectar dudas e intereses.</td>
+                      <td>Comentarios recibidos.</td>
+                    </tr>
+                    <tr>
+                      <td>Preparar primer caso real.</td>
+                      <td>Demostrar valor con ejemplo cercano.</td>
+                      <td>Caso listo para publicar.</td>
+                    </tr>
+                    <tr>
+                      <td>Configurar reservas 1-1.</td>
+                      <td>Activar soporte personalizado.</td>
+                      <td>Primeras reservas.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-title">
+              Mediano plazo · 4 a 8 semanas
+              <span>+</span>
+            </button>
+            <div class="accordion-content">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Acción</th>
+                      <th>Objetivo</th>
+                      <th>Indicador</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Consolidar calendario editorial.</td>
+                      <td>Generar hábito de consumo.</td>
+                      <td>Publicaciones sostenidas.</td>
+                    </tr>
+                    <tr>
+                      <td>Publicar casos de uso reales.</td>
+                      <td>Aumentar credibilidad interna.</td>
+                      <td>Comentarios, guardados y preguntas.</td>
+                    </tr>
+                    <tr>
+                      <td>Realizar primeras sesiones AMA.</td>
+                      <td>Resolver bloqueos comunes.</td>
+                      <td>Asistencia y preguntas.</td>
+                    </tr>
+                    <tr>
+                      <td>Identificar embajadores internos.</td>
+                      <td>Amplificar adopción desde GCO.</td>
+                      <td>Primer testimonio o caso interno.</td>
+                    </tr>
+                    <tr>
+                      <td>Activar sesión con POs y Managers.</td>
+                      <td>Detectar casos y extender valor.</td>
+                      <td>Participación y casos sugeridos.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-title">
+              Largo plazo · A partir de 8 semanas
+              <span>+</span>
+            </button>
+            <div class="accordion-content">
+              <div class="table-wrap">
+                <table>
+                  <thead>
+                    <tr>
+                      <th>Acción</th>
+                      <th>Objetivo</th>
+                      <th>Indicador</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Evaluar madurez de la comunidad.</td>
+                      <td>Decidir continuidad o ajustes.</td>
+                      <td>Actividad sostenida en Teams.</td>
+                    </tr>
+                    <tr>
+                      <td>Evolucionar hacia contenidos avanzados.</td>
+                      <td>Introducir customización y mejores prácticas.</td>
+                      <td>Interés en temas avanzados.</td>
+                    </tr>
+                    <tr>
+                      <td>Explorar Spec-Driven Development.</td>
+                      <td>Abrir línea de evolución metodológica.</td>
+                      <td>Validación directiva.</td>
+                    </tr>
+                    <tr>
+                      <td>Formalizar repositorio de aprendizajes.</td>
+                      <td>Convertir dudas en conocimiento reutilizable.</td>
+                      <td>FAQs, casos y materiales consolidados.</td>
+                    </tr>
+                    <tr>
+                      <td>Medir adopción con datos de uso.</td>
+                      <td>Evaluar impacto real.</td>
+                      <td>Tendencia de uso en dashboard.</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="decisiones" class="section alt">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <span class="eyebrow">Decisiones solicitadas</span>
+            <h2>Qué necesitamos validar para avanzar.</h2>
+          </div>
+          <p>
+            La presentación debe cerrar con decisiones concretas para que el plan no quede como una propuesta abierta,
+            sino como una ruta accionable.
+          </p>
+        </div>
+
+        <div class="grid grid-3">
+          <article class="card">
+            <h3>1. Enfoque</h3>
+            <p>
+              Validar que la siguiente etapa no es más formación, sino adopción post-formación con contenidos,
+              soporte y casos reales.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>2. Teams</h3>
+            <p>
+              Aprobar el uso del Teams ya creado como comunidad central de adopción, manteniendo los canales existentes.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>3. Cadencia</h3>
+            <p>
+              Confirmar una cadencia inicial de 2 publicaciones semanales en Anuncios y Tips Ágiles durante el arranque.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>4. Referente GCO</h3>
+            <p>
+              Designar una persona que valide contexto, priorice temas y ayude a evitar contenidos poco aterrizados.
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>5. Soporte</h3>
+            <p>
+              Validar el modelo de foro, sesiones AMA y reservas 1-1 como mecanismos para resolver bloqueos reales.
+            </p>
+          </article>
+
+          <article class="card red">
+            <h3>Cierre</h3>
+            <p>
+              Para que GitHub Copilot genere valor en GCO, necesita convertirse en una práctica visible, útil y acompañada.
+              La comunidad en Teams será el punto de activación.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div>
+        <div class="brand">
+          <span class="brand-mark"></span>
+          <span>Occident · GCO</span>
+        </div>
+        <p style="margin-top: 16px;">
+          Estrategia de adopción de GitHub Copilot. Documento visual para presentación directiva.
+        </p>
+        <small>Uso interno · Raona / GCO</small>
+      </div>
+
+      <div class="mini-nav">
+        <div>
+          <h4>Objetivo</h4>
+          <p>Pasar de formación técnica a adopción sostenida.</p>
+        </div>
+        <div>
+          <h4>Canal clave</h4>
+          <p>Anuncios y Tips Ágiles como motor de activación.</p>
+        </div>
+        <div>
+          <h4>Primer paso</h4>
+          <p>Activar comunidad, contenidos breves y soporte inicial.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    const navButtons = document.querySelectorAll("[data-target]");
+
+    navButtons.forEach((button) => {
+      button.addEventListener("click", () => {
+        const targetId = button.getAttribute("data-target");
+        const target = document.getElementById(targetId);
+
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+
+        document.querySelectorAll(".nav button").forEach((btn) => {
+          btn.classList.remove("active");
+        });
+
+        if (button.closest(".nav")) {
+          button.classList.add("active");
+        }
+      });
+    });
+
+    const sections = document.querySelectorAll("main section[id]");
+    const navItems = document.querySelectorAll(".nav button");
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const id = entry.target.getAttribute("id");
+
+          navItems.forEach((item) => {
+            item.classList.toggle("active", item.getAttribute("data-target") === id);
+          });
+        }
+      });
+    }, { threshold: 0.35 });
+
+    sections.forEach((section) => observer.observe(section));
+
+    const accordionTitles = document.querySelectorAll(".accordion-title");
+
+    accordionTitles.forEach((title) => {
+      title.addEventListener("click", () => {
+        const item = title.parentElement;
+        item.classList.toggle("open");
+      });
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Biblioteca de Iconos — Catalana Occidente</title>
+<style>
+@font-face{font-family:'icomoon';src:url('icomoon.woff2') format('woff2'),url('icomoon.ttf') format('truetype');font-weight:normal;font-style:normal;font-display:block}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;background:#f4f4f5;color:#1a1a1a}
+
+header{background:#fff;border-bottom:2px solid #dc0028;padding:16px 24px;display:flex;align-items:center;gap:14px}
+.bar{width:5px;height:40px;background:#dc0028;border-radius:3px;flex-shrink:0}
+h1{font-size:17px;font-weight:700}
+.sub{font-size:12px;color:#777;margin-top:3px}
+
+.controls{position:sticky;top:0;z-index:10;background:#fff;border-bottom:1px solid #e5e5e5;padding:10px 24px;display:flex;gap:10px;flex-wrap:wrap;align-items:center;box-shadow:0 1px 4px rgba(0,0,0,.06)}
+input[type=search]{flex:1;min-width:180px;max-width:340px;padding:7px 10px 7px 32px;border:1px solid #ddd;border-radius:6px;font-size:13px;outline:none;background:#f9f9f9 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='13' height='13' viewBox='0 0 24 24' fill='none' stroke='%23999' stroke-width='2'%3E%3Ccircle cx='11' cy='11' r='8'/%3E%3Cpath d='m21 21-4.35-4.35'/%3E%3C/svg%3E") no-repeat 9px center;transition:border-color .15s}
+input[type=search]:focus{border-color:#dc0028;background-color:#fff}
+select{padding:7px 24px 7px 9px;border:1px solid #ddd;border-radius:6px;font-size:13px;background:#f9f9f9;outline:none;cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23666' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 7px center}
+select:focus{border-color:#dc0028}
+.count{font-size:12px;color:#888;margin-left:auto;white-space:nowrap}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(148px,1fr));gap:8px;padding:14px 24px}
+
+.card{background:#fff;border:1px solid #e8e8e8;border-radius:8px;padding:14px 10px 10px;display:flex;flex-direction:column;align-items:center;gap:7px;transition:border-color .15s,box-shadow .15s,transform .1s}
+.card:hover{border-color:#dc0028;box-shadow:0 3px 12px rgba(220,0,40,.1);transform:translateY(-2px)}
+
+.preview{width:40px;height:40px;display:flex;align-items:center;justify-content:center}
+.preview svg{width:34px;height:34px}
+
+.name{font-size:10px;color:#555;text-align:center;word-break:break-all;line-height:1.35;max-height:42px;overflow:hidden}
+
+.btns{display:flex;gap:3px;width:100%}
+.btn{flex:1;font-size:10px;padding:4px 2px;border:1px solid #e0e0e0;border-radius:4px;background:#f7f7f7;cursor:pointer;color:#444;font-weight:500;transition:all .12s;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.btn:hover{background:#dc0028;color:#fff;border-color:#dc0028}
+.btn-svg{color:#1a73e8;border-color:#c5d8fc;background:#f0f6ff}
+.btn-svg:hover{background:#1a73e8;color:#fff;border-color:#1a73e8}
+
+.empty{text-align:center;color:#aaa;padding:80px 24px;font-size:14px;grid-column:1/-1}
+.empty strong{display:block;font-size:15px;margin-bottom:4px;color:#666}
+
+.toast{position:fixed;bottom:26px;left:50%;transform:translateX(-50%) translateY(10px);background:#1a1a1a;color:#fff;padding:9px 18px;border-radius:6px;font-size:13px;pointer-events:none;opacity:0;transition:opacity .18s,transform .18s;white-space:nowrap;z-index:999}
+.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
+
+.tip{font-size:11px;color:#1a73e8;background:#f0f6ff;border:1px solid #c5d8fc;border-radius:6px;padding:8px 14px;margin:10px 24px 0;display:flex;align-items:center;gap:8px}
+.tip svg{flex-shrink:0}
+</style>
+<link rel="stylesheet" href="icomoon.css">
+<script src="_icondata.js"></script>
+</head>
+<body>
+
+<header>
+  <div class="bar"></div>
+  <div>
+    <h1>Biblioteca de Iconos — Catalana Occidente</h1>
+    <div class="sub" id="sub">Cargando iconos...</div>
+  </div>
+</header>
+
+<div class="tip">
+  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#1a73e8" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+  Clic en <strong style="margin:0 3px">SVG</strong> para copiar el vector · Luego pega con <kbd style="background:#e8f0fe;border:1px solid #c5d8fc;border-radius:3px;padding:1px 5px;font-size:10px">Ctrl+V</kbd> directamente en Figma · Los botones <strong style="margin:0 3px">HTML</strong> y <strong style="margin:0 3px">Clase</strong> son para desarrollo web
+</div>
+
+<div class="controls">
+  <input type="search" id="q" placeholder="Buscar por nombre..." autocomplete="off" spellcheck="false">
+  <select id="grp"><option value="">Todos los grupos</option></select>
+  <span class="count" id="cnt"></span>
+</div>
+
+<div class="grid" id="grid"></div>
+<div class="toast" id="toast"></div>
+
+<script>
+const ICONS = [
+  "icon-seguro_caravanas_moviles","icon-fjs_accion_social","icon-fjs_deporte","icon-fjs_investigacion",
+  "icon-fjs_promocion_de_las_artes","icon-fjs_empresa_docencia","icon-autopresto_reparacion_inmediata",
+  "icon-autopresto_movilidad_garantizada","icon-autopresto_financiacion","icon-autopresto_calidad",
+  "icon-autopresto_bonificacion","icon-autopresto_60","icon-autopresto_taller_sostenible",
+  "icon-autopresto_autopresto","icon-autopresto_grua","icon-autopresto_garantia",
+  "icon-autopresto_bola_mundo_lineas","icon-autopresto_limpieza_del_vehiculo","icon-autopresto_engranaje2",
+  "icon-tiktok_white_1","icon-spotify_white_1","icon-tiktok","icon-spotify","icon-twitter",
+  "icon-twitter_circle","icon-generico_usuario_ecliente","icon-download","icon-lupa","icon-search",
+  "icon-chevron-up","icon-smartphone","icon-clock","icon-phone","icon-mail","icon-trash",
+  "icon-headphones","icon-user","icon-chevron-small-down","icon-menu","icon-language","icon-map-pin",
+  "icon-location","icon-poi_agujero","icon-check","icon-play_circle","icon-message-square",
+  "icon-archivo","icon-contacto_y_asistencia","icon-facebook","icon-youtube","icon-instagram",
+  "icon-twitter_old","icon-linkedin","icon-chevron-down","icon-calendar","icon-whatsapp","icon-upload",
+  "icon-servicio_desatasco_preventivo","icon-servicio_declaracion_de_siniestro_automovil",
+  "icon-servicio_declaracion_de_siniestro_hogar","icon-servicio_declaracion_de_siniestro",
+  "icon-servicio_certificacion_energetica","icon-servicio_tu_salud_digital",
+  "icon-servicio_asesoramiento_financiero_no_independiente","icon-servicio_asistencia_en_viaje",
+  "icon-servicio_aviso_de_multas_de_trafico","icon-servicio_segunda_opinion_premium",
+  "icon-servicio_autopresto","icon-servicio_asistencia_negocio","icon-servicio_emergencia_e-car",
+  "icon-servicio_bricohogar","icon-servicio_buscador_de_esquelas_mascotas",
+  "icon-servicio_asistencia_comunidades","icon-servicio_mi_legado_digital",
+  "icon-servicio_administracion_de_fincas","icon-servicio_asesoramiento_ciberriesgo",
+  "icon-servicio_atencion_domiciliaria","icon-servicio_atencion_digital_post-incidente",
+  "icon-servicio_gestoria_vehiculos","icon-servicio_acceso_iberinform","icon-servicio_asistencia_hogar",
+  "icon-servicio_prevencion_digital","icon-servicio_segunda_opinion_medica",
+  "icon-servicio_control_de_plagas","icon-servicio_orientacion_medica_telefonica",
+  "icon-servicio_asesoramiento_juridico_telefonico","icon-servicio_gestoria_fallecimiento",
+  "icon-servicio_tu_coche_por_otro","icon-servicio_defensa_multas_de_trafico",
+  "icon-servicio_asistencia_mascotas","icon-servicio_asistencia_informatica_online",
+  "icon-servicio_rehabilitacion_cardiaca","icon-servicio_orientacion_veterinaria_telefonica",
+  "icon-servicio_reparacion_urgente_de_calderas","icon-servicio_buscador_de_esquelas",
+  "icon-servicio_acompanamiento_a_la_dependencia","icon-servicio_cardiosport",
+  "icon-servicio_alertas_meteorologicas","icon-servicio_asesoramiento_de_servicios_a_la_dependencia",
+  "icon-servicio_bienestar_y_salud","icon-servicio_asesoramiento_tecnico_de_edificios",
+  "icon-servicio_segunda_opinion_medica_diferente_al_de_cortesia",
+  "icon-servicio_mi_testamento_borrado_digital",
+  "icon-servicio_rehabilitacion_cardiaca_diferente_al_de_cortesia",
+  "icon-seguro_motos_electricas","icon-seguro_hogar_exclusivo","icon-seguro_cancelacion_viajes1",
+  "icon-proteccion_juridica_autonomos","icon-proteccion_juridica_conductor",
+  "icon-seguro_responsabilidad_civil_autonomos","icon-seguro_equipos_profesionales",
+  "icon-seguro_hogar_profesional","icon-seguro_furgoneta","icon-seguro_vehiculos_agrarios",
+  "icon-seguro_vida_autonomos","icon-seguro_accidentes_autonomos","icon-seguro_de_comercios",
+  "icon-seguro_de_oficinas","icon-seguro_agrario","icon-salud_asistencia_sanitaria_autonomos",
+  "icon-incapacidad_temporal","icon-salud_subsidio_hospitalizacion",
+  "icon-seguro_responsabilidad_civil_caza","icon-seguro_responsabilidad_civil_particular",
+  "icon-seguro_responsabilidad_civil_pesca","icon-automovil_terceros_completo",
+  "icon-seguro_embarcaciones_recreo","icon-automovil_todo_riesgo_con_franquicia",
+  "icon-seguro_furgonetas_camper","icon-automovil_terceros_basico","icon-seguro_autocaravanas",
+  "icon-renting_particulares","icon-seguros_de_moto","icon-automovil_todo_riesgo_sin_franquicia",
+  "icon-seguro_coche_electrico_hibrido","icon-seguro_patinetes_electricos","icon-seguro_de_quad",
+  "icon-seguro_para_ciclistas_bicicletas","icon-seguro_de_ciclomotor","icon-gco_eurobolsa",
+  "icon-gco_acciones","icon-ahorro_ppa","icon-co_emergentes_fi","icon-gco_internacional",
+  "icon-co_bolsa_espanola_fi","icon-planes_de_pensiones","icon-pias","icon-co_bolsa_mundial_fi",
+  "icon-inversion_multifondos","icon-gco_mixto","icon-co_renta_fija_fi","icon-seguro_ahorro_capital",
+  "icon-gco_bolsa_usa","icon-gco_renta_fija","icon-co_patrimonio_fi","icon-seguro_ahorro_creciente",
+  "icon-rentas","icon-gco_global_50","icon-gco_ahorro","icon-hipoteca_inversa","icon-epsv",
+  "icon-ahorro_sialp","icon-cuenta_cliente","icon-seguro_hogar_vivienda_turistica",
+  "icon-implantes_cocleares","icon-seguro_instrumentos","icon-drones","icon-seguro_mascotas",
+  "icon-seguro_comunidades_garajes","icon-seguro_hogar_arrendador","icon-seguro_de_caravanas_fijas",
+  "icon-seguro_para_portatiles_pcs","icon-seguro_hogar","icon-seguro_para_camaras_fotograficas",
+  "icon-seguro_ciberriesgo_hogar","icon-seguro_comunidades","icon-seguro_decesos_repatriacion",
+  "icon-seguro_decesos_senior","icon-seguro_de_viaje","icon-seguro_decesos",
+  "icon-seguro_vida_amortizacion_particular","icon-seguro_vida_temporal_particular",
+  "icon-seguro_accidentes","icon-salud_bienestar_senior","icon-salud_reembolso_particular",
+  "icon-salud_asistencia_sanitaria_particular","icon-salud_bienestar",
+  "icon-salud_subsidio_hospitalizacion_particular","icon-proteccion_juridica_conductor1",
+  "icon-proteccion_juridica_familiar","icon-proteccion_juridica_empresas",
+  "icon-seguro_de_maquinaria","icon-seguro_transporte_mercancias_para_transportistas",
+  "icon-combinado_empresas","icon-seguro_transporte_mercancias_para_cargadores",
+  "icon-seguro_cancelacion_viajes","icon-robo","icon-grandes_comercios",
+  "icon-todo_riesgo_construccion_montaje","icon-seguro_transporte_mercancias_lott-lcttm",
+  "icon-seguro_local_comercial","icon-seguro_agrario_empresas","icon-decenal_edificacion",
+  "icon-todo_riesgo_danos_materiales","icon-pyme_talleres_mecanicos_vehiculos",
+  "icon-seguro_cancelacion_eventos","icon-pymes_hoteles_hostales_pensiones","icon-pyme_ganaderia",
+  "icon-incendio","icon-pyme_industrial","icon-pyme_agricultura",
+  "icon-seguro_transporte_mercancias_cmr","icon-ciberriesgo_empresas",
+  "icon-seguro_de_equipos_electronicos","icon-seguro_obligatorio_de_viajeros",
+  "icon-seguro_viaje_empresa","icon-seguro_de_estudios","icon-seguro_escolar",
+  "icon-seguro_accidentes_convenio_empleados","icon-planes_de_pensiones_empleados",
+  "icon-seguro_vida_colectivo_empleados","icon-salud_asistencia_sanitaria_empleados",
+  "icon-ahorro_ppse_empleados","icon-seguro_ahorro_colectivo_empleados","icon-flotas",
+  "icon-vehiculos_maquinaria_pesada","icon-camiones_cabezas_tractoras",
+  "icon-responsabilidad_civil_profesional","icon-responsabilidad_medioambiental",
+  "icon-responsabilidad_civil_inmuebles","icon-responsabilidad_civil_construccion_industrias",
+  "icon-valor-original","icon-visible-password","icon-flecha-arriba","icon-flecha-abajo",
+  "icon-pro-hogar","icon-visto","icon-menos","icon-mas","icon-lorem-ipsum","icon-link","icon-info",
+  "icon-flecha-izquierda","icon-flecha-derecha","icon-error-fixed","icon-correcto-fixed",
+  "icon-close","icon-encargos","icon-pro-euro-4","icon-generico_ventana1","icon-generico_accede_aqui",
+  "icon-generico_patinete","icon-generico_bicicleta","icon-generico_checkbox-ok",
+  "icon-generico_propietario_vivienda_de_alquiler","icon-generico_alquiler",
+  "icon-generico_solidaridad-12","icon-generico_lavar_manos",
+  "icon-generico_formacion_cursos_a_la_carta","icon-generico_mano_mas","icon-generico_contento",
+  "icon-generico_feliz","icon-generico_resto_vida","icon-generico_mano_abajo",
+  "icon-generico_mano_pagando","icon-generico_centro_diagnostico","icon-generico_ojo",
+  "icon-generico_informacion","icon-generico_telefono_2","icon-generico_estrella",
+  "icon-generico_reloj","icon-generico_peligro","icon-generico_ordenador",
+  "icon-generico_alerta_de_velocidad","icon-generico_billetes_2","icon-generico_centros_medicos",
+  "icon-generico_no_asegurado","icon-generico_lupa_correcto","icon-generico_papel",
+  "icon-generico_agente","icon-generico_share","icon-generico_edificios","icon-generico_sorprendido",
+  "icon-generico_triste","icon-generico_billetes","icon-generico_oncologia_medica",
+  "icon-generico_jurado","icon-generico_coche_eco","icon-generico_matricula",
+  "icon-generico_equipo_de_1","icon-generico_medico","icon-generico_pediatria",
+  "icon-generico_medicina_del_trabajo","icon-generico_pecho","icon-generico_t_alergologia",
+  "icon-generico_visto_tres","icon-generico_fiesta","icon-generico_reumatologia",
+  "icon-generico_cervell","icon-generico_grupo_corazon","icon-generico_subir_escaleras",
+  "icon-generico_solidaridad-60","icon-generico_pulmones","icon-generico_carga",
+  "icon-generico_residencia_habitual","icon-generico_zonas_comunes","icon-generico_ultima_planta",
+  "icon-generico_nino","icon-generico_persona_obesa","icon-generico_guantes","icon-generico_dieta",
+  "icon-generico_reconocimiento_facial","icon-generico_modificacion_precio",
+  "icon-generico_cardiologia","icon-generico_videollamada","icon-generico_pasos",
+  "icon-generico_farmacologia_clinica","icon-generico_capital_mobiliario",
+  "icon-generico_parking-almacen","icon-generico_angiologia_y_cirugia_vascular",
+  "icon-generico_flor","icon-generico_sostenibilidad-20","icon-generico_paraguas",
+  "icon-generico_urologia","icon-generico_boca","icon-generico_persona_mayor",
+  "icon-generico_segunda_residencia","icon-generico_embarazada","icon-generico_desnutricion",
+  "icon-generico_planta_baja","icon-generico_inmunologia","icon-generico_subir",
+  "icon-generico_pastel","icon-generico_bolsa_de_estudios","icon-generico_cirugia",
+  "icon-generico_vino","icon-generico_traumatologia","icon-generico_fundas_auriculares",
+  "icon-generico_esquema","icon-generico_pizza","icon-generico_blog_premium","icon-generico_diana",
+  "icon-generico_hematologia_y_hemoterapia","icon-generico_aparato_reproductor",
+  "icon-generico_anestesiologia_y_reanimacion","icon-generico_wifi","icon-generico_tetrabric",
+  "icon-generico_sensor_coche","icon-generico_aparato_digestivo","icon-generico_radiodiagnostico",
+  "icon-generico_psicologo","icon-generico_propietario_vivienda_deshabitada","icon-generico_taxi",
+  "icon-generico_bajar_escaleras","icon-generico_casa_arbol","icon-generico_planta_intermedia",
+  "icon-generico_usuario_estrella","icon-generico_endocrinologia_y_nutricion",
+  "icon-generico_paralelo","icon-generico_gabinete_medico","icon-generico_chalet_independiente",
+  "icon-generico_sostenibilidad-61","icon-generico_honestidad","icon-generico_coche_premium",
+  "icon-generico_dermatologia_y_venerologia","icon-generico_anatomia_patologica",
+  "icon-generico_oreja","icon-generico_propietario_vivienda","icon-generico_psiquiatria",
+  "icon-generico_capital_vivienda","icon-generico_servicios_hogar","icon-generico_chalet_adosado",
+  "icon-generico_nefrologia","icon-generico_medio_ambiente","icon-generico_deportiva_2",
+  "icon-generico_sotano","icon-generico_car_finder","icon-generico_localizacion_vehiculo",
+  "icon-generico_maleta_viaje_2","icon-generico_oficinas","icon-generico_machine_deep_learning",
+  "icon-generico_mascarilla","icon-generico_escaleras","icon-generico_radar",
+  "icon-generico_informe_viaje","icon-generico_mujer","icon-generico_abrir_siniestro",
+  "icon-generico_parking_1","icon-generico_llama_gas","icon-generico_jabon_de_manos",
+  "icon-generico_piscina","icon-generico_impresora","icon-generico_centralita_del_vehiculo",
+  "icon-generico_control_graficos","icon-generico_teletrabajo","icon-generico_herencias_digitales",
+  "icon-generico_brujula","icon-generico_chat_2","icon-generico_eliminar_cuentas_online",
+  "icon-generico_recuperar_puntos","icon-generico_inteligencia_artificial",
+  "icon-generico_3_pilares","icon-generico_automatizacion_robotica",
+  "icon-generico_fuegos_artificiales","icon-generico_cartera_negocio","icon-generico_corazon",
+  "icon-generico_acuagim","icon-generico_ascensor","icon-generico_desatascador",
+  "icon-generico_distancia_en_km","icon-generico_gobierno_del_dato","icon-generico_rotulo",
+  "icon-generico_arboles","icon-generico_seguro_obligatorio","icon-generico_montana",
+  "icon-generico_tabla","icon-generico_grafico_circular","icon-generico_fabrica_ideas",
+  "icon-generico_historial_medico","icon-generico_espacio_sin_humo",
+  "icon-generico_trabajo_a_altura","icon-generico_herencia_digital_postal","icon-generico_hombre",
+  "icon-generico_bandera_llegada","icon-generico_robot_humanoide","icon-generico_casa",
+  "icon-generico_memorial","icon-generico_cuentas_conmemorativas","icon-generico_mentor",
+  "icon-generico_monedas","icon-generico_volante","icon-generico_moto_parking",
+  "icon-generico_transporte_terrestre_vehiculos","icon-generico_codigo_abierto",
+  "icon-generico_modos_especiales","icon-generico_codigos_sos","icon-generico_monedas_2",
+  "icon-generico_a_tu_lado","icon-generico_estrella_navidad","icon-generico_horario_viaje",
+  "icon-generico_rescindir","icon-generico_grafico_barras","icon-generico_aptitudes",
+  "icon-generico_prohibido_fumar","icon-generico_camion_cuba","icon-generico_paleteria",
+  "icon-generico_gasolinera","icon-generico_arbol_de_navidad","icon-generico_3_hojas_2",
+  "icon-generico_transporte_de_vehiculos_fluvial","icon-generico_bloqueo_del_vehiculo",
+  "icon-generico_parking","icon-generico_diagnostico","icon-generico_3_hojas_1",
+  "icon-generico_remo","icon-generico_realidad_virtual","icon-generico_parquet",
+  "icon-generico_monedas_pagos","icon-generico_grafico_linea","icon-generico_gafas",
+  "icon-generico_planta_2","icon-generico_diagrama","icon-generico_libreta_5",
+  "icon-generico_pregunta","icon-generico_trofeo","icon-generico_imagenes","icon-generico_caballo",
+  "icon-generico_personas","icon-generico_polea","icon-generico_libreta_2",
+  "icon-generico_cepillo_de_dientes","icon-generico_libreta_3","icon-generico_papelera",
+  "icon-generico_flecha_2","icon-generico_averia_tractor","icon-generico_libreta_1",
+  "icon-generico_carrito_compra","icon-generico_planta","icon-generico_coche_estrella",
+  "icon-generico_pastilla","icon-generico_mochila","icon-generico_diploma","icon-generico_bandera",
+  "icon-generico_bosque","icon-generico_gorro_graduacion","icon-generico_grua",
+  "icon-generico_bola_del_mundo","icon-generico_coche_multa","icon-generico_trofeo_medalla",
+  "icon-generico_coche_elevador","icon-generico_averia_camion","icon-generico_ventana_rota",
+  "icon-generico_television","icon-generico_avion_lateral","icon-generico_telefono_1",
+  "icon-generico_alarma_colegio","icon-generico_jeringilla","icon-generico_no_me_gusta",
+  "icon-generico_salud_coche_2","icon-generico_barco_grua","icon-generico_tenis",
+  "icon-generico_coche_rayo","icon-generico_salud_coche_1","icon-generico_calculadora",
+  "icon-generico_esquema1","icon-generico_escenario","icon-generico_averia_coche",
+  "icon-generico_taladro","icon-generico_ciencias","icon-generico_perforadora",
+  "icon-generico_cirujano","icon-generico_fisioterapia","icon-generico_avion_con_ruedas",
+  "icon-generico_avion_despegando","icon-generico_oso","icon-generico_grua_3",
+  "icon-generico_noche_campamento","icon-generico_libro_2","icon-generico_grua_2",
+  "icon-generico_reciclado","icon-generico_club_deportivo","icon-generico_carretilla",
+  "icon-generico_coche_frontal","icon-generico_ciencia_atomo","icon-generico_libro_1",
+  "icon-generico_flecha","icon-generico_avion_salud","icon-generico_policia",
+  "icon-generico_garantia","icon-generico_gallina","icon-generico_me_gusta",
+  "icon-generico_remolque","icon-generico_dni","icon-generico_coche_grua_2",
+  "icon-generico_grua_cajas","icon-generico_ambulancia","icon-generico_robo_coche_abierto",
+  "icon-generico_cinturon_seguridad","icon-generico_caminar","icon-generico_testigos_automovil",
+  "icon-generico_coche_calor","icon-generico_dinero_tarjetas","icon-generico_sillita_coche",
+  "icon-generico_caja_petardos","icon-generico_parabrisas_roto","icon-generico_frenos",
+  "icon-generico_aceite","icon-generico_petardo","icon-generico_parabrisas",
+  "icon-generico_aceite_motor","icon-generico_ajustar_asiento","icon-generico_carroceria",
+  "icon-generico_amortiguadores","icon-generico_coche_en_casa","icon-generico_desatascador1",
+  "icon-generico_dormir","icon-generico_filtraciones_casa","icon-generico_comprobar_lista",
+  "icon-generico_luces","icon-generico_incendio_coche","icon-generico_retrovisor",
+  "icon-generico_bocina_claxon","icon-generico_desconectar_interruptor",
+  "icon-generico_llave_de_paso","icon-generico_entidad_bancaria","icon-generico_limpiaparabrisas",
+  "icon-generico_grifo","icon-generico_padre_e_hijo","icon-generico_coche_en_casa_1",
+  "icon-generico_averias_electricas","icon-generico_efectos_medicamentos","icon-generico_rueda",
+  "icon-generico_coche_en_mecanico","icon-generico_entrar_vivienda","icon-generico_luna_rotura",
+  "icon-generico_mano","icon-generico_lampara","icon-generico_policia_1",
+  "icon-generico_carpeta_aprobada","icon-generico_coche_maletas","icon-generico_etica_transparencia",
+  "icon-generico_cara_seria","icon-generico_nevera_rota","icon-generico_perito_autos",
+  "icon-generico_atleta","icon-generico_email_pendiente","icon-generico_foto_personaje",
+  "icon-generico_bici_estatica","icon-generico_crecimiento","icon-generico_centro",
+  "icon-generico_viento","icon-generico_ciclon_viento","icon-generico_investigacion_de_mercado",
+  "icon-generico_gestion_social","icon-generico_cubo_fregona_2","icon-generico_nadador",
+  "icon-generico_botella_y_vaso","icon-generico_guargar_ubicacion","icon-generico_ordenador_movil",
+  "icon-generico_tina","icon-generico_vitroceramica","icon-generico_buscar_ubicacion",
+  "icon-generico_gestiones_polizas","icon-generico_expediente","icon-generico_boli",
+  "icon-generico_tramite_siniestro","icon-generico_idiomas","icon-generico_cubo_fregona",
+  "icon-generico_termometro_humedad","icon-generico_tableta","icon-generico_recuperacion_economica",
+  "icon-generico_servidor","icon-generico_boletin_web","icon-generico_lluvia",
+  "icon-generico_proteccion_dinero","icon-generico_gestion_de_riesgos","icon-generico_defuncion",
+  "icon-generico_plumero_polvo","icon-generico_perito_diversos",
+  "icon-generico_necesidad_de_un_seguro","icon-generico_ciclista","icon-generico_personaje",
+  "icon-generico_boletin","icon-generico_gobierno_corporativo","icon-generico_esquiador",
+  "icon-generico_lupa_documento","icon-generico_diente","icon-generico_terremoto",
+  "icon-generico_telefono_casa","icon-generico_brocha_pintor","icon-generico_bannner_web",
+  "icon-generico_wifi_auto","icon-generico_jugador_padel_tenis","icon-generico_wifi_casa",
+  "icon-generico_lista","icon-generico_bombilla_engranaje","icon-generico_proteccion_inquilinos",
+  "icon-generico_perito_reparaciones","icon-generico_avatar2","icon-generico_firma",
+  "icon-generico_robo","icon-generico_perito_medico","icon-generico_plantilla_outlook",
+  "icon-generico_multientidad","icon-generico_termometro_temperatura",
+  "icon-generico_nube_pensamiento","icon-generico_proteccion_casa",
+  "icon-generico_caballete_pintor","icon-generico_cinta_de_correr",
+  "icon-generico_levantador_de_pesas","icon-generico_sociedad_2","icon-generico_wifi_mobile",
+  "icon-generico_megafono","icon-generico_modificar_coberturas","icon-generico_dar_la_mano",
+  "icon-generico_pila","icon-generico_e-cliente","icon-generico_pesas",
+  "icon-generico_sostenibilidad","icon-generico_valoracion","icon-generico_rayo_sobre_casa",
+  "icon-generico_nieve","icon-generico_sociedad_1","icon-generico_sol_nube",
+  "icon-generico_solvencia","icon-generico_camara_flash","icon-generico_dron_camara",
+  "icon-generico_coche_okey","icon-generico_rueda_engranaje","icon-generico_-15",
+  "icon-generico_coche-60","icon-generico_avatar","icon-generico_casa-15","icon-generico_bocadillo",
+  "icon-generico_sol","icon-generico_candado","icon-generico_filtro","icon-generico_60",
+  "icon-generico_bombilla","icon-generico_musico","icon-generico_ubicacion","icon-generico_okey",
+  "icon-generico_paraguas1","icon-generico_100","icon-generico_peligro_carretera",
+  "icon-generico_corbata_2","icon-generico_reparacion_casa","icon-generico_puesta_de_sol",
+  "icon-generico_cometa","icon-generico_muletas","icon-generico_reparacion_informatica",
+  "icon-generico_regalo","icon-generico_puzzle","icon-generico_destornillador",
+  "icon-generico_coche-60b","icon-generico_bolsa_dolares","icon-generico_reno",
+  "icon-generico_valla","icon-generico_sobre_3","icon-generico_sobre_1","icon-generico_helado",
+  "icon-generico_pergamino","icon-generico_hospital","icon-generico_anillo",
+  "icon-generico_candado1","icon-generico_cono","icon-generico_leche","icon-generico_avion_frontal",
+  "icon-generico_nube","icon-generico_cubiertos","icon-generico_llave_inglesa_1",
+  "icon-generico_llave_inglesa_3","icon-generico_perro","icon-generico_llave_inglesa_2",
+  "icon-generico_timon","icon-generico_chat","icon-generico_gato","icon-generico_chimenea",
+  "icon-generico_llave_coche","icon-generico_piano","icon-generico_aceituna_martini",
+  "icon-generico_parlamento","icon-generico_martillo","icon-generico_gamba",
+  "icon-generico_red_hot_chilli_pepper","icon-generico_h2o","icon-generico_barco",
+  "icon-generico_dulce","icon-generico_barberia","icon-generico_cadena_bicicleta",
+  "icon-generico_bambas","icon-generico_libreria","icon-generico_mapa","icon-generico_llave",
+  "icon-generico_libros","icon-generico_vestido","icon-generico_remolque_2","icon-generico_barrika",
+  "icon-generico_timbre","icon-generico_cronometro","icon-generico_osobuco","icon-generico_cocina",
+  "icon-generico_margarita","icon-generico_microfono","icon-generico_remolque_1",
+  "icon-generico_ancora","icon-generico_collar","icon-generico_frutas_y_verduras",
+  "icon-generico_cafe","icon-generico_avion_papel","icon-generico_direccion",
+  "icon-generico_casco_moto","icon-generico_gorro_cocinero","icon-generico_cazuela",
+  "icon-generico_dolar","icon-generico_caja","icon-generico_barco_frontal","icon-generico_enchufe",
+  "icon-generico_sarten","icon-generico_nudo_marinero_4","icon-generico_peine_2",
+  "icon-generico_maleta_negocio","icon-generico_hogar","icon-generico_rayo",
+  "icon-generico_gota_de_agua","icon-generico_uva","icon-generico_capitolio",
+  "icon-generico_huella","icon-generico_reloj_arena","icon-generico_peine_1",
+  "icon-generico_nudo_marinero_3","icon-generico_perro_cazador","icon-generico_perro_1",
+  "icon-generico_cosechadora","icon-generico_jabon","icon-generico_nudo_marinero_2",
+  "icon-generico_corbata","icon-generico_tijeras","icon-generico_campo_de_trigo",
+  "icon-generico_pajarita","icon-generico_lampara1","icon-generico_secador",
+  "icon-generico_campo_maiz","icon-generico_cuadro","icon-generico_fuego",
+  "icon-generico_nudo_marinero_1","icon-generico_moto","icon-generico_calendario",
+  "icon-generico_anzuelo","icon-generico_web_cam","icon-generico_alerta_novedad_importancia",
+  "icon-generico_insignia","icon-generico_furgo","icon-generico_coordinador",
+  "icon-generico_documento_okey","icon-generico_jarra","icon-generico_voluntario_flexible",
+  "icon-generico_str","icon-generico_hilo","icon-generico_chat_medico",
+  "icon-generico_bici_y_patinete","icon-generico_camara_videollamada","icon-generico_produccion",
+  "icon-generico_eliminar_doc","icon-generico_coche_patinete","icon-generico_coche_suv_hibrido",
+  "icon-generico_encargo_virtual","icon-generico_pajaro","icon-generico_atestado",
+  "icon-generico_regar","icon-generico_ventana","icon-generico_covid-19","icon-generico_planta1",
+  "icon-generico_transporte_publico","icon-generico_inodoro_abierto","icon-generico_venta_hibrida",
+  "icon-generico_aguas_grises","icon-generico_bombilla1","icon-generico_robo_expoliacion",
+  "icon-generico_circulo_moebius","icon-generico_jefe","icon-generico_ocio_viajes",
+  "icon-generico_informe_juridico","icon-generico_co2","icon-generico_gestor",
+  "icon-generico_detectives_1","icon-generico_reparacion_camion_vehiculoindustrial",
+  "icon-generico_llamada","icon-generico_placa_fotovoltaica","icon-generico_customer_journey",
+  "icon-generico_sustitucion_de_cristales","icon-generico_formacion","icon-generico_estetica_y_salud",
+  "icon-generico_formacion_cursos_obligatorios","icon-generico_atomos",
+  "icon-generico_busqueda_localizacion_en_web","icon-generico_bombilla_estrella",
+  "icon-generico_reclamacion","icon-generico_plantar_folleto","icon-generico_taxi-uber",
+  "icon-generico_defuncion_todas_las_rel","icon-generico_contractual","icon-generico_lapiz",
+  "icon-generico_conejo","icon-generico_brote","icon-generico_retrovisor1",
+  "icon-generico_danos_ciberataque_coche_electrico","icon-generico_peso","icon-generico_aplauso",
+  "icon-generico_recobros","icon-generico_insectos","icon-generico_maquineta",
+  "icon-generico_auriculares","icon-generico_papelera_abierta","icon-generico_musica",
+  "icon-generico_consultor_financiero","icon-generico_cookie",
+  "icon-generico_reparacion_de_motocicleta_o_ciclomotor","icon-generico_whatsapp",
+  "icon-generico_coche_hibrido","icon-generico_caja_fuerte","icon-generico_energia_eolica",
+  "icon-generico_encargo","icon-generico_telefono-sobre","icon-generico_busqueda_de_talento",
+  "icon-generico_ladron","icon-generico_coche_enchufe","icon-generico_personaje_boli",
+  "icon-generico_estacion_de_carga","icon-generico_volante_calefaccion","icon-generico_bomberos",
+  "icon-generico_extracontractual","icon-generico_titularidad","icon-generico_inodoro_cerrado",
+  "icon-generico_inflador_ruedas","icon-generico_tarjeta_boli","icon-generico_percha",
+  "icon-generico_puerta_abatible","icon-generico_mundo_sostenible","icon-generico_silla_de_ruedas",
+  "icon-generico_asesoria_juridica","icon-generico_regadera","icon-generico_asiento",
+  "icon-generico_tramite"
+];
+
+function getGroup(cls) {
+  const n = cls.replace('icon-','');
+  const i = n.indexOf('_');
+  if (i > 0) return n.slice(0, i);
+  const h = n.indexOf('-');
+  return h > 0 ? n.slice(0, h) : 'otros';
+}
+
+function makeSvgInline(name) {
+  const d = PATHS[name];
+  if (!d) return '';
+  const color = COLORS[name] || '#dc0028';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024"><path transform="matrix(1 0 0 -1 0 960)" fill="${color}" d="${d}"/></svg>`;
+}
+
+function makeSvgFull(name) {
+  const d = PATHS[name];
+  if (!d) return '';
+  const color = COLORS[name] || '#dc0028';
+  return `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="512" height="512"><path transform="matrix(1 0 0 -1 0 960)" fill="${color}" d="${d}"/></svg>`;
+}
+
+const grid   = document.getElementById('grid');
+const search = document.getElementById('q');
+const grpSel = document.getElementById('grp');
+const cntEl  = document.getElementById('cnt');
+const subEl  = document.getElementById('sub');
+const toast  = document.getElementById('toast');
+let timer;
+
+function showToast(m) {
+  clearTimeout(timer);
+  toast.textContent = m;
+  toast.classList.add('show');
+  timer = setTimeout(() => toast.classList.remove('show'), 2500);
+}
+
+function copy(text) {
+  if (navigator.clipboard) {
+    navigator.clipboard.writeText(text).catch(() => fallback(text));
+  } else {
+    fallback(text);
+  }
+}
+function fallback(text) {
+  const ta = document.createElement('textarea');
+  ta.value = text;
+  ta.style.cssText = 'position:fixed;top:-999px;opacity:0';
+  document.body.appendChild(ta);
+  ta.select();
+  document.execCommand('copy');
+  document.body.removeChild(ta);
+}
+
+function buildGroups() {
+  const seen = new Set(ICONS.map(getGroup));
+  [...seen].sort().forEach(g => {
+    const o = document.createElement('option');
+    o.value = g;
+    o.textContent = g[0].toUpperCase() + g.slice(1);
+    grpSel.appendChild(o);
+  });
+}
+
+function render(list) {
+  grid.innerHTML = '';
+  if (!list.length) {
+    grid.innerHTML = '<div class="empty"><strong>Sin resultados</strong>Prueba con otro término.</div>';
+    cntEl.textContent = '0 iconos';
+    return;
+  }
+  cntEl.textContent = list.length + ' icono' + (list.length !== 1 ? 's' : '');
+  const frag = document.createDocumentFragment();
+
+  list.forEach(cls => {
+    const name = cls.replace('icon-', '');
+    const preview = makeSvgInline(name);
+    const htmlCode = `<i class="${cls}"></i>`;
+
+    const card = document.createElement('div');
+    card.className = 'card';
+    card.innerHTML =
+      `<div class="preview">${preview || `<i class="${cls}" style="font-size:28px"></i>`}</div>` +
+      `<div class="name">${cls}</div>` +
+      `<div class="btns">` +
+        `<button class="btn" data-action="html" data-val="${htmlCode.replace(/"/g,'&quot;')}" title="Copiar etiqueta HTML para web">HTML</button>` +
+        `<button class="btn" data-action="cls" data-val="${cls}" title="Copiar nombre de clase CSS">Clase</button>` +
+        `<button class="btn btn-svg" data-action="svg" data-name="${name}" title="Copiar SVG y pegar en Figma con Ctrl+V">SVG</button>` +
+      `</div>`;
+
+    card.querySelectorAll('.btn').forEach(btn => {
+      btn.addEventListener('click', e => {
+        e.stopPropagation();
+        const action = btn.dataset.action;
+        if (action === 'svg') {
+          const svg = makeSvgFull(btn.dataset.name);
+          copy(svg);
+          showToast('SVG copiado — abre Figma y pega con Ctrl+V');
+        } else if (action === 'html') {
+          const val = btn.dataset.val.replace(/&quot;/g, '"');
+          copy(val);
+          showToast('Copiado: ' + val);
+        } else {
+          copy(btn.dataset.val);
+          showToast('Clase copiada: ' + btn.dataset.val);
+        }
+      });
+    });
+    frag.appendChild(card);
+  });
+  grid.appendChild(frag);
+}
+
+function filter() {
+  const q = search.value.toLowerCase().trim();
+  const g = grpSel.value;
+  render(ICONS.filter(c => (!q || c.toLowerCase().includes(q)) && (!g || getGroup(c) === g)));
+}
+
+buildGroups();
+subEl.textContent = ICONS.length + ' iconos · Clic en SVG para copiar y pegar directo en Figma';
+render(ICONS);
+search.addEventListener('input', filter);
+grpSel.addEventListener('change', filter);
+</script>
+</body>
+</html>

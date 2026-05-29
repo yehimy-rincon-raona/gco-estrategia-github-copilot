@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrategia de Adopción GitHub Copilot | GCO</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        /* Tipografía corporativa */
+        h1, h2, h3, h4, .serif-font {
+            font-family: 'Georgia', serif;
+        }
+        body {
+            font-family: 'Inter', Arial, sans-serif;
+            color: #1A1A1A;
+            background-color: #FFFFFF;
+        }
+
+        /* Colores de marca Occident */
+        :root {
+            --oc-red: #DC0028;
+            --oc-gray: #828282;
+            --oc-orange: #FA9600;
+            --oc-black: #1A1A1A;
+            --oc-light-bg: #F5F5F5;
+        }
+
+        .text-oc-red { color: var(--oc-red); }
+        .bg-oc-red { background-color: var(--oc-red); }
+        .border-oc-red { border-color: var(--oc-red); }
+        
+        /* Estilos específicos de la imagen de referencia */
+        .nav-link {
+            font-weight: 600;
+            font-size: 0.9rem;
+            color: var(--oc-black);
+            transition: color 0.3s;
+        }
+        .nav-link:hover {
+            color: var(--oc-red);
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(45deg, #DC0028 70%, #FA9600 100%);
+        }
+
+        .card-tip {
+            border-left: 4px solid var(--oc-red);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            border-radius: 6px;
+        }
+
+        .pill-phase {
+            background-color: var(--oc-red);
+            color: white;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .tech-badge {
+            background-color: #F5F5F5;
+            color: #444444;
+            border: 1px solid #DDDDDD;
+            padding: 2px 10px;
+            border-radius: 20px;
+            font-size: 0.7rem;
+            font-weight: bold;
+        }
+
+        /* Utilidades */
+        .section-padding { padding: 80px 0; }
+        .fade-in { animation: fadeIn 0.8s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Nav -->
+    <nav class="sticky top-0 bg-white z-50 border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 h-20 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <!-- Representación del Logo Occident -->
+                <div class="w-8 h-8 bg-oc-red flex items-center justify-center text-white font-bold text-xl">O</div>
+                <div class="leading-none">
+                    <span class="block text-xl font-bold uppercase tracking-tighter">Occident</span>
+                    <span class="text-[9px] text-oc-gray font-bold uppercase tracking-widest">Grupo Catalana Occidente</span>
+                </div>
+            </div>
+            <div class="hidden md:flex gap-8">
+                <a href="#objetivo" class="nav-link">Objetivo</a>
+                <a href="#estrategia" class="nav-link">Estrategia</a>
+                <a href="#canales" class="nav-link">Comunidad</a>
+                <a href="#seguimiento" class="nav-link">Métricas</a>
+            </div>
+            <button class="bg-oc-red text-white px-6 py-2 rounded font-bold text-sm hover:opacity-90 transition-all">Acceso Directivo</button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-white border-b border-gray-100">
+        <div class="max-w-6xl mx-auto px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
+            <div class="fade-in">
+                <div class="pill-phase inline-block mb-6">Fase 1 · Concienciación</div>
+                <h1 class="text-5xl font-bold leading-tight mb-6">Convertir la inversión en <span class="text-oc-red">hábito diario.</span></h1>
+                <p class="text-oc-gray text-lg mb-8 leading-relaxed">
+                    La formación ya ocurrió. Ahora el reto estratégico de GCO es integrar GitHub Copilot en el instinto operativo diario de los desarrolladores para proteger la inversión realizada.
+                </p>
+                <div class="flex gap-4">
+                    <a href="#estrategia" class="bg-oc-red text-white px-8 py-3 rounded font-bold hover:shadow-lg transition-all">Ver Plan de Acción</a>
+                    <a href="#canales" class="border border-oc-red text-oc-red px-8 py-3 rounded font-bold hover:bg-red-50 transition-all text-center">Explorar Comunidad</a>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="hero-gradient p-1 rounded-2xl shadow-2xl">
+                    <div class="bg-white p-8 rounded-xl">
+                        <div class="flex gap-2 mb-4">
+                            <span class="tech-badge">COBOL</span>
+                            <span class="tech-badge">.NET</span>
+                            <span class="tech-badge">DB2</span>
+                            <span class="tech-badge">PL/SQL</span>
+                        </div>
+                        <h3 class="text-xl font-bold mb-4">Ingeniería Aumentada en GCO</h3>
+                        <p class="text-sm text-oc-gray italic">"No buscamos cubrir todo Copilot. Buscamos activar la comunidad y generar hábito con casos simples que ahorren minutos reales hoy."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- 1. Objetivo y Contexto -->
+    <section id="objetivo" class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="mb-16">
+                <h2 class="text-3xl font-bold mb-6 border-b-2 border-oc-red inline-block pb-2 text-oc-black">Objetivo Estratégico</h2>
+                <p class="text-oc-gray max-w-3xl leading-relaxed">
+                    Reforzar la adopción real de GitHub Copilot en GCO, pasando de una etapa de formación técnica a un <strong>modelo sostenido de uso y generación de valor</strong>. Buscamos que los equipos incorporen la herramienta para entender código heredado, revisar errores, analizar logs y documentar bajo los estándares del Grupo.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-oc-light-bg p-8 rounded-xl">
+                    <h4 class="font-bold text-oc-red mb-4 uppercase text-xs tracking-widest">Punto de Partida</h4>
+                    <p class="text-sm leading-relaxed text-oc-black">
+                        Contamos con licencias activas y formación completada en conceptos básicos, prompting estructurado, instrucciones personalizadas (MCP) y multi-agentes. La base técnica es sólida.
+                    </p>
+                </div>
+                <div class="bg-oc-light-bg p-8 rounded-xl border-l-4 border-oc-orange">
+                    <h4 class="font-bold text-oc-orange mb-4 uppercase text-xs tracking-widest">Desafío Detectado</h4>
+                    <p class="text-sm leading-relaxed text-oc-black">
+                        Existe una resistencia natural. La audiencia puede percibir la IA como lejana a su stack legacy o como una amenaza al control. Esta estrategia rompe esa barrera con acompañamiento.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 2. Propuesta Estratégica -->
+    <section id="estrategia" class="section-padding bg-oc-light-bg">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-4 text-oc-black">Pilares de Adopción Continua</h2>
+            <p class="text-oc-gray mb-16">Un sistema de cuatro ejes para asegurar el éxito post-formación.</p>
+            
+            <div class="grid md:grid-cols-4 gap-6">
+                <!-- Eje 1 -->
+                <div class="bg-white p-6 card-tip text-left">
+                    <h4 class="font-bold mb-3 text-oc-red">Valor Ágil</h4>
+                    <p class="text-xs text-oc-gray leading-relaxed mb-4">Dinamización con tips, infografías y vídeos cortos de casos reales de GCO.</p>
+                    <ul class="text-[10px] space-y-1 font-semibold uppercase">
+                        <li>• Tips de 90s</li>
+                        <li>• Infografías de valor</li>
+                    </ul>
+                </div>
+                <!-- Eje 2 -->
+                <div class="bg-white p-6 card-tip text-left">
+                    <h4 class="font-bold mb-3 text-oc-red">Soporte Continuo</h4>
+                    <p class="text-xs text-oc-gray leading-relaxed mb-4">Sustituir la formación teórica por ayuda práctica y resolutiva.</p>
+                    <ul class="text-[10px] space-y-1 font-semibold uppercase">
+                        <li>• Sesiones AMA</li>
+                        <li>• Reservas 1:1</li>
+                    </ul>
+                </div>
+                <!-- Eje 3 -->
+                <div class="bg-white p-6 card-tip text-left">
+                    <h4 class="font-bold mb-3 text-oc-red">Credibilidad</h4>
+                    <p class="text-xs text-oc-gray leading-relaxed mb-4">Visibilizar éxitos detectados por POs y managers de área.</p>
+                    <ul class="text-[10px] space-y-1 font-semibold uppercase">
+                        <li>• Embajadores GCO</li>
+                        <li>• Casos reales</li>
+                    </ul>
+                </div>
+                <!-- Eje 4 -->
+                <div class="bg-white p-6 card-tip text-left">
+                    <h4 class="font-bold mb-3 text-oc-red">Evolución</h4>
+                    <p class="text-xs text-oc-gray leading-relaxed mb-4">Ruta de madurez técnica sin saturar a los equipos inicialmente.</p>
+                    <ul class="text-[10px] space-y-1 font-semibold uppercase">
+                        <li>• Spec-Driven Dev</li>
+                        <li>• Customización</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. Comunidad Teams -->
+    <section id="canales" class="section-padding bg-white">
+        <div class="max-w-6xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-12 text-center text-oc-black">Infraestructura en MS Teams</h2>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse bg-white shadow-sm rounded-lg overflow-hidden">
+                    <thead class="bg-oc-red text-white">
+                        <tr>
+                            <th class="p-4 uppercase text-[10px] font-bold tracking-widest">Canal</th>
+                            <th class="p-4 uppercase text-[10px] font-bold tracking-widest">Objetivo Estratégico</th>
+                            <th class="p-4 uppercase text-[10px] font-bold tracking-widest">Ideas de Contenido</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sm divide-y divide-gray-100">
+                        <tr>
+                            <td class="p-4 font-bold">01 General</td>
+                            <td class="p-4 text-oc-gray">Punto de encuentro y propósito de la comunidad.</td>
+                            <td class="p-4 italic">Mensaje de bienvenida y normas.</td>
+                        </tr>
+                        <tr class="bg-red-50/30">
+                            <td class="p-4 font-bold">02 Anuncios y Tips</td>
+                            <td class="p-4 text-oc-gray">El pulso diario. Piezas rápidas de aprendizaje.</td>
+                            <td class="p-4 italic">Infografía: "Copilot ya está en tu IDE".</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">03 Foro de Dudas</td>
+                            <td class="p-4 text-oc-gray">Inteligencia colectiva y desbloqueo.</td>
+                            <td class="p-4 italic">Hilos de SQLCODEs y errores DB2.</td>
+                        </tr>
+                        <tr class="bg-red-50/30">
+                            <td class="p-4 font-bold">04 Casos de Éxito</td>
+                            <td class="p-4 text-oc-gray">Demostrar ahorro real en el contexto de GCO.</td>
+                            <td class="p-4 italic">"Cómo ahorré 1h documentando en COBOL".</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4 font-bold">05 Soporte 1:1</td>
+                            <td class="p-4 text-oc-gray">Desbloqueo técnico personalizado.</td>
+                            <td class="p-4 italic">Agenda vía Bookings para dudas críticas.</td>
+                        </tr>
+                        <tr class="bg-red-50/30">
+                            <td class="p-4 font-bold">06 Novedades</td>
+                            <td class="p-4 text-oc-gray">Mantener a los seniors en la vanguardia.</td>
+                            <td class="p-4 italic">Actualizaciones de la plataforma Copilot.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Zoom Semana 1 -->
+            <div class="mt-20 hero-gradient p-12 rounded-[3rem] text-white">
+                <div class="flex flex-col md:flex-row gap-12 items-center">
+                    <div class="md:w-1/2">
+                        <div class="pill-phase text-oc-red mb-4 inline-block">Semana de Lanzamiento</div>
+                        <h3 class="text-3xl font-bold mb-4">El Despertar de la Ola</h3>
+                        <p class="text-blue-50 italic">"Subirse hoy no es una opción técnica, es la ventaja competitiva clave de GCO para liderar el 2026."</p>
+                    </div>
+                    <div class="md:w-1/2 space-y-6">
+                        <div class="bg-white/10 p-4 rounded-xl backdrop-blur-md">
+                            <h5 class="font-bold text-xs uppercase mb-2">Canal Anuncios</h5>
+                            <p class="text-sm">Infografía: <strong>¿Sabías que ya tienes licencia activa?</strong> Activación de conciencia en Visual Studio.</p>
+                        </div>
+                        <div class="bg-white/10 p-4 rounded-xl backdrop-blur-md">
+                            <h5 class="font-bold text-xs uppercase mb-2">Canal Novedades</h5>
+                            <p class="text-sm">Noticias de impacto de la semana para captar interés de perfiles senior y escépticos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. Seguimiento y Métricas -->
+    <section id="seguimiento" class="section-padding bg-oc-light-bg">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4 text-oc-black">Medición del Éxito</h2>
+                <p class="text-oc-gray">KPIs para decidir los siguientes pasos de la estrategia.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <h4 class="text-oc-red text-4xl font-bold mb-2">Mín. 5</h4>
+                    <p class="text-xs font-bold uppercase tracking-widest text-oc-black">Reacciones / Publicación</p>
+                    <p class="text-[10px] text-oc-gray mt-4 italic">Saber qué temas generan interés real.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <h4 class="text-oc-red text-4xl font-bold mb-2">+15</h4>
+                    <p class="text-xs font-bold uppercase tracking-widest text-oc-black">Asistentes / AMA</p>
+                    <p class="text-[10px] text-oc-gray mt-4 italic">Medir la necesidad de soporte grupal.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-sm text-center">
+                    <h4 class="text-oc-red text-4xl font-bold mb-2">3-5</h4>
+                    <p class="text-xs font-bold uppercase tracking-widest text-oc-black">Reservas 1:1 / Sem.</p>
+                    <p class="text-[10px] text-oc-gray mt-4 italic">Identificar bloqueos técnicos concretos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-oc-black text-oc-gray py-20 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="text-3xl font-bold mb-6">La formación fue el punto de partida.<br><span class="text-oc-red">La adopción empieza ahora.</span></h2>
+            <p class="text-oc-gray max-w-xl mx-auto mb-10">
+                Para que GitHub Copilot genere valor en GCO, necesitamos convertirlo en una práctica visible, útil y acompañada.
+            </p>
+            <div class="flex items-center justify-center gap-4">
+                <div class="w-10 h-10 bg-oc-red flex items-center justify-center font-bold text-2xl">O</div>
+                <div class="text-left leading-none">
+                    <span class="block text-lg font-bold uppercase tracking-tighter">Occident</span>
+                    <span class="text-[8px] text-oc-gray font-bold uppercase tracking-widest">Grupo Catalana Occidente</span>
+                </div>
+            </div>
+            <p class="text-[10px] text-oc-gray mt-12 uppercase tracking-widest">Propuesta Corporativa · Mayo 2026 · Uso Interno Confidencial</p>
+        </div>
+    </footer>
+
+</body>
+</html>

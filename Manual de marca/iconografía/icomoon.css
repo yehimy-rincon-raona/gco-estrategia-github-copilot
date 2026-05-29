@@ -1,0 +1,3432 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../_assets/fonts/icomoon.eot?3t6kk');
+  src:  url('../_assets/fonts/icomoon.eot?3t6kk#iefix') format('embedded-opentype'),
+    url('../_assets/fonts/icomoon.woff2?3t6kk') format('woff2'),
+    url('../_assets/fonts/icomoon.ttf?3t6kk') format('truetype'),
+    url('../_assets/fonts/icomoon.woff?3t6kk') format('woff'),
+    url('../_assets/fonts/icomoon.svg?3t6kk#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-seguro_caravanas_moviles:before {
+  content: "\e929";
+  color: #417fec;
+}
+.icon-fjs_accion_social:before {
+  content: "\e900";
+  color: #dc0028;
+}
+.icon-fjs_deporte:before {
+  content: "\e901";
+  color: #dc0028;
+}
+.icon-fjs_investigacion:before {
+  content: "\e902";
+  color: #dc0028;
+}
+.icon-fjs_promocion_de_las_artes:before {
+  content: "\e903";
+  color: #dc0028;
+}
+.icon-fjs_empresa_docencia:before {
+  content: "\e904";
+  color: #dc0028;
+}
+.icon-autopresto_reparacion_inmediata:before {
+  content: "\e905";
+  color: #dc0028;
+}
+.icon-autopresto_movilidad_garantizada:before {
+  content: "\e906";
+  color: #dc0028;
+}
+.icon-autopresto_financiacion:before {
+  content: "\e907";
+  color: #dc0028;
+}
+.icon-autopresto_calidad:before {
+  content: "\e908";
+  color: #dc0028;
+}
+.icon-autopresto_bonificacion:before {
+  content: "\e909";
+  color: #dc0028;
+}
+.icon-autopresto_60:before {
+  content: "\e90a";
+  color: #dc0028;
+}
+.icon-autopresto_taller_sostenible:before {
+  content: "\e90b";
+  color: #dc0028;
+}
+.icon-autopresto_autopresto:before {
+  content: "\e90c";
+  color: #dc0028;
+}
+.icon-autopresto_grua:before {
+  content: "\e90d";
+  color: #dc0028;
+}
+.icon-autopresto_garantia:before {
+  content: "\e90e";
+  color: #dc0028;
+}
+.icon-autopresto_bola_mundo_lineas:before {
+  content: "\e90f";
+  color: #dc0028;
+}
+.icon-autopresto_limpieza_del_vehiculo:before {
+  content: "\e910";
+  color: #dc0028;
+}
+.icon-autopresto_engranaje2:before {
+  content: "\e911";
+  color: #dc0028;
+}
+.icon-tiktok_white_1:before {
+  content: "\e91d";
+  color: #505050;
+}
+.icon-spotify_white_1:before {
+  content: "\e91e";
+  color: #505050;
+}
+.icon-tiktok:before {
+  content: "\e91f";
+  color: #505050;
+}
+.icon-spotify:before {
+  content: "\e921";
+  color: #505050;
+}
+.icon-twitter:before {
+  content: "\e917";
+}
+.icon-twitter_circle:before {
+  content: "\e91c";
+}
+.icon-generico_usuario_ecliente:before {
+  content: "\e916";
+  color: #d90028;
+}
+.icon-download:before {
+  content: "\ebd3";
+  color: #dc0028;
+}
+.icon-lupa:before {
+  content: "\ebd4";
+}
+.icon-search:before {
+  content: "\ec95";
+}
+.icon-chevron-up:before {
+  content: "\ebd5";
+  color: #dc0028;
+}
+.icon-smartphone:before {
+  content: "\ebd6";
+  color: #d90028;
+}
+.icon-clock:before {
+  content: "\ebd7";
+  color: #dc0028;
+}
+.icon-phone:before {
+  content: "\ebd8";
+  color: #dc0028;
+}
+.icon-mail:before {
+  content: "\ebd9";
+  color: #dc0028;
+}
+.icon-trash:before {
+  content: "\ebda";
+  color: #dc0028;
+}
+.icon-headphones:before {
+  content: "\ebdb";
+  color: #dc0028;
+}
+.icon-user:before {
+  content: "\ebdc";
+  color: #da1f2a;
+}
+.icon-chevron-small-down:before {
+  content: "\ebdd";
+  color: #dc0028;
+}
+.icon-menu:before {
+  content: "\ebde";
+  color: #dc0028;
+}
+.icon-language:before {
+  content: "\ebdf";
+}
+.icon-map-pin:before {
+  content: "\ebe0";
+  color: #dc0028;
+}
+.icon-location:before {
+  content: "\ebe1";
+  color: #dc0028;
+}
+.icon-poi_agujero:before {
+  content: "\ebe2";
+  color: #dc0028;
+}
+.icon-check:before {
+  content: "\ebe3";
+  color: #dc0028;
+}
+.icon-play_circle:before {
+  content: "\ebe4";
+  color: #dc0028;
+}
+.icon-message-square:before {
+  content: "\ebe5";
+  color: #dc0028;
+}
+.icon-archivo:before {
+  content: "\ebe6";
+  color: #dc0028;
+}
+.icon-contacto_y_asistencia:before {
+  content: "\ebe7";
+  color: #dc0028;
+}
+.icon-facebook:before {
+  content: "\ebe8";
+}
+.icon-youtube:before {
+  content: "\ebe9";
+}
+.icon-instagram:before {
+  content: "\ebea";
+}
+.icon-twitter_old:before {
+  content: "\ebeb";
+}
+.icon-linkedin:before {
+  content: "\ebec";
+}
+.icon-chevron-down:before {
+  content: "\ebed";
+  color: #dc0028;
+}
+.icon-calendar:before {
+  content: "\ebee";
+  color: #dc0028;
+}
+.icon-whatsapp:before {
+  content: "\ebef";
+}
+.icon-upload:before {
+  content: "\ebf0";
+  color: #dc0028;
+}
+.icon-servicio_desatasco_preventivo:before {
+  content: "\e928";
+  color: #dc0028;
+}
+.icon-servicio_declaracion_de_siniestro_automovil:before {
+  content: "\e925";
+  color: #dc0028;
+}
+.icon-servicio_declaracion_de_siniestro_hogar:before {
+  content: "\e926";
+  color: #dc0028;
+}
+.icon-servicio_declaracion_de_siniestro:before {
+  content: "\e927";
+  color: #dc0028;
+}
+.icon-servicio_certificacion_energetica:before {
+  content: "\e923";
+  color: #dc0028;
+}
+.icon-servicio_tu_salud_digital:before {
+  content: "\e924";
+  color: #dc0028;
+}
+.icon-servicio_asesoramiento_financiero_no_independiente:before {
+  content: "\e914";
+  color: #dc0028;
+}
+.icon-servicio_asistencia_en_viaje:before {
+  content: "\e912";
+  color: #dc0028;
+}
+.icon-servicio_aviso_de_multas_de_trafico:before {
+  content: "\ebf1";
+  color: #dc0028;
+}
+.icon-servicio_segunda_opinion_premium:before {
+  content: "\ebf2";
+}
+.icon-servicio_autopresto:before {
+  content: "\ebf3";
+}
+.icon-servicio_asistencia_negocio:before {
+  content: "\ebf4";
+  color: #dc0028;
+}
+.icon-servicio_emergencia_e-car:before {
+  content: "\ebf5";
+}
+.icon-servicio_bricohogar:before {
+  content: "\ebf6";
+}
+.icon-servicio_buscador_de_esquelas_mascotas:before {
+  content: "\ebf8";
+  color: #dc0028;
+}
+.icon-servicio_asistencia_comunidades:before {
+  content: "\ebf9";
+  color: #dc0028;
+}
+.icon-servicio_mi_legado_digital:before {
+  content: "\ebfa";
+  color: #dc0028;
+}
+.icon-servicio_administracion_de_fincas:before {
+  content: "\ebfb";
+  color: #dc0028;
+}
+.icon-servicio_asesoramiento_ciberriesgo:before {
+  content: "\ebfc";
+}
+.icon-servicio_atencion_domiciliaria:before {
+  content: "\ebfd";
+  color: #dc0028;
+}
+.icon-servicio_atencion_digital_post-incidente:before {
+  content: "\ebfe";
+  color: #dc0028;
+}
+.icon-servicio_gestoria_vehiculos:before {
+  content: "\ebff";
+  color: #dc0028;
+}
+.icon-servicio_acceso_iberinform:before {
+  content: "\ec00";
+  color: #dc0028;
+}
+.icon-servicio_asistencia_hogar:before {
+  content: "\ec01";
+}
+.icon-servicio_prevencion_digital:before {
+  content: "\ec02";
+  color: #dc0028;
+}
+.icon-servicio_segunda_opinion_medica:before {
+  content: "\ec03";
+}
+.icon-servicio_control_de_plagas:before {
+  content: "\ec04";
+  color: #dc0028;
+}
+.icon-servicio_orientacion_medica_telefonica:before {
+  content: "\ec05";
+}
+.icon-servicio_asesoramiento_juridico_telefonico:before {
+  content: "\ec06";
+}
+.icon-servicio_gestoria_fallecimiento:before {
+  content: "\ec07";
+  color: #dc0028;
+}
+.icon-servicio_tu_coche_por_otro:before {
+  content: "\ec08";
+}
+.icon-servicio_defensa_multas_de_trafico:before {
+  content: "\ec09";
+  color: #dc0028;
+}
+.icon-servicio_asistencia_mascotas:before {
+  content: "\ec0a";
+}
+.icon-servicio_asistencia_informatica_online:before {
+  content: "\ec0b";
+}
+.icon-servicio_rehabilitacion_cardiaca:before {
+  content: "\ec0c";
+}
+.icon-servicio_orientacion_veterinaria_telefonica:before {
+  content: "\ec0d";
+  color: #dc0028;
+}
+.icon-servicio_reparacion_urgente_de_calderas:before {
+  content: "\ec0e";
+  color: #dc0028;
+}
+.icon-servicio_buscador_de_esquelas:before {
+  content: "\ec0f";
+  color: #dc0028;
+}
+.icon-servicio_acompanamiento_a_la_dependencia:before {
+  content: "\ec10";
+  color: #dc0028;
+}
+.icon-servicio_cardiosport:before {
+  content: "\ec11";
+  color: #dc0028;
+}
+.icon-servicio_alertas_meteorologicas:before {
+  content: "\ec12";
+}
+.icon-servicio_asesoramiento_de_servicios_a_la_dependencia:before {
+  content: "\ec13";
+  color: #dc0028;
+}
+.icon-servicio_bienestar_y_salud:before {
+  content: "\ec14";
+}
+.icon-servicio_asesoramiento_tecnico_de_edificios:before {
+  content: "\ec15";
+  color: #dc0028;
+}
+.icon-servicio_segunda_opinion_medica_diferente_al_de_cortesia:before {
+  content: "\ec16";
+}
+.icon-servicio_mi_testamento_borrado_digital:before {
+  content: "\ec17";
+}
+.icon-servicio_rehabilitacion_cardiaca_diferente_al_de_cortesia:before {
+  content: "\ec18";
+  color: #dc0028;
+}
+.icon-seguro_motos_electricas:before {
+  content: "\e922";
+  color: #417fec;
+}
+.icon-seguro_hogar_exclusivo:before {
+  content: "\e91b";
+  color: #e246a9;
+}
+.icon-seguro_cancelacion_viajes1:before {
+  content: "\e913";
+  color: #f9b224;
+}
+.icon-proteccion_juridica_autonomos:before {
+  content: "\ec19";
+  color: #aa7f4d;
+}
+.icon-proteccion_juridica_conductor:before {
+  content: "\ec1a";
+}
+.icon-seguro_responsabilidad_civil_autonomos:before {
+  content: "\ec1b";
+}
+.icon-seguro_equipos_profesionales:before {
+  content: "\ec1c";
+  color: #e246a9;
+}
+.icon-seguro_hogar_profesional:before {
+  content: "\ec1d";
+}
+.icon-seguro_furgoneta:before {
+  content: "\ec1e";
+  color: #417fec;
+}
+.icon-seguro_vehiculos_agrarios:before {
+  content: "\ec1f";
+}
+.icon-seguro_vida_autonomos:before {
+  content: "\ec20";
+}
+.icon-seguro_accidentes_autonomos:before {
+  content: "\ec21";
+}
+.icon-seguro_de_comercios:before {
+  content: "\ec22";
+  color: #f17258;
+}
+.icon-seguro_de_oficinas:before {
+  content: "\ec23";
+  color: #f17258;
+}
+.icon-seguro_agrario:before {
+  content: "\ec24";
+  color: #f17258;
+}
+.icon-salud_asistencia_sanitaria_autonomos:before {
+  content: "\ec25";
+  color: #dc4a4a;
+}
+.icon-incapacidad_temporal:before {
+  content: "\ec26";
+  color: #dc4a4a;
+}
+.icon-salud_subsidio_hospitalizacion:before {
+  content: "\ec27";
+}
+.icon-seguro_responsabilidad_civil_caza:before {
+  content: "\ec28";
+  color: #ad64db;
+}
+.icon-seguro_responsabilidad_civil_particular:before {
+  content: "\ec29";
+  color: #ad64db;
+}
+.icon-seguro_responsabilidad_civil_pesca:before {
+  content: "\ec2a";
+  color: #ad64db;
+}
+.icon-automovil_terceros_completo:before {
+  content: "\ec2b";
+}
+.icon-seguro_embarcaciones_recreo:before {
+  content: "\ec2c";
+  color: #417fec;
+}
+.icon-automovil_todo_riesgo_con_franquicia:before {
+  content: "\ec2d";
+  color: #417fec;
+}
+.icon-seguro_furgonetas_camper:before {
+  content: "\ec2e";
+  color: #417fec;
+}
+.icon-automovil_terceros_basico:before {
+  content: "\ec2f";
+  color: #417fec;
+}
+.icon-seguro_autocaravanas:before {
+  content: "\ec30";
+  color: #417fec;
+}
+.icon-renting_particulares:before {
+  content: "\ec31";
+}
+.icon-seguros_de_moto:before {
+  content: "\ec32";
+}
+.icon-automovil_todo_riesgo_sin_franquicia:before {
+  content: "\ec33";
+}
+.icon-seguro_coche_electrico_hibrido:before {
+  content: "\ec34";
+  color: #417fec;
+}
+.icon-seguro_patinetes_electricos:before {
+  content: "\ec35";
+  color: #417fec;
+}
+.icon-seguro_de_quad:before {
+  content: "\ec36";
+  color: #417fec;
+}
+.icon-seguro_para_ciclistas_bicicletas:before {
+  content: "\ec37";
+  color: #417fec;
+}
+.icon-seguro_de_ciclomotor:before {
+  content: "\ec38";
+  color: #417fec;
+}
+.icon-gco_eurobolsa:before {
+  content: "\ec39";
+}
+.icon-gco_acciones:before {
+  content: "\ec3a";
+}
+.icon-ahorro_ppa:before {
+  content: "\ec3b";
+}
+.icon-co_emergentes_fi:before {
+  content: "\ec3c";
+  color: #26a047;
+}
+.icon-gco_internacional:before {
+  content: "\ec3d";
+  color: #26a047;
+}
+.icon-co_bolsa_espanola_fi:before {
+  content: "\ec3e";
+}
+.icon-planes_de_pensiones:before {
+  content: "\ec3f";
+}
+.icon-pias:before {
+  content: "\ec40";
+}
+.icon-co_bolsa_mundial_fi:before {
+  content: "\ec41";
+  color: #26a047;
+}
+.icon-inversion_multifondos:before {
+  content: "\ec42";
+  color: #26a047;
+}
+.icon-gco_mixto:before {
+  content: "\ec43";
+  color: #26a047;
+}
+.icon-co_renta_fija_fi:before {
+  content: "\ec44";
+}
+.icon-seguro_ahorro_capital:before {
+  content: "\ec45";
+  color: #26a047;
+}
+.icon-gco_bolsa_usa:before {
+  content: "\ec46";
+}
+.icon-gco_renta_fija:before {
+  content: "\ec47";
+}
+.icon-co_patrimonio_fi:before {
+  content: "\ec48";
+  color: #26a047;
+}
+.icon-seguro_ahorro_creciente:before {
+  content: "\ec49";
+  color: #26a047;
+}
+.icon-rentas:before {
+  content: "\ec4a";
+}
+.icon-gco_global_50:before {
+  content: "\ec4b";
+  color: #26a047;
+}
+.icon-gco_ahorro:before {
+  content: "\ec4c";
+}
+.icon-hipoteca_inversa:before {
+  content: "\ec4d";
+  color: #26a047;
+}
+.icon-epsv:before {
+  content: "\ec4e";
+}
+.icon-ahorro_sialp:before {
+  content: "\ec4f";
+}
+.icon-cuenta_cliente:before {
+  content: "\ec50";
+}
+.icon-seguro_hogar_vivienda_turistica:before {
+  content: "\ec51";
+  color: #e246a9;
+}
+.icon-implantes_cocleares:before {
+  content: "\ec52";
+  color: #e246a9;
+}
+.icon-seguro_instrumentos:before {
+  content: "\ec53";
+  color: #e246a9;
+}
+.icon-drones:before {
+  content: "\ec54";
+  color: #e246a9;
+}
+.icon-seguro_mascotas:before {
+  content: "\ec55";
+}
+.icon-seguro_comunidades_garajes:before {
+  content: "\ec56";
+  color: #e246a9;
+}
+.icon-seguro_hogar_arrendador:before {
+  content: "\ec57";
+  color: #e246a9;
+}
+.icon-seguro_de_caravanas_fijas:before {
+  content: "\ec58";
+}
+.icon-seguro_para_portatiles_pcs:before {
+  content: "\ec59";
+  color: #e246a9;
+}
+.icon-seguro_hogar:before {
+  content: "\ec5a";
+  color: #e246a9;
+}
+.icon-seguro_para_camaras_fotograficas:before {
+  content: "\ec5b";
+  color: #e246a9;
+}
+.icon-seguro_ciberriesgo_hogar:before {
+  content: "\ec5c";
+  color: #e246a9;
+}
+.icon-seguro_comunidades:before {
+  content: "\ec5d";
+}
+.icon-seguro_decesos_repatriacion:before {
+  content: "\ec5e";
+  color: #f9b224;
+}
+.icon-seguro_decesos_senior:before {
+  content: "\ec5f";
+}
+.icon-seguro_de_viaje:before {
+  content: "\ec60";
+}
+.icon-seguro_decesos:before {
+  content: "\ec61";
+}
+.icon-seguro_vida_amortizacion_particular:before {
+  content: "\ec62";
+  color: #f9b224;
+}
+.icon-seguro_vida_temporal_particular:before {
+  content: "\ec63";
+  color: #f9b224;
+}
+.icon-seguro_accidentes:before {
+  content: "\ec64";
+}
+.icon-salud_bienestar_senior:before {
+  content: "\ec65";
+}
+.icon-salud_reembolso_particular:before {
+  content: "\ec66";
+}
+.icon-salud_asistencia_sanitaria_particular:before {
+  content: "\ec67";
+  color: #dc4a4a;
+}
+.icon-salud_bienestar:before {
+  content: "\ec68";
+}
+.icon-salud_subsidio_hospitalizacion_particular:before {
+  content: "\ec69";
+  color: #dc4a4a;
+}
+.icon-proteccion_juridica_conductor1:before {
+  content: "\ec6a";
+  color: #aa7f4d;
+}
+.icon-proteccion_juridica_familiar:before {
+  content: "\ec6b";
+  color: #aa7f4d;
+}
+.icon-proteccion_juridica_empresas:before {
+  content: "\ec6c";
+  color: #aa7f4d;
+}
+.icon-seguro_de_maquinaria:before {
+  content: "\ec6d";
+  color: #f17258;
+}
+.icon-seguro_transporte_mercancias_para_transportistas:before {
+  content: "\ec6e";
+  color: #f17258;
+}
+.icon-combinado_empresas:before {
+  content: "\ec6f";
+  color: #f17258;
+}
+.icon-seguro_transporte_mercancias_para_cargadores:before {
+  content: "\ec70";
+  color: #f17258;
+}
+.icon-seguro_cancelacion_viajes:before {
+  content: "\ec71";
+  color: #f17258;
+}
+.icon-robo:before {
+  content: "\ec72";
+  color: #f17258;
+}
+.icon-grandes_comercios:before {
+  content: "\ec73";
+  color: #f17258;
+}
+.icon-todo_riesgo_construccion_montaje:before {
+  content: "\ec74";
+  color: #f17258;
+}
+.icon-seguro_transporte_mercancias_lott-lcttm:before {
+  content: "\ec75";
+  color: #f17258;
+}
+.icon-seguro_local_comercial:before {
+  content: "\ec76";
+  color: #f17258;
+}
+.icon-seguro_agrario_empresas:before {
+  content: "\ec77";
+  color: #f17258;
+}
+.icon-decenal_edificacion:before {
+  content: "\ec78";
+}
+.icon-todo_riesgo_danos_materiales:before {
+  content: "\ec79";
+  color: #f17258;
+}
+.icon-pyme_talleres_mecanicos_vehiculos:before {
+  content: "\ec7a";
+}
+.icon-seguro_cancelacion_eventos:before {
+  content: "\ec7b";
+  color: #f17258;
+}
+.icon-pymes_hoteles_hostales_pensiones:before {
+  content: "\ec7c";
+  color: #f17258;
+}
+.icon-pyme_ganaderia:before {
+  content: "\ec7d";
+  color: #f17258;
+}
+.icon-incendio:before {
+  content: "\ec7e";
+  color: #f17258;
+}
+.icon-pyme_industrial:before {
+  content: "\ec7f";
+  color: #f17258;
+}
+.icon-pyme_agricultura:before {
+  content: "\ec80";
+  color: #f17258;
+}
+.icon-seguro_transporte_mercancias_cmr:before {
+  content: "\ec81";
+  color: #f17258;
+}
+.icon-ciberriesgo_empresas:before {
+  content: "\ec82";
+  color: #f17258;
+}
+.icon-seguro_de_equipos_electronicos:before {
+  content: "\ec83";
+  color: #f17258;
+}
+.icon-seguro_obligatorio_de_viajeros:before {
+  content: "\ec84";
+  color: #f9b224;
+}
+.icon-seguro_viaje_empresa:before {
+  content: "\ec85";
+}
+.icon-seguro_de_estudios:before {
+  content: "\ec86";
+  color: #f9b224;
+}
+.icon-seguro_escolar:before {
+  content: "\ec87";
+  color: #f9b224;
+}
+.icon-seguro_accidentes_convenio_empleados:before {
+  content: "\ec88";
+  color: #20c3b7;
+}
+.icon-planes_de_pensiones_empleados:before {
+  content: "\ec89";
+  color: #20c3b7;
+}
+.icon-seguro_vida_colectivo_empleados:before {
+  content: "\ec8a";
+  color: #20c3b7;
+}
+.icon-salud_asistencia_sanitaria_empleados:before {
+  content: "\ec8b";
+  color: #20c3b7;
+}
+.icon-ahorro_ppse_empleados:before {
+  content: "\ec8c";
+  color: #20c3b7;
+}
+.icon-seguro_ahorro_colectivo_empleados:before {
+  content: "\ec8d";
+  color: #20c3b7;
+}
+.icon-flotas:before {
+  content: "\ec8e";
+  color: #417fec;
+}
+.icon-vehiculos_maquinaria_pesada:before {
+  content: "\ec8f";
+  color: #417fec;
+}
+.icon-camiones_cabezas_tractoras:before {
+  content: "\ec90";
+}
+.icon-responsabilidad_civil_profesional:before {
+  content: "\ec91";
+  color: #ad64db;
+}
+.icon-responsabilidad_medioambiental:before {
+  content: "\ec92";
+}
+.icon-responsabilidad_civil_inmuebles:before {
+  content: "\ec93";
+  color: #ad64db;
+}
+.icon-responsabilidad_civil_construccion_industrias:before {
+  content: "\ec94";
+  color: #ad64db;
+}
+.icon-valor-original:before {
+  content: "\eca8";
+}
+.icon-visible-password:before {
+  content: "\eca7";
+}
+.icon-flecha-arriba:before {
+  content: "\ec9e";
+}
+.icon-flecha-abajo:before {
+  content: "\eca6";
+}
+.icon-pro-hogar:before {
+  content: "\eca4";
+}
+.icon-visto:before {
+  content: "\eca3";
+}
+.icon-menos:before {
+  content: "\ec96";
+}
+.icon-mas:before {
+  content: "\ec97";
+}
+.icon-lorem-ipsum:before {
+  content: "\ec98";
+}
+.icon-link:before {
+  content: "\ec99";
+}
+.icon-info:before {
+  content: "\ec9a";
+}
+.icon-flecha-izquierda:before {
+  content: "\ec9b";
+}
+.icon-flecha-derecha:before {
+  content: "\ec9c";
+}
+.icon-error-fixed:before {
+  content: "\ec9d";
+}
+.icon-correcto-fixed:before {
+  content: "\ec9f";
+}
+.icon-close:before {
+  content: "\eca0";
+}
+.icon-encargos:before {
+  content: "\eca1";
+}
+.icon-pro-euro-4:before {
+  content: "\eca2";
+}
+.icon-generico_ventana1:before {
+  content: "\e91a";
+  color: #dc0028;
+}
+.icon-generico_accede_aqui:before {
+  content: "\e920";
+  color: #dc0028;
+}
+.icon-generico_patinete:before {
+  content: "\e918";
+  color: #dc0028;
+}
+.icon-generico_bicicleta:before {
+  content: "\e919";
+  color: #dc0028;
+}
+.icon-generico_checkbox-ok:before {
+  content: "\e915";
+  color: #d90028;
+}
+.icon-generico_propietario_vivienda_de_alquiler:before {
+  content: "\e970";
+  color: #dc0028;
+}
+.icon-generico_alquiler:before {
+  content: "\e965";
+  color: #dc0028;
+}
+.icon-generico_solidaridad-12:before {
+  content: "\e980";
+  color: #dc0028;
+}
+.icon-generico_lavar_manos:before {
+  content: "\ea0e";
+  color: #dc0028;
+}
+.icon-generico_formacion_cursos_a_la_carta:before {
+  content: "\eb76";
+  color: #dc0028;
+}
+.icon-generico_mano_mas:before {
+  content: "\e9f1";
+  color: #dc0028;
+}
+.icon-generico_contento:before {
+  content: "\ea63";
+  color: #dc0028;
+}
+.icon-generico_feliz:before {
+  content: "\ea5a";
+}
+.icon-generico_resto_vida:before {
+  content: "\ebb6";
+}
+.icon-generico_mano_abajo:before {
+  content: "\ea50";
+  color: #dc0028;
+}
+.icon-generico_mano_pagando:before {
+  content: "\ea47";
+  color: #dc0028;
+}
+.icon-generico_centro_diagnostico:before {
+  content: "\e9ad";
+  color: #dc0028;
+}
+.icon-generico_ojo:before {
+  content: "\e9ae";
+}
+.icon-generico_informacion:before {
+  content: "\ea31";
+  color: #dc0028;
+}
+.icon-generico_telefono_2:before {
+  content: "\ea3b";
+}
+.icon-generico_estrella:before {
+  content: "\eb1e";
+  color: #dc0b2a;
+}
+.icon-generico_reloj:before {
+  content: "\eb3c";
+  color: #dc0028;
+}
+.icon-generico_peligro:before {
+  content: "\eaeb";
+}
+.icon-generico_ordenador:before {
+  content: "\eaa0";
+  color: #dc0028;
+}
+.icon-generico_alerta_de_velocidad:before {
+  content: "\e9d1";
+}
+.icon-generico_billetes_2:before {
+  content: "\eb58";
+  color: #dc0028;
+}
+.icon-generico_centros_medicos:before {
+  content: "\e961";
+}
+.icon-generico_no_asegurado:before {
+  content: "\e9cb";
+  color: #dc0028;
+}
+.icon-generico_lupa_correcto:before {
+  content: "\e9d8";
+}
+.icon-generico_papel:before {
+  content: "\e9ec";
+  color: #dc0028;
+}
+.icon-generico_agente:before {
+  content: "\ea0a";
+}
+.icon-generico_share:before {
+  content: "\ea0d";
+  color: #dc0028;
+}
+.icon-generico_edificios:before {
+  content: "\ea19";
+  color: #dc0028;
+}
+.icon-generico_sorprendido:before {
+  content: "\ea2d";
+  color: #dc0028;
+}
+.icon-generico_triste:before {
+  content: "\ea69";
+  color: #dc0028;
+}
+.icon-generico_billetes:before {
+  content: "\eb19";
+  color: #dc0028;
+}
+.icon-generico_oncologia_medica:before {
+  content: "\e95d";
+  color: #dc0028;
+}
+.icon-generico_jurado:before {
+  content: "\e95e";
+  color: #dc0028;
+}
+.icon-generico_coche_eco:before {
+  content: "\e95f";
+  color: #dc0028;
+}
+.icon-generico_matricula:before {
+  content: "\e960";
+  color: #dc0028;
+}
+.icon-generico_equipo_de_1:before {
+  content: "\e962";
+  color: #dc0028;
+}
+.icon-generico_medico:before {
+  content: "\e963";
+  color: #dc0028;
+}
+.icon-generico_pediatria:before {
+  content: "\e964";
+  color: #dc0028;
+}
+.icon-generico_medicina_del_trabajo:before {
+  content: "\e966";
+  color: #dc0028;
+}
+.icon-generico_pecho:before {
+  content: "\e967";
+  color: #dc0028;
+}
+.icon-generico_t_alergologia:before {
+  content: "\e968";
+  color: #dc0028;
+}
+.icon-generico_visto_tres:before {
+  content: "\e969";
+}
+.icon-generico_fiesta:before {
+  content: "\e96a";
+  color: #dc0028;
+}
+.icon-generico_reumatologia:before {
+  content: "\e96b";
+  color: #dc0028;
+}
+.icon-generico_cervell:before {
+  content: "\e96c";
+  color: #dc0028;
+}
+.icon-generico_grupo_corazon:before {
+  content: "\e96d";
+  color: #dc0028;
+}
+.icon-generico_subir_escaleras:before {
+  content: "\e96e";
+  color: #dc0028;
+}
+.icon-generico_solidaridad-60:before {
+  content: "\e96f";
+  color: #dc0028;
+}
+.icon-generico_pulmones:before {
+  content: "\e971";
+  color: #dc0028;
+}
+.icon-generico_carga:before {
+  content: "\e972";
+  color: #dc0028;
+}
+.icon-generico_residencia_habitual:before {
+  content: "\e973";
+  color: #dc0028;
+}
+.icon-generico_zonas_comunes:before {
+  content: "\e974";
+  color: #dc0028;
+}
+.icon-generico_ultima_planta:before {
+  content: "\e975";
+  color: #dc0028;
+}
+.icon-generico_nino:before {
+  content: "\e976";
+  color: #dc0028;
+}
+.icon-generico_persona_obesa:before {
+  content: "\e977";
+  color: #dc0028;
+}
+.icon-generico_guantes:before {
+  content: "\e978";
+  color: #dc0028;
+}
+.icon-generico_dieta:before {
+  content: "\e979";
+  color: #dc0028;
+}
+.icon-generico_reconocimiento_facial:before {
+  content: "\e97a";
+  color: #dc0028;
+}
+.icon-generico_modificacion_precio:before {
+  content: "\e97b";
+  color: #dc0028;
+}
+.icon-generico_cardiologia:before {
+  content: "\e97c";
+  color: #dc0028;
+}
+.icon-generico_videollamada:before {
+  content: "\e97d";
+  color: #dc0028;
+}
+.icon-generico_pasos:before {
+  content: "\e97e";
+  color: #dc0028;
+}
+.icon-generico_farmacologia_clinica:before {
+  content: "\e97f";
+  color: #dc0028;
+}
+.icon-generico_capital_mobiliario:before {
+  content: "\e981";
+  color: #dc0028;
+}
+.icon-generico_parking-almacen:before {
+  content: "\e982";
+  color: #dc0028;
+}
+.icon-generico_angiologia_y_cirugia_vascular:before {
+  content: "\e983";
+  color: #dc0028;
+}
+.icon-generico_flor:before {
+  content: "\e984";
+  color: #dc0028;
+}
+.icon-generico_sostenibilidad-20:before {
+  content: "\e985";
+  color: #dc0028;
+}
+.icon-generico_paraguas:before {
+  content: "\e986";
+  color: #dc0028;
+}
+.icon-generico_urologia:before {
+  content: "\e987";
+  color: #dc0028;
+}
+.icon-generico_boca:before {
+  content: "\e988";
+  color: #dc0028;
+}
+.icon-generico_persona_mayor:before {
+  content: "\e989";
+  color: #dc0028;
+}
+.icon-generico_segunda_residencia:before {
+  content: "\e98a";
+  color: #dc0028;
+}
+.icon-generico_embarazada:before {
+  content: "\e98b";
+  color: #dc0028;
+}
+.icon-generico_desnutricion:before {
+  content: "\e98c";
+  color: #dc0028;
+}
+.icon-generico_planta_baja:before {
+  content: "\e98d";
+  color: #dc0028;
+}
+.icon-generico_inmunologia:before {
+  content: "\e98e";
+  color: #dc0028;
+}
+.icon-generico_subir:before {
+  content: "\e98f";
+  color: #dc0028;
+}
+.icon-generico_pastel:before {
+  content: "\e990";
+  color: #dc0028;
+}
+.icon-generico_bolsa_de_estudios:before {
+  content: "\e991";
+  color: #dc0028;
+}
+.icon-generico_cirugia:before {
+  content: "\e992";
+  color: #dc0028;
+}
+.icon-generico_vino:before {
+  content: "\e993";
+  color: #dc0028;
+}
+.icon-generico_traumatologia:before {
+  content: "\e994";
+  color: #dc0028;
+}
+.icon-generico_fundas_auriculares:before {
+  content: "\e995";
+  color: #dc0028;
+}
+.icon-generico_esquema:before {
+  content: "\e996";
+  color: #dc0028;
+}
+.icon-generico_pizza:before {
+  content: "\e997";
+  color: #dc0028;
+}
+.icon-generico_blog_premium:before {
+  content: "\e998";
+  color: #dc0028;
+}
+.icon-generico_diana:before {
+  content: "\e999";
+  color: #dc0028;
+}
+.icon-generico_hematologia_y_hemoterapia:before {
+  content: "\e99a";
+  color: #dc0028;
+}
+.icon-generico_aparato_reproductor:before {
+  content: "\e99b";
+  color: #dc0028;
+}
+.icon-generico_anestesiologia_y_reanimacion:before {
+  content: "\e99c";
+  color: #dc0028;
+}
+.icon-generico_wifi:before {
+  content: "\e99d";
+  color: #dc0028;
+}
+.icon-generico_tetrabric:before {
+  content: "\e99e";
+  color: #dc0028;
+}
+.icon-generico_sensor_coche:before {
+  content: "\e99f";
+  color: #dc0028;
+}
+.icon-generico_aparato_digestivo:before {
+  content: "\e9a0";
+  color: #dc0028;
+}
+.icon-generico_radiodiagnostico:before {
+  content: "\e9a1";
+  color: #dc0028;
+}
+.icon-generico_psicologo:before {
+  content: "\e9a2";
+  color: #dc0028;
+}
+.icon-generico_propietario_vivienda_deshabitada:before {
+  content: "\e9a3";
+  color: #dc0028;
+}
+.icon-generico_taxi:before {
+  content: "\e9a4";
+  color: #dc0028;
+}
+.icon-generico_bajar_escaleras:before {
+  content: "\e9a5";
+  color: #dc0028;
+}
+.icon-generico_casa_arbol:before {
+  content: "\e9a6";
+}
+.icon-generico_planta_intermedia:before {
+  content: "\e9a7";
+  color: #dc0028;
+}
+.icon-generico_usuario_estrella:before {
+  content: "\e9a8";
+  color: #dc0028;
+}
+.icon-generico_endocrinologia_y_nutricion:before {
+  content: "\e9a9";
+  color: #dc0028;
+}
+.icon-generico_paralelo:before {
+  content: "\e9aa";
+  color: #dc0028;
+}
+.icon-generico_gabinete_medico:before {
+  content: "\e9ab";
+  color: #dc0028;
+}
+.icon-generico_chalet_independiente:before {
+  content: "\e9ac";
+  color: #dc0028;
+}
+.icon-generico_sostenibilidad-61:before {
+  content: "\e9af";
+  color: #dc0028;
+}
+.icon-generico_honestidad:before {
+  content: "\e9b0";
+  color: #dc0028;
+}
+.icon-generico_coche_premium:before {
+  content: "\e9b1";
+  color: #dc0028;
+}
+.icon-generico_dermatologia_y_venerologia:before {
+  content: "\e9b2";
+  color: #dc0028;
+}
+.icon-generico_anatomia_patologica:before {
+  content: "\e9b3";
+  color: #dc0028;
+}
+.icon-generico_oreja:before {
+  content: "\e9b4";
+  color: #dc0028;
+}
+.icon-generico_propietario_vivienda:before {
+  content: "\e9b5";
+  color: #dc0028;
+}
+.icon-generico_psiquiatria:before {
+  content: "\e9b6";
+  color: #dc0028;
+}
+.icon-generico_capital_vivienda:before {
+  content: "\e9b7";
+  color: #dc0028;
+}
+.icon-generico_servicios_hogar:before {
+  content: "\e9b8";
+}
+.icon-generico_chalet_adosado:before {
+  content: "\e9b9";
+  color: #dc0028;
+}
+.icon-generico_nefrologia:before {
+  content: "\e9ba";
+  color: #dc0028;
+}
+.icon-generico_medio_ambiente:before {
+  content: "\e9bb";
+  color: #dc0028;
+}
+.icon-generico_deportiva_2:before {
+  content: "\e9bc";
+  color: #dc0028;
+}
+.icon-generico_sotano:before {
+  content: "\e9bd";
+  color: #dc0028;
+}
+.icon-generico_car_finder:before {
+  content: "\e9be";
+  color: #dc0028;
+}
+.icon-generico_localizacion_vehiculo:before {
+  content: "\e9bf";
+  color: #dc0028;
+}
+.icon-generico_maleta_viaje_2:before {
+  content: "\e9c0";
+  color: #dc0028;
+}
+.icon-generico_oficinas:before {
+  content: "\e9c1";
+  color: #dc0028;
+}
+.icon-generico_machine_deep_learning:before {
+  content: "\e9c2";
+  color: #dc0028;
+}
+.icon-generico_mascarilla:before {
+  content: "\e9c3";
+  color: #dc0028;
+}
+.icon-generico_escaleras:before {
+  content: "\e9c4";
+  color: #dc0028;
+}
+.icon-generico_radar:before {
+  content: "\e9c5";
+  color: #dc0028;
+}
+.icon-generico_informe_viaje:before {
+  content: "\e9c6";
+  color: #dc0028;
+}
+.icon-generico_mujer:before {
+  content: "\e9c7";
+  color: #dc0028;
+}
+.icon-generico_abrir_siniestro:before {
+  content: "\e9c8";
+}
+.icon-generico_parking_1:before {
+  content: "\e9c9";
+  color: #dc0028;
+}
+.icon-generico_llama_gas:before {
+  content: "\e9ca";
+  color: #dc0028;
+}
+.icon-generico_jabon_de_manos:before {
+  content: "\e9cc";
+  color: #dc0028;
+}
+.icon-generico_piscina:before {
+  content: "\e9cd";
+  color: #dc0028;
+}
+.icon-generico_impresora:before {
+  content: "\e9ce";
+  color: #dc0028;
+}
+.icon-generico_centralita_del_vehiculo:before {
+  content: "\e9cf";
+  color: #dc0028;
+}
+.icon-generico_control_graficos:before {
+  content: "\e9d0";
+  color: #dc0028;
+}
+.icon-generico_teletrabajo:before {
+  content: "\e9d2";
+  color: #dc0028;
+}
+.icon-generico_herencias_digitales:before {
+  content: "\e9d3";
+  color: #dc0028;
+}
+.icon-generico_brujula:before {
+  content: "\e9d4";
+  color: #dc0028;
+}
+.icon-generico_chat_2:before {
+  content: "\e9d5";
+  color: #dc0028;
+}
+.icon-generico_eliminar_cuentas_online:before {
+  content: "\e9d6";
+  color: #dc0028;
+}
+.icon-generico_recuperar_puntos:before {
+  content: "\e9d7";
+  color: #dc0028;
+}
+.icon-generico_inteligencia_artificial:before {
+  content: "\e9d9";
+  color: #dc0028;
+}
+.icon-generico_3_pilares:before {
+  content: "\e9da";
+  color: #dc0028;
+}
+.icon-generico_automatizacion_robotica:before {
+  content: "\e9db";
+  color: #dc0028;
+}
+.icon-generico_fuegos_artificiales:before {
+  content: "\e9dc";
+  color: #dc0028;
+}
+.icon-generico_cartera_negocio:before {
+  content: "\e9dd";
+  color: #dc0028;
+}
+.icon-generico_corazon:before {
+  content: "\e9de";
+  color: #dc0028;
+}
+.icon-generico_acuagim:before {
+  content: "\e9df";
+  color: #dc0028;
+}
+.icon-generico_ascensor:before {
+  content: "\e9e0";
+  color: #dc0028;
+}
+.icon-generico_desatascador:before {
+  content: "\e9e1";
+  color: #dc0028;
+}
+.icon-generico_distancia_en_km:before {
+  content: "\e9e2";
+  color: #dc0028;
+}
+.icon-generico_gobierno_del_dato:before {
+  content: "\e9e3";
+  color: #dc0028;
+}
+.icon-generico_rotulo:before {
+  content: "\e9e4";
+  color: #dc0028;
+}
+.icon-generico_arboles:before {
+  content: "\e9e5";
+  color: #dc0028;
+}
+.icon-generico_seguro_obligatorio:before {
+  content: "\e9e6";
+  color: #dc0028;
+}
+.icon-generico_montana:before {
+  content: "\e9e7";
+  color: #dc0028;
+}
+.icon-generico_tabla:before {
+  content: "\e9e8";
+  color: #dc0028;
+}
+.icon-generico_grafico_circular:before {
+  content: "\e9e9";
+  color: #dc0028;
+}
+.icon-generico_fabrica_ideas:before {
+  content: "\e9ea";
+  color: #dc0028;
+}
+.icon-generico_historial_medico:before {
+  content: "\e9eb";
+  color: #dc0028;
+}
+.icon-generico_espacio_sin_humo:before {
+  content: "\e9ed";
+  color: #dc0028;
+}
+.icon-generico_trabajo_a_altura:before {
+  content: "\e9ee";
+  color: #dc0028;
+}
+.icon-generico_herencia_digital_postal:before {
+  content: "\e9ef";
+  color: #dc0028;
+}
+.icon-generico_hombre:before {
+  content: "\e9f0";
+  color: #dc0028;
+}
+.icon-generico_bandera_llegada:before {
+  content: "\e9f2";
+  color: #dc0028;
+}
+.icon-generico_robot_humanoide:before {
+  content: "\e9f3";
+  color: #dc0028;
+}
+.icon-generico_casa:before {
+  content: "\e9f4";
+}
+.icon-generico_memorial:before {
+  content: "\e9f5";
+  color: #dc0028;
+}
+.icon-generico_cuentas_conmemorativas:before {
+  content: "\e9f6";
+  color: #dc0028;
+}
+.icon-generico_mentor:before {
+  content: "\e9f7";
+  color: #dc0028;
+}
+.icon-generico_monedas:before {
+  content: "\e9f8";
+  color: #dc0028;
+}
+.icon-generico_volante:before {
+  content: "\e9f9";
+  color: #dc0028;
+}
+.icon-generico_moto_parking:before {
+  content: "\e9fa";
+  color: #dc0028;
+}
+.icon-generico_transporte_terrestre_vehiculos:before {
+  content: "\e9fb";
+  color: #dc0028;
+}
+.icon-generico_codigo_abierto:before {
+  content: "\e9fc";
+  color: #dc0028;
+}
+.icon-generico_modos_especiales:before {
+  content: "\e9fd";
+  color: #dc0028;
+}
+.icon-generico_codigos_sos:before {
+  content: "\e9fe";
+  color: #dc0028;
+}
+.icon-generico_monedas_2:before {
+  content: "\e9ff";
+  color: #dc0028;
+}
+.icon-generico_a_tu_lado:before {
+  content: "\ea00";
+  color: #dc0028;
+}
+.icon-generico_estrella_navidad:before {
+  content: "\ea01";
+  color: #dc0028;
+}
+.icon-generico_horario_viaje:before {
+  content: "\ea02";
+  color: #dc0028;
+}
+.icon-generico_rescindir:before {
+  content: "\ea03";
+  color: #dc0028;
+}
+.icon-generico_grafico_barras:before {
+  content: "\ea04";
+  color: #dc0028;
+}
+.icon-generico_aptitudes:before {
+  content: "\ea05";
+  color: #dc0028;
+}
+.icon-generico_prohibido_fumar:before {
+  content: "\ea06";
+  color: #dc0028;
+}
+.icon-generico_camion_cuba:before {
+  content: "\ea07";
+  color: #dc0028;
+}
+.icon-generico_paleteria:before {
+  content: "\ea08";
+  color: #dc0028;
+}
+.icon-generico_gasolinera:before {
+  content: "\ea09";
+  color: #dc0028;
+}
+.icon-generico_arbol_de_navidad:before {
+  content: "\ea0b";
+  color: #dc0028;
+}
+.icon-generico_3_hojas_2:before {
+  content: "\ea0c";
+  color: #dc0028;
+}
+.icon-generico_transporte_de_vehiculos_fluvial:before {
+  content: "\ea0f";
+  color: #dc0028;
+}
+.icon-generico_bloqueo_del_vehiculo:before {
+  content: "\ea10";
+  color: #dc0028;
+}
+.icon-generico_parking:before {
+  content: "\ea11";
+  color: #dc0028;
+}
+.icon-generico_diagnostico:before {
+  content: "\ea12";
+  color: #dc0028;
+}
+.icon-generico_3_hojas_1:before {
+  content: "\ea13";
+  color: #dc0028;
+}
+.icon-generico_remo:before {
+  content: "\ea14";
+  color: #dc0028;
+}
+.icon-generico_realidad_virtual:before {
+  content: "\ea15";
+  color: #dc0028;
+}
+.icon-generico_parquet:before {
+  content: "\ea16";
+  color: #dc0028;
+}
+.icon-generico_monedas_pagos:before {
+  content: "\ea17";
+  color: #dc0028;
+}
+.icon-generico_grafico_linea:before {
+  content: "\ea18";
+  color: #dc0028;
+}
+.icon-generico_gafas:before {
+  content: "\ea1a";
+  color: #dc0028;
+}
+.icon-generico_planta_2:before {
+  content: "\ea1b";
+  color: #dc0028;
+}
+.icon-generico_diagrama:before {
+  content: "\ea1c";
+  color: #dc0028;
+}
+.icon-generico_libreta_5:before {
+  content: "\ea1d";
+  color: #dc0028;
+}
+.icon-generico_pregunta:before {
+  content: "\ea1e";
+  color: #dc0028;
+}
+.icon-generico_trofeo:before {
+  content: "\ea1f";
+  color: #dc0028;
+}
+.icon-generico_imagenes:before {
+  content: "\ea20";
+  color: #dc0028;
+}
+.icon-generico_caballo:before {
+  content: "\ea21";
+  color: #dc0028;
+}
+.icon-generico_personas:before {
+  content: "\ea22";
+  color: #dc0028;
+}
+.icon-generico_polea:before {
+  content: "\ea23";
+  color: #dc0028;
+}
+.icon-generico_libreta_2:before {
+  content: "\ea24";
+}
+.icon-generico_cepillo_de_dientes:before {
+  content: "\ea25";
+  color: #dc0028;
+}
+.icon-generico_libreta_3:before {
+  content: "\ea26";
+  color: #dc0028;
+}
+.icon-generico_papelera:before {
+  content: "\ea27";
+  color: #dc0028;
+}
+.icon-generico_flecha_2:before {
+  content: "\ea28";
+  color: #dc0028;
+}
+.icon-generico_averia_tractor:before {
+  content: "\ea29";
+  color: #dc0028;
+}
+.icon-generico_libreta_1:before {
+  content: "\ea2a";
+  color: #dc0028;
+}
+.icon-generico_carrito_compra:before {
+  content: "\ea2b";
+  color: #dc0028;
+}
+.icon-generico_planta:before {
+  content: "\ea2c";
+  color: #dc0028;
+}
+.icon-generico_coche_estrella:before {
+  content: "\ea2e";
+  color: #dc0028;
+}
+.icon-generico_pastilla:before {
+  content: "\ea2f";
+  color: #dc0028;
+}
+.icon-generico_mochila:before {
+  content: "\ea30";
+  color: #dc0028;
+}
+.icon-generico_diploma:before {
+  content: "\ea32";
+  color: #dc0028;
+}
+.icon-generico_bandera:before {
+  content: "\ea33";
+  color: #dc0028;
+}
+.icon-generico_bosque:before {
+  content: "\ea34";
+  color: #dc0028;
+}
+.icon-generico_gorro_graduacion:before {
+  content: "\ea35";
+  color: #dc0028;
+}
+.icon-generico_grua:before {
+  content: "\ea36";
+  color: #dc0028;
+}
+.icon-generico_bola_del_mundo:before {
+  content: "\ea37";
+  color: #dc0028;
+}
+.icon-generico_coche_multa:before {
+  content: "\ea38";
+  color: #dc0028;
+}
+.icon-generico_trofeo_medalla:before {
+  content: "\ea39";
+  color: #dc0028;
+}
+.icon-generico_coche_elevador:before {
+  content: "\ea3a";
+  color: #dc0028;
+}
+.icon-generico_averia_camion:before {
+  content: "\ea3c";
+  color: #dc0028;
+}
+.icon-generico_ventana_rota:before {
+  content: "\ea3d";
+  color: #dc0028;
+}
+.icon-generico_television:before {
+  content: "\ea3e";
+  color: #dc0028;
+}
+.icon-generico_avion_lateral:before {
+  content: "\ea3f";
+  color: #dc0028;
+}
+.icon-generico_telefono_1:before {
+  content: "\ea40";
+}
+.icon-generico_alarma_colegio:before {
+  content: "\ea41";
+  color: #dc0028;
+}
+.icon-generico_jeringilla:before {
+  content: "\ea42";
+  color: #dc0028;
+}
+.icon-generico_no_me_gusta:before {
+  content: "\ea43";
+  color: #dc0028;
+}
+.icon-generico_salud_coche_2:before {
+  content: "\ea44";
+}
+.icon-generico_barco_grua:before {
+  content: "\ea45";
+  color: #dc0028;
+}
+.icon-generico_tenis:before {
+  content: "\ea46";
+  color: #dc0028;
+}
+.icon-generico_coche_rayo:before {
+  content: "\ea48";
+}
+.icon-generico_salud_coche_1:before {
+  content: "\ea49";
+}
+.icon-generico_calculadora:before {
+  content: "\ea4a";
+  color: #dc0028;
+}
+.icon-generico_esquema1:before {
+  content: "\ea4b";
+  color: #dc0028;
+}
+.icon-generico_escenario:before {
+  content: "\ea4c";
+  color: #dc0028;
+}
+.icon-generico_averia_coche:before {
+  content: "\ea4d";
+}
+.icon-generico_taladro:before {
+  content: "\ea4e";
+  color: #dc0028;
+}
+.icon-generico_ciencias:before {
+  content: "\ea4f";
+  color: #dc0028;
+}
+.icon-generico_perforadora:before {
+  content: "\ea51";
+  color: #dc0028;
+}
+.icon-generico_cirujano:before {
+  content: "\ea52";
+  color: #dc0028;
+}
+.icon-generico_fisioterapia:before {
+  content: "\ea53";
+  color: #dc0028;
+}
+.icon-generico_avion_con_ruedas:before {
+  content: "\ea54";
+  color: #dc0028;
+}
+.icon-generico_avion_despegando:before {
+  content: "\ea55";
+  color: #dc0028;
+}
+.icon-generico_oso:before {
+  content: "\ea56";
+  color: #dc0028;
+}
+.icon-generico_grua_3:before {
+  content: "\ea57";
+  color: #dc0028;
+}
+.icon-generico_noche_campamento:before {
+  content: "\ea58";
+  color: #dc0028;
+}
+.icon-generico_libro_2:before {
+  content: "\ea59";
+  color: #dc0028;
+}
+.icon-generico_grua_2:before {
+  content: "\ea5b";
+  color: #dc0028;
+}
+.icon-generico_reciclado:before {
+  content: "\ea5c";
+  color: #dc0028;
+}
+.icon-generico_club_deportivo:before {
+  content: "\ea5d";
+  color: #dc0028;
+}
+.icon-generico_carretilla:before {
+  content: "\ea5e";
+  color: #dc0028;
+}
+.icon-generico_coche_frontal:before {
+  content: "\ea5f";
+}
+.icon-generico_ciencia_atomo:before {
+  content: "\ea60";
+  color: #dc0028;
+}
+.icon-generico_libro_1:before {
+  content: "\ea61";
+  color: #dc0028;
+}
+.icon-generico_flecha:before {
+  content: "\ea62";
+  color: #dc0028;
+}
+.icon-generico_avion_salud:before {
+  content: "\ea64";
+  color: #dc0028;
+}
+.icon-generico_policia:before {
+  content: "\ea65";
+  color: #dc0028;
+}
+.icon-generico_garantia:before {
+  content: "\ea66";
+}
+.icon-generico_gallina:before {
+  content: "\ea67";
+  color: #dc0028;
+}
+.icon-generico_me_gusta:before {
+  content: "\ea68";
+  color: #dc0028;
+}
+.icon-generico_remolque:before {
+  content: "\ea6a";
+  color: #dc0028;
+}
+.icon-generico_dni:before {
+  content: "\ea6b";
+  color: #dc0028;
+}
+.icon-generico_coche_grua_2:before {
+  content: "\ea6c";
+  color: #dc0028;
+}
+.icon-generico_grua_cajas:before {
+  content: "\ea6d";
+  color: #dc0028;
+}
+.icon-generico_ambulancia:before {
+  content: "\ea6e";
+  color: #dc0028;
+}
+.icon-generico_robo_coche_abierto:before {
+  content: "\ea6f";
+  color: #dc0b2a;
+}
+.icon-generico_cinturon_seguridad:before {
+  content: "\ea70";
+  color: #dc0b2a;
+}
+.icon-generico_caminar:before {
+  content: "\ea71";
+  color: #dc0b2a;
+}
+.icon-generico_testigos_automovil:before {
+  content: "\ea72";
+  color: #dc0b2a;
+}
+.icon-generico_coche_calor:before {
+  content: "\ea73";
+  color: #dc0b2a;
+}
+.icon-generico_dinero_tarjetas:before {
+  content: "\ea74";
+  color: #dc0b2a;
+}
+.icon-generico_sillita_coche:before {
+  content: "\ea75";
+  color: #dc0b2a;
+}
+.icon-generico_caja_petardos:before {
+  content: "\ea76";
+  color: #dc0b2a;
+}
+.icon-generico_parabrisas_roto:before {
+  content: "\ea77";
+  color: #dc0b2a;
+}
+.icon-generico_frenos:before {
+  content: "\ea78";
+  color: #dc0b2a;
+}
+.icon-generico_aceite:before {
+  content: "\ea79";
+  color: #dc0b2a;
+}
+.icon-generico_petardo:before {
+  content: "\ea7a";
+  color: #dc0b2a;
+}
+.icon-generico_parabrisas:before {
+  content: "\ea7b";
+  color: #dc0b2a;
+}
+.icon-generico_aceite_motor:before {
+  content: "\ea7c";
+  color: #dc0b2a;
+}
+.icon-generico_ajustar_asiento:before {
+  content: "\ea7d";
+  color: #dc0b2a;
+}
+.icon-generico_carroceria:before {
+  content: "\ea7e";
+  color: #dc0b2a;
+}
+.icon-generico_amortiguadores:before {
+  content: "\ea7f";
+  color: #dc0b2a;
+}
+.icon-generico_coche_en_casa:before {
+  content: "\ea80";
+  color: #dc0b2a;
+}
+.icon-generico_desatascador1:before {
+  content: "\ea81";
+  color: #dc0b2a;
+}
+.icon-generico_dormir:before {
+  content: "\ea82";
+  color: #dc0b2a;
+}
+.icon-generico_filtraciones_casa:before {
+  content: "\ea83";
+  color: #dc0b2a;
+}
+.icon-generico_comprobar_lista:before {
+  content: "\ea84";
+  color: #dc0b2a;
+}
+.icon-generico_luces:before {
+  content: "\ea85";
+  color: #dc0b2a;
+}
+.icon-generico_incendio_coche:before {
+  content: "\ea86";
+  color: #dc0b2a;
+}
+.icon-generico_retrovisor:before {
+  content: "\ea87";
+  color: #dc0b2a;
+}
+.icon-generico_bocina_claxon:before {
+  content: "\ea88";
+  color: #dc0b2a;
+}
+.icon-generico_desconectar_interruptor:before {
+  content: "\ea89";
+  color: #dc0b2a;
+}
+.icon-generico_llave_de_paso:before {
+  content: "\ea8a";
+  color: #dc0b2a;
+}
+.icon-generico_entidad_bancaria:before {
+  content: "\ea8b";
+  color: #dc0b2a;
+}
+.icon-generico_limpiaparabrisas:before {
+  content: "\ea8c";
+  color: #dc0b2a;
+}
+.icon-generico_grifo:before {
+  content: "\ea8d";
+  color: #dc0b2a;
+}
+.icon-generico_padre_e_hijo:before {
+  content: "\ea8e";
+  color: #dc0b2a;
+}
+.icon-generico_coche_en_casa_1:before {
+  content: "\ea8f";
+  color: #dc0b2a;
+}
+.icon-generico_averias_electricas:before {
+  content: "\ea90";
+  color: #dc0b2a;
+}
+.icon-generico_efectos_medicamentos:before {
+  content: "\ea91";
+  color: #dc0b2a;
+}
+.icon-generico_rueda:before {
+  content: "\ea92";
+  color: #dc0b2a;
+}
+.icon-generico_coche_en_mecanico:before {
+  content: "\ea93";
+}
+.icon-generico_entrar_vivienda:before {
+  content: "\ea94";
+  color: #dc0b2a;
+}
+.icon-generico_luna_rotura:before {
+  content: "\ea95";
+  color: #dc0b2a;
+}
+.icon-generico_mano:before {
+  content: "\ea96";
+  color: #dc0b2a;
+}
+.icon-generico_lampara:before {
+  content: "\ea97";
+  color: #dc0b2a;
+}
+.icon-generico_policia_1:before {
+  content: "\ea98";
+  color: #dc0b2a;
+}
+.icon-generico_carpeta_aprobada:before {
+  content: "\ea99";
+}
+.icon-generico_coche_maletas:before {
+  content: "\ea9a";
+  color: #dc0b2a;
+}
+.icon-generico_etica_transparencia:before {
+  content: "\ea9b";
+  color: #dc0028;
+}
+.icon-generico_cara_seria:before {
+  content: "\ea9c";
+  color: #dc0028;
+}
+.icon-generico_nevera_rota:before {
+  content: "\ea9d";
+  color: #dc0028;
+}
+.icon-generico_perito_autos:before {
+  content: "\ea9e";
+  color: #dc0028;
+}
+.icon-generico_atleta:before {
+  content: "\ea9f";
+  color: #dc0028;
+}
+.icon-generico_email_pendiente:before {
+  content: "\eaa1";
+  color: #dc0028;
+}
+.icon-generico_foto_personaje:before {
+  content: "\eaa2";
+  color: #dc0028;
+}
+.icon-generico_bici_estatica:before {
+  content: "\eaa3";
+  color: #dc0028;
+}
+.icon-generico_crecimiento:before {
+  content: "\eaa4";
+  color: #dc0028;
+}
+.icon-generico_centro:before {
+  content: "\eaa5";
+  color: #dc0028;
+}
+.icon-generico_viento:before {
+  content: "\eaa6";
+  color: #dc0028;
+}
+.icon-generico_ciclon_viento:before {
+  content: "\eaa7";
+  color: #dc0028;
+}
+.icon-generico_investigacion_de_mercado:before {
+  content: "\eaa8";
+  color: #dc0028;
+}
+.icon-generico_gestion_social:before {
+  content: "\eaa9";
+  color: #dc0028;
+}
+.icon-generico_cubo_fregona_2:before {
+  content: "\eaaa";
+  color: #dc0028;
+}
+.icon-generico_nadador:before {
+  content: "\eaab";
+  color: #dc0028;
+}
+.icon-generico_botella_y_vaso:before {
+  content: "\eaac";
+  color: #dc0028;
+}
+.icon-generico_guargar_ubicacion:before {
+  content: "\eaad";
+  color: #dc0028;
+}
+.icon-generico_ordenador_movil:before {
+  content: "\eaae";
+  color: #dc0028;
+}
+.icon-generico_tina:before {
+  content: "\eaaf";
+  color: #dc0028;
+}
+.icon-generico_vitroceramica:before {
+  content: "\eab0";
+  color: #dc0028;
+}
+.icon-generico_buscar_ubicacion:before {
+  content: "\eab1";
+  color: #dc0028;
+}
+.icon-generico_gestiones_polizas:before {
+  content: "\eab2";
+  color: #dc0028;
+}
+.icon-generico_expediente:before {
+  content: "\eab3";
+  color: #dc0028;
+}
+.icon-generico_boli:before {
+  content: "\eab4";
+  color: #dc0028;
+}
+.icon-generico_tramite_siniestro:before {
+  content: "\eab5";
+  color: #dc0028;
+}
+.icon-generico_idiomas:before {
+  content: "\eab6";
+  color: #dc0028;
+}
+.icon-generico_cubo_fregona:before {
+  content: "\eab7";
+  color: #dc0028;
+}
+.icon-generico_termometro_humedad:before {
+  content: "\eab8";
+  color: #dc0028;
+}
+.icon-generico_tableta:before {
+  content: "\eab9";
+  color: #dc0028;
+}
+.icon-generico_recuperacion_economica:before {
+  content: "\eaba";
+}
+.icon-generico_servidor:before {
+  content: "\eabb";
+  color: #dc0028;
+}
+.icon-generico_boletin_web:before {
+  content: "\eabc";
+  color: #dc0028;
+}
+.icon-generico_lluvia:before {
+  content: "\eabd";
+  color: #dc0028;
+}
+.icon-generico_proteccion_dinero:before {
+  content: "\eabe";
+  color: #dc0028;
+}
+.icon-generico_gestion_de_riesgos:before {
+  content: "\eabf";
+}
+.icon-generico_defuncion:before {
+  content: "\eac0";
+  color: #dc0028;
+}
+.icon-generico_plumero_polvo:before {
+  content: "\eac1";
+  color: #dc0028;
+}
+.icon-generico_perito_diversos:before {
+  content: "\eac2";
+  color: #dc0028;
+}
+.icon-generico_necesidad_de_un_seguro:before {
+  content: "\eac3";
+  color: #dc0028;
+}
+.icon-generico_ciclista:before {
+  content: "\eac4";
+  color: #dc0028;
+}
+.icon-generico_personaje:before {
+  content: "\eac5";
+}
+.icon-generico_boletin:before {
+  content: "\eac6";
+  color: #dc0028;
+}
+.icon-generico_gobierno_corporativo:before {
+  content: "\eac7";
+  color: #dc0028;
+}
+.icon-generico_esquiador:before {
+  content: "\eac8";
+  color: #dc0028;
+}
+.icon-generico_lupa_documento:before {
+  content: "\eac9";
+  color: #dc0028;
+}
+.icon-generico_diente:before {
+  content: "\eaca";
+}
+.icon-generico_terremoto:before {
+  content: "\eacb";
+  color: #dc0028;
+}
+.icon-generico_telefono_casa:before {
+  content: "\eacc";
+  color: #dc0028;
+}
+.icon-generico_brocha_pintor:before {
+  content: "\eacd";
+  color: #dc0028;
+}
+.icon-generico_bannner_web:before {
+  content: "\eace";
+  color: #dc0028;
+}
+.icon-generico_wifi_auto:before {
+  content: "\eacf";
+  color: #dc0028;
+}
+.icon-generico_jugador_padel_tenis:before {
+  content: "\ead0";
+  color: #dc0028;
+}
+.icon-generico_wifi_casa:before {
+  content: "\ead1";
+  color: #dc0028;
+}
+.icon-generico_lista:before {
+  content: "\ead2";
+  color: #dc0028;
+}
+.icon-generico_bombilla_engranaje:before {
+  content: "\ead3";
+  color: #dc0028;
+}
+.icon-generico_proteccion_inquilinos:before {
+  content: "\ead4";
+  color: #dc0028;
+}
+.icon-generico_perito_reparaciones:before {
+  content: "\ead5";
+}
+.icon-generico_avatar2:before {
+  content: "\ead6";
+  color: #dc0028;
+}
+.icon-generico_firma:before {
+  content: "\ead7";
+  color: #dc0028;
+}
+.icon-generico_robo:before {
+  content: "\ead8";
+  color: #dc0028;
+}
+.icon-generico_perito_medico:before {
+  content: "\ead9";
+  color: #dc0028;
+}
+.icon-generico_plantilla_outlook:before {
+  content: "\eada";
+  color: #dc0028;
+}
+.icon-generico_multientidad:before {
+  content: "\eadb";
+  color: #dc0028;
+}
+.icon-generico_termometro_temperatura:before {
+  content: "\eadc";
+  color: #dc0028;
+}
+.icon-generico_nube_pensamiento:before {
+  content: "\eadd";
+  color: #dc0028;
+}
+.icon-generico_proteccion_casa:before {
+  content: "\eade";
+  color: #dc0028;
+}
+.icon-generico_caballete_pintor:before {
+  content: "\eadf";
+  color: #dc0028;
+}
+.icon-generico_cinta_de_correr:before {
+  content: "\eae0";
+  color: #dc0028;
+}
+.icon-generico_levantador_de_pesas:before {
+  content: "\eae1";
+  color: #dc0028;
+}
+.icon-generico_sociedad_2:before {
+  content: "\eae2";
+  color: #dc0028;
+}
+.icon-generico_wifi_mobile:before {
+  content: "\eae3";
+}
+.icon-generico_megafono:before {
+  content: "\eae4";
+  color: #dc0028;
+}
+.icon-generico_modificar_coberturas:before {
+  content: "\eae5";
+  color: #dc0028;
+}
+.icon-generico_dar_la_mano:before {
+  content: "\eae6";
+  color: #dc0028;
+}
+.icon-generico_pila:before {
+  content: "\eae7";
+  color: #dc0028;
+}
+.icon-generico_e-cliente:before {
+  content: "\eae8";
+}
+.icon-generico_pesas:before {
+  content: "\eae9";
+  color: #dc0028;
+}
+.icon-generico_sostenibilidad:before {
+  content: "\eaea";
+  color: #dc0028;
+}
+.icon-generico_valoracion:before {
+  content: "\eaec";
+  color: #dc0028;
+}
+.icon-generico_rayo_sobre_casa:before {
+  content: "\eaed";
+  color: #dc0028;
+}
+.icon-generico_nieve:before {
+  content: "\eaee";
+  color: #dc0028;
+}
+.icon-generico_sociedad_1:before {
+  content: "\eaef";
+  color: #dc0028;
+}
+.icon-generico_sol_nube:before {
+  content: "\eaf0";
+  color: #dc0028;
+}
+.icon-generico_solvencia:before {
+  content: "\eaf1";
+  color: #dc0028;
+}
+.icon-generico_camara_flash:before {
+  content: "\eaf2";
+  color: #dc0028;
+}
+.icon-generico_dron_camara:before {
+  content: "\eaf3";
+  color: #dc0028;
+}
+.icon-generico_coche_okey:before {
+  content: "\eaf4";
+}
+.icon-generico_rueda_engranaje:before {
+  content: "\eaf5";
+  color: #dc0028;
+}
+.icon-generico_-15:before {
+  content: "\eaf6";
+  color: #dc0028;
+}
+.icon-generico_coche-60:before {
+  content: "\eaf7";
+  color: #dc0028;
+}
+.icon-generico_avatar:before {
+  content: "\eaf8";
+}
+.icon-generico_casa-15:before {
+  content: "\eaf9";
+  color: #dc0028;
+}
+.icon-generico_bocadillo:before {
+  content: "\eafa";
+  color: #dc0028;
+}
+.icon-generico_sol:before {
+  content: "\eafb";
+  color: #dc0028;
+}
+.icon-generico_candado:before {
+  content: "\eafc";
+  color: #dc0028;
+}
+.icon-generico_filtro:before {
+  content: "\eafd";
+  color: #dc0028;
+}
+.icon-generico_60:before {
+  content: "\eafe";
+  color: #dc0028;
+}
+.icon-generico_bombilla:before {
+  content: "\eaff";
+  color: #dc0028;
+}
+.icon-generico_musico:before {
+  content: "\eb00";
+  color: #dc0028;
+}
+.icon-generico_ubicacion:before {
+  content: "\eb01";
+}
+.icon-generico_okey:before {
+  content: "\eb02";
+  color: #dc0028;
+}
+.icon-generico_paraguas1:before {
+  content: "\eb03";
+  color: #dc0028;
+}
+.icon-generico_100:before {
+  content: "\eb04";
+  color: #dc0028;
+}
+.icon-generico_peligro_carretera:before {
+  content: "\eb05";
+  color: #dc0028;
+}
+.icon-generico_corbata_2:before {
+  content: "\eb06";
+  color: #dc0028;
+}
+.icon-generico_reparacion_casa:before {
+  content: "\eb07";
+}
+.icon-generico_puesta_de_sol:before {
+  content: "\eb08";
+  color: #dc0028;
+}
+.icon-generico_cometa:before {
+  content: "\eb09";
+  color: #dc0028;
+}
+.icon-generico_muletas:before {
+  content: "\eb0a";
+  color: #dc0028;
+}
+.icon-generico_reparacion_informatica:before {
+  content: "\eb0b";
+}
+.icon-generico_regalo:before {
+  content: "\eb0c";
+  color: #dc0028;
+}
+.icon-generico_puzzle:before {
+  content: "\eb0d";
+  color: #dc0028;
+}
+.icon-generico_destornillador:before {
+  content: "\eb0e";
+  color: #dc0028;
+}
+.icon-generico_coche-60b:before {
+  content: "\eb0f";
+  color: #dc0028;
+}
+.icon-generico_bolsa_dolares:before {
+  content: "\eb10";
+  color: #dc0028;
+}
+.icon-generico_reno:before {
+  content: "\eb11";
+  color: #dc0028;
+}
+.icon-generico_valla:before {
+  content: "\eb12";
+  color: #dc0028;
+}
+.icon-generico_sobre_3:before {
+  content: "\eb13";
+  color: #dc0028;
+}
+.icon-generico_sobre_1:before {
+  content: "\eb14";
+  color: #dc0028;
+}
+.icon-generico_helado:before {
+  content: "\eb15";
+  color: #dc0028;
+}
+.icon-generico_pergamino:before {
+  content: "\eb16";
+  color: #dc0028;
+}
+.icon-generico_hospital:before {
+  content: "\eb17";
+  color: #dc0028;
+}
+.icon-generico_anillo:before {
+  content: "\eb18";
+  color: #dc0028;
+}
+.icon-generico_candado1:before {
+  content: "\eb1a";
+  color: #dc0028;
+}
+.icon-generico_cono:before {
+  content: "\eb1b";
+  color: #dc0028;
+}
+.icon-generico_leche:before {
+  content: "\eb1c";
+  color: #dc0028;
+}
+.icon-generico_avion_frontal:before {
+  content: "\eb1d";
+  color: #dc0028;
+}
+.icon-generico_nube:before {
+  content: "\eb1f";
+  color: #dc0028;
+}
+.icon-generico_cubiertos:before {
+  content: "\eb20";
+  color: #dc0028;
+}
+.icon-generico_llave_inglesa_1:before {
+  content: "\eb21";
+  color: #dc0028;
+}
+.icon-generico_llave_inglesa_3:before {
+  content: "\eb22";
+}
+.icon-generico_perro:before {
+  content: "\eb23";
+  color: #dc0028;
+}
+.icon-generico_llave_inglesa_2:before {
+  content: "\eb24";
+  color: #dc0028;
+}
+.icon-generico_timon:before {
+  content: "\eb25";
+  color: #dc0028;
+}
+.icon-generico_chat:before {
+  content: "\eb26";
+  color: #dc0028;
+}
+.icon-generico_gato:before {
+  content: "\eb27";
+  color: #dc0028;
+}
+.icon-generico_chimenea:before {
+  content: "\eb28";
+  color: #dc0028;
+}
+.icon-generico_llave_coche:before {
+  content: "\eb29";
+  color: #dc0028;
+}
+.icon-generico_piano:before {
+  content: "\eb2a";
+  color: #dc0028;
+}
+.icon-generico_aceituna_martini:before {
+  content: "\eb2b";
+  color: #dc0028;
+}
+.icon-generico_parlamento:before {
+  content: "\eb2c";
+  color: #dc0028;
+}
+.icon-generico_martillo:before {
+  content: "\eb2d";
+  color: #dc0028;
+}
+.icon-generico_gamba:before {
+  content: "\eb2e";
+  color: #dc0028;
+}
+.icon-generico_red_hot_chilli_pepper:before {
+  content: "\eb2f";
+  color: #dc0028;
+}
+.icon-generico_h2o:before {
+  content: "\eb30";
+  color: #dc0028;
+}
+.icon-generico_barco:before {
+  content: "\eb31";
+  color: #dc0028;
+}
+.icon-generico_dulce:before {
+  content: "\eb32";
+  color: #dc0028;
+}
+.icon-generico_barberia:before {
+  content: "\eb33";
+  color: #dc0028;
+}
+.icon-generico_cadena_bicicleta:before {
+  content: "\eb34";
+  color: #dc0028;
+}
+.icon-generico_bambas:before {
+  content: "\eb35";
+  color: #dc0028;
+}
+.icon-generico_libreria:before {
+  content: "\eb36";
+  color: #dc0028;
+}
+.icon-generico_mapa:before {
+  content: "\eb37";
+  color: #dc0028;
+}
+.icon-generico_llave:before {
+  content: "\eb38";
+  color: #dc0028;
+}
+.icon-generico_libros:before {
+  content: "\eb39";
+  color: #dc0028;
+}
+.icon-generico_vestido:before {
+  content: "\eb3a";
+  color: #dc0028;
+}
+.icon-generico_remolque_2:before {
+  content: "\eb3b";
+}
+.icon-generico_barrika:before {
+  content: "\eb3d";
+  color: #dc0028;
+}
+.icon-generico_timbre:before {
+  content: "\eb3e";
+  color: #dc0028;
+}
+.icon-generico_cronometro:before {
+  content: "\eb3f";
+  color: #dc0028;
+}
+.icon-generico_osobuco:before {
+  content: "\eb40";
+  color: #dc0028;
+}
+.icon-generico_cocina:before {
+  content: "\eb41";
+  color: #dc0028;
+}
+.icon-generico_margarita:before {
+  content: "\eb42";
+  color: #dc0028;
+}
+.icon-generico_microfono:before {
+  content: "\eb43";
+  color: #dc0028;
+}
+.icon-generico_remolque_1:before {
+  content: "\eb44";
+}
+.icon-generico_ancora:before {
+  content: "\eb45";
+  color: #dc0028;
+}
+.icon-generico_collar:before {
+  content: "\eb46";
+  color: #dc0028;
+}
+.icon-generico_frutas_y_verduras:before {
+  content: "\eb47";
+  color: #dc0028;
+}
+.icon-generico_cafe:before {
+  content: "\eb48";
+  color: #dc0028;
+}
+.icon-generico_avion_papel:before {
+  content: "\eb49";
+  color: #dc0028;
+}
+.icon-generico_direccion:before {
+  content: "\eb4a";
+  color: #dc0028;
+}
+.icon-generico_casco_moto:before {
+  content: "\eb4b";
+  color: #dc0028;
+}
+.icon-generico_gorro_cocinero:before {
+  content: "\eb4c";
+  color: #dc0028;
+}
+.icon-generico_cazuela:before {
+  content: "\eb4d";
+  color: #dc0028;
+}
+.icon-generico_dolar:before {
+  content: "\eb4e";
+  color: #dc0028;
+}
+.icon-generico_caja:before {
+  content: "\eb4f";
+  color: #dc0028;
+}
+.icon-generico_barco_frontal:before {
+  content: "\eb50";
+  color: #dc0028;
+}
+.icon-generico_enchufe:before {
+  content: "\eb51";
+  color: #dc0028;
+}
+.icon-generico_sarten:before {
+  content: "\eb52";
+  color: #dc0028;
+}
+.icon-generico_nudo_marinero_4:before {
+  content: "\eb53";
+  color: #dc0028;
+}
+.icon-generico_peine_2:before {
+  content: "\eb54";
+  color: #dc0028;
+}
+.icon-generico_maleta_negocio:before {
+  content: "\eb55";
+  color: #dc0028;
+}
+.icon-generico_hogar:before {
+  content: "\eb56";
+}
+.icon-generico_rayo:before {
+  content: "\eb57";
+  color: #dc0028;
+}
+.icon-generico_gota_de_agua:before {
+  content: "\eb59";
+  color: #dc0028;
+}
+.icon-generico_uva:before {
+  content: "\eb5a";
+  color: #dc0028;
+}
+.icon-generico_capitolio:before {
+  content: "\eb5b";
+  color: #dc0028;
+}
+.icon-generico_huella:before {
+  content: "\eb5c";
+  color: #dc0028;
+}
+.icon-generico_reloj_arena:before {
+  content: "\eb5d";
+  color: #dc0028;
+}
+.icon-generico_peine_1:before {
+  content: "\eb5e";
+  color: #dc0028;
+}
+.icon-generico_nudo_marinero_3:before {
+  content: "\eb5f";
+  color: #dc0028;
+}
+.icon-generico_perro_cazador:before {
+  content: "\eb60";
+  color: #dc0028;
+}
+.icon-generico_perro_1:before {
+  content: "\eb61";
+  color: #dc0028;
+}
+.icon-generico_cosechadora:before {
+  content: "\eb62";
+  color: #dc0028;
+}
+.icon-generico_jabon:before {
+  content: "\eb63";
+  color: #dc0028;
+}
+.icon-generico_nudo_marinero_2:before {
+  content: "\eb64";
+  color: #dc0028;
+}
+.icon-generico_corbata:before {
+  content: "\eb65";
+  color: #dc0028;
+}
+.icon-generico_tijeras:before {
+  content: "\eb66";
+  color: #dc0028;
+}
+.icon-generico_campo_de_trigo:before {
+  content: "\eb67";
+  color: #dc0028;
+}
+.icon-generico_pajarita:before {
+  content: "\eb68";
+  color: #dc0028;
+}
+.icon-generico_lampara1:before {
+  content: "\eb69";
+  color: #dc0028;
+}
+.icon-generico_secador:before {
+  content: "\eb6a";
+  color: #dc0028;
+}
+.icon-generico_campo_maiz:before {
+  content: "\eb6b";
+  color: #dc0028;
+}
+.icon-generico_cuadro:before {
+  content: "\eb6c";
+  color: #dc0028;
+}
+.icon-generico_fuego:before {
+  content: "\eb6d";
+  color: #dc0028;
+}
+.icon-generico_nudo_marinero_1:before {
+  content: "\eb6e";
+  color: #dc0028;
+}
+.icon-generico_moto:before {
+  content: "\eb6f";
+}
+.icon-generico_calendario:before {
+  content: "\eb70";
+  color: #dc0028;
+}
+.icon-generico_anzuelo:before {
+  content: "\eb71";
+  color: #dc0028;
+}
+.icon-generico_web_cam:before {
+  content: "\eb72";
+  color: #dc0028;
+}
+.icon-generico_alerta_novedad_importancia:before {
+  content: "\eb73";
+  color: #dc0028;
+}
+.icon-generico_insignia:before {
+  content: "\eb74";
+  color: #dc0028;
+}
+.icon-generico_furgo:before {
+  content: "\eb75";
+}
+.icon-generico_coordinador:before {
+  content: "\eb77";
+  color: #dc0028;
+}
+.icon-generico_documento_okey:before {
+  content: "\eb78";
+  color: #dc0028;
+}
+.icon-generico_jarra:before {
+  content: "\eb79";
+  color: #dc0028;
+}
+.icon-generico_voluntario_flexible:before {
+  content: "\eb7a";
+  color: #dc0028;
+}
+.icon-generico_str:before {
+  content: "\eb7b";
+  color: #dc0028;
+}
+.icon-generico_hilo:before {
+  content: "\eb7c";
+  color: #dc0028;
+}
+.icon-generico_chat_medico:before {
+  content: "\eb7d";
+  color: #dc0028;
+}
+.icon-generico_bici_y_patinete:before {
+  content: "\eb7e";
+}
+.icon-generico_camara_videollamada:before {
+  content: "\eb80";
+  color: #dc0028;
+}
+.icon-generico_produccion:before {
+  content: "\eb81";
+  color: #dc0028;
+}
+.icon-generico_eliminar_doc:before {
+  content: "\eb82";
+  color: #dc0028;
+}
+.icon-generico_coche_patinete:before {
+  content: "\eb83";
+}
+.icon-generico_coche_suv_hibrido:before {
+  content: "\eb84";
+  color: #dc0028;
+}
+.icon-generico_encargo_virtual:before {
+  content: "\eb85";
+}
+.icon-generico_pajaro:before {
+  content: "\eb86";
+  color: #dc0028;
+}
+.icon-generico_atestado:before {
+  content: "\eb87";
+  color: #dc0028;
+}
+.icon-generico_regar:before {
+  content: "\eb88";
+  color: #dc0028;
+}
+.icon-generico_ventana:before {
+  content: "\eb89";
+  color: #dc0028;
+}
+.icon-generico_covid-19:before {
+  content: "\eb8a";
+  color: #dc0028;
+}
+.icon-generico_planta1:before {
+  content: "\eb8b";
+  color: #dc0028;
+}
+.icon-generico_transporte_publico:before {
+  content: "\eb8c";
+  color: #dc0028;
+}
+.icon-generico_inodoro_abierto:before {
+  content: "\eb8d";
+  color: #dc0028;
+}
+.icon-generico_venta_hibrida:before {
+  content: "\eb8e";
+  color: #dc0028;
+}
+.icon-generico_aguas_grises:before {
+  content: "\eb8f";
+  color: #dc0028;
+}
+.icon-generico_bombilla1:before {
+  content: "\eb90";
+  color: #dc0028;
+}
+.icon-generico_robo_expoliacion:before {
+  content: "\eb91";
+  color: #dc0028;
+}
+.icon-generico_circulo_moebius:before {
+  content: "\eb92";
+  color: #dc0028;
+}
+.icon-generico_jefe:before {
+  content: "\eb93";
+  color: #dc0028;
+}
+.icon-generico_ocio_viajes:before {
+  content: "\eb94";
+  color: #dc0028;
+}
+.icon-generico_informe_juridico:before {
+  content: "\eb95";
+  color: #dc0028;
+}
+.icon-generico_co2:before {
+  content: "\eb96";
+  color: #dc0028;
+}
+.icon-generico_gestor:before {
+  content: "\eb97";
+  color: #dc0028;
+}
+.icon-generico_detectives_1:before {
+  content: "\eb98";
+  color: #dc0028;
+}
+.icon-generico_reparacion_camion_vehiculoindustrial:before {
+  content: "\eb99";
+  color: #dc0028;
+}
+.icon-generico_llamada:before {
+  content: "\eb9a";
+  color: #dc0028;
+}
+.icon-generico_placa_fotovoltaica:before {
+  content: "\eb9b";
+  color: #dc0028;
+}
+.icon-generico_customer_journey:before {
+  content: "\eb9c";
+  color: #dc0028;
+}
+.icon-generico_sustitucion_de_cristales:before {
+  content: "\eb9d";
+  color: #dc0028;
+}
+.icon-generico_formacion:before {
+  content: "\eb9e";
+  color: #dc0028;
+}
+.icon-generico_estetica_y_salud:before {
+  content: "\eb9f";
+  color: #dc0028;
+}
+.icon-generico_formacion_cursos_obligatorios:before {
+  content: "\eba0";
+  color: #dc0028;
+}
+.icon-generico_atomos:before {
+  content: "\eba1";
+  color: #dc0028;
+}
+.icon-generico_busqueda_localizacion_en_web:before {
+  content: "\eba2";
+  color: #dc0028;
+}
+.icon-generico_bombilla_estrella:before {
+  content: "\eba3";
+  color: #dc0028;
+}
+.icon-generico_reclamacion:before {
+  content: "\eba4";
+  color: #dc0028;
+}
+.icon-generico_plantar_folleto:before {
+  content: "\eba5";
+  color: #dc0028;
+}
+.icon-generico_taxi-uber:before {
+  content: "\eba6";
+  color: #dc0028;
+}
+.icon-generico_defuncion_todas_las_rel:before {
+  content: "\eba7";
+  color: #dc0028;
+}
+.icon-generico_contractual:before {
+  content: "\eba8";
+  color: #dc0028;
+}
+.icon-generico_lapiz:before {
+  content: "\eba9";
+  color: #dc0028;
+}
+.icon-generico_conejo:before {
+  content: "\ebaa";
+  color: #dc0028;
+}
+.icon-generico_brote:before {
+  content: "\ebab";
+  color: #dc0028;
+}
+.icon-generico_retrovisor1:before {
+  content: "\ebac";
+  color: #dc0028;
+}
+.icon-generico_danos_ciberataque_coche_electrico:before {
+  content: "\ebad";
+  color: #dc0028;
+}
+.icon-generico_peso:before {
+  content: "\ebae";
+  color: #dc0028;
+}
+.icon-generico_aplauso:before {
+  content: "\ebaf";
+  color: #dc0028;
+}
+.icon-generico_recobros:before {
+  content: "\ebb0";
+  color: #dc0028;
+}
+.icon-generico_insectos:before {
+  content: "\ebb1";
+  color: #dc0028;
+}
+.icon-generico_maquineta:before {
+  content: "\ebb2";
+  color: #dc0028;
+}
+.icon-generico_auriculares:before {
+  content: "\ebb3";
+  color: #dc0028;
+}
+.icon-generico_papelera_abierta:before {
+  content: "\ebb4";
+  color: #dc0028;
+}
+.icon-generico_musica:before {
+  content: "\ebb5";
+  color: #dc0028;
+}
+.icon-generico_consultor_financiero:before {
+  content: "\ebb7";
+  color: #dc0028;
+}
+.icon-generico_cookie:before {
+  content: "\ebb8";
+  color: #dc0028;
+}
+.icon-generico_reparacion_de_motocicleta_o_ciclomotor:before {
+  content: "\ebb9";
+  color: #dc0028;
+}
+.icon-generico_whatsapp:before {
+  content: "\ebba";
+  color: #dc0028;
+}
+.icon-generico_coche_hibrido:before {
+  content: "\ebbb";
+  color: #dc0028;
+}
+.icon-generico_caja_fuerte:before {
+  content: "\ebbc";
+  color: #dc0028;
+}
+.icon-generico_energia_eolica:before {
+  content: "\ebbd";
+  color: #dc0028;
+}
+.icon-generico_encargo:before {
+  content: "\ebbe";
+  color: #dc0028;
+}
+.icon-generico_telefono-sobre:before {
+  content: "\ebbf";
+  color: #dc0028;
+}
+.icon-generico_busqueda_de_talento:before {
+  content: "\ebc0";
+  color: #dc0028;
+}
+.icon-generico_ladron:before {
+  content: "\ebc1";
+  color: #dc0028;
+}
+.icon-generico_coche_enchufe:before {
+  content: "\ebc2";
+  color: #dc0028;
+}
+.icon-generico_personaje_boli:before {
+  content: "\ebc3";
+  color: #dc0028;
+}
+.icon-generico_estacion_de_carga:before {
+  content: "\ebc4";
+  color: #dc0028;
+}
+.icon-generico_volante_calefaccion:before {
+  content: "\ebc5";
+  color: #dc0028;
+}
+.icon-generico_bomberos:before {
+  content: "\ebc6";
+  color: #dc0028;
+}
+.icon-generico_extracontractual:before {
+  content: "\ebc7";
+  color: #dc0028;
+}
+.icon-generico_titularidad:before {
+  content: "\ebc8";
+  color: #dc0028;
+}
+.icon-generico_inodoro_cerrado:before {
+  content: "\ebc9";
+  color: #dc0028;
+}
+.icon-generico_inflador_ruedas:before {
+  content: "\ebca";
+  color: #dc0028;
+}
+.icon-generico_tarjeta_boli:before {
+  content: "\ebcb";
+  color: #dc0028;
+}
+.icon-generico_percha:before {
+  content: "\ebcc";
+  color: #dc0028;
+}
+.icon-generico_puerta_abatible:before {
+  content: "\ebcd";
+  color: #dc0028;
+}
+.icon-generico_mundo_sostenible:before {
+  content: "\ebce";
+  color: #dc0028;
+}
+.icon-generico_silla_de_ruedas:before {
+  content: "\ebcf";
+  color: #dc0028;
+}
+.icon-generico_asesoria_juridica:before {
+  content: "\ebd0";
+}
+.icon-generico_regadera:before {
+  content: "\ebd1";
+  color: #dc0028;
+}
+.icon-generico_asiento:before {
+  content: "\ebd2";
+  color: #dc0028;
+}
+.icon-generico_tramite:before {
+  content: "\eb7f";
+  color: #dc0028;
+}
