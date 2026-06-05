@@ -14,19 +14,17 @@ Su propósito es mantener a los equipos en movimiento: una publicación útil, c
 
 ## Post listo para Teams
 
-**Asunto:** `🎉 GitHub Copilot ya está en GCO`
+**Asunto:** `👋 Bienvenido/a a tu canal de tips y novedades sobre GitHub Copilot`
 
 ---
 
-👋 **Bienvenido/a a tu canal de tips y novedades sobre GitHub Copilot**
+Este espacio será el **punto de encuentro** para acompañarte en tu día a día con **GitHub Copilot.**
 
-Este espacio será el punto de encuentro para acompañarte en tu día a día con **GitHub Copilot.**
-
-Aquí publicaremos contenido breve y aplicable dos veces por semana: tips, casos de uso reales del equipo y novedades organizadas por fase y por tecnología.
+Aquí publicaremos contenido breve y aplicable como: tips, casos de uso reales del equipo y novedades organizadas por fase y por tecnología.
 
 **La idea es simple:** cada publicación te da algo concreto que puedes probar hoy, sin necesidad de leer documentación ni hacer cursos largos.
 
-👉 Empieza cuando quieras — aquí no hay prisa.
+👉 **Empieza cuando quieras** — aquí no hay prisa.
 
 ---
 

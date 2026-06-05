@@ -15,11 +15,11 @@ Su propósito es que cualquier developer — independientemente de su tecnologí
 
 ## Post listo para Teams
 
-**Asunto:** `🚀 Por aquí empieza tu camino con GitHub Copilot`
+**Asunto:** `🪡 Por aquí empieza tu camino con GitHub Copilot`
 
 ---
 
-🚀 **Bienvenido/a a tu guía de arranque con GitHub Copilot**
+🪡 **Bienvenido/a esta es tu guía de arranque con GitHub Copilot**
 
 Si acabas de recibir acceso o aún no has dado el primer paso, este canal es tu punto de partida.
 
@@ -27,7 +27,7 @@ Aquí encontrarás los pasos numerados para activar Copilot en tu entorno, lanza
 
 **Cada paso es corto, concreto y está adaptado a los entornos de GCO:** Visual Studio, .NET, COBOL y DB2.
 
-👉 Empieza por el Paso 1 — verificar que tienes acceso activo.
+👉 **Empieza por el Paso 1 — verificar que tienes acceso activo.**
 
 ---
 
@@ -49,14 +49,14 @@ La pieza gráfica contiene este texto — no necesita texto externo para entende
 
 | Elemento | Texto |
 |----------|-------|
-| Franja canal | 🚀 Primeros Pasos con Copilot |
+| Franja canal | 🪡 Primeros Pasos |
 | Pill fase | Fase 1 · Concienciación |
-| Título | Tu guía para arrancar desde cero |
-| Subtítulo | Activación, primeros prompts y dudas básicas — sin prisa |
-| Cuerpo línea 1 | Pasos cortos y concretos adaptados a los entornos de GCO. |
-| Cuerpo línea 2 | Visual Studio, .NET, COBOL, DB2 — elige tu punto de partida. |
-| Cuerpo línea 3 | Cada paso tarda menos de 10 minutos. |
-| CTA | 👉 Empieza por el Paso 1 |
+| Título | Empieza poco a poco, a tu ritmo |
+| Subtítulo | — |
+| Cuerpo línea 1 | — |
+| Cuerpo línea 2 | — |
+| Cuerpo línea 3 | — |
+| CTA | 👉 Empieza por el Paso 1 — verificar que tienes acceso activo |
 | Footer | Estrategia de Adopción · 2026 |
 
 ---

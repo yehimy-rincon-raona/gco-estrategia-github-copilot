@@ -22,18 +22,26 @@ GCO ya tiene licencias activas y un proceso de formación técnica en curso, imp
 
 ---
 
-## ESTADO ACTUAL (Mayo 2026)
+## ESTADO ACTUAL (Junio 2026 — Semana 1 de ejecución)
 
 - ✅ Proceso de formación técnica en curso — impartido por Raona y Pasiona (el número exacto de sesiones no está centralizado; no usar "18" como cifra fija)
 - ✅ Estrategia de adopción en 4 fases definida
-- ✅ Estructura del canal Teams definida (6 canales)
+- ✅ Estructura del canal Teams GCO definida (6 canales para los developers)
 - ✅ Correo enviado a helpdesk@raona.com solicitando licencia Cloud Design
 - ✅ Documento base para presentación directiva completado
+- ✅ Canal interno de Teams creado en **tenant Raona**: equipo "Estrategia de Adopción GitHub Copilot GCO" — 2 canales: **General** y **Producción y materiales** — solo acceso Nibaldo, Guillermo y Yehimy (ver `Configuraciones/config_canal-interno.md`)
+- ✅ Pub 1 (Bienvenida) — Publicada el 3 junio en los 6 canales del Teams GCO
+- ✅ Pub 2 (Primeros Pasos) — Post + Infografía publicados el 5 junio · Vídeo 1 en producción (grabaciones pendientes de Nibaldo)
+- ✅ Briefs Pub 3 y Pub 4 (Semana 2) — listos, pendiente aprobación Nibaldo/Guillermo el lunes 8 junio
+- ✅ Canal interno de equipos actualizado con estado de Semana 1
+- 🔄 Pendiente: Grabaciones de Nibaldo para completar Vídeo 1 (URL canal corporativo pendiente)
+- 🔄 Pendiente: Aprobación Pub 3 y Pub 4 (lunes 8 junio)
 - 🔄 Pendiente: Recibir manual de marca de Occident (responsable: Guillermo)
-- 🔄 Pendiente: Crear design system en Claude Design
-- 🔄 Pendiente: Montar entorno de simulación en Teams de Raona
+- 🔄 Pendiente: Crear design system en Figma
 - 🔄 Pendiente: Configurar Microsoft Bookings para sesiones 1:1
-- 🔄 Pendiente: Checkpoint de presentación con cliente GCO
+- 🔄 Pendiente: Acceso al Teams GCO (bloqueante activo — lo gestiona Catalana Occidente)
+- ⚠️ Bloqueado: Pub 5 (AMA) — falta fecha (Nibaldo + Guillermo)
+- ⚠️ Bloqueado: Pub 8 (Sesiones 1:1) — falta Microsoft Bookings
 
 ---
 
@@ -42,20 +50,23 @@ GCO ya tiene licencias activas y un proceso de formación técnica en curso, imp
 | Archivo / Carpeta | Qué contiene |
 |---|---|
 | `index.html` | **DOCUMENTO PRINCIPAL** — Presentación completa para stakeholders de GCO |
+| `Produccion/TABLERO.md` | **PUNTO DE ENTRADA DE PRODUCCIÓN** — Estado de cada publicación y vídeo, con links directos a los archivos |
+| `Produccion/semana-N_fechas/pub-0X_dia-DDmes/` | Archivos de cada publicación (post Teams + brief infografía). Organizados por semana de publicación |
+| `Produccion/Videos/` | Scripts de guión y grabación para los 3 vídeos de adopción |
+| `Produccion/semana-0_25-29may/graficas/screenshots/` | Screenshots de todo lo publicado — evidencia visual del estado real |
 | `Configuraciones/configuracion-ia-asistente.md` | Configuración detallada del asistente IA (rol, restricciones, casos reales, formato de salida) |
-| `Configuraciones/config_canal-teams.md` | Estructura y propósito de los 6 canales del equipo de Teams |
+| `Configuraciones/config_canal-teams.md` | Estructura y propósito de los 6 canales del equipo de Teams de GCO (los developers) |
+| `Configuraciones/config_canal-interno.md` | Estructura y metodología del canal interno de Teams del equipo Raona |
 | `Configuraciones/estructura_prompt.md` | Fórmula de prompting: Rol + Contexto + Tarea + Restricciones + Formato |
-| `Configuraciones/tareas.md` | Lista de tareas activas del proyecto |
-| `Planeacion/estrategia-de-adopcion-posformacion.md` | Documento base estratégico completo (19 secciones) |
-| `Planeacion/plan_de_accion-estrategia_de_comunicacion.md` | Plan de contenidos por fases con ejemplos listos |
-| `Planeacion/plan_de_capacitacion.md` | Contenido de cada sesión de formación y cronograma |
-| `Planeacion/ejemplos_practicos_Github-Copilot.md` | Casos de uso reales demostrados en sesiones |
+| `Planeacion/Semana-1_primer-plan-de-contenidos/timeline-y-checklist.md` | Calendario de publicaciones semana a semana (Semanas 1–8) |
+| `Planeacion/Semana-0_planeacion-del-proyecto/plan_de_capacitacion.md` | Contenido de cada módulo de formación y cronograma de grupos |
+| `Planeacion/Semana-0_planeacion-del-proyecto/ejemplos_practicos_Github-Copilot.md` | Casos de uso reales demostrados en sesiones — fuente para briefs de Pub 3 en adelante |
 | `Conocimiento/` | Base de conocimiento e investigación que alimenta el proyecto |
 | `Sesiones/` | Materiales de formación por grupo (G1M a G6M, sesiones 1–3) |
-| `Reuniones/` | Notas y grabaciones de reuniones |
-| `Design System/` | Assets y referencias gráficas (prompt_claude_design.md) |
-| `Manual de marca/` | Brand book de Occident y fuentes tipográficas |
-| `Seguimiento/` | Correos y seguimiento de helpdesk |
+| `Teams-Interno/` | Organiza el contenido del canal interno de Teams (avances semanales + aportes de Nibaldo) |
+| `Teams-Interno/General/actualizaciones-semanales/` | Posts de avance semanal listos para publicar en el canal General |
+| `Teams-Interno/Produccion-y-materiales/nibaldo/registro-nibaldo.md` | Log de todo lo que Nibaldo sube al canal |
+| `Teams-Interno/Produccion-y-materiales/integraciones/registro-integraciones.md` | Qué se integró al plan y dónde quedó |
 | `_historico/` | **Trazabilidad de sesiones** — un archivo por sesión, punto de entrada para nuevos chats |
 
 ---
@@ -131,6 +142,26 @@ Los archivos son **consecutivos** — cada uno referencia el anterior en la cabe
 
 ### Cómo usar este archivo al iniciar una nueva sesión
 Al abrir un chat nuevo, lee primero el archivo histórico más reciente de `_historico/` — no el CLAUDE.md completo. El histórico tiene el estado actual; el CLAUDE.md tiene las reglas permanentes. Ambos se complementan.
+
+---
+
+## CANAL INTERNO DE TEAMS — Metodología
+
+Existe un equipo de Microsoft Teams llamado **"Estrategia de Adopción GitHub Copilot GCO"** (creado el 4 junio 2026) en el **tenant de Raona**. Es exclusivamente interno — solo tienen acceso Nibaldo, Guillermo y Yehimy. Es distinto e independiente del Teams de contenidos que usarán los developers de GCO (ese irá en el tenant de Occidente).
+
+**Canales:**
+- **General** → visibilizar el avance semanal respecto al cronograma entre los tres
+- **Producción y materiales** → Nibaldo sube grabaciones y notas; Yehimy las integra al plan
+
+**Principio clave:** Todo lo que se publica en el canal de Teams tiene un archivo fuente en `Teams-Interno/`. Nunca publicar sin registrar primero en el proyecto.
+
+**Flujo Nibaldo → Plan:**
+1. Nibaldo sube algo en "Producción y materiales"
+2. Yehimy lo registra en `Teams-Interno/Produccion-y-materiales/nibaldo/registro-nibaldo.md`
+3. Yehimy evalúa → integra o descarta
+4. Si se integra: va a `Planeacion/` o `Produccion/` + se registra en `registro-integraciones.md`
+
+**Ver:** `Configuraciones/config_canal-interno.md` para detalle completo y `Teams-Interno/README.md` para la estructura de carpetas.
 
 ---
 

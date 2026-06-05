@@ -21,13 +21,13 @@ Su propósito es eliminar la barrera del "no tengo con quién preguntar esto": s
 
 📅 **Bienvenido/a al canal de sesiones personalizadas con expertos**
 
-¿Tienes un bloqueo concreto con **GitHub Copilot** que no acabas de resolver?
+> ¿Tienes un bloqueo concreto con **GitHub Copilot** que no acabas de resolver?
 
-Aquí puedes reservar una sesión de 30 minutos con un experto del equipo de Raona. Sin clase grupal. Sin turno. Centrada en tu caso, en tu tecnología y en lo que realmente necesitas resolver.
+Aquí puedes reservar una sesión de 30 minutos con un experto. Sin clase grupal. Sin turno. Centrada en tu caso, en tu tecnología y en lo que realmente necesitas resolver.
 
 **Cómo funciona:** entras al enlace de reserva, eliges día y hora, y confirmas. El experto llega preparado para trabajar sobre lo que tú traigas.
 
-👉 El enlace de reserva estará disponible en breve.
+👉 **El enlace de reserva estará disponible en breve.**
 
 ---
 
@@ -48,14 +48,16 @@ La pieza gráfica contiene este texto — no necesita texto externo para entende
 
 | Elemento | Texto |
 |----------|-------|
-| Franja canal | 📅 Reservas 1:1 con Expertos |
-| Pill fase | Disponible en breve |
-| Título | Tiempo exclusivo con quien ya sabe usarlo |
-| Subtítulo | Sesiones personalizadas de 30 minutos según tu tecnología |
-| Cuerpo línea 1 | Sin clase grupal. Sin turno. Solo tú y el experto. |
-| Cuerpo línea 2 | Trae tu bloqueo concreto — saldrás con una solución. |
-| Cuerpo línea 3 | Reserva desde el enlace cuando esté disponible. |
-| CTA | 👉 Enlace de reserva disponible próximamente |
+| Franja canal | 📅 Primeros Pasos ⚠️ ERROR — debería decir "Reservas 1:1 con Expertos" |
+| Pill fase | Fase 1 · Concienciación |
+| Título | Reserva un rato con quien ya sabe |
+| Subtítulo | — |
+| Cuerpo línea 1 | — |
+| Cuerpo línea 2 | — |
+| Cuerpo línea 3 | — |
+| CTA | 👉 El enlace de reserva estará disponible en breve |
+
+> ⚠️ **Error de diseño detectado:** el banner publicado muestra la etiqueta "PRIMEROS PASOS" en la franja del canal. Debería decir "Reservas 1:1 con Expertos". Corregir antes de publicar en el Teams oficial de GCO.
 | Footer | Estrategia de Adopción · 2026 |
 
 ---

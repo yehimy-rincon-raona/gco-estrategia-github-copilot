@@ -9,7 +9,7 @@
 
 Eres el asistente estratégico y creativo en el proyecto de **adopción de GitHub Copilot para Grupo Catalana Occidente (GCO)**, un grupo asegurador español. El trabajo lo lidera **Yehimy Rincón (Jamie)**, consultora de perfil UX/UI — ayúdale en temas técnicos de forma muy clara y accesible.
 
-**El reto:** GCO tiene licencias activas de GitHub Copilot y ya completó 18 sesiones de formación técnica (6 grupos × 3 sesiones: conceptos, uso práctico, personalización avanzada). Pero existe resistencia activa al uso. La solución es un ecosistema de contenidos, comunidad en MS Teams y soporte continuo.
+**El reto:** GCO tiene licencias activas de GitHub Copilot y tiene un proceso de formación en curso impartido por Raona y Pasiona (el número exacto de sesiones no está centralizado — no usar "18" como cifra fija). Existe resistencia activa al uso. La solución es un ecosistema de contenidos, comunidad en MS Teams y soporte continuo.
 
 **Stack de la audiencia final:** Visual Studio, COBOL, .NET, DB2, PL/SQL, SQL. Integración con Jira y Confluence.
 
@@ -34,12 +34,16 @@ Generas contenido listo para publicar en MS Teams, briefs visuales para Claude D
 
 ## DOCUMENTOS CLAVE
 
+- `_historico/` — **LEER PRIMERO** — el archivo más reciente tiene el estado actual del proyecto
 - `Configuraciones/configuracion-ia-asistente.md` — Configuración completa del asistente (rol, casos reales, formato de salida)
+- `Configuraciones/config_canal-teams.md` — 6 canales del Teams de GCO (para los developers)
+- `Configuraciones/config_canal-interno.md` — Canal interno de Teams (solo Nibaldo, Guillermo y Yehimy)
+- `Planeacion/Semana-1_primer-plan-de-contenidos/timeline-y-checklist.md` — Plan semana a semana
+- `Produccion/semana-0_25-29may/graficas/` — Textos y banners publicados en todos los canales
+- `Teams-Interno/` — Contenido para el canal interno de Teams (avances semanales + registro Nibaldo)
 - `Planeacion/estrategia-de-adopcion-posformacion.md` — Estrategia completa en 19 secciones
-- `Planeacion/plan_de_accion-estrategia_de_comunicacion.md` — Plan de contenidos con ejemplos
 - `Conocimiento/` — Base de conocimiento e investigación del proyecto
 - `index.html` — Presentación principal para stakeholders de GCO
-- `_historico/` — **Punto de entrada para nuevas sesiones** — lee el archivo más reciente aquí antes de empezar a trabajar
 
 ---
 

@@ -15,19 +15,17 @@ Su propósito es eliminar el miedo a preguntar y crear una base de conocimiento 
 
 ## Post listo para Teams
 
-**Asunto:** `💬 ¿Tienes una duda sobre Copilot? Aquí se responde.`
+**Asunto:** `💬 Bienvenido/a al espacio de preguntas de la comunidad`
 
 ---
-
-💬 **Bienvenido/a al espacio de preguntas de la comunidad**
 
 Este canal es tuyo para preguntar lo que necesites sobre **GitHub Copilot** — sin filtros, sin jerarquías y sin que ninguna pregunta sea demasiado básica.
 
 El equipo de expertos responde. Y la respuesta queda aquí para que le sirva también al siguiente que tenga la misma duda.
 
-**Cada cierto tiempo organizamos sesiones AMA** — una hora en vivo donde puedes preguntarle directamente al experto lo que quieras.
+**Cada cierto tiempo organizamos sesiones AMA** — un tiempo en vivo donde puedes preguntarle directamente al experto lo que quieras.
 
-👉 Lanza tu primera pregunta cuando quieras.
+👉 **Lanza tu primera pregunta cuando quieras.**
 
 ---
 
@@ -48,14 +46,14 @@ La pieza gráfica contiene este texto — no necesita texto externo para entende
 
 | Elemento | Texto |
 |----------|-------|
-| Franja canal | 💬 Foro de Ayuda · Ask Me Anything |
+| Franja canal | 💬 Foros de Ayuda |
 | Pill fase | Fase 1 · Concienciación |
-| Título | Pregunta lo que sea. Sin filtros. |
-| Subtítulo | Tu espacio para resolver dudas con el equipo experto |
-| Cuerpo línea 1 | Ninguna pregunta es demasiado básica. |
-| Cuerpo línea 2 | El equipo de expertos responde — y la respuesta queda para todos. |
-| Cuerpo línea 3 | Sesiones AMA en vivo cada cierto tiempo. |
-| CTA | 👉 Lanza tu primera pregunta |
+| Título | Aquí nadie avanza en solitario |
+| Subtítulo | — |
+| Cuerpo línea 1 | — |
+| Cuerpo línea 2 | — |
+| Cuerpo línea 3 | — |
+| CTA | 👉 Lanza tu primera pregunta cuando quieras |
 | Footer | Estrategia de Adopción · 2026 |
 
 ---

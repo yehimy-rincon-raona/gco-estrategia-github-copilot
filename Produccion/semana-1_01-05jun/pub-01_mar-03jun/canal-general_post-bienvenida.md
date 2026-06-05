@@ -17,7 +17,7 @@ Su propósito no es publicar tips ni casos de uso en detalle, sino ayudar a que 
 
 ## Post listo para Teams
 
-**Asunto:** `🎉 GitHub Copilot ya está en GCO`
+**Asunto:** `🚀 GitHub Copilot ya está en GCO`
 
 ---
 
@@ -42,6 +42,15 @@ Claves de tono:
 - Orientar, no saturar.
 - Explicar el mapa del espacio, no vender Copilot.
 - Mantener frases simples y directas.
+
+---
+
+## Banner publicado
+
+La imagen publicada con este post tiene fondo rojo completo con el texto:
+> "Tu espacio de adopción para GitHub Copilot"
+
+✅ **Decisión de diseño confirmada (4 junio 2026):** el fondo rojo sólido en el canal General es intencional. Funciona como la **portada de los canales** — equivalente a la portada del manual de marca de Occident. Esta es la excepción a la regla de fondos blancos: solo aplica al banner del canal General, no al resto de piezas.
 
 ---
 

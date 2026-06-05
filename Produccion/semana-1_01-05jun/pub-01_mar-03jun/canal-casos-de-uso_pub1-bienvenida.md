@@ -15,19 +15,17 @@ Su propósito es demostrar — con ejemplos del propio equipo — que Copilot fu
 
 ## Post listo para Teams
 
-**Asunto:** `📂 Casos que ya funcionan en equipos como el tuyo`
+**Asunto:** `📁 Casos que ya funcionan en equipos como el tuyo`
 
 ---
 
-📂 **Bienvenido/a al canal de casos prácticos de GitHub Copilot en GCO**
+📁 **Bienvenido/a al canal de casos prácticos de GitHub Copilot**
 
-Este espacio recoge ejemplos reales documentados por el propio equipo: el problema, el prompt exacto y el resultado.
-
-Nada inventado. Nada genérico. **COBOL, .NET, DB2, PL/SQL** — el código que ya conoces.
+Este espacio recoge *ejemplos reales* documentados por el propio equipo: el problema, el prompt exacto y el resultado. Nada inventado. Nada genérico. **COBOL, .NET, DB2, PL/SQL** — el código que ya conoces.
 
 La idea es que puedas ver cómo alguien de tu equipo resolvió algo concreto y adaptar ese prompt a tu propio caso.
 
-👉 Empieza por el caso que más se parezca a tu día a día.
+👉 **Empieza por el caso que más se parezca a tu día a día.**
 
 ---
 
@@ -48,14 +46,14 @@ La pieza gráfica contiene este texto — no necesita texto externo para entende
 
 | Elemento | Texto |
 |----------|-------|
-| Franja canal | 📂 Casos de Uso Reales |
+| Franja canal | 📁 Casos de Uso |
 | Pill fase | Fase 1 · Concienciación |
-| Título | Casos reales. De código GCO. |
-| Subtítulo | Tu canal de ejemplos documentados con el prompt exacto y el resultado |
-| Cuerpo línea 1 | COBOL, .NET, DB2, PL/SQL — el código que ya conoces. |
-| Cuerpo línea 2 | Cada caso incluye: problema, prompt y aprendizaje. |
-| Cuerpo línea 3 | Adapta el prompt. Aplícalo hoy. |
-| CTA | 👉 Empieza por el caso más parecido a tu día a día |
+| Título | Lo que ya funciona en tu día a día |
+| Subtítulo | — |
+| Cuerpo línea 1 | — |
+| Cuerpo línea 2 | — |
+| Cuerpo línea 3 | — |
+| CTA | 👉 Empieza por el caso que más se parezca a tu día a día |
 | Footer | Estrategia de Adopción · 2026 |
 
 ---
