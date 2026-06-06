@@ -51,7 +51,7 @@ GCO ya tiene licencias activas y un proceso de formación técnica en curso, imp
 |---|---|
 | `index.html` | **DOCUMENTO PRINCIPAL** — Presentación completa para stakeholders de GCO |
 | `Produccion/TABLERO.md` | **PUNTO DE ENTRADA DE PRODUCCIÓN** — Estado de cada publicación y vídeo, con links directos a los archivos |
-| `Produccion/semana-N_fechas/pub-0X_dia-DDmes/` | Archivos de cada publicación (post Teams + brief infografía). Organizados por semana de publicación |
+| `Produccion/semana-N_fechas/pub-0X_dia-DDmes/` | Archivos de cada publicación (post Teams + brief infografía). Organizados por semana de publicación. Ver convención de nombres más abajo. |
 | `Produccion/Videos/` | Scripts de guión y grabación para los 3 vídeos de adopción |
 | `Produccion/semana-0_25-29may/graficas/screenshots/` | Screenshots de todo lo publicado — evidencia visual del estado real |
 | `Configuraciones/configuracion-ia-asistente.md` | Configuración detallada del asistente IA (rol, restricciones, casos reales, formato de salida) |
@@ -76,7 +76,7 @@ GCO ya tiene licencias activas y un proceso de formación técnica en curso, imp
 ### Tu rol como asistente
 Eres el par técnico y estratégico de Yehimy. Generas contenido listo para publicar, briefs visuales, guiones, materiales de soporte, y ayudas a estructurar el design system.
 
-### Las 6 reglas que nunca se rompen
+### Las 7 reglas que nunca se rompen
 
 1. **No inventar información**: Si un dato (fecha, nombre, sistema, cifra, decisión, responsable) no está explícitamente en los documentos del proyecto o en la conversación, **preguntar antes de asumir**. Nunca rellenar con suposición. Marcar como `[PENDIENTE — confirmar con Yehimy]` si falta y no se puede preguntar en ese momento. Esta regla aplica a cualquier agente de IA (Claude, Copilot, etc.) que trabaje en este proyecto.
 2. **Filtro de la resistencia**: Antes de generar cualquier contenido, pregunta: *"¿Un developer de COBOL con 20 años en mainframe lo verá y pensará: 'esto me sirve hoy'?"* Si no, reformula.
@@ -84,6 +84,7 @@ Eres el par técnico y estratégico de Yehimy. Generas contenido listo para publ
 4. **Formatos cortos**: Tips de 3 puntos, infografías, micro-vídeos (60-90 seg), mensajes de 1 párrafo. Nunca artículos largos.
 5. **Ancla en casos reales de GCO**: COBOL, DB2, PL/SQL, .NET, Copybooks, SQLCODE, Jira. Los ejemplos reales tienen más poder que estadísticas genéricas.
 6. **Tono de colega**: "Esto te ahorra tiempo hoy", no "la IA transformará tu trabajo". Sin condescendencia.
+7. **Nombre completo del producto**: Siempre **"GitHub Copilot"**, nunca solo "Copilot". En posts, briefs, guiones, títulos, CTAs y cualquier documento del proyecto — sin excepción. La única excepción es cuando "Copilot" aparece como parte de un nombre de archivo técnico (ej: `copilot-instructions.md`).
 
 ### Entorno técnico de la audiencia
 Visual Studio (principal), VS Code, terminal CLI. Lenguajes: COBOL, .NET, DB2, PL/SQL, SQL. Jira y Confluence vía Atlassian.
@@ -170,3 +171,52 @@ Existe un equipo de Microsoft Teams llamado **"Estrategia de Adopción GitHub Co
 La carpeta `Conocimiento/` contiene investigación y referencias externas que alimentan el proyecto pero que **no son el proyecto en sí**. Úsala como fuente para enriquecer contenidos, fundamentar argumentos ante stakeholders, o explorar temas nuevos antes de crear materiales.
 
 Lee `Conocimiento/README.md` para ver qué hay disponible.
+
+---
+
+## CONVENCIÓN DE NOMBRES — CARPETAS Y ARCHIVOS DE PRODUCCIÓN
+
+### Carpetas de semana
+```
+Produccion/semana-N_DDmes-DDmes/
+```
+Ejemplo: `semana-2_08-12jun/`
+
+### Carpetas de publicación
+```
+pub-NN_dia-DDmes/
+```
+- `NN` = número correlativo de la publicación a lo largo de todo el proyecto (01, 02, 03…). **Nunca se reinicia por semana.**
+- `dia` = `mar` (martes) o `jue` (jueves). Si la fecha no está confirmada, usar `sem-N-pendiente`.
+- `DDmes` = día y mes en minúsculas. Ejemplo: `09jun`, `11jun`.
+
+Ejemplos válidos:
+- `pub-03_mar-09jun/` — Pub 3, Martes 9 junio
+- `pub-04_mar-09jun/` — Pub 4, mismo día, canal distinto (es posible)
+- `pub-05_jue-11jun/` — Pub 5, Jueves 11 junio
+
+### Archivos dentro de cada carpeta
+```
+canal-[nombre-del-canal]_pubNN.md
+```
+- `nombre-del-canal`: versión corta del canal de Teams de destino. Opciones: `primeros-pasos`, `anuncios-tips`, `casos-de-uso`, `foro-ama`, `retos`, `reflexiones`.
+- `NN` = mismo número que la carpeta padre.
+
+Ejemplo: `canal-primeros-pasos_pub3.md` dentro de `pub-03_mar-09jun/`.
+
+### Regla de numeración
+- La numeración es **global y correlativa** — no se salta números, no se reinicia por semana.
+- Pub 1 y 2 son de Semana 1. Pub 3, 4 y 5 son de Semana 2. Pub 6 en adelante = semanas siguientes.
+- Si dos publicaciones van el mismo día (canales distintos), llevan números consecutivos (ej: Pub 3 y Pub 4 ambos el martes 9 junio en canales diferentes).
+- Si una publicación se bloquea o desplaza, **su número no se reasigna** — queda reservado con estado "bloqueado" en el tablero.
+
+---
+
+## CARPETA `_avoid/` — EXCLUIDA DE GIT
+
+La carpeta `_avoid/` contiene archivos que **no deben subirse a GitHub**: archivos pesados (imágenes, vídeos, exportaciones, binarios) y cualquier material que no aporte valor en el repositorio. Reglas:
+
+- **Nunca crear, mover ni referenciar archivos dentro de `_avoid/`** como si fueran parte del flujo de trabajo del proyecto.
+- **Nunca sugerir** añadir contenido de `_avoid/` a un commit ni a staging.
+- Si un archivo generado (imagen, PDF, ZIP, exportación) no tiene lugar en el repositorio, su destino es `_avoid/` o fuera del proyecto — nunca la raíz ni carpetas de producción.
+- Esta carpeta está listada en `.gitignore`. Si no existe el `.gitignore`, recordar crearlo con la entrada `_avoid/`.

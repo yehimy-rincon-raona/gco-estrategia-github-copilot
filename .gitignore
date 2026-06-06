@@ -32,3 +32,6 @@ Thumbs.db
 # Archivos de caché
 *.tmp
 *.cache
+
+# Carpeta de exclusión explícita — archivos pesados que no van a GitHub
+_avoid/
