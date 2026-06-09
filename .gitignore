@@ -35,3 +35,4 @@ Thumbs.db
 
 # Carpeta de exclusión explícita — archivos pesados que no van a GitHub
 _avoid/
+_grabaciones/

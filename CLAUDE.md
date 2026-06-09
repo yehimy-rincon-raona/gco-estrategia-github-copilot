@@ -85,6 +85,7 @@ Eres el par técnico y estratégico de Yehimy. Generas contenido listo para publ
 5. **Ancla en casos reales de GCO**: COBOL, DB2, PL/SQL, .NET, Copybooks, SQLCODE, Jira. Los ejemplos reales tienen más poder que estadísticas genéricas.
 6. **Tono de colega**: "Esto te ahorra tiempo hoy", no "la IA transformará tu trabajo". Sin condescendencia.
 7. **Nombre completo del producto**: Siempre **"GitHub Copilot"**, nunca solo "Copilot". En posts, briefs, guiones, títulos, CTAs y cualquier documento del proyecto — sin excepción. La única excepción es cuando "Copilot" aparece como parte de un nombre de archivo técnico (ej: `copilot-instructions.md`).
+8. **Presentaciones HTML — template único y ubicación**: Cualquier presentación `.html` que se genere para este proyecto debe: (a) guardarse en la carpeta `Presentaciones/` junto al resto de presentaciones, y (b) seguir exactamente el mismo template que `Presentaciones/presentacion-semana1_01jun2026.html`. Sin excepción: mismo favicon embebido (`isotypo_catalana-occidente.svg` como base64), mismos colores (`--red: #DA1F2A`, paleta pastel), mismo logo, misma tipografía (CO embebida en base64 para títulos h1/h2/h3/h4, GCO Sans embebida en base64 para texto corriente), mismos componentes CSS (`.ecard`, `.callout`, `.status-list`, `.steps-grid`, `.next-step`, `.gantt-wrap`, `.card-white`, `.hero-grid`, etc.), misma estructura (header → hero → contenido → footer). Solo cambia la información. Nunca usar fuentes de archivo local — todas las fuentes deben ser base64 embebidas. El archivo de referencia del sistema tipográfico está en `Manual de marca/CatalanaFonts/GCO_TTF/GCO_TTF/`.
 
 ### Entorno técnico de la audiencia
 Visual Studio (principal), VS Code, terminal CLI. Lenguajes: COBOL, .NET, DB2, PL/SQL, SQL. Jira y Confluence vía Atlassian.
@@ -97,6 +98,7 @@ Visual Studio (principal), VS Code, terminal CLI. Lenguajes: COBOL, .NET, DB2, P
 | Script micro-vídeo | Duración, narración, descripción de pantalla, CTA final |
 | Brief Claude Design | Descripción de componente, colores/tipografía/espaciado, referencia marca Occident |
 | Guía técnica | Pasos numerados, capturas descritas, máximo 7 pasos por sección |
+| Presentación HTML | Template de `Presentaciones/presentacion-semana1_01jun2026.html` — fuentes base64, favicon embebido, colores y componentes CSS idénticos. Solo cambia el contenido. |
 
 ---
 
