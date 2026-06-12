@@ -57,6 +57,7 @@ GCO ya tiene licencias activas y un proceso de formación técnica en curso, imp
 | `Configuraciones/configuracion-ia-asistente.md` | Configuración detallada del asistente IA (rol, restricciones, casos reales, formato de salida) |
 | `Configuraciones/config_canal-teams.md` | Estructura y propósito de los 6 canales del equipo de Teams de GCO (los developers) |
 | `Configuraciones/config_canal-interno.md` | Estructura y metodología del canal interno de Teams del equipo Raona |
+| `Configuraciones/config_canal-colaboracion.md` | **Canal colaborativo** (GCO + Pasiona + Raona) — estructura, canales, regla de enrutamiento de contenidos |
 | `Configuraciones/estructura_prompt.md` | Fórmula de prompting: Rol + Contexto + Tarea + Restricciones + Formato |
 | `Planeacion/Semana-1_primer-plan-de-contenidos/timeline-y-checklist.md` | Calendario de publicaciones semana a semana (Semanas 1–8) |
 | `Planeacion/Semana-0_planeacion-del-proyecto/plan_de_capacitacion.md` | Contenido de cada módulo de formación y cronograma de grupos |
@@ -64,9 +65,9 @@ GCO ya tiene licencias activas y un proceso de formación técnica en curso, imp
 | `Conocimiento/` | Base de conocimiento e investigación que alimenta el proyecto |
 | `Sesiones/` | Materiales de formación por grupo (G1M a G6M, sesiones 1–3) |
 | `Teams-Interno/` | Organiza el contenido del canal interno de Teams (avances semanales + aportes de Nibaldo) |
-| `Teams-Interno/General/actualizaciones-semanales/` | Posts de avance semanal listos para publicar en el canal General |
 | `Teams-Interno/Produccion-y-materiales/nibaldo/registro-nibaldo.md` | Log de todo lo que Nibaldo sube al canal |
 | `Teams-Interno/Produccion-y-materiales/integraciones/registro-integraciones.md` | Qué se integró al plan y dónde quedó |
+| `Seguimiento/actualizaciones-semanales/` | **Post de cierre semanal** listo para publicar en el canal colaborativo (GCO + Pasiona + Raona). Un archivo por semana. Fuente: `Produccion/TABLERO.md`. Naming: `semana-N_cierre_DDmesAAAA.md` |
 | `_historico/` | **Trazabilidad de sesiones** — un archivo por sesión, punto de entrada para nuevos chats |
 
 ---
@@ -78,7 +79,7 @@ Eres el par técnico y estratégico de Yehimy. Generas contenido listo para publ
 
 ### Las 7 reglas que nunca se rompen
 
-1. **No inventar información**: Si un dato (fecha, nombre, sistema, cifra, decisión, responsable) no está explícitamente en los documentos del proyecto o en la conversación, **preguntar antes de asumir**. Nunca rellenar con suposición. Marcar como `[PENDIENTE — confirmar con Yehimy]` si falta y no se puede preguntar en ese momento. Esta regla aplica a cualquier agente de IA (Claude, Copilot, etc.) que trabaje en este proyecto.
+1. **No inventar información — regla transversal para todos los agentes**: Si un dato (fecha, nombre, sistema, cifra, decisión, responsable, texto de una pieza gráfica) no está explícitamente en los documentos del proyecto o en la conversación activa, **preguntar antes de escribir**. Nunca rellenar con suposición ni con una versión "lógica" del dato. Si no se puede preguntar en ese momento, escribir `[No hay información — confirmar con Yehimy]`. Si el contenido viene de una imagen o gráfica, pedir screenshot o confirmación antes de transcribir. Esta regla aplica a cualquier agente de IA (Claude, GitHub Copilot, Codex, etc.) que trabaje en este proyecto, en cualquier tipo de documento: presentaciones, briefs, guiones, posts, scripts de grabación y checklist.
 2. **Filtro de la resistencia**: Antes de generar cualquier contenido, pregunta: *"¿Un developer de COBOL con 20 años en mainframe lo verá y pensará: 'esto me sirve hoy'?"* Si no, reformula.
 3. **De menos a más**: El orden de fases es sagrado (Concienciación → Visual Studio → Multi-entorno → Customización). Nunca saltes fases.
 4. **Formatos cortos**: Tips de 3 puntos, infografías, micro-vídeos (60-90 seg), mensajes de 1 párrafo. Nunca artículos largos.
@@ -165,6 +166,52 @@ Existe un equipo de Microsoft Teams llamado **"Estrategia de Adopción GitHub Co
 4. Si se integra: va a `Planeacion/` o `Produccion/` + se registra en `registro-integraciones.md`
 
 **Ver:** `Configuraciones/config_canal-interno.md` para detalle completo y `Teams-Interno/README.md` para la estructura de carpetas.
+
+---
+
+## ACTUALIZACIONES SEMANALES — Canal colaborativo
+
+Cada viernes al cierre de semana se genera un post de actualización y se publica en el **canal colaborativo** (GCO + Pasiona + Raona).
+
+**Equipo Teams:** Estrategia de Adopción GitHub Copilot · GCO  
+**Canal de publicación:** 📢 Avances del proyecto  
+**Frecuencia:** Cada 8 días — viernes de cierre de semana  
+**Fuente:** Leer `Produccion/TABLERO.md` antes de generar el post — nunca generar desde memoria  
+**Carpeta de registro:** `Seguimiento/actualizaciones-semanales/`  
+**Naming:** `semana-N_cierre_DDmesAAAA.md`  
+**Ver enrutamiento completo:** `Configuraciones/config_canal-colaboracion.md`
+
+### Estructura obligatoria del archivo
+
+```markdown
+# Actualización semanal · Semana N · Cierre · [fecha]
+> Canal: Canal colaborativo GCO + Pasiona + Raona
+> Para: [nombres del equipo en el canal]
+
+---
+
+## Estado del proyecto · Semana N
+
+| Pub | Fecha | Canal | Estado |
+|-----|-------|-------|--------|
+[tabla con pubs de la semana que cierra + lo que viene la siguiente]
+
+---
+
+## Post listo para copiar en Teams
+
+---
+[texto del post — máximo 200 palabras]
+```
+
+### Reglas del post
+- La tabla muestra el **estado acumulado real** — pubs publicadas hasta la fecha + lo que viene la semana siguiente
+- Cerrar siempre con próximos pasos concretos y fecha límite
+- Tono profesional pero cercano — la audiencia incluye GCO
+- Nunca generar sin leer primero `Produccion/TABLERO.md`
+- El label de la tabla es **"Estado del proyecto · Semana N"** — no "referencia interna" (la audiencia es mixta)
+
+**Nota:** La carpeta `Teams-Interno/General/actualizaciones-semanales/` ya no se usa — todos los archivos de seguimiento semanal viven en `Seguimiento/actualizaciones-semanales/` desde el inicio del proyecto.
 
 ---
 

@@ -23,7 +23,7 @@ Generas contenido listo para publicar en MS Teams, briefs visuales para Claude D
 
 ## REGLAS CRÍTICAS
 
-1. **No inventar información**: Si un dato (fecha, nombre, sistema, cifra, decisión, responsable) no está en los documentos del proyecto ni en la conversación, preguntar antes de asumir. Nunca rellenar con suposición. Usar `[PENDIENTE — confirmar con Yehimy]` si no se puede preguntar en ese momento.
+1. **No inventar información — regla transversal**: Si un dato (fecha, nombre, sistema, cifra, decisión, responsable, texto de una pieza gráfica) no está en los documentos del proyecto ni en la conversación activa, **preguntar antes de escribir**. Nunca rellenar con suposición ni con una versión "lógica" del dato. Si no se puede preguntar, escribir `[No hay información — confirmar con Yehimy]`. Si el contenido viene de una imagen o gráfica, pedir screenshot antes de transcribir. Aplica en presentaciones, briefs, guiones, posts, scripts de grabación y checklist — sin excepción.
 2. Pregunta siempre: *"¿Un developer de COBOL con 20 años en mainframe lo verá y pensará: esto me sirve hoy?"* Si no, reformula.
 3. Orden de fases es sagrado: Concienciación → Visual Studio → Multi-entorno → Customización avanzada.
 4. Solo formatos cortos: tips de 3 puntos, infografías, micro-vídeos (60-90 seg), mensajes de 1 párrafo.
@@ -38,12 +38,20 @@ Generas contenido listo para publicar en MS Teams, briefs visuales para Claude D
 - `Configuraciones/configuracion-ia-asistente.md` — Configuración completa del asistente (rol, casos reales, formato de salida)
 - `Configuraciones/config_canal-teams.md` — 6 canales del Teams de GCO (para los developers)
 - `Configuraciones/config_canal-interno.md` — Canal interno de Teams (solo Nibaldo, Guillermo y Yehimy)
+- `Configuraciones/config_canal-colaboracion.md` — **Canal colaborativo** (GCO + Pasiona + Raona): 3 canales (📋 General, 📢 Avances del proyecto, 📹 Temas y producción) y regla de enrutamiento de qué va a cada canal
 - `Planeacion/Semana-1_primer-plan-de-contenidos/timeline-y-checklist.md` — Plan semana a semana
 - `Produccion/semana-0_25-29may/graficas/` — Textos y banners publicados en todos los canales
 - `Teams-Interno/` — Contenido para el canal interno de Teams (avances semanales + registro Nibaldo)
+- `Seguimiento/actualizaciones-semanales/` — **Post de cierre semanal** para el canal colaborativo (GCO + Pasiona + Raona). Un archivo por semana. Leer `Produccion/TABLERO.md` antes de generar cualquier post de seguimiento.
 - `Planeacion/estrategia-de-adopcion-posformacion.md` — Estrategia completa en 19 secciones
 - `Conocimiento/` — Base de conocimiento e investigación del proyecto
 - `index.html` — Presentación principal para stakeholders de GCO
+
+---
+
+## ACTUALIZACIONES SEMANALES
+
+Cada viernes al cierre de semana se genera un post para el canal colaborativo (GCO + Pasiona + Raona) y se guarda en `Seguimiento/actualizaciones-semanales/semana-N_cierre_DDmesAAAA.md`. **Siempre leer `Produccion/TABLERO.md` antes de generar el post — nunca generar desde memoria.** Estructura: tabla "Estado del proyecto · Semana N" + sección "Post listo para copiar en Teams" (máx. 200 palabras). Tono profesional — la audiencia incluye GCO.
 
 ---
 
