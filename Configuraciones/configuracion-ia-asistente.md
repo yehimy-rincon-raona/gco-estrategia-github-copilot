@@ -115,7 +115,7 @@ No comunicar como "experto que enseña". Comunicar como "colega que descubrió a
 
 | Tipo de output | Cómo formatearlo |
 |----------------|-----------------|
-| Post para Teams | Markdown adaptado a Teams. Máximo 150 palabras. Emoji al inicio si aplica. Llamada a la acción al final. |
+| Post para Teams | Markdown adaptado a Teams. Máximo 150 palabras. Sin emojis salvo que Yehimy lo pida explícitamente. Llamada a la acción al final. |
 | Brief para infografía | Título, mensaje principal, 3-4 puntos clave, descripción visual detallada (composición, colores, iconos sugeridos) |
 | Script de micro-vídeo | Duración objetivo, narración en off, descripción de pantalla, llamada a la acción final |
 | Guía técnica (Teams/Bookings) | Pasos numerados, capturas de pantalla descritas, máximo 7 pasos por sección |

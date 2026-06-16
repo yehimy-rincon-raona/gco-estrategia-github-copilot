@@ -6,12 +6,12 @@
 
 ## Resumen de avance
 
-| | Semana 1 · 1–5 jun | Semana 2 · 8–12 jun | Semana 3 · 15–19 jun |
-|---|---|---|---|
-| Publicaciones en Teams | 2 publicadas | 1 publicada | En planificación |
-| Piezas gráficas publicadas | 1 infografía | 1 infografía | — |
-| Contenido listo para publicar | — | Pub 6 y 7 (tema en validación) · Pub 8 y 9 (brief listo) | — |
-| Vídeo | — | V1 — edición finalizada 12 jun | — |
+| | Semana 1 · 1–5 jun | Semana 2 · 8–12 jun | Semana 3 · 15–19 jun | Semana 4 · 22–26 jun |
+|---|---|---|---|---|
+| Publicaciones en Teams | 2 publicadas | 1 publicada | — (pubs desplazadas a S4) | Pub 6, 7, 8 y 9 planificadas |
+| Piezas gráficas publicadas | 1 infografía | 1 infografía | — | — |
+| Contenido listo para publicar | — | — | — | Pub 6 y 7 (tema confirmado · brief pendiente) · Pub 8 y 9 (brief listo) |
+| Vídeo | — | V1 — edición finalizada 12 jun | — | — |
 
 ---
 
@@ -22,8 +22,8 @@
 | 1 | S1 | Mar 3 jun | Todos los canales | Posts de bienvenida — 6 canales activados | ✅ Publicada | [pub-01_mar-03jun/](semana-1_01-05jun/pub-01_mar-03jun/) |
 | 2 | S1 | Jue 5 jun | Primeros Pasos | Cómo activar GitHub Copilot en Visual Studio — post + infografía + cards paso a paso | ✅ Post + infografía publicados · cards en Figma | [pub-02_jue-04jun/](semana-1_01-05jun/pub-02_jue-04jun/) |
 | 5 | S2 | Jue 11 jun | Primeros Pasos | Hay una forma más precisa. — Jerarquía de referencias de GitHub Copilot | ✅ Post + infografía publicados · card minimalista en Figma | [pub-05_jue-11jun/](semana-2_08-12jun/pub-05_jue-11jun/) |
-| 6 | S3 | Mar 16 jun | Casos de Uso Reales | Caso de uso real 1 — tema a confirmar (hilo abierto en 📹 Temas y producción) | 📝 Propuesta enviada — pendiente validación equipo | [semana-3_15-19jun/pub-06_mar-16jun/](semana-3_15-19jun/pub-06_mar-16jun/) |
-| 7 | S3 | Jue 18 jun | Casos de Uso Reales | Caso de uso real 2 — tema a confirmar (hilo abierto en 📹 Temas y producción) | 📝 Propuesta enviada — pendiente validación equipo | [semana-3_15-19jun/pub-07_jue-18jun/](semana-3_15-19jun/pub-07_jue-18jun/) |
+| 6 | S4 | Mar 23 jun | Casos de Uso Reales | Caso de uso real 1 — Entender código heredado con GitHub Copilot · COBOL | 📝 Tema confirmado · brief pendiente | [semana-4_22-26jun/pub-06_mar-23jun/](semana-4_22-26jun/pub-06_mar-23jun/) |
+| 7 | S4 | Jue 25 jun | Casos de Uso Reales | Caso de uso real 2 — Bug fixing con GitHub Copilot · .NET | 📝 Tema confirmado · brief pendiente | [semana-4_22-26jun/pub-07_jue-25jun/](semana-4_22-26jun/pub-07_jue-25jun/) |
 | 8 | S4 | Mar 23 jun | Anuncios y Tips Ágiles | La fórmula del prompt que funciona — parte 1 (distribución de las 5 piezas a confirmar) | 📝 Brief listo — desplazada a Semana 4 | [semana-4_22-26jun/pub-08_mar-23jun/](semana-4_22-26jun/pub-08_mar-23jun/) |
 | 9 | S4 | Jue 25 jun | Anuncios y Tips Ágiles | La fórmula del prompt que funciona — parte 2 (distribución de las 5 piezas a confirmar) | 📝 Brief listo — desplazada a Semana 4 | [semana-4_22-26jun/pub-09_jue-25jun/](semana-4_22-26jun/pub-09_jue-25jun/) |
 | 10 | S4+ | Por confirmar | Primeros Pasos | Cómo hacer que GitHub Copilot conozca tu entorno de equipo (Skills + instructions) | ⏳ Desplazada — semana a confirmar tras decisión del equipo · input técnico Nibaldo pendiente | — |
@@ -70,7 +70,7 @@
 | Fecha sesión AMA | Nibaldo + Guillermo | Sin fecha — desbloquea pub AMA |
 | Microsoft Bookings | Yehimy | Sin configurar — desbloquea pub Reservas 1:1 |
 | Manual de marca Occident | Guillermo | Sin fecha de entrega |
-| Input técnico Pub 6 + Video 2 (Skills/MCP) | Nibaldo + José María (Pasiona) | Deadline: viernes 12 junio · hilo abierto en canal colaboración |
+| Input técnico Pub 6 + Video 2 (Skills/MCP) | Nibaldo + José María (Pasiona) | Temas confirmados en reunión 16 jun · briefs pendientes de producción |
 
 ---
 
