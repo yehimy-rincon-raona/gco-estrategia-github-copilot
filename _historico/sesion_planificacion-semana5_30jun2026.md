@@ -44,7 +44,16 @@ Preparación de la reunión del **martes 30 junio**. Se confirmó el estado de l
   - **Videos propios de Nibaldo:** en curso (dijo entrega hoy).
 - TABLERO actualizado: sección de videos (V1, V2, V3, V-MCP, V-Nibaldo) + bloqueantes (VPN), apuntando al doc de seguimiento.
 
-### 6. Referencias de acceso/licencia de Jonathan (reu 25 jun) — como disclaimer
+### 6. Reunión semanal con Jonathan (30 jun) — acuerdos
+- Acta: `Reuniones/[GCO] reunion_semanal-30-06-26.md`.
+- **Dos videos nuevos esta semana:** caso de uso de GitHub Copilot (V3, COBOL) + servidores MCP (V-MCP), con material en bruto de Nibaldo. Nota: VS 2022 no soporta MCP → el video de MCP probablemente va sobre VS Code o terminal.
+- **Correcciones finales de Video 1 y Video 2:** Yehimy sigue a la espera de que Nibaldo las entregue.
+- **Parrilla Semana 5:** publicaciones gráficas sobre uso de prompts (Pub 8/9), martes y jueves — confirmado.
+- **VPN:** Jonathan habló con Nibaldo el 30 jun; Nibaldo entendió el requerimiento y lo gestiona con el equipo de sistemas. Acceso esperado esta semana o la próxima. **Contingencia:** si tarda, Yehimy pasa el copy a Nibaldo o Víctor para que publiquen en el Teams de GCO.
+- **Estrategia de lanzamiento en Teams de GCO:** el canal está vacío y sin usuarios. Se sube primero el contenido "Semana 1", y cuando esté presentable se añade de golpe a todo el departamento de informática; luego se liberan contenidos progresivamente semana a semana. Hay un mes de ventaja entre lo producido y lo publicado.
+- **Flujo de aprobaciones:** Jonathan no recibe notificación al ser etiquetado en el Teams de Raona. Acuerdo: Yehimy le avisará vía Nibaldo o Guillermo cuando haya material para revisar.
+
+### 7. Referencias de acceso/licencia de Jonathan (reu 25 jun) — como disclaimer
 - Jonathan entregó la URL de soporte de GCO (`soporte.gco.global/...#tab-Visual+Studio+2022`) y el flujo real de acceso: SSO `github.com/enterprises/gco-emu/sso` → si falla, `myprofile.microsoft.com` → Mi acceso → Paquetes de acceso → Solicitar acceso a GitHub Copilot (máx. 40 min tras aprobación).
 - A petición de Yehimy: se dejó **como DISCLAIMER DE CORRECCIÓN** en la sección 5 del doc de seguimiento — **no aplicado, sin borrar ni mover nada existente**. La fila del Video 1 en el TABLERO se **revirtió** a su texto original (myaccess) y solo lleva un puntero al disclaimer.
 - Esto corrige (cuando se decida) el ítem 9 de `resolucion-propia_reunion-23jun2026.md` — ese documento no se tocó.
@@ -78,7 +87,9 @@ Preparación de la reunión del **martes 30 junio**. Se confirmó el estado de l
 - Se siguió la convención `_historico/` de CLAUDE.md para la trazabilidad, no el skill `historial-sesiones` (que usa otra carpeta), para no fragmentar el histórico.
 - El seguimiento de videos/acceso se registra como **tareas** (no narrativa "él dijo / él se compromete"), a petición de Yehimy.
 - La corrección de URLs de acceso/licencia (Jonathan) se deja como **disclaimer no aplicado**, sin borrar ni mover lo existente — se implementa cuando se decida.
-- La VPN necesaria es la de **Raona** (no la de GCO); el bloqueo es geográfico (Colombia).
+- La VPN necesaria es la de **Raona** (no la de GCO); el bloqueo es geográfico (Colombia). Contingencia acordada: si tarda, Yehimy pasa el copy a Nibaldo o Víctor para publicar en el Teams de GCO.
+- **Lanzamiento del Teams de GCO** (reunión 30 jun): primero contenido "Semana 1" → cuando esté presentable se añade de golpe a todo el departamento de informática → luego liberación progresiva semana a semana. Un mes de ventaja de producción.
+- **Aprobaciones** (reunión 30 jun): Jonathan no recibe notificaciones en el Teams de Raona → se le avisa vía Nibaldo o Guillermo.
 
 ---
 
@@ -91,7 +102,9 @@ Preparación de la reunión del **martes 30 junio**. Se confirmó el estado de l
 - **Video MCP:** producir esta semana (entregado por Nibaldo).
 - **Guion del flujo de acceso/licencia:** Yehimy puede ir armándolo desde acá con la doc de Jonathan (insumo Video 1 + Primeros Pasos) — tarea sin bloqueo.
 - **Video 1:** destrabar publicación (URL canal corporativo, Nibaldo). **Video 2:** cerrar decisión de enfoque A/B.
-- **VPN de Raona:** seguir su gestión con Nibaldo (en tránsito).
+- **VPN de Raona:** seguir su gestión con Nibaldo (en gestión con sistemas, esperado esta semana o la próxima).
+- **Lanzamiento Teams GCO:** dejar el contenido "Semana 1" presentable para el alta masiva del departamento de informática.
+- **Aprobaciones:** al tener material para revisión, avisar a Jonathan vía Nibaldo o Guillermo (ya no solo etiquetándolo en Teams de Raona).
 
 ---
 

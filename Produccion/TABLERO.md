@@ -61,8 +61,8 @@
 |-------|--------|--------|---------|
 | V1 | Configuración del entorno | ✅ Edición finalizada 12 jun · 🔄 Ajustes pendientes (Nibaldo): regrabar flujo de licencia myaccess + reflejar el acceso · pendiente publicación + URL canal corporativo · 📌 corrección de URLs disponible en `Seguimiento/seguimiento-videos-y-acceso_30jun2026.md` (no aplicada — ver disclaimer) | [Videos/v01_configuracion-entorno/](Videos/v01_configuracion-entorno/) |
 | V2 | Dos opciones sobre la mesa — equipo elige: **(A)** Primera conversación con GitHub Copilot Chat + completado inline · **(B)** Primeros pasos + introducción a Skills | 📝 Dos guiones enviados — pendiente decisión · 🔄 Ajustes (Nibaldo): ocultar dato del login + regrabar autenticación VS Code | [Videos/v02_primeros-pasos/](Videos/v02_primeros-pasos/) |
-| V3 | Cómo interactuar con GitHub Copilot — demo de casos reales | 🔄 Caso de uso 1 (COBOL heredado) descargado el jueves · **en producción esta semana** · pendiente revisión de coherencia por Nibaldo | [Videos/v03_como-interactuar/](Videos/v03_como-interactuar/) |
-| V-MCP | Instalación y configuración de un MCP (pedido por Jonathan) | 🔄 Entregado por Nibaldo · **en producción esta semana** | — |
+| V3 | Cómo interactuar con GitHub Copilot — demo de casos reales | 🔄 **Uno de los 2 videos nuevos de esta semana** (reunión 30 jun) · caso de uso COBOL · material en bruto de Nibaldo descargado el jueves · pendiente revisión de coherencia por Nibaldo | [Videos/v03_como-interactuar/](Videos/v03_como-interactuar/) |
+| V-MCP | Servidores MCP (material en bruto de Nibaldo) | 🔄 **Uno de los 2 videos nuevos de esta semana** (reunión 30 jun) · nota: VS 2022 no soporta MCP → enfoque probable VS Code o terminal (confirmar con Nibaldo) | — |
 | V-Nibaldo | Videos propios de Nibaldo | 🔄 En curso — Nibaldo indica entrega hoy 30 jun | — |
 
 ---
@@ -72,12 +72,22 @@
 | Ítem | Responsable | Notas |
 |------|-------------|-------|
 | Acceso al Teams oficial de GCO (tenant Occidente) | Catalana Occidente | ⛔ Bloqueante principal — publicaciones actuales son en Teams de Raona |
-| VPN de Raona para que Yehimy ingrese al usuario de GCO y publique contenidos | Nibaldo | 🔄 En tránsito (confirmado 30 jun) · es la VPN de Raona, no la de GCO |
+| VPN de Raona para que Yehimy ingrese al usuario de GCO y publique contenidos | Nibaldo + equipo de sistemas | 🔄 Nibaldo entendió el requerimiento (reunión 30 jun con Jonathan) y lo está gestionando con sistemas · acceso esperado esta semana o la próxima · **contingencia:** si tarda, Yehimy pasa el copy a Nibaldo o Víctor para que publiquen en el Teams de GCO |
 | URL canal corporativo para enlace en Vídeo 1 | Nibaldo | Necesaria tras publicación V1 |
 | Fecha sesión AMA | Nibaldo + Guillermo | Sin fecha — desbloquea pub AMA |
 | Microsoft Bookings | Yehimy | Sin configurar — desbloquea pub Reservas 1:1 |
 | Manual de marca Occident | Guillermo | Sin fecha de entrega |
 | Input técnico Pub 6 + Video 2 (Skills/MCP) | Nibaldo + José María (Pasiona) | Temas confirmados en reunión 16 jun · briefs pendientes de producción |
+
+---
+
+## Acuerdos de la reunión del 30 jun (con Jonathan)
+
+> Acta completa: `Reuniones/[GCO] reunion_semanal-30-06-26.md`
+
+- **Estrategia de lanzamiento en el Teams de GCO:** el canal existe pero está vacío y sin usuarios. Táctica acordada: subir primero el contenido inicial ("Semana 1") y, una vez presentable, **añadir de golpe a todo el departamento de informática**. A partir de ahí, liberar los contenidos **progresivamente, semana a semana**, para no abrumar. Hay **un mes de ventaja** entre lo ya producido y lo que se va publicando.
+- **Flujo de aprobaciones:** Jonathan **no recibe notificación** cuando se le etiqueta en el entorno de Teams de Raona. Acuerdo: Yehimy avisará a Jonathan **a través de Nibaldo o Guillermo** cuando tenga material pendiente de revisión.
+- **Parrilla Semana 5:** publicaciones gráficas sobre uso de prompts (Pub 8 y 9), martes y jueves — confirmado.
 
 ---
 

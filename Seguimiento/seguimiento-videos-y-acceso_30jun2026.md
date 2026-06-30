@@ -51,7 +51,8 @@
 
 | Tarea | Responsable | Estado |
 |-------|-------------|--------|
-| Gestionar la **VPN de Raona** para que Yehimy pueda ingresar al usuario de GCO (desde Colombia el acceso está bloqueado) y publicar en el Teams de GCO lo que está en el Teams local | Nibaldo | 🔄 En tránsito — Nibaldo lo confirmó hoy (30 jun) · aclarado que es la VPN de Raona, no la de GCO |
+| Gestionar la **VPN de Raona** para que Yehimy pueda ingresar al usuario de GCO (desde Colombia el acceso está bloqueado) y publicar en el Teams de GCO lo que está en el Teams local | Nibaldo + equipo de sistemas | 🔄 Nibaldo entendió el requerimiento (reunión 30 jun con Jonathan) y lo gestiona con sistemas · acceso esperado esta semana o la próxima · aclarado que es la VPN de Raona, no la de GCO |
+| **Contingencia si la VPN tarda:** Yehimy pasa el copy a Nibaldo o Víctor para que publiquen directamente en el Teams de GCO | Yehimy → Nibaldo / Víctor | Acordado en reunión 30 jun |
 | Acceso al Teams oficial de GCO (tenant Occident) | Catalana Occident | Bloqueante principal persistente |
 
 ---
