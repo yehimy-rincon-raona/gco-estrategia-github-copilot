@@ -3,6 +3,8 @@
 > Fase: 2 · Entorno Nativo y Primeros Pasos
 > Propuesto por: Nibaldo · 5 junio 2026
 > Estado: ✅ Validado con sesiones Nibaldo · pendiente confirmación ubicación exacta en Visual Studio
+>
+> ⚠️ **AVISO (21 jun 2026):** el esquema `0x`/`1x`/`3x` y "bolsa de peticiones premium" de este documento quedó **legacy** desde el 1 jun 2026 (GitHub Copilot pasó a AI Credits por tokens). **No usar este texto tal cual.** Versión reformulada y vigente: `Produccion/semana-2_08-12jun/pub-04_jue-11jun/ajuste-facturacion-tokens_pub4.md`. Contexto: `Conocimiento/facturacion-github-copilot-2026.md`. Este documento se conserva como registro histórico.
 
 ---
 

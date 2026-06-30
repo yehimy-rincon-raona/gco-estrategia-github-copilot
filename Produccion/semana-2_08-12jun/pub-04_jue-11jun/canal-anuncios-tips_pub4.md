@@ -1,13 +1,15 @@
 # Canal Anuncios y Tips — Pub 4 · Elige el modelo según la tarea
-> Canal: Anuncios y Tips Ágiles · Fecha: Jueves 11 junio · Tipo: Tip de uso
-> Estado: listo para revisión Nibaldo / Guillermo
+> Canal: Anuncios y Tips Ágiles · Tipo: Tip de uso
+> Estado: ✅ Publicado · ajuste de facturación aplicado el 21 jun 2026
 > Fuente: sesiones Nibaldo · prop_modelo-apropiado.md
+>
+> ⚠️ **Actualizado por cambio de facturación (21 jun 2026):** el modelo 0x/1x/3x quedó legacy; este post se reformuló a "ligeros/avanzados". Este archivo ya refleja la versión final publicada. El antes/después detallado y el orden del hilo están en `ajuste-facturacion-tokens_pub4.md` (misma carpeta).
 
 ---
 
 ## Objetivo de esta publicación
 
-Que los developers entiendan que en GitHub Copilot no todos los modelos tienen el mismo coste en tokens, y que usar siempre el premium los deja sin bolsa en días. El hábito que se quiere instalar: revisar qué modelo está seleccionado antes de preguntar.
+Que los developers entiendan que en GitHub Copilot no todos los modelos tienen el mismo coste, y que usar siempre el más potente gasta su bolsa mensual más rápido. El hábito que se quiere instalar: revisar qué modelo está seleccionado antes de preguntar y acotar el contexto.
 
 ---
 
@@ -19,17 +21,17 @@ Que los developers entiendan que en GitHub Copilot no todos los modelos tienen e
 
 📣 **¿Siempre usas el mismo modelo en GitHub Copilot? Puede que estés gastando más de lo necesario.**
 
-En GitHub Copilot no todos los modelos cuestan lo mismo. Los modelos premium consumen tu bolsa de tokens; los estándar, no.
+En GitHub Copilot no todos los modelos cuestan lo mismo. Tu licencia incluye una bolsa mensual de uso: los modelos ligeros consumen poco, los avanzados consumen bastante más. Y cuanto más contexto le pasas, más gastas.
 
 La idea no es usar siempre el más potente — es usar el adecuado para lo que necesitas ahora.
 
 | Tipo de tarea | Modelo |
 |---------------|--------|
-| Explicar un error · documentar · resumir código | Estándar `0x` |
-| Refactor delicado · análisis de impacto · lógica COBOL/DB2 compleja | Premium `1x` o `3x` |
-| ¿No sabes cuál? | Empieza con el estándar. Si no alcanza, sube. |
+| Explicar un error · documentar · resumir código | Ligero |
+| Refactor delicado · análisis de impacto · lógica COBOL/DB2 compleja | Avanzado |
+| ¿No sabes cuál? | Empieza con el ligero. Si no alcanza, sube. |
 
-Si te quedas sin tokens premium, puedes seguir con el estándar. La bolsa se renueva el primer día de cada mes.
+Dos hábitos que ahorran: elige el modelo según la tarea y acota el contexto —no le pases el proyecto entero si la pregunta es sobre un método. Tu bolsa se renueva cada mes.
 
 👉 Antes de tu próxima consulta, mira qué modelo tienes seleccionado.
 
@@ -50,7 +52,7 @@ Claves:
 
 | Elemento | Fuente |
 |----------|--------|
-| Estándar `0x` vs premium `1x/3x` | G4M Sesión 1 · G2M Sesión 2 |
+| Modelos ligeros vs avanzados (consumo relativo) | G4M Sesión 1 · G2M Sesión 2 · actualizado por cambio de facturación 1 jun 2026 |
 | "En dos días te quedas sin tokens" | G3M Sesión 1 |
 | Criterio tarea simple / compleja | G2M Sesión 1 · G5M Sesión 1 |
 | Renovación mensual de la bolsa | G2M Sesión 2 |
@@ -59,35 +61,29 @@ Claves:
 
 ---
 
-## Posts de hilo — Una respuesta por card
+## Posts de hilo — Una card por publicación
 
-> El post principal va con `1-S2-card_pub4` (Optimización de Tokens y Modelos). Cada reply a continuación acompaña una card y le da contexto al equipo antes o después de compartirla.
-
----
-
-### Reply 1 — acompaña `1-S2-card_pub4` (card-comparativa)
-
-📊 **El desglose completo: qué modelo usar y cuánto consume.**
-
-GPT-4.1 / 5 mini = gratuito. Claude / Gemini = 1x o 3x de tu bolsa mensual.
-
-La regla: si la tarea no requiere razonar sobre código complejo, el Estándar resuelve igual de bien sin tocar la bolsa. Si vas a analizar impacto en COBOL o refactorizar lógica crítica, ahí sí vale el premium.
-
-¿Cuál tienes seleccionado ahora mismo?
+> **Orden publicado** (detalle en `ajuste-facturacion-tokens_pub4.md`): el post principal lleva la card `1-S2` "Menos/Mayor Consumo". Cada reply lleva una card distinta — la `1-S2` no se repite. El texto antiguo de "cuánto consume" se retiró (su idea ya vive en el post principal + card `1-S2`).
 
 ---
 
-### Reply 2 — acompaña `2-S2-card_pub4` (card-minimalista)
+### Reply 1 — acompaña `2-S2-card_pub4` (Diseñe la solución con un modelo avanzado)
 
-🧠 **Una táctica concreta para ahorrar tokens premium sin sacrificar calidad.**
+🧠 **Diseña con el que razona, ejecuta con el ligero.**
 
-Usa el Premium para pensar — analizar el problema, definir el enfoque, entender el impacto. Usa el Estándar para escribir — el código, el refactor, la documentación.
+Una táctica para ahorrar sin sacrificar calidad en GitHub Copilot: usa un **modelo avanzado** para *pensar* —analizar el problema, definir el enfoque, entender el impacto— y uno **ligero** para *escribir* —el código, el refactor, la documentación.
 
-En COBOL o .NET: un hilo Premium para entender qué cambiar en el módulo, un hilo Estándar para generar los bloques de DB2 o el boilerplate. El modelo que razona no tiene que ser el que produce volumen.
+En COBOL o .NET: un hilo con modelo avanzado para entender qué cambiar en el módulo, otro con modelo ligero para generar los bloques de DB2 o el boilerplate. El que razona no tiene que ser el que produce volumen.
+
+Y cuida el contexto: `#file` para apuntar solo a los archivos que importan, y `@workspace` solo cuando de verdad no sabes dónde está el problema.
+
+👉 La próxima vez que abras una tarea compleja, separa el pensar del ejecutar.
+
+→ Adjuntar: `2-S2-card_pub4`
 
 ---
 
-### Reply 3 — acompaña `3-S2-card_pub4` (card-minimalista)
+### Reply 2 — acompaña `3-S2-card_pub4` (Carga progresiva de Skills)
 
 🎯 **¿Cuánto contexto le das a GitHub Copilot cuando preguntas algo?**
 
@@ -97,9 +93,11 @@ El orden: `#selection` primero, luego método o clase, luego `#file`, y `@worksp
 
 Para COBOL: no cargues 20 programas para preguntarle por un SQLCODE que falla en un módulo específico. Referencia ese método directamente.
 
+→ Adjuntar: `3-S2-card_pub4`
+
 ---
 
-### Reply 4 — acompaña `4-S2-card_pub4` (card-minimalista)
+### Reply 3 — acompaña `4-S2-card_pub4` (Higiene de la memoria a corto plazo)
 
 🧹 **GitHub Copilot no recuerda lo que hablaste ayer. Pero sí se "llena" dentro del mismo hilo.**
 
@@ -109,7 +107,7 @@ Tres reglas que hacen diferencia: abre un hilo nuevo cuando llevas muchas pregun
 
 ---
 
-### Reply 5 — acompaña `5-S2-card_pub4` (card-comparativa)
+### Reply 4 — acompaña `5-S2-card_pub4` (Memoria vs. Instrucciones)
 
 ⚙️ **Dos formas de darle contexto permanente a GitHub Copilot. Una es tuya. La otra es de todo el equipo.**
 
@@ -128,12 +126,16 @@ Lo que defines ahí, GitHub Copilot lo aplica siempre. Sin repetirlo en cada pro
 
 ---
 
+> **Texto retirado:** el antiguo Reply "📊 El desglose completo: qué modelo usar y cuánto consume" (con "GPT-4.1 = gratuito / 1x o 3x") no se publicó — contenía términos de facturación legacy y su idea ya vive en el post principal + card `1-S2`. Se conserva el registro en `ajuste-facturacion-tokens_pub4.md` (punto 5).
+
+---
+
 ## Archivos de salida
 
 | # | Nombre de archivo | Tipo | Tema |
 |---|-------------------|------|------|
-| 1 | `1-S2-card_pub4` | card-comparativa | Optimización de Tokens y Modelos |
-| 2 | `2-S2-card_pub4` | card-minimalista | Diseñe la solución con un modelo Premium. |
+| 1 | `1-S2-card_pub4` | card-comparativa | Optimización de Tokens y Modelos (reformulada: ligeros/avanzados) |
+| 2 | `2-S2-card_pub4` | card-minimalista | Diseñe la solución con un modelo avanzado. |
 | 3 | `3-S2-card_pub4` | card-minimalista | Carga progresiva de Skills |
 | 4 | `4-S2-card_pub4` | card-minimalista | Higiene de la memoria a corto plazo |
 | 5 | `5-S2-card_pub4` | card-comparativa | Memoria vs. Instrucciones |
@@ -141,6 +143,8 @@ Lo que defines ahí, GitHub Copilot lo aplica siempre. Sin repetirlo en cada pro
 ---
 
 ## Brief — `1-S2-card_pub4` · card-comparativa
+
+> ⚠️ **Brief legacy (0x/1x/3x).** La versión final reformulada y corregida de esta card está en `ajuste-facturacion-tokens_pub4.md` (puntos 7 y 7.1) — card publicada como "Menos/Mayor Consumo". El contenido de abajo se conserva solo como referencia histórica.
 
 **Tipo de pieza:** card-comparativa — panel único con dos columnas
 **Origen:** transcripción de gráfica de referencia · ver imagen adjunta en carpeta
@@ -180,6 +184,8 @@ Lo que defines ahí, GitHub Copilot lo aplica siempre. Sin repetirlo en cada pro
 ---
 
 ## Brief — `2-S2-card_pub4` · card-minimalista · Planificador-Ejecutor
+
+> ⚠️ **Cambio aplicado:** en el título, "modelo Premium" → "modelo avanzado" y "uno Estándar" → "uno ligero". Card publicada como "Diseñe la solución con un modelo avanzado". Los bullets `#file`/`@workspace` no cambian. Detalle en `ajuste-facturacion-tokens_pub4.md`.
 
 **Tipo de pieza:** card-minimalista — panel único
 **Origen del contenido:** imagen de referencia · sesión 10 junio 2026
