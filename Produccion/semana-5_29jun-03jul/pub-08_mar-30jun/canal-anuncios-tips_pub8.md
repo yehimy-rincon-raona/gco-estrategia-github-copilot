@@ -32,7 +32,7 @@ Un buen prompt no es más largo — es más completo. Cuando la respuesta no sal
 - **Restricciones:** los límites — lo que no debe tocar, las reglas que debe respetar.
 - **Formato:** cómo quieres la respuesta (solo el bloque, una tabla, paso a paso).
 
-La pieza que más se olvida es **Restricciones** — y es la que evita que te devuelva algo que no sirve.
+Las **Restricciones** son lo que separa "algo parecido" de "justo lo que necesitaba" — y es la pieza que más se olvida.
 
 👉 En tu próximo prompt, antes de enviarlo, revisa: ¿están las cinco?
 
@@ -45,7 +45,7 @@ La pieza que más se olvida es **Restricciones** — y es la que evita que te de
 - **Reply 1:** el mismo prompt mal y bien escrito (antes/después) con un caso real de GCO.
 - **Reply 2 (opcional):** la plantilla en blanco para copiar.
 
-**En la pieza gráfica (infografía o card de fórmula):**
+**En la pieza gráfica (infografía F2-D · fórmula / componentes):**
 - La fórmula `Rol + Contexto + Tarea + Restricciones + Formato` como elemento central.
 - Una línea por pieza explicando qué aporta.
 - **No lleva el ejemplo completo** — ese va en el texto, para que el equipo lo copie.
@@ -143,15 +143,15 @@ No hace falta rellenar las cinco siempre — pero cuando algo no sale, revisa cu
 
 | # | Nombre de archivo | Tipo | Tema |
 |---|-------------------|------|------|
-| 1 | `S5-Card_pub8-formula` | card / infografía · 1080×1350 px (a confirmar formato con Yehimy) | La fórmula de 5 piezas: Rol + Contexto + Tarea + Restricciones + Formato |
+| 1 | `S5-Infografia_pub8-formula` | infografía F2-D · fórmula / componentes · 1080×1350 px | La fórmula de 5 piezas: Rol + Contexto + Tarea + Restricciones + Formato |
 
 > El **ejemplo completo y la plantilla** no van en la pieza gráfica: viven en el texto del post (Reply 1 y Reply 2) para que el equipo pueda copiarlos.
 
 ---
 
-## Brief — `S5-Card_pub8-formula` · card de fórmula
+## Brief — `S5-Infografia_pub8-formula` · infografía F2-D (fórmula / componentes)
 
-**Tipo de pieza:** card / infografía — panel único con la fórmula como protagonista
+**Tipo de pieza:** infografía F2-D — vertical con la fórmula como elemento central y sus 5 componentes desglosados
 **Origen del contenido:** `estructura_prompt.md` + caso COBOL SQLCODE de las sesiones
 
 ### Contenido
@@ -166,18 +166,19 @@ No hace falta rellenar las cinco siempre — pero cuando algo no sale, revisa cu
 | Pieza 3 — Tarea | Qué quieres, un solo objetivo claro. |
 | Pieza 4 — Restricciones | Los límites y las reglas que debe respetar. |
 | Pieza 5 — Formato | Cómo quieres la respuesta. |
-| Remate | La pieza que más se olvida es Restricciones. |
+| Remate | Las Restricciones son lo que separa "algo parecido" de "justo lo que necesitaba". |
 | Logo | Occident — inferior derecha |
 
-### Especificaciones Figma (referencia — el diseño final lo define Yehimy)
+### Especificaciones (referencia — el diseño final lo define el usuario)
 
-- **Formato:** 1080×1350 px para Teams
+- **Formato:** infografía F2-D, vertical 1080×1350 px para Teams (puede extenderse verticalmente si el contenido lo pide)
 - **Fondo:** blanco — sin fondos negros ni rojos
 - **Eyebrow:** rojo `#DC0028` · uppercase · GCO Sans pequeño
 - **Título principal:** negro · CO Bold · display
-- **Fórmula central:** las 5 palabras con los signos `+` en rojo `#DC0028` como acento; las palabras en negro CO Bold
-- **Las 5 piezas:** cada una con su nombre en CO Bold + la explicación en GCO Sans gris
-- **Remate "Restricciones":** destacado con rojo `#DC0028` como acento
+- **Fórmula central:** las 5 palabras con los signos `+` en rojo `#DC0028` como acento; las palabras en negro CO Bold. Es el elemento protagonista de la pieza.
+- **Las 5 piezas / componentes:** desglosadas debajo de la fórmula, cada una con su nombre en CO Bold + la explicación en GCO Sans gris. Pueden ir numeradas o en bloques, manteniendo la lectura de "componentes de la fórmula".
+- **Remate ("algo parecido" vs "justo lo que necesitaba"):** destacado con rojo `#DC0028` como acento; "Restricciones" resaltado como la palabra clave.
 - **Logo Occident:** inferior derecha
-- **Tipografía:** CO para títulos · GCO Sans para texto corriente
+- **Tipografía:** CO Bold para títulos · GCO Sans para texto corriente (fuentes del design system, carpeta `fonts`)
 - **Marca:** rojo `#DC0028` solo como acento (eyebrow, signos `+`, remate)
+- **Ilustración:** opcional; si se usa, seguir uno de los estilos del proyecto (ver "Estilos de ilustración" en el catálogo)
