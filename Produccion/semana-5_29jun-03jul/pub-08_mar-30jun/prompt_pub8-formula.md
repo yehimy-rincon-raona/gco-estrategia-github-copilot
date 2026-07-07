@@ -16,12 +16,12 @@ Contenido exacto de la pieza (no inventes ni añadas texto que no esté aquí):
 - Título principal (CO Bold, negro): La fórmula del prompt que funciona
 - Fórmula central (elemento protagonista, palabras en negro CO Bold, signos + en rojo): Rol + Contexto + Tarea + Restricciones + Formato
 - Componentes de la fórmula (cada uno: nombre en CO Bold + explicación en GCO Sans gris):
-  1. Rol — Quién quieres que sea.
-  2. Contexto — El código o el dato sobre el que trabaja.
-  3. Tarea — Qué quieres, un solo objetivo claro.
-  4. Restricciones — Los límites y las reglas que debe respetar.
-  5. Formato — Cómo quieres la respuesta.
-- Remate (destacado con rojo como acento): La pieza que más se olvida es Restricciones.
+  1. Rol — Define desde qué experiencia debe responder.
+  2. Contexto — Dale el código, dato o caso sobre el que trabaja.
+  3. Tarea — Pide una acción concreta, con un objetivo claro.
+  4. Restricciones — Indica límites, reglas y estándares que debe respetar.
+  5. Formato — Dile cómo entregar la respuesta para usarla directo.
+- Remate (destacado con rojo como acento): Las Restricciones son lo que separa: "Algo parecido" de "justo lo que necesitaba".
 - Logo Occident: inferior derecha.
 
 Formato: vertical 1080×1350 px. El ejemplo completo y la plantilla NO van en la pieza (viven en el texto del post). La gráfica solo fija la fórmula de un vistazo.
@@ -34,4 +34,4 @@ Si algún dato de estilo no está definido en el catálogo (retícula, tamaños 
 
 - Si Claude Design pregunta por la variante, confírmale F2-D.
 - Cuando devuelva el primer diseño, revísalo contra el brief: que la fórmula sea el elemento central, que los `+` estén en rojo, que "Restricciones" tenga el acento, y que no haya colado el ejemplo de código (ese va en el texto del post, no en la pieza).
-- Cuando la apruebes, expórtala como `infografia_formula-componentes.jpg` y súbela a `uploads`: pasa a ser la imagen de referencia oficial de la variante F2-D.
+- Producida y aprobada — exportada como `08-S5-infografia_prompts.jpg` en la carpeta de la pub. Pasa a ser la imagen de referencia oficial de la variante F2-D.

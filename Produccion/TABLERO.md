@@ -1,6 +1,6 @@
 # Tablero de Producción — Estrategia de Adopción GitHub Copilot GCO
 > Punto de entrada único de seguimiento y estado del proyecto.
-> Última actualización: 30 junio 2026 — Semana 5 planificada: Pub 8 y Pub 9 (La fórmula del prompt, partes 1 y 2) con briefs listos en `semana-5_29jun-03jul/`
+> Última actualización: 3 julio 2026 — Semana 5: todas las piezas gráficas producidas — Pub 8 (infografía de la fórmula + card del ejemplo antes/después) y Pub 9 (díptico Contexto / Restricciones) · Guion del Vídeo 4 (instalar y configurar MCP con Copilot Dev Suite) listo para edición
 
 ---
 
@@ -8,10 +8,10 @@
 
 | | Semana 1 · 1–5 jun | Semana 2 · 8–12 jun | Semana 3 · 15–19 jun | Semana 4 · 22–26 jun | Semana 5 · 29 jun–3 jul |
 |---|---|---|---|---|---|
-| Publicaciones en Teams | 2 publicadas | 1 publicada | — (pubs desplazadas a S4) | Pub 6 publicada · Pub 7 lista | Pub 8 y 9 planificadas (fórmula del prompt) |
-| Piezas gráficas publicadas | 1 infografía | 1 infografía | — | Tríptico Pub 6 (3 cards) | — (2 cards en producción) |
-| Contenido listo para publicar | — | — | — | Pub 7 (brief listo) | Pub 8 y 9 (briefs listos) |
-| Vídeo | — | V1 — edición finalizada 12 jun | — | — | Video caso de uso 1 en diseño |
+| Publicaciones en Teams | 2 publicadas | 1 publicada | — (pubs desplazadas a S4) | Pub 6 publicada · Pub 7 lista | Pub 8 y 9 listas para publicar (fórmula del prompt) |
+| Piezas gráficas publicadas | 1 infografía | 1 infografía | — | Tríptico Pub 6 (3 cards) | Pub 8 (infografía + card ejemplo) + díptico Pub 9 — 4 piezas producidas |
+| Contenido listo para publicar | — | — | — | Pub 7 (brief listo) | Pub 8 y 9 (briefs + piezas listas) |
+| Vídeo | — | V1 — edición finalizada 12 jun | — | — | Video caso de uso 1 en diseño · Guion V4 (instalar y configurar MCP) listo |
 
 ---
 
@@ -24,8 +24,8 @@
 | 5 | S2 | Jue 11 jun | Primeros Pasos | Hay una forma más precisa. — Jerarquía de referencias de GitHub Copilot | ✅ Post + infografía publicados · card minimalista en Figma | [pub-05_jue-11jun/](semana-2_08-12jun/pub-05_jue-11jun/) |
 | 6 | S4 | Mar 23 jun | Casos de Uso Reales | Caso de uso real 1 — Entender código heredado con GitHub Copilot · COBOL | ✅ **Publicada** — post principal + tríptico (3 cards: Portada → Problema → Solución) + reply "Prompts listos para el equipo". Reply 2 (análisis de impacto, opcional) pendiente. Info validada contra el brief. | [semana-4_22-26jun/pub-06_mar-23jun/](semana-4_22-26jun/pub-06_mar-23jun/) |
 | 7 | S4 | Jue 25 jun | Casos de Uso Reales | Caso de uso real 2 — Bug fixing con GitHub Copilot · .NET | ✅ Brief reformulado como caso de uso · post + tríptico (Portada → Problema → Solución) + replies + reparto texto/gráfica definido · publicable como "bug fixing con contexto" · confirmar lenguaje (.NET) con Nibaldo | [semana-4_22-26jun/pub-07_jue-25jun/](semana-4_22-26jun/pub-07_jue-25jun/) |
-| 8 | S5 | Mar 30 jun | Anuncios y Tips Ágiles | La fórmula del prompt que funciona — parte 1: Rol + Contexto + Tarea + Restricciones + Formato (caso real SQLCODE en COBOL) | 📝 Brief listo — pendiente producir card en Figma · fecha a confirmar | [semana-5_29jun-03jul/pub-08_mar-30jun/](semana-5_29jun-03jul/pub-08_mar-30jun/) |
-| 9 | S5 | Jue 2 jul | Anuncios y Tips Ágiles | La fórmula del prompt — parte 2: Contexto y Restricciones (orden de referencias + reglas de código GCO) | 📝 Brief listo — pendiente producir card en Figma · fecha a confirmar | [semana-5_29jun-03jul/pub-09_jue-02jul/](semana-5_29jun-03jul/pub-09_jue-02jul/) |
+| 8 | S5 | Mar 30 jun | Anuncios y Tips Ágiles | La fórmula del prompt que funciona — parte 1: Rol + Contexto + Tarea + Restricciones + Formato (caso real SQLCODE en COBOL) | ✅ Ambas piezas producidas — infografía de la fórmula (`08-S5-infografia_prompts`) + card del ejemplo antes/después (`08-S5-card-contexto`) · fecha a confirmar | [semana-5_29jun-03jul/pub-08_mar-30jun/](semana-5_29jun-03jul/pub-08_mar-30jun/) |
+| 9 | S5 | Jue 2 jul | Anuncios y Tips Ágiles | La fórmula del prompt — parte 2: Contexto y Restricciones (orden de referencias + reglas de código GCO) | ✅ Díptico producido — 2 cards horizontales (Contexto + Restricciones) · fecha a confirmar | [semana-5_29jun-03jul/pub-09_jue-02jul/](semana-5_29jun-03jul/pub-09_jue-02jul/) |
 | 10 | S4+ | Por confirmar | Primeros Pasos | Cómo hacer que GitHub Copilot conozca tu entorno de equipo (Skills + instructions) | ⏳ Desplazada — semana a confirmar tras decisión del equipo · input técnico Nibaldo pendiente | — |
 | AMA | TBD | Por confirmar | Foro AMA | Sesión AMA en directo | ⚠️ Bloqueado — falta fecha (Nibaldo + Guillermo) | — |
 
@@ -44,12 +44,16 @@
 | Infografía jerarquía de referencias | Pub 5 | Infografía 1080×1350 px | ✅ Publicada |
 | Tríptico Pub 6 — Entender COBOL heredado (`S3-Card_pub6-portada` · `-problema` · `-solucion`) | Pub 6 | card-triptico · 3 paneles · 1080×1080 px | ✅ Publicada |
 | Tríptico Pub 7 — Bug fixing con contexto (`S3-Card_pub7-portada` · `-problema` · `-solucion`) | Pub 7 | card-triptico · 3 paneles · 1080×1080 px | 📝 Brief listo — pendiente producción Figma |
+| Infografía "La fórmula del prompt que funciona" (`08-S5-infografia_prompts`) | Pub 8 | Infografía · fórmula / componentes · 1080×1350 px | ✅ Producida |
+| Card "El mismo encargo, dos resultados" (`08-S5-card-contexto`) | Pub 8 (reply 1) | Card comparativa horizontal · antes/después | ✅ Producida |
+| Card "Contexto" del díptico (`9-S5-card-contexto`) | Pub 9 | Card horizontal · ~1920×1080 px | ✅ Producida |
+| Card "Restricciones" del díptico (`9-S5-card-restricciones`) | Pub 9 | Card horizontal · ~1920×1080 px | ✅ Producida |
 | Card minimalista "Empieza por lo más acotado" | Pub 5 | Card minimalista 1080×1350 px | 🔄 Producción Figma |
-| 1-S2 · Optimización de Tokens y Modelos | Pub 8 / 9 | Card comparativa 1920×1080 px | ✅ Reformulada (plan-agnóstica) — ver `Produccion/semana-2_08-12jun/pub-04_jue-11jun/ajuste-facturacion-tokens_pub4.md` · pendiente confirmar plan de GCO con Nibaldo |
-| 2-S2 · Diseñe la solución con un modelo Premium | Pub 8 / 9 | Card minimalista 1080×1350 px | 🔄 Producción Figma |
-| 3-S2 · Carga progresiva de Skills | Pub 8 / 9 | Card minimalista 1080×1350 px | 🔄 Producción Figma |
-| 4-S2 · Higiene de la memoria a corto plazo | Pub 8 / 9 | Card minimalista 1080×1350 px | 🔄 Producción Figma |
-| 5-S2 · Memoria vs. Instrucciones del equipo | Pub 8 / 9 | Card comparativa 1920×1080 px | 🔄 Producción Figma |
+| 1-S2 · Optimización de Tokens y Modelos | Pub 4 | Card comparativa 1920×1080 px | ✅ Reformulada (plan-agnóstica) — ver `Produccion/semana-2_08-12jun/pub-04_jue-11jun/ajuste-facturacion-tokens_pub4.md` · pendiente confirmar plan de GCO con Nibaldo |
+| 2-S2 · Diseñe la solución con un modelo Premium | Pub 4 | Card minimalista 1080×1350 px | 🔄 Producción Figma |
+| 3-S2 · Carga progresiva de Skills | Pub 4 | Card minimalista 1080×1350 px | 🔄 Producción Figma |
+| 4-S2 · Higiene de la memoria a corto plazo | Pub 4 | Card minimalista 1080×1350 px | 🔄 Producción Figma |
+| 5-S2 · Memoria vs. Instrucciones del equipo | Pub 4 | Card comparativa 1920×1080 px | 🔄 Producción Figma |
 
 ---
 
@@ -62,7 +66,7 @@
 | V1 | Configuración del entorno | ✅ Edición finalizada 12 jun · 🔄 Ajustes pendientes (Nibaldo): regrabar flujo de licencia myaccess + reflejar el acceso · pendiente publicación + URL canal corporativo · 📌 corrección de URLs disponible en `Seguimiento/seguimiento-videos-y-acceso_30jun2026.md` (no aplicada — ver disclaimer) | [Videos/v01_configuracion-entorno/](Videos/v01_configuracion-entorno/) |
 | V2 | Dos opciones sobre la mesa — equipo elige: **(A)** Primera conversación con GitHub Copilot Chat + completado inline · **(B)** Primeros pasos + introducción a Skills | 📝 Dos guiones enviados — pendiente decisión · 🔄 Ajustes (Nibaldo): ocultar dato del login + regrabar autenticación VS Code | [Videos/v02_primeros-pasos/](Videos/v02_primeros-pasos/) |
 | V3 | Cómo interactuar con GitHub Copilot — demo de casos reales | 🔄 **Uno de los 2 videos nuevos de esta semana** (reunión 30 jun) · caso de uso COBOL · material en bruto de Nibaldo descargado el jueves · pendiente revisión de coherencia por Nibaldo | [Videos/v03_como-interactuar/](Videos/v03_como-interactuar/) |
-| V-MCP | Servidores MCP (material en bruto de Nibaldo) | 🔄 **Uno de los 2 videos nuevos de esta semana** (reunión 30 jun) · nota: VS 2022 no soporta MCP → enfoque probable VS Code o terminal (confirmar con Nibaldo) | — |
+| V4 | Instala y configura tus MCP con Copilot Dev Suite (Jira · Confluence · DB2 · SQL) | ✅ **Guion listo** — píldora ágil consolidada (voz en off + qué mostrar en pantalla), todo verificado contra las 44 capturas del vídeo, sin datos inventados · grabación fuente de **Víctor Gisbert** (`gco_mcp-victor-gisbert`, ~16 min) · orientado a **Fase 3** (VS Code / Terminal; VS 2022 no soporta MCP) · parte experimental (Chrome/Playwright + custom agents) dejada fuera por decisión de guion · 🔄 pendiente edición/postproducción (condensar a 2:30–3:00 + difuminar datos sensibles) · _corresponde al slot "Servidores MCP" de la reunión 30 jun — grabación aportada por Víctor, no Nibaldo_ | [Videos/v04_instalar-mcp/](Videos/v04_instalar-mcp/) |
 | V-Nibaldo | Videos propios de Nibaldo | 🔄 En curso — Nibaldo indica entrega hoy 30 jun | — |
 
 ---

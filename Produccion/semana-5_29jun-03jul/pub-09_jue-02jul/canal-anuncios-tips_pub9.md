@@ -1,7 +1,7 @@
 # Canal Anuncios y Tips — Pub 9 · La fórmula del prompt (parte 2): Contexto y Restricciones
 > Canal: Anuncios y Tips Ágiles · Tipo: Tip de uso
 > ⏱️ **Producción: Semana 5 (trabajo del 30 jun)** · **Publicación: Semana 5 — jueves 2 jul (fecha a confirmar en la reunión)**
-> Estado: 📝 Brief listo — presentado en la reunión del 30 jun como plan de la semana
+> Estado: ✅ Díptico producido — 2 cards horizontales (`9-S5-card-contexto.jpg` · `9-S5-card-restricciones.jpg`)
 > Fuente: `Configuraciones/estructura_prompt.md` · sesiones de formación · card `5-S2` · `copilot-instructions.md` del proyecto
 > Continúa: `pub-08_mar-30jun/canal-anuncios-tips_pub8.md`
 
@@ -35,19 +35,23 @@ Lo que no debe tocar y cómo debe escribir: COBOL entre columnas 7–72, SQL sin
 
 ---
 
-## Qué va en el post (texto) y qué va en la pieza gráfica
+## Qué va en el post (texto) y qué va en las piezas gráficas
+
+Esta pub se produjo como un **díptico de dos cards horizontales** (no una sola card comparativa), con un título común: *Contexto y Restricciones: la mitad del resultado*.
 
 **En el texto del post (Teams):**
 - El cuerpo de arriba: Contexto (orden de referencias) + Restricciones (reglas GCO) + CTA.
-- **Reply 1:** el truco de pasar las restricciones a `copilot-instructions.md` para no repetirlas en cada prompt.
-- **Reply 2 (opcional):** ejemplo de restricciones bien puestas en un prompt .NET.
+- **Reply:** el atajo de poner las reglas una vez en `.github/copilot-instructions.md` para todo el equipo, con un ejemplo copiable de las reglas reales de GCO.
 
-**En la pieza gráfica (card comparativa o de dos columnas):**
-- Columna A: **Contexto** → el orden de referencias (`#selection` → método → `#file` → `@workspace`).
-- Columna B: **Restricciones** → las reglas de código de GCO.
-- **No lleva el detalle de instructions.md** — eso va en el texto.
+**En la card 1 — Contexto:**
+- El orden de referencias (`#selection` → método/clase → `#file` → `@workspace`).
+- "Menos tokens, mayor enfoque" + el caso COBOL de un error de SQLCODE (referencia el módulo, no 20 programas).
 
-> Regla: la gráfica fija las dos piezas de un vistazo; el texto aterriza el cómo. No se duplica el contenido.
+**En la card 2 — Restricciones:**
+- Las reglas de código de GCO: COBOL columnas 7–72, SQL sin `LIKE`/`DELETE`/`TRUNCATE`, .NET C# 12 con `async/await`.
+- Cierre de seguridad: nunca credenciales en el código.
+
+> Regla: las cards fijan las dos piezas de un vistazo; el texto aterriza el cómo (el atajo de `copilot-instructions.md` va en el reply). No se duplica el contenido.
 
 ---
 
@@ -96,76 +100,94 @@ Claves:
 
 ---
 
-## Posts de hilo
+## Post de hilo (reply)
 
-> El post principal va con la card comparativa Contexto / Restricciones. Reply 1 abre el tema de instructions.md. Reply 2 (opcional) da el ejemplo .NET.
-
----
-
-### Reply 1 — el atajo: no repitas las reglas en cada prompt
-
-⚙️ **¿Cansado de escribir las mismas restricciones una y otra vez?**
-
-Las reglas que tu equipo repite en cada prompt — columnas 7–72, SQL sin `LIKE`, .NET en C# 12 — pueden vivir en un solo archivo: `.github/copilot-instructions.md`.
-
-Ese archivo entra al contexto en cada conversación, para todo el equipo, sin que nadie tenga que escribirlo. Lo que defines ahí, GitHub Copilot lo aplica siempre.
-
-Es el siguiente paso natural de las Restricciones: de escribirlas en cada prompt → a tenerlas puestas para todo el proyecto.
-
-→ Adjuntar: card comparativa Contexto / Restricciones
+> El post principal va con el díptico (card 1 Contexto + card 2 Restricciones). El reply es el remate de valor: convierte las restricciones que se escriben prompt a prompt en una regla permanente para todo el equipo.
 
 ---
 
-### Reply 2 — (opcional) restricciones bien puestas en .NET
+### Reply — Escribe las reglas una vez, no en cada prompt
 
-🧩 **Mismo encargo, con y sin restricciones.**
+⚙️ **El atajo: pon las reglas de tu equipo una sola vez.**
 
-Sin restricciones → "créame el método para insertar un usuario en la tabla tramitación" te devuelve algo que compila, pero quizá sin `async/await` y con SQL que no pasa tus reglas.
+¿Cansado de repetir las mismas restricciones cada vez que le pides algo a GitHub Copilot? Esas reglas —las mismas de la card— pueden vivir en un único archivo del repo: `.github/copilot-instructions.md`.
 
-Con restricciones → le dices "C# 12, `async/await` en toda I/O, sin `DELETE` ni `TRUNCATE`, sin credenciales en el código". El resultado ya respeta cómo programa GCO.
+Un ejemplo con las reglas reales de GCO, listo para adaptar:
 
-La restricción no limita a GitHub Copilot: lo alinea con tu proyecto.
+```
+# Reglas de código — GCO
+- COBOL: respeta las columnas 7–72. No modifiques copybooks sin listar antes el impacto.
+- SQL: sin LIKE, sin DELETE ni TRUNCATE si no está autorizado.
+- .NET: C# 12, async/await en toda operación de I/O.
+- Nunca escribas credenciales, tokens ni passwords en el código.
+```
+
+Ese archivo entra al contexto en **cada conversación y para todo el equipo**, sin que nadie tenga que reescribirlo. Lo que defines ahí, GitHub Copilot lo aplica siempre.
+
+Es el salto natural de las Restricciones: de declararlas prompt a prompt → a tenerlas puestas para todo el proyecto.
+
+👉 Arranca con 4–5 reglas de tu equipo. En cinco minutos ya está trabajando por ti.
+
+_(Solo texto — el díptico va con el post principal.)_
 
 ---
 
 ## Archivos de salida
 
-| # | Nombre de archivo | Tipo | Tema |
-|---|-------------------|------|------|
-| 1 | `S5-Card_pub9-contexto-restricciones` | card-comparativa · 1080×1350 px (formato a confirmar con Yehimy) | Dos columnas: Contexto (orden de referencias) vs. Restricciones (reglas GCO) |
+| # | Nombre de archivo | Tipo | Tema | Estado |
+|---|-------------------|------|------|--------|
+| 1 | `9-S5-card-contexto` | card horizontal · ~1920×1080 px | Contexto: orden de referencias + menos tokens / mayor enfoque (caso SQLCODE en COBOL) | ✅ Producida |
+| 2 | `9-S5-card-restricciones` | card horizontal · ~1920×1080 px | Restricciones: estándares de código GCO (COBOL 7–72, SQL, .NET C# 12) + seguridad | ✅ Producida |
 
-> El detalle de `copilot-instructions.md` y el ejemplo .NET no van en la pieza gráfica: viven en el texto del post (Reply 1 y Reply 2).
+> El detalle de `copilot-instructions.md` (el reply) no va en las cards: vive en el texto del post.
 
 ---
 
-## Brief — `S5-Card_pub9-contexto-restricciones` · card-comparativa
+## Brief — Díptico `9-S5-card-contexto` + `9-S5-card-restricciones` ✅ Producido
 
-**Tipo de pieza:** card-comparativa — panel único con dos columnas
-**Origen del contenido:** orden de referencias (Pub 4) + reglas de código de GCO (card `5-S2`, `copilot-instructions.md`)
+**Tipo de pieza:** díptico de dos cards horizontales (~1920×1080 px), mismo título común; cada una destaca en rojo una de las dos piezas.
+**Origen del contenido:** orden de referencias (Pub 4) + reglas de código de GCO (card `5-S2`, `copilot-instructions.md`) + caso SQLCODE en COBOL de las sesiones.
 
-### Contenido
+### Elemento común a las dos cards
 
 | Elemento | Texto |
 |----------|-------|
-| Eyebrow (overline) | GUÍA DE MAESTRÍA EN GITHUB COPILOT · PROMPTING (2/2) |
+| Eyebrow (overline) | GUÍA DE MAESTRÍA EN GITHUB COPILOT · PROMPTING |
 | Título principal | Contexto y Restricciones: la mitad del resultado |
-| Columna A — encabezado | Contexto — muéstrale solo lo que importa |
-| Columna A — contenido | Orden de referencias: `#selection` → método/clase → `#file` → `@workspace` (solo si no sabes dónde está). En COBOL: un módulo, no 20 programas. |
-| Columna B — encabezado | Restricciones — dile las reglas de GCO |
-| Columna B — contenido | COBOL: columnas 7–72. SQL: sin `LIKE`, sin `DELETE`/`TRUNCATE`. .NET: C# 12, `async/await`. Nunca credenciales en el código. |
-| Remate | Lo que no le dices, lo adivina. |
 | Logo | Occident — inferior derecha |
 
-### Especificaciones Figma (referencia — el diseño final lo define Yehimy)
+> En la card 1 se resalta **Contexto** en rojo dentro del título; en la card 2 se resalta **Restricciones**.
 
-- **Formato:** 1080×1350 px para Teams (o 1920×1080 landscape adaptable)
-- **Fondo:** blanco — sin fondos negros ni rojos
-- **Eyebrow:** rojo `#DC0028` · uppercase · GCO Sans pequeño
-- **Título principal:** negro · CO Bold · display
-- **Columnas:** fondo `#F5F5F5` · esquinas suavemente redondeadas
-- **Encabezados de columna:** CO Bold negro
-- **Comandos inline** (`#selection`, `#file`, `@workspace`, `LIKE`, `async/await`): monospace · fondo blanco/`#F5F5F5` · borde sutil
-- **Remate "Lo que no le dices, lo adivina":** rojo `#DC0028` como acento
+### Card 1 — Contexto (`9-S5-card-contexto`)
+
+| Elemento | Texto |
+|----------|-------|
+| Encabezado izquierda | Contexto — muéstrale solo lo que importa |
+| Subtítulo | Orden de referencias: |
+| Diagrama de flujo | `#selection` → método/clase → `#file` → `@workspace` (solo si no sabes dónde está) |
+| Encabezado derecha | Menos tokens, mayor enfoque |
+| Texto derecha | Acotar la referencia evita respuestas irrelevantes y reduce el gasto de tokens. En COBOL: un módulo, no 20 programas. |
+| Terminal (mainframe) | EXEC SQL / SELECT CUSTOMER_NAME / INTO :WS-CUSTOMER-NAME / FROM CUSTOMER_TABLE / WHERE CUSTOMER_ID = :WS-CUSTOMER-ID / END-EXEC. · SQLCODE: -911 · SQLSTATE: 40001 · ERROR: DEADLOCK OR TIMEOUT OCCURRED · ACTION: ROLLBACK TRANSACTION AND RETRY |
+| Cierre | Para un error de SQLCODE, referencia el módulo específico. |
+
+### Card 2 — Restricciones (`9-S5-card-restricciones`)
+
+| Elemento | Texto |
+|----------|-------|
+| Encabezado | Restricciones — dile las reglas de GCO |
+| Subtítulo | Estándares de código obligatorios |
+| Bloque COBOL | Regla visual de columnas 7–72 sobre un EXEC SQL (SELECT CUSTOMER_NAME … END-EXEC.), con las columnas 7 y 72 marcadas. Rótulo: Columnas 7–72. |
+| Regla SQL | No propongas consultas destructivas `DELETE` / `TRUNCATE` ni búsquedas amplias con `LIKE` si no están autorizadas. |
+| Bloque .NET | .NET · C# 12 · `async/await` — `public static async Task Main(string[] args) { await ProcessDataAsync(); }` |
+| Regla .NET | Usar `async/await` cuando haya operaciones asíncronas reales: API, base de datos, archivos o servicios. |
+| Cierre (footer) | Seguridad y limpieza: nunca credenciales en el código. |
+
+### Especificaciones (referencia — el diseño ya está producido)
+
+- **Formato:** dos cards horizontales ~1920×1080 px
+- **Fondo:** blanco · paneles `#F5F5F5` con esquinas redondeadas
+- **Eyebrow:** rojo `#DC0028` · uppercase
+- **Título:** CO Bold · la palabra destacada (Contexto / Restricciones) en rojo `#DC0028`
+- **Comandos y código** (`#selection`, `#file`, `@workspace`, `DELETE`, `TRUNCATE`, `LIKE`, `async/await`): monospace con recuadro sutil
 - **Logo Occident:** inferior derecha
 - **Tipografía:** CO para títulos · GCO Sans para texto corriente · monospace para términos técnicos
-- **Marca:** rojo `#DC0028` solo como acento (eyebrow, remate)
