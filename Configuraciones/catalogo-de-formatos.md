@@ -78,7 +78,7 @@ Esta es la **única** tabla de referencia de formatos. Total: **4 formatos base 
 | Código | Nombre exacto | Formato / dimensiones | Para qué contenido | Variantes | Imagen(es) de referencia en `uploads` |
 |--------|---------------|-----------------------|--------------------|-----------|----------------------------------------|
 | `F1` | `card-triptico` | 3 paneles 1080×1080 px (carrusel) | Caso de uso o tema narrado en 3 pasos: Portada → Problema → Solución | única (3 paneles: degradado / blanco / rojo) | `card-triptico_portada.png` · `card-triptico_problema.png` · `card-triptico_solucion.png` |
-| `F2` | `infografía` | Vertical 1080×1350 px | Jerarquía/pirámide, procedimiento largo, o fórmula desglosada en componentes | B (jerarquía/pirámide) · C (paso a paso largo) · D (fórmula/componentes) | `infografia_jerarquia-piramide.jpg` · `infografia_paso-a-paso-largo.jpg` · `08-S5-infografia_prompts.jpg` (Pub 8 — referencia F2-D) |
+| `F2` | `infografía` | Vertical 1080×1350 px | Jerarquía/pirámide, procedimiento largo, o fórmula desglosada en componentes | B (jerarquía/pirámide) · C (paso a paso largo) · D (fórmula/componentes) | `infografia_jerarquia-piramide.jpg` · `infografia_paso-a-paso-largo.jpg` · `09-S5-infografia_prompts.jpg` (Pub 8 — referencia F2-D) |
 | `F3` | `card-minimalista` | Panel único 1080×1350 px | Un tip corto, una sola idea o regla | única | `card-minimalista.png` |
 | `F4` | `banner de canal` | Portada de canal ~1200×627 px | Portada/encabezado de un canal de Teams | Roja (canal General) · Gris (resto de canales) | `banner-canal_general-rojo.jpg` · `banner-canal_gris.jpg` |
 
@@ -93,7 +93,7 @@ Esta es la **única** tabla de referencia de formatos. Total: **4 formatos base 
 **Cuándo usarlo:** para un **caso de uso o tema** que se cuenta de un vistazo en tres pasos: Portada → Problema → Solución. El tríptico narra el caso; el texto del post aporta los prompts copiables. No se duplica contenido entre gráfica y texto — los prompts nunca van en la pieza.
 
 **Estructura (los 3 paneles) — cada panel tiene su propio fondo:**
-- **Panel 1 — Portada:** parte superior con **degradado naranja `#FA961E` → rojo `#DC0028`** (aquí va la ilustración / el tema de la card, ej. "Píldora Ágil"); parte inferior blanca con eyebrow en rojo uppercase (ej. `CASO DE USO REAL · <LENGUAJE>` o `PRIMEROS PASOS CON GITHUB COPILOT`), el **título** en CO Bold, y subtítulo/descripción cuando aplique. Isótipo Occident arriba izquierda.
+- **Panel 1 — Portada:** parte superior con **degradado naranja `#FA961E` → rojo `#DC0028`** (aquí va la ilustración / el tema de la tarjeta, ej. "Píldora Ágil"); parte inferior blanca con eyebrow en rojo uppercase (ej. `CASO DE USO REAL · <LENGUAJE>` o `PRIMEROS PASOS CON GITHUB COPILOT`), el **título** en CO Bold, y subtítulo/descripción cuando aplique. Isótipo Occident arriba izquierda.
   - **Tratamiento de la ilustración de portada:** el icono/ilustración sobre el degradado usa el **Estilo 1 — Icono a línea (marcador / tiza)** descrito en "Estilos de ilustración" del sistema base (sobre degradado, el trazo va en blanco). Parte de un icono de `assets/icons` y aplícale ese acabado a mano; no lo reemplaces por un icono plano estándar. Referencias en `types_of_illustrations`.
 - **Panel 2 — El problema / la pregunta (fondo blanco):** eyebrow o tag superior (ej. `EL PROBLEMA`, o el tag `Píldora Ágil | Video N` en esquina superior derecha), la afirmación del dolor real o la duda que se plantea, con el copy que la desarrolla, un fragmento clave resaltado en rojo, y un visual/icono de apoyo si aplica.
 - **Panel 3 — La solución (fondo rojo `#DC0028`):** tag `SOLUCIÓN` + pill de fase (ej. `Fase 1 | Concienciación`) arriba, el método en **filas de pasos numerados** (número grande + texto, todo en blanco), y la frase de cierre / remate en bold al final (CTA).
@@ -107,7 +107,7 @@ Esta es la **única** tabla de referencia de formatos. Total: **4 formatos base 
 - Eyebrow / tags en rojo `#DC0028` uppercase sobre fondo blanco; en el panel de solución (fondo rojo) el texto va en blanco.
 - Chips de términos técnicos en monospace con borde, sin relleno.
 - Título en CO Bold; texto corriente en GCO Sans.
-- Los estilos de ilustración del proyecto (Estilo 1 icono a línea, Estilo 2 collage foto B/N + trazo a mano) pueden **proponerse también en otras cards** cuando aporten, no quedan limitados a la portada del tríptico. Ver "Estilos de ilustración" en el sistema base.
+- Los estilos de ilustración del proyecto (Estilo 1 icono a línea, Estilo 2 collage foto B/N + trazo a mano) pueden **proponerse también en otras tarjetas** cuando aporten, no quedan limitados a la portada del tríptico. Ver "Estilos de ilustración" en el sistema base.
 
 **Imágenes de referencia (en `uploads`):** `card-triptico_portada.png` · `card-triptico_problema.png` · `card-triptico_solucion.png`.
 
@@ -147,7 +147,7 @@ Para cuando el mensaje central es **una fórmula o estructura repetible** que se
 - Logo Occident inferior derecha.
 - El ejemplo completo NO va en la pieza: vive en el texto del post. La gráfica solo fija la fórmula.
 - **Señales:** "la fórmula", "5 piezas", "Rol + Contexto + Tarea + Restricciones + Formato", "estructura repetible", "no más largo, más completo", palabras unidas por `+`, componentes de algo.
-- **Imagen de referencia:** `Produccion/semana-5_29jun-03jul/pub-08_mar-30jun/08-S5-infografia_prompts.jpg` — "La fórmula del prompt que funciona" (Pub 8). Primera pieza aprobada de esta variante; es la referencia oficial de F2-D.
+- **Imagen de referencia:** `Produccion/semana-5_29jun-03jul/pub-08_mar-30jun_(repub-09_mar-11-ago)/09-S5-infografia_prompts.jpg` — "La fórmula del prompt que funciona" (Pub 8). Primera pieza aprobada de esta variante; es la referencia oficial de F2-D.
 
 **Especificaciones comunes:**
 - Bloque introductorio / nota al pie: fondo gris (`#F2F2F2` / `#F7F7F7`) con borde izquierdo rojo de 4 px.
@@ -169,7 +169,7 @@ Para cuando el mensaje central es **una fórmula o estructura repetible** que se
 - Título corto rojo `#DC0028`, uppercase, alineado a la derecha, tamaño pequeño.
 - Título principal negro, CO Bold, display (40–56 px equiv.).
 - Comandos inline en monospace con fondo `#F5F5F5` y borde sutil.
-- Variante de fondo gris `#F5F5F5` permitida para diferenciar una card dentro de una serie, manteniendo el resto blancas.
+- Variante de fondo gris `#F5F5F5` permitida para diferenciar una tarjeta dentro de una serie, manteniendo el resto blancas.
 
 **Imagen de referencia (en `uploads`):** `card-minimalista.png`.
 

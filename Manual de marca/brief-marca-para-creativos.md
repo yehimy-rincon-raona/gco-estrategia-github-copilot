@@ -15,7 +15,7 @@
 | **Fondo universal** · toda pieza sobre blanco | Blanco | `#FFFFFF` |
 | **Titulares** · texto sobre fondo blanco | Negro suave | `#1A1A1A` |
 
-**Degradado corporativo** (uso limitado: headers, cards de impacto, banners)
+**Degradado corporativo** (uso limitado: headers, tarjetas de impacto, banners)
 - Fórmula: `#DC0028` → `#FA9600`, 45°, solo cuando el texto encima va en blanco
 
 ### Tipografía
@@ -50,8 +50,8 @@ Disponible como `.woff` / `.ttf` (web) y `.otf` (diseño):
 
 | Elemento | Valor |
 |----------|-------|
-| Padding mínimo en cards | `24px` |
-| Border radius · cards | `6–8px` |
+| Padding mínimo en tarjetas | `24px` |
+| Border radius · tarjetas | `6–8px` |
 | Border radius · pills/badges | `20px` |
 | Sombra máxima permitida | `0 2px 8px rgba(0,0,0,0.08)` |
 | Borde izquierdo de acento | `4px sólido #DC0028` |

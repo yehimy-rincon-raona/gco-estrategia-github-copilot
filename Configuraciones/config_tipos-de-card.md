@@ -1,4 +1,4 @@
-# Tipos de card — Definición de patrones visuales
+# Tipos de tarjeta — Definición de patrones visuales
 > Referencia para producción gráfica. Cada tipo tiene estructura, elementos y especificaciones distintas.
 > Usar estos nombres en los briefs de Figma y en la nomenclatura de archivos.
 

@@ -7,7 +7,7 @@
 
 ### Decisiones de sistema visual
 - **Flujo de producción definido:** Claude Design genera propuesta → se prueba → se refina en Figma
-- **Sistema visual elegido: Opción A** — Card con identidad de canal (franja de color por canal arriba de cada pieza)
+- **Sistema visual elegido: Opción A** — Tarjeta con identidad de canal (franja de color por canal arriba de cada pieza)
 - **Colores de canal asignados:**
   - Anuncios y Tips Ágiles → `#DC0028`
   - Primeros Pasos → `#FA9600`

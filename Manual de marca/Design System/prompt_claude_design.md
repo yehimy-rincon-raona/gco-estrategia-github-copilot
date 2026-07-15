@@ -27,7 +27,7 @@ Muéstrame los siguientes componentes en una sola pantalla:
 1. **Etiqueta de fase** — pill/badge con texto "Fase 1 · Concienciación" 
    en rojo #DC0028 con texto blanco
 
-2. **Card de tip** — rectángulo con borde izquierdo rojo de 4px, 
+2. **Tarjeta de tip** — rectángulo con borde izquierdo rojo de 4px, 
    fondo blanco, título en negro, 3 líneas de contenido numeradas
 
 3. **Header de post** — banda horizontal con degradado corporativo 
@@ -44,7 +44,7 @@ Muéstrame los siguientes componentes en una sola pantalla:
 - Fondo siempre blanco — nunca fondos de color como superficie principal
 - El rojo se usa para acentos, nunca como fondo de grandes áreas de texto
 - Espaciado generoso: mínimo 24px de padding en todos los componentes
-- Bordes con radio suave: 6-8px en cards, 20px en pills/badges
+- Bordes con radio suave: 6-8px en tarjetas, 20px en pills/badges
 - Sin sombras dramáticas — máximo sombra sutil: 0 2px 8px rgba(0,0,0,0.08)
 - Estilo: corporativo pero accesible, nunca intimidante
 

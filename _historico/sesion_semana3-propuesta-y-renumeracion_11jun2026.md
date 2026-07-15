@@ -64,7 +64,7 @@
 - [ ] **Nibaldo + José María** — Input técnico para Pub 10 (Skills + MCP)
 - [ ] **Yehimy** — Crear briefs Pub 6 y Pub 7 una vez confirmados los temas
 - [ ] **Yehimy** — Actualizar CLAUDE.md sección "ESTADO ACTUAL" (aún refleja estado de Semana 1)
-- [ ] **Yehimy** — Revisar carpeta huérfana `semana-2_08-12jun/pub-04_jue-11jun/` (vacía/sin seguimiento)
+- [ ] **Yehimy** — Revisar carpeta huérfana `semana-2_08-12jun/pub-04_jue-11jun_(repub-05_mar-28-jul)/` (vacía/sin seguimiento)
 
 ---
 

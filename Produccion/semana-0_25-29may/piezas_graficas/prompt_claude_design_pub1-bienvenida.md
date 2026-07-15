@@ -1,11 +1,11 @@
-# Prompt Claude Design — Pub 1 · Card de bienvenida
+# Prompt Claude Design — Pub 1 · Tarjeta de bienvenida
 > Canal: Anuncios y Tips Ágiles · Fecha: Martes 3 junio · Formato: 1200×628 px
 
 ---
 
 ## Contexto
 
-Crea una card de lanzamiento para el canal de adopción de GitHub Copilot en Grupo Catalana Occidente (GCO).
+Crea una tarjeta de lanzamiento para el canal de adopción de GitHub Copilot en Grupo Catalana Occidente (GCO).
 Es la primera pieza del canal — establece el tono visual de todas las publicaciones siguientes.
 Estilo: corporativo pero accesible, limpio, sin elementos intimidantes.
 
@@ -22,7 +22,7 @@ Estilo: corporativo pero accesible, limpio, sin elementos intimidantes.
 - Fondo: `#FFFFFF` — siempre blanco, nunca de color
 - Degradado corporativo: `#DC0028` al 70% → `#FA9600` al 30%, inclinación 45°
 - Tipografía: usar las fuentes corporativas del design system
-- Border-radius cards: 6–8px · Pills/badges: 20px
+- Border-radius tarjetas: 6–8px · Pills/badges: 20px
 - Sombra máxima: `0 2px 8px rgba(0,0,0,0.08)`
 - Padding mínimo: 24px en todos los bordes
 

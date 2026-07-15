@@ -13,11 +13,11 @@ Nueva presentación HTML creada desde cero (NO modifica `presentacion-gco.html` 
 
 | Sección | Contenido |
 |---------|-----------|
-| 01 — Hoja de Ruta | 4 phase-cards (Concienciación, Primeros Pasos, Multi-entorno, Customización) + grid de 3 horizontes |
+| 01 — Hoja de Ruta | 4 phase-tarjetas (Concienciación, Primeros Pasos, Multi-entorno, Customización) + grid de 3 horizontes |
 | 02 — Cronograma | Tabla 4 semanas (1–5 jun, 8–12 jun, 15–19 jun, 22–26 jun) con canal, publicación y estado |
 | 03 — Zoom Semana 1 | Gantt detallado + Pub 1 y Pub 2 con texto completo y brief de diseño |
 | 04 — Plan Editorial | Tabs por semana S1–S4 con ecards por publicación (8 pubs, 2 bloqueadas marcadas) |
-| 05 — Los 3 Vídeos | cat-cards con concepto + lista de 6 secciones por guion |
+| 05 — Los 3 Vídeos | cat-tarjetas con concepto + lista de 6 secciones por guion |
 | 06 — Siguientes Pasos | 4 pasos de acción (ver detalle de correcciones abajo) |
 
 ### Correcciones aplicadas a la presentación

@@ -78,7 +78,7 @@ Los demás minutos son estimados. Ante la duda, usa la **frase de inicio** de ca
 - **Empieza:** "Vale, mira aquí el tema del debug, que esto fue el del otro día"
 - **Termina:** "…si la situación ya viene de dos, se mantenga y no se recalcule…"
 - **Qué se ve, en este orden:**
-  1. La sesión "Debug Situacion Value Change" en el visor (card y detalle, prompt de "cbsituacion con valor 2… se transforma la situacion en Iniciada").
+  1. La sesión "Debug Situacion Value Change" en el visor (tarjeta y detalle, prompt de "cbsituacion con valor 2… se transforma la situacion en Iniciada").
   2. El portal de Catalana (`catalanaaplicaciones.gco.global`), siniestro 41718802, campo "Situación: INICIADA" — el síntoma en vivo.
   3. De vuelta al visor: identifica el problema, revisión y solución.
 - **Capturas:** `34` (la de `incidencia03`) y `49`–`57`

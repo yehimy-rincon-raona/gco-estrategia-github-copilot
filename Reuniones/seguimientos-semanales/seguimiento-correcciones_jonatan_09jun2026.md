@@ -51,7 +51,7 @@ Jonatan revisó el canal **Primeros Pasos** y detectó que el contenido asume qu
   - Paso 2: cambiar texto e icono — "Portal de Empresa" (icono: 🏢 aplicativo)
   - Pasos 3, 4, 5: sin cambios de contenido
 
-- [ ] **`S1-Card_paso1.png` / `S1-Card_paso-1.jpg` / `S1-Card_paso1-A.jpg`** — Cards del paso 1
+- [ ] **`S1-Card_paso1.png` / `S1-Card_paso-1.jpg` / `S1-Card_paso1-A.jpg`** — Tarjetas del paso 1
   - Rediseñar completo: el mensaje cambia de "Descarga Visual Studio" a "Visual Studio ya está en tu máquina"
 
 ---

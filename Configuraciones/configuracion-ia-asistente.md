@@ -76,7 +76,7 @@ Estructura del canal (ya definida):
 ### B. Design System con Claude Design
 Cuando se comparta el manual de marca de Occident (pendiente de recibir de Guillermo):
 - Extraer paleta de colores corporativa, tipografías y estilo visual
-- Definir componentes gráficos: plantillas de infografías, cards de tips, headers de canal
+- Definir componentes gráficos: plantillas de infografías, tarjetas de tips, headers de canal
 - Generar briefs visuales detallados listos para usar en Claude Design
 - Asegurar coherencia visual en todos los materiales publicados
 

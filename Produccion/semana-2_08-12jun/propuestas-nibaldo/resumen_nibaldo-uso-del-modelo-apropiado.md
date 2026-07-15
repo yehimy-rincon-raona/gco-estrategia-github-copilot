@@ -15,7 +15,7 @@ Razonan más profundo, tienen ventanas de contexto más grandes y se recomiendan
 *   **Familia Google (Gemini):** Tienen **Gemini 3 Pro** (destacado por ser multimodal), **Gemini 3.3 Pro** y, durante las últimas sesiones, Nibaldo nota que les añadieron la versión **Gemini 3.5 Flash**.
 
 **Un apunte importante sobre las licencias en GCO:**
-Nibaldo les aclara que esta lista es completamente dinámica. Los modelos se actualizan constantemente; por ejemplo, se eliminaron versiones antiguas para dar paso a las nuevas. De hecho, en una sesión, un usuario (Diego) reporta que él solo ve en su lista los modelos GPT-4.0 y GPT-4.1. Ante esto, Nibaldo le indica que tiene una versión antigua en su cuenta y que debe contactar al administrador del proyecto (Jonathan) para que le actualice la licencia y le habilite el resto de modelos.
+Nibaldo les aclara que esta lista es completamente dinámica. Los modelos se actualizan constantemente; por ejemplo, se eliminaron versiones antiguas para dar paso a las nuevas. De hecho, en una sesión, un usuario (Diego) reporta que él solo ve en su lista los modelos GPT-4.0 y GPT-4.1. Ante esto, Nibaldo le indica que tiene una versión antigua en su cuenta y que debe contactar al administrador del proyecto (Jonatan) para que le actualice la licencia y le habilite el resto de modelos.
 
 ----
 

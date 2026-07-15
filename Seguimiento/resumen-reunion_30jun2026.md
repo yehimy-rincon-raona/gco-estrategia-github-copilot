@@ -12,7 +12,7 @@
 | 1 | Mar 3 jun | Todos | Bienvenida — 6 canales activados |
 | 2 | Jue 5 jun | Primeros Pasos | Activar GitHub Copilot en Visual Studio (post + infografía) |
 | 5 | Jue 11 jun | Primeros Pasos | Jerarquía de referencias (post + infografía) |
-| 4 | Jue 11 jun | Anuncios y Tips | Elige el modelo según la tarea (post + hilo de cards · ajuste de facturación aplicado) |
+| 4 | Jue 11 jun | Anuncios y Tips | Elige el modelo según la tarea (post + hilo de tarjetas · ajuste de facturación aplicado) |
 | 6 | Mar 23 jun | Casos de Uso Reales | **Caso de uso 1 — entender un COBOL heredado antes de tocarlo** (post + tríptico) |
 
 ### Listo, pendiente de publicar
@@ -20,7 +20,7 @@
 |-----|----------------|-------|------|-------|
 | 7 | Jue 25 jun | Casos de Uso Reales | **Caso de uso 2 — un bug que no estaba donde parecía** (bug fixing con contexto) | Confirmar si ya salió · confirmar lenguaje (.NET) con Nibaldo |
 
-> Las cards de tokens (1-S2 a 5-S2) ya están producidas. La card 1-S2 se reformuló a lenguaje plan-agnóstico tras el cambio de facturación de GitHub Copilot (modelo 0x/1x/3x quedó legacy el 1 jun → ahora por tokens/AI Credits).
+> Las tarjetas de tokens (1-S2 a 5-S2) ya están producidas. La tarjeta 1-S2 se reformuló a lenguaje plan-agnóstico tras el cambio de facturación de GitHub Copilot (modelo 0x/1x/3x quedó legacy el 1 jun → ahora por tokens/AI Credits).
 
 ---
 
@@ -34,10 +34,10 @@
 | 9 | Jue 2 jul | Anuncios y Tips Ágiles | **La fórmula del prompt (parte 2)** — Contexto y Restricciones: orden de referencias + reglas de código de GCO | 📝 Brief listo |
 
 **Archivos de los briefs:**
-- `Produccion/semana-5_29jun-03jul/pub-08_mar-30jun/canal-anuncios-tips_pub8.md`
-- `Produccion/semana-5_29jun-03jul/pub-09_jue-02jul/canal-anuncios-tips_pub9.md`
+- `Produccion/semana-5_29jun-03jul/pub-08_mar-30jun_(repub-09_mar-11-ago)/canal-anuncios-tips_pub8.md`
+- `Produccion/semana-5_29jun-03jul/pub-09_jue-02jul_(repub-10_jue-13-ago)/canal-anuncios-tips_pub9.md`
 
-**Producción gráfica pendiente esta semana:** 2 cards en Figma (`S5-Card_pub8-formula`, `S5-Card_pub9-contexto-restricciones`).
+**Producción gráfica pendiente esta semana:** 2 tarjetas en Figma (`S5-Card_pub8-formula`, `S5-Card_pub9-contexto-restricciones`).
 
 ---
 

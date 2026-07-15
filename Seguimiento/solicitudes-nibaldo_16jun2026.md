@@ -1,7 +1,7 @@
 # Solicitudes a Nibaldo · 16 junio 2026
 
 > Estado: pendiente de enviar
-> Origen: reunión 16 jun + feedback Jonathan (canal colaborativo)
+> Origen: reunión 16 jun + feedback Jonatan (canal colaborativo)
 
 ---
 
@@ -23,7 +23,7 @@ Falta grabar la sección del flujo de licencia completo en myaccess. El contenid
 2. Si tampoco está → buscar "GitHub Enterprise - Arquitectura" y usar el botón Solicitud
 3. Mencionar brevemente qué pasa detrás (asignación al grupo en Azure)
 
-Jonathan también pidió que en el post debe estar la URL para acceder a la licencia es `myaccess.microsoft.com` o si hay una URL específica del tenant de GCO. 
+Jonatan también pidió que en el post debe estar la URL para acceder a la licencia es `myaccess.microsoft.com` o si hay una URL específica del tenant de GCO. 
 
  > Pregunta: La URL que usaremos como enlace clicable en el post que acompaña al vídeo — ¿es `myaccess.microsoft.com` o hay una URL específica del tenant de GCO?
 
@@ -52,7 +52,7 @@ Estos casos además van a ser la base del Vídeo 3, así que mientras más detal
    - B) Modo agente
    - C) Planificación / modo especial
 
-2. **Facturación GitHub Copilot en GCO:** Jonathan señaló que el modelo de 0x/1x/3x ya cambió con la nueva facturación. Antes de publicar la card de tokens y modelos necesito confirmar: ¿las licencias de GCO ya están bajo el nuevo modelo de peticiones premium mensuales?
+2. **Facturación GitHub Copilot en GCO:** Jonatan señaló que el modelo de 0x/1x/3x ya cambió con la nueva facturación. Antes de publicar la tarjeta de tokens y modelos necesito confirmar: ¿las licencias de GCO ya están bajo el nuevo modelo de peticiones premium mensuales?
 
 3. **URL del canal corporativo** para poner en el Vídeo 1 — ¿ya está disponible?
 

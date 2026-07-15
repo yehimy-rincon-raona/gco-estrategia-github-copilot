@@ -6,14 +6,14 @@
 ## Qué se completó en esta sesión
 
 - ✅ **pub-04 cerrada y ordenada** (continuación de sesión anterior)
-  - Archivo: `Produccion/semana-2_08-12jun/pub-04_jue-11jun/canal-anuncios-tips_pub4.md`
+  - Archivo: `Produccion/semana-2_08-12jun/pub-04_jue-11jun_(repub-05_mar-28-jul)/canal-anuncios-tips_pub4.md`
   - Posts de hilo y briefs reordenados en orden ascendente 1-S2 → 5-S2
   - Documento listo para producción en Figma
 
 - ✅ **pub-05 completada con tipo de pieza definido y aprobado**
-  - Archivo: `Produccion/semana-2_08-12jun/pub-05_jue-11jun/canal-primeros-pasos_pub5.md`
+  - Archivo: `Produccion/semana-2_08-12jun/pub-05_jue-11jun_(repub-06_jue-30-jul)/canal-primeros-pasos_pub5.md`
   - Tipo de pieza decidido: **card-minimalista** (`2-S2-card_pub5`) — aprobado por Yehimy
-  - Brief completo desarrollado, posts de hilo (2 replies) y tabla de archivos de salida añadidos
+  - Brief completo desarrollado, posts de hilo (2 respuestas) y tabla de archivos de salida añadidos
 
 - ✅ **pub-05 actualizada con el contenido real publicado**
   - Post actualizado según screenshot de Teams: asunto más corto, "Hay una forma más precisa." como H1, lista numerada en lugar de tabla
@@ -53,7 +53,7 @@
 
 ## Próximas tareas pendientes
 
-1. **Producción Figma pub-04** — 5 cards (`1-S2` a `5-S2`) con briefs completos en `canal-anuncios-tips_pub4.md`
+1. **Producción Figma pub-04** — 5 tarjetas (`1-S2` a `5-S2`) con briefs completos en `canal-anuncios-tips_pub4.md`
 2. **Producción Figma pub-05** — `2-S2-card_pub5` · card-minimalista · brief en `canal-primeros-pasos_pub5.md`
 3. **Actualizar TABLERO.md** — marcar pub-04 y pub-05 con estado real (pub-05 parcialmente publicada)
 4. **Seguimiento aprobación pub-03 / pub-04** — Nibaldo y Guillermo
@@ -65,7 +65,7 @@
 
 | Archivo | Estado |
 |---------|--------|
-| `Produccion/semana-2_08-12jun/pub-04_jue-11jun/canal-anuncios-tips_pub4.md` | ✅ Cerrado — listo para Figma (5 assets) |
-| `Produccion/semana-2_08-12jun/pub-03_mar-09jun/canal-primeros-pasos_pub3.md` | ✅ Cerrado — listo para Figma |
-| `Produccion/semana-2_08-12jun/pub-05_jue-11jun/canal-primeros-pasos_pub5.md` | ✅ Post + infografía publicados · card-minimalista pendiente Figma |
+| `Produccion/semana-2_08-12jun/pub-04_jue-11jun_(repub-05_mar-28-jul)/canal-anuncios-tips_pub4.md` | ✅ Cerrado — listo para Figma (5 assets) |
+| `Produccion/semana-2_08-12jun/pub-03_mar-09jun_(repub-04_jue-23-jul)/canal-primeros-pasos_pub3.md` | ✅ Cerrado — listo para Figma |
+| `Produccion/semana-2_08-12jun/pub-05_jue-11jun_(repub-06_jue-30-jul)/canal-primeros-pasos_pub5.md` | ✅ Post + infografía publicados · card-minimalista pendiente Figma |
 | `Produccion/TABLERO.md` | 🔄 Pendiente actualización semana 2 |

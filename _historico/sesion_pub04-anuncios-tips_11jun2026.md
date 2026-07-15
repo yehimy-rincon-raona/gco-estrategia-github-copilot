@@ -6,16 +6,16 @@
 ## Qué se completó en esta sesión
 
 - ✅ **Pub 04 cerrada y lista para producción en Figma**
-  - Archivo: `Produccion/semana-2_08-12jun/pub-04_jue-11jun/canal-anuncios-tips_pub4.md`
-  - 5 assets definidos con briefs completos, post principal, 5 replies de hilo y tabla de salida
+  - Archivo: `Produccion/semana-2_08-12jun/pub-04_jue-11jun_(repub-05_mar-28-jul)/canal-anuncios-tips_pub4.md`
+  - 5 assets definidos con briefs completos, post principal, 5 respuestas de hilo y tabla de salida
 - ✅ **Clarificada la separación pub-03 / pub-04**
-  - El tríptico del cajón (card-triptico "No tiene una memoria infinita") pertenece a pub-03 (martes 9 jun) — ya estaba completo en `Produccion/semana-2_08-12jun/pub-03_mar-09jun/canal-primeros-pasos_pub3.md`
+  - El tríptico del cajón (card-triptico "No tiene una memoria infinita") pertenece a pub-03 (martes 9 jun) — ya estaba completo en `Produccion/semana-2_08-12jun/pub-03_mar-09jun_(repub-04_jue-23-jul)/canal-primeros-pasos_pub3.md`
   - Pub-04 contiene exclusivamente los 5 assets de optimización de tokens y modelos
 - ✅ **Eliminada infografía fantasma** — `1-S2-Infografia_pub4` no existía; la suplanta la card-comparativa `1-S2-card_pub4`
-- ✅ **Creada card nueva: `5-S2-card_pub4` · Memoria vs. Instrucciones** (card-comparativa)
+- ✅ **Creada tarjeta nueva: `5-S2-card_pub4` · Memoria vs. Instrucciones** (card-comparativa)
   - Comparación entre Copilot Memory (individual) y `copilot-instructions.md` (equipo)
   - Brief completo con columnas A y B, ejemplo GCO en Columna B
-  - Reply 5 enriquecido con restricciones reales de GCO (fuente: Nibaldo + sesiones)
+  - Respuesta 5 enriquecido con restricciones reales de GCO (fuente: Nibaldo + sesiones)
 - ✅ **Corregida numeración y nombres de todos los assets**
 - ✅ **Reordenado el documento en orden ascendente** — Posts de hilo y Briefs de 1-S2 a 5-S2
 
@@ -37,7 +37,7 @@
 
 - **El cajón es pub-03, no pub-04.** La metáfora del cajón cierra el bloque de Primeros Pasos (canal Primeros Pasos · martes 9 jun). Pub-04 abre el tema de optimización (canal Anuncios y Tips · jueves 11 jun). No hay solapamiento.
 - **Infografía eliminada.** El documento anterior incluía una `1-S2-Infografia_pub4` que nunca se diseñó ni planificó. Se eliminó del tablero interno. La card-comparativa de Optimización de Tokens cubre ese espacio visualmente.
-- **Restricciones GCO en la card 5** vienen de las sesiones de Nibaldo (confirmadas en `propuestas-nibaldo/resumen_nibaldo-copilot-instructions.md`):
+- **Restricciones GCO en la tarjeta 5** vienen de las sesiones de Nibaldo (confirmadas en `propuestas-nibaldo/resumen_nibaldo-copilot-instructions.md`):
   - SQL: sin `LIKE`, sin `DELETE` ni `TRUNCATE`
   - COBOL: columnas 7–72 · no modificar copybooks sin listar impacto
   - .NET: C# 12 · `async/await` en toda operación I/O
@@ -60,8 +60,8 @@
 
 ## Próximas tareas pendientes
 
-1. **Pub-05 · Canal Primeros Pasos** (`Produccion/semana-2_08-12jun/pub-05_jue-11jun/canal-primeros-pasos_pub5.md`) — tiene post e infografía, faltan briefs de cards y replies de hilo. Siguiente entregable inmediato.
-2. **Producción Figma de pub-04** — 5 cards listas para ejecutar con los briefs del documento cerrado.
+1. **Pub-05 · Canal Primeros Pasos** (`Produccion/semana-2_08-12jun/pub-05_jue-11jun_(repub-06_jue-30-jul)/canal-primeros-pasos_pub5.md`) — tiene post e infografía, faltan briefs de tarjetas y respuestas de hilo. Siguiente entregable inmediato.
+2. **Producción Figma de pub-04** — 5 tarjetas listas para ejecutar con los briefs del documento cerrado.
 3. **Actualizar TABLERO.md** — marcar pub-04 como lista para producción.
 4. **Seguimiento aprobación pub-03 / pub-04** — Nibaldo y Guillermo, pendiente desde lunes 8 jun.
 
@@ -71,8 +71,8 @@
 
 | Archivo | Estado |
 |---------|--------|
-| `Produccion/semana-2_08-12jun/pub-04_jue-11jun/canal-anuncios-tips_pub4.md` | ✅ Cerrado — listo para Figma |
-| `Produccion/semana-2_08-12jun/pub-03_mar-09jun/canal-primeros-pasos_pub3.md` | ✅ Cerrado — listo para Figma |
-| `Produccion/semana-2_08-12jun/pub-05_jue-11jun/canal-primeros-pasos_pub5.md` | 🔄 En borrador — siguiente tarea |
+| `Produccion/semana-2_08-12jun/pub-04_jue-11jun_(repub-05_mar-28-jul)/canal-anuncios-tips_pub4.md` | ✅ Cerrado — listo para Figma |
+| `Produccion/semana-2_08-12jun/pub-03_mar-09jun_(repub-04_jue-23-jul)/canal-primeros-pasos_pub3.md` | ✅ Cerrado — listo para Figma |
+| `Produccion/semana-2_08-12jun/pub-05_jue-11jun_(repub-06_jue-30-jul)/canal-primeros-pasos_pub5.md` | 🔄 En borrador — siguiente tarea |
 | `Produccion/TABLERO.md` | 🔄 Pendiente actualización pub-04 |
 | `propuestas-nibaldo/resumen_nibaldo-copilot-instructions.md` | Fuente de restricciones GCO — leer antes de crear contenido sobre instructions.md |

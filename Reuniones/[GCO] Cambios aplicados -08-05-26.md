@@ -21,7 +21,7 @@ Basado en la reunión del 08/05/26 y el resumen validado, se aplicaron los sigui
 **Motivo:** Con este perfil no se debe hablar solo de GitHub Copilot. Guillermo espera que la conversación con líderes incluya otras herramientas de IA útiles para su gestión diaria.
 
 **Archivos modificados:**
-- `index.html` — Línea 3 (card de propuesta), tabla de soporte sección 07, hoja de ruta semanas 4–8
+- `index.html` — Línea 3 (tarjeta de propuesta), tabla de soporte sección 07, hoja de ruta semanas 4–8
 - `Planeacion/estrategia-de-adopcion-posformacion.md` — Tabla de líneas estratégicas, sección 16, próximos pasos mediano plazo
 - `Planeacion/plan_de_accion-estrategia_de_comunicacion.md` — Sección 3 (implicación POs/Managers)
 
@@ -34,7 +34,7 @@ Basado en la reunión del 08/05/26 y el resumen validado, se aplicaron los sigui
 **Motivo:** La ampliación a VS Code tiene implicaciones importantes para IT (instalación, permisos, entorno). No puede asumirse sin validación explícita de Nibaldo.
 
 **Archivos modificados:**
-- `index.html` — Card Fase 3 (nota en cursiva + tag "Pendiente validación IT")
+- `index.html` — Tarjeta Fase 3 (nota en cursiva + tag "Pendiente validación IT")
 - `Planeacion/estrategia-de-adopcion-posformacion.md` — Tabla de fases (Fase 3 marcada con aviso)
 - `Planeacion/plan_de_accion-estrategia_de_comunicacion.md` — Bloque de advertencia al inicio de la Fase 3; aviso en la descripción de entorno técnico
 

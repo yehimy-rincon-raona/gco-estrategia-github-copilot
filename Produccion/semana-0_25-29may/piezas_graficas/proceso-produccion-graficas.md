@@ -3,7 +3,7 @@
 
 ---
 
-## Opción A — Card con identidad de canal
+## Opción A — Tarjeta con identidad de canal
 Cada pieza lleva una marca visual que identifica el canal de origen. El lector sabe de un vistazo de dónde viene y qué tipo de contenido es. Consistente y escalable: una vez definido el sistema, cada pieza nueva es rápida de producir.
 
 **Cuándo usarla:** audiencia con resistencia, volumen alto de piezas, poco tiempo de producción por pieza.

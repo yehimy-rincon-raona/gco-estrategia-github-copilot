@@ -1,4 +1,4 @@
-# Resumen de sesión — Cards brief + regla transversal no inventar · 10 junio 2026
+# Resumen de sesión — Tarjetas brief + regla transversal no inventar · 10 junio 2026
 > Continúa desde: `sesion_correcciones-jonatan_10jun2026.md`
 
 ---
@@ -6,7 +6,7 @@
 ## Qué se completó en esta sesión
 
 ### Infografía — correcciones finales al brief
-- Actualización de `Produccion/semana-1_01-05jun/pub-02_jue-04jun/infografia_instalacion-copilot-vs.md`
+- Actualización de `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/infografia_instalacion-copilot-vs.md`
   - **Paso 1:** ampliado el texto ("Si no lo ves, búscalo en el menú de inicio...") para equilibrar con el paso 2
   - **Paso 3:** expandido con instrucción de verificación de cuenta ("En la esquina superior derecha verás tu avatar... comprueba que aparece tu correo corporativo. Si ves una cuenta personal, cierra sesión y vuelve a entrar con la cuenta de GCO")
   - **Paso 4:** restaurado al contenido real de la gráfica — terminal PowerShell + `$PSVersionTable.PSVersion` — título: "Valida tu entorno de terminal"
@@ -19,9 +19,9 @@
 - `memory/feedback_no_inventar_presentaciones.md` — Expandido con dos incidentes concretos (Why) + criterios de verificación (How to apply)
 - `memory/MEMORY.md` — Entrada actualizada para reflejar alcance transversal
 
-### Cards brief — nuevo archivo en pub-02
-- Creación de `Produccion/semana-1_01-05jun/pub-02_jue-04jun/S1-cards_paso-a-paso.md`
-  - Brief completo de 6 cards (2 temas × 3 cards cada uno)
+### Tarjetas brief — nuevo archivo en pub-02
+- Creación de `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/02-S1-cards_paso-a-paso.md`
+  - Brief completo de 6 tarjetas (2 temas × 3 tarjetas cada uno)
   - **Tema 1 — "¿Tengo que instalar Visual Studio?"**: portada / el problema / la solución (Portal de Empresa)
   - **Tema 2 — "GitHub Copilot no aparece en mi Visual Studio"**: portada / el problema / la solución (My Profile de Microsoft · 2 clics · ~40 min)
   - Origen del contenido: Jonatan (GCO) · reunión 9 junio 2026
@@ -29,7 +29,7 @@
   - Nomenclatura de salida: `S1-Card_vs-instalacion_01/02/03.jpg` + `S1-Card_licencia-copilot_01/02/03.jpg`
   - Especificaciones Figma completas incluidas
 
-- **Post para Teams añadido dentro del mismo archivo** — sección "Post para Teams — Respuesta al hilo de Pub 2 · Acompaña Card T2"
+- **Post para Teams añadido dentro del mismo archivo** — sección "Post para Teams — Respuesta al hilo de Pub 2 · Acompaña Tarjeta T2"
   - Tipo: respuesta al hilo existente · no post nuevo
   - Adjuntar: `S1-Card_licencia-copilot_01.jpg`, `_02.jpg`, `_03.jpg`
   - Texto: "¿GitHub Copilot no aparece en tu Visual Studio? [...] La solución tiene 2 clics [...]"
@@ -54,9 +54,9 @@
 
 ## Decisiones tomadas
 
-- Las cards de los dos problemas frecuentes pertenecen a Pub 2 (no son una publicación nueva). El archivo vive en `pub-02_jue-04jun/` y se publica como respuesta al hilo ya publicado, no como un post nuevo.
-- El prefijo de nomenclatura de las cards es `S1-` (Semana 1), no `A1-`. El archivo se llama `S1-cards_paso-a-paso.md`.
-- El post de Teams para Card T2 es una **respuesta al hilo**, no un post a nivel raíz del canal.
+- Las tarjetas de los dos problemas frecuentes pertenecen a Pub 2 (no son una publicación nueva). El archivo vive en `pub-02_jue-04jun_(repub-02_jue-16-jul)/` y se publica como respuesta al hilo ya publicado, no como un post nuevo.
+- El prefijo de nomenclatura de las tarjetas es `S1-` (Semana 1), no `A1-`. El archivo se llama `02-S1-cards_paso-a-paso.md`.
+- El post de Teams para Tarjeta T2 es una **respuesta al hilo**, no un post a nivel raíz del canal.
 - La regla "no inventar" se aplica a todos los agentes de IA que trabajan en el proyecto — no es exclusiva de Claude.
 
 ---
@@ -67,7 +67,7 @@
 - [ ] **Yehimy** — Actualizar guión completo Video 1 `pildoras-agiles_configuracion-del-entorno.md`: reescribir sección 2 (VS ya instalado, no hay descarga) + añadir sección solicitud de licencia
 - [ ] **Yehimy** — Actualizar script de grabación `v01-pill01-para-grabacion_instalacion.md`: eliminar instrucción de grabar ejecutable/instalador, reemplazar con flujo icono escritorio + Portal de Empresa + My Profile
 - [ ] **Yehimy / Diseño** — Figma: rediseñar `S1-Infografia_paso-a-paso.jpg` — añadir bloque intro antes del paso 1, actualizar pasos 1 y 2 (brief listo en `infografia_instalacion-copilot-vs.md`)
-- [ ] **Yehimy / Diseño** — Figma: crear 6 cards (brief listo en `S1-cards_paso-a-paso.md`)
+- [ ] **Yehimy / Diseño** — Figma: crear 6 tarjetas (brief listo en `02-S1-cards_paso-a-paso.md`)
 - [ ] **Yehimy** — Eliminar `Produccion/semana-2_08-12jun/pub-06_sem-2-pendiente/canal-primeros-pasos_pub6.md` (duplicado por error)
 - [ ] **Nibaldo** — Confirmar que sección Portal de Empresa ya está en grabación
 - [ ] **Nibaldo** — Grabar flujo solicitud de licencia (My Profile → 2 clics → ~40 min)
@@ -79,7 +79,7 @@
 
 | Archivo | Para qué |
 |---------|----------|
-| `Produccion/semana-1_01-05jun/pub-02_jue-04jun/S1-cards_paso-a-paso.md` | Brief de 6 cards + post de Teams para Card T2 — listo para Figma y publicación |
-| `Produccion/semana-1_01-05jun/pub-02_jue-04jun/infografia_instalacion-copilot-vs.md` | Brief actualizado de infografía — listo para Figma |
+| `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/02-S1-cards_paso-a-paso.md` | Brief de 6 tarjetas + post de Teams para Tarjeta T2 — listo para Figma y publicación |
+| `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/infografia_instalacion-copilot-vs.md` | Brief actualizado de infografía — listo para Figma |
 | `Reuniones/seguimientos-semanales/seguimiento-correcciones_jonatan_09jun2026.md` | Checklist completo de correcciones de Jonatan — punto de entrada para continuar |
 | `Produccion/Videos/v01_configuracion-entorno/pildoras-agiles_configuracion-del-entorno.md` | Guión completo Video 1 — pendiente de actualizar |

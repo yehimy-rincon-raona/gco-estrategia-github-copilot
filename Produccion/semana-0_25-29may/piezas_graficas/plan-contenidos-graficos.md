@@ -29,7 +29,7 @@
 > 👉 Echa un vistazo a los canales del equipo para saber dónde encontrar cada cosa.
 
 **Brief gráfico**
-- **Tipo:** Card de bienvenida / banner de lanzamiento
+- **Tipo:** Tarjeta de bienvenida / banner de lanzamiento
 - **Mensaje principal:** "Tu espacio de adopción de GitHub Copilot en GCO"
 - **Elementos visuales:** Logo GitHub Copilot · Identidad visual Occident · Tono cálido, no técnico
 - **Texto en imagen:** "GitHub Copilot en GCO · Ya disponible" + tagline: "Aprende a tu ritmo, con apoyo del equipo"
@@ -226,7 +226,7 @@
 > 👉 [Enlace de reserva — PENDIENTE: activar Microsoft Bookings]
 
 **Brief gráfico**
-- **Tipo:** Card de servicio / CTA
+- **Tipo:** Tarjeta de servicio / CTA
 - **Mensaje principal:** "Reserva tu sesión 1:1 · 15–30 min"
 - **Estructura visual:** Diseño limpio · Icono de calendario · Duración visible · CTA destacado
 - **Texto en imagen:** "Tutoría 1:1 · 15–30 min · Elige tu hueco" + CTA: "Reserva aquí"
@@ -238,14 +238,14 @@
 
 | Pub | Fecha | Canal | Contenido | Tipo de pieza | Estado |
 |-----|-------|-------|-----------|---------------|--------|
-| 1 | Mar 3 jun | Anuncios y Tips | Bienvenida oficial | Card de lanzamiento | ✅ Texto listo |
+| 1 | Mar 3 jun | Anuncios y Tips | Bienvenida oficial | Tarjeta de lanzamiento | ✅ Texto listo |
 | 2 | Jue 5 jun | Primeros Pasos | Verificación de acceso + Vídeo 1 | Infografía checklist | ✅ Texto listo |
 | 3 | Mar 10 jun | Casos de Uso | Explicar código con #selection | Micro-demo visual | ✅ Texto listo |
 | 4 | Jue 12 jun | Anuncios y Tips | Tip: contexto en el prompt | Tarjeta ❌ vs ✅ | ✅ Texto listo |
 | 5 | Mar 17 jun | Foro AMA | Invitación AMA | Anuncio de evento | ⚠️ Espera fecha confirmada |
 | 6 | Jue 19 jun | Primeros Pasos | Pregunta vs. Agente + Vídeo 3 | Comparativa visual | ✅ Texto listo |
 | 7 | Mar 24 jun | Casos de Uso | Bug fixing con log de error | Infografía flujo | ✅ Texto listo |
-| 8 | Jue 26 jun | Reservas 1:1 | Sesiones personalizadas | Card CTA | ⚠️ Espera Bookings |
+| 8 | Jue 26 jun | Reservas 1:1 | Sesiones personalizadas | Tarjeta CTA | ⚠️ Espera Bookings |
 
 **6 piezas listas para producir · 2 bloqueadas por dependencias externas**
 

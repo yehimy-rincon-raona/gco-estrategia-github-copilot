@@ -20,7 +20,7 @@
 ## Lo que hay — Posts producidos (material Nibaldo)
 
 ### Pub 3 — Martes 9 junio · Canal Primeros Pasos
-> Archivo: `pub-03_mar-09jun/canal-primeros-pasos_pub3.md`
+> Archivo: `pub-03_mar-09jun_(repub-04_jue-23-jul)/canal-primeros-pasos_pub3.md`
 
 **Tema:** Memoria y ventana de contexto — el cajón
 **Concepto:** GitHub Copilot no tiene memoria permanente — tiene un cajón que se llena. Cuando se satura, empieza a mezclar cosas o inventar. La solución está en controlar qué metes y abrir hilos nuevos.
@@ -40,7 +40,7 @@
 ---
 
 ### Pub 5 — Jueves 11 junio · Canal Primeros Pasos
-> Archivo: `pub-05_jue-11jun/canal-primeros-pasos_pub5.md`
+> Archivo: `pub-05_jue-11jun_(repub-06_jue-30-jul)/canal-primeros-pasos_pub5.md`
 
 **Tema:** Referencias de contexto — deja de copiar y pegar
 **Concepto:** GitHub Copilot puede leer directamente desde donde está el código. No necesita que copies y pegues. Cuatro referencias de más a menos acotado: `#selection` → método/clase → `#file` → `@workspace`.

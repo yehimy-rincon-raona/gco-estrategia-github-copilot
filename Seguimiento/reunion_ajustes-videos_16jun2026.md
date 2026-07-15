@@ -79,13 +79,13 @@ Sin ajustes. Está bien como está.
 
 ---
 
-## Feedback de Jonathan (canal colaborativo)
+## Feedback de Jonatan (canal colaborativo)
 
 **Post revisado:** *¿GitHub Copilot no aparece en tu Visual Studio?*
 
 | Ajuste | Detalle |
 |--------|---------|
-| Orden de publicación | Publicar ANTES del post "No tiene memoria permanente" (el cajón). Jonathan lo ubicaría como segunda publicación del canal Primeros Pasos |
+| Orden de publicación | Publicar ANTES del post "No tiene memoria permanente" (el cajón). Jonatan lo ubicaría como segunda publicación del canal Primeros Pasos |
 | Enlace myprofile | La mención a myprofile debe ser un enlace clicable — no texto plano |
 
 **Pendiente de Nibaldo (1):** confirmar la URL exacta de myprofile/myaccess para el tenant de GCO.
@@ -93,14 +93,14 @@ En los screenshots de la reunión de hoy se ve `myaccess.microsoft.com/@grupocat
 
 > El post "¿GitHub Copilot no aparece en tu Visual Studio?" no tiene archivo en el proyecto aún — crear en `Produccion/_propuestas/eje_primeros-pasos/` una vez confirmada la URL.
 
-**Pendiente de Nibaldo (2) — Card "Optimización de Tokens y Modelos" (Pub 8/9):**
+**Pendiente de Nibaldo (2) — Tarjeta "Optimización de Tokens y Modelos" (Pub 8/9):**
 
-Jonathan señaló que el modelo de multiplicadores (0x/1x/3x) ya no aplica con el nuevo sistema de facturación de GitHub Copilot. Hay que confirmar con Nibaldo antes de publicar:
+Jonatan señaló que el modelo de multiplicadores (0x/1x/3x) ya no aplica con el nuevo sistema de facturación de GitHub Copilot. Hay que confirmar con Nibaldo antes de publicar:
 
 - ¿Las licencias de GCO ya operan bajo el nuevo modelo (peticiones premium mensuales)?
 - ¿O todavía está activo el modelo de multiplicadores?
 
-Hasta confirmar: la card **no se publica**. Si el nuevo modelo ya está activo, el mensaje se actualiza al ángulo propuesto por Jonathan: *"Puede que estés gastando más de lo necesario — los modelos premium consumen tu bolsa mensual; los estándar, no."*
+Hasta confirmar: la tarjeta **no se publica**. Si el nuevo modelo ya está activo, el mensaje se actualiza al ángulo propuesto por Jonatan: *"Puede que estés gastando más de lo necesario — los modelos premium consumen tu bolsa mensual; los estándar, no."*
 
 ---
 

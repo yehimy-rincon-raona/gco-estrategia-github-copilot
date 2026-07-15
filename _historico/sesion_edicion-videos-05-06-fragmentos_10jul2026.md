@@ -16,7 +16,7 @@ Sesión de acompañamiento a la edición: Yehimy fue recorriendo la grabación f
 **Fragmentos identificados durante la edición (dudas resueltas):**
 - App "Analizador de Logs BE — Parseador COBOL" funcionando + carpeta `AnalizadorLogsBECobol` (FrmPrincipal.cs) → **V05 S3 (caso GAN), inicio**. La demo de la app cubre el párrafo 1 y la primera frase del párrafo 2; el corte al visor va en "la petición de extraer ese negocio".
 - Visual Studio con `Operativa.xp` (diagrama de flujo) → **V05 S3, resultado** (capturas 46–48); la conclusión "se puede…" se queda en ese mismo plano.
-- Sesión "Debug Situacion Value Change" (card y detalle) → **V06 S3 (bug combo)**. Cortar ANTES del mensaje "me has cambiado la codificación" (se descarta).
+- Sesión "Debug Situacion Value Change" (tarjeta y detalle) → **V06 S3 (bug combo)**. Cortar ANTES del mensaje "me has cambiado la codificación" (se descarta).
 - Portal Catalana siniestro 41718802, "Situación: INICIADA" → **V06 S3, síntoma** (capturas 49–53).
 - Prompt del teléfono con puntos en `SCARA56C.CBL` → **V05 S2 (caso 1), tramo final** — es el "dato con caracteres extraños" de la voz en off.
 - Sesiones Equifax: `e2b56271…` (prompt con JSON, riskScoreSMEScore 849) y "Validate And Assign Score Values" (tres versiones AccesoEquifax/_Win/Tmp) → **ambas son V05 S4 (caso 3)**, en el orden en que aparecen.

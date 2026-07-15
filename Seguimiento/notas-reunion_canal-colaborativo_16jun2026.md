@@ -24,9 +24,9 @@ Ajustes de los vídeos de configuración del entorno y los contenidos gráficos 
 
 El Vídeo 3 nace directamente de estas dos piezas gráficas: una vez producidas Pub 6 y Pub 7, el guion del vídeo se construye a partir de esos mismos casos reales. Primero el contenido gráfico, luego el vídeo.
 
-**Ajustes al canal Primeros Pasos — feedback de Jonathan**
+**Ajustes al canal Primeros Pasos — feedback de Jonatan**
 
-- Url del canal corporativo: confirmar cual es para incluirlo como enlace clicable en eln post relacionado al Vídeo 1. Jonathan mencionó que el enlace a myprofile/myaccess debe ser clicable, pero antes de hacer ese ajuste necesito confirmar la URL exacta del tenant de GCO para asegurar que el enlace es correcto.
+- Url del canal corporativo: confirmar cual es para incluirlo como enlace clicable en eln post relacionado al Vídeo 1. Jonatan mencionó que el enlace a myprofile/myaccess debe ser clicable, pero antes de hacer ese ajuste necesito confirmar la URL exacta del tenant de GCO para asegurar que el enlace es correcto.
 - Corrección del modelo, cuando se habla del 0x 1x... ahora con la nueva facturación ha cambiado, se debe confirmar si las licencias de GCO ya están bajo el nuevo modelo de peticiones premium mensuales para ajustar esa parte del post.
 
 

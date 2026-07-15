@@ -2,7 +2,7 @@
 
 > **Fuente:** Documentación oficial de GitHub y blog de GitHub (consultado el 21 junio 2026).
 > **Fecha del cambio:** 1 de junio de 2026.
-> **Relevancia para el proyecto:** resuelve el punto que levantó Jonathan en el canal colaborativo — el modelo 0x/1x/3x ya cambió. Impacta directamente la card "Optimización de Tokens y Modelos" (Pub 8/9), que está construida sobre el esquema antiguo.
+> **Relevancia para el proyecto:** resuelve el punto que levantó Jonatan en el canal colaborativo — el modelo 0x/1x/3x ya cambió. Impacta directamente la tarjeta "Optimización de Tokens y Modelos" (Pub 8/9), que está construida sobre el esquema antiguo.
 
 ---
 
@@ -16,7 +16,7 @@ El **1 de junio de 2026**, GitHub Copilot pasó de un modelo de **peticiones pre
 | Cómo se mide | Cada interacción = N peticiones según el multiplicador del modelo | Consumo de tokens según las tarifas de API publicadas por cada modelo |
 | Asignación | Bolsa mensual de peticiones premium | **Bolsa mensual de AI Credits** por plan |
 
-> Importante: el esquema **0x / 1x / 3x** sobre el que está hecha la card de Pub 8/9 quedó como **legacy**. Solo sigue vigente para suscriptores de **planes anuales** que mantienen el modelo de peticiones hasta que expire su suscripción (y a esos usuarios los multiplicadores les **subieron** el 1 de junio).
+> Importante: el esquema **0x / 1x / 3x** sobre el que está hecha la tarjeta de Pub 8/9 quedó como **legacy**. Solo sigue vigente para suscriptores de **planes anuales** que mantienen el modelo de peticiones hasta que expire su suscripción (y a esos usuarios los multiplicadores les **subieron** el 1 de junio).
 
 ---
 
@@ -39,7 +39,7 @@ El **1 de junio de 2026**, GitHub Copilot pasó de un modelo de **peticiones pre
 
 El consumo se calcula por **tokens**: entrada, salida y tokens cacheados, según las **tarifas de API publicadas para cada modelo**. Es decir, ya no es "este modelo cuesta 3x"; ahora es "este modelo cuesta X por cada millón de tokens", y el gasto depende del tamaño real de cada conversación.
 
-Esto refuerza —en lugar de invalidar— el mensaje de fondo de nuestras cards de eficiencia:
+Esto refuerza —en lugar de invalidar— el mensaje de fondo de nuestras tarjetas de eficiencia:
 - **Acotar el contexto** (referencias precisas en vez de pegar todo) sigue ahorrando, ahora de forma aún más directa (menos tokens = menos crédito).
 - **Higiene de la memoria / hilos cortos** sigue siendo válido (menos historial arrastrado = menos tokens).
 - Lo que cambia es el **encuadre del coste**: ya no hablamos de "multiplicadores 0x/1x/3x" ni de "bolsa de peticiones", sino de **crédito por consumo de tokens**.
@@ -48,7 +48,7 @@ Esto refuerza —en lugar de invalidar— el mensaje de fondo de nuestras cards 
 
 ## Implicación para el contenido del proyecto
 
-1. **Card "Optimización de Tokens y Modelos" (Pub 8/9):** está construida con el esquema 0x/1x/3x y "bolsa de peticiones premium". **Hay que reformularla** al modelo de AI Credits / tokens antes de publicar. No publicarla tal como está.
+1. **Tarjeta "Optimización de Tokens y Modelos" (Pub 8/9):** está construida con el esquema 0x/1x/3x y "bolsa de peticiones premium". **Hay que reformularla** al modelo de AI Credits / tokens antes de publicar. No publicarla tal como está.
 2. **Confirmación que sigue dependiendo de Nibaldo:** bajo qué plan están las licencias de GCO (Business o Enterprise) y si ya operan bajo el modelo nuevo o aún bajo un plan anual legacy. El modelo público ya está claro; el estado específico de GCO, no.
 3. **El mensaje de eficiencia no se cae:** acotar contexto, elegir el modelo adecuado y mantener hilos limpios siguen siendo válidos. Solo cambia el vocabulario del coste.
 
@@ -58,7 +58,7 @@ Esto refuerza —en lugar de invalidar— el mensaje de fondo de nuestras cards 
 
 - Plan exacto de las licencias de GCO (Business / Enterprise) y bolsa mensual real.
 - Si GCO ya está en el modelo usage-based (AI Credits) o en un plan anual con peticiones legacy.
-- Si GCO quiere que las cards mencionen cifras de crédito concretas o se mantengan en el plano conceptual (recomendado: conceptual, para no atar el contenido a precios que cambian).
+- Si GCO quiere que las tarjetas mencionen cifras de crédito concretas o se mantengan en el plano conceptual (recomendado: conceptual, para no atar el contenido a precios que cambian).
 
 ---
 

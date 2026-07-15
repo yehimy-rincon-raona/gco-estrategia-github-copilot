@@ -12,8 +12,8 @@ Registro cronológico de las sesiones de trabajo del proyecto. Cada archivo es u
 | 4 jun 2026 | `sesion_canal-interno-y-sincronizacion_04jun2026.md` | Canal interno de Teams + sincronización de canales |
 | 5 jun 2026 | `sesion_pub2-semana1-cierre_05jun2026.md` | Pub 2 y cierre de la Semana 1 |
 | 5 jun 2026 | `sesion_semana2-renumeracion-y-reglas_05jun2026.md` | Semana 2 — renumeración, reglas y correcciones |
-| 10 jun 2026 | `sesion_correcciones-jonatan_10jun2026.md` | Correcciones por feedback de Jonathan |
-| 10 jun 2026 | `sesion_cards-brief-y-regla-transversal_10jun2026.md` | Briefs de cards + regla transversal "no inventar" |
+| 10 jun 2026 | `sesion_correcciones-jonatan_10jun2026.md` | Correcciones por feedback de Jonatan |
+| 10 jun 2026 | `sesion_cards-brief-y-regla-transversal_10jun2026.md` | Briefs de tarjetas + regla transversal "no inventar" |
 | 11 jun 2026 | `sesion_pub04-anuncios-tips_11jun2026.md` | Pub 04 — canal Anuncios y Tips Ágiles |
 | 11 jun 2026 | `sesion_pub05-publicado_11jun2026.md` | Pub 05 publicada |
 | 11 jun 2026 | `sesion_semana3-propuesta-y-renumeracion_11jun2026.md` | Semana 3 — propuesta de contenidos y corrección de numeración |
@@ -26,5 +26,6 @@ Registro cronológico de las sesiones de trabajo del proyecto. Cada archivo es u
 | 9 jul 2026 | `sesion_videos-05-06-casos-de-uso_09jul2026.md` | Guiones Videos 05 y 06 (5 casos de uso repartidos en 2 píldoras) + mapa de edición + transcripción corregida + doc GAN en Conocimiento |
 | 9 jul 2026 | `sesion_revision-guiones-videos-05-06_09jul2026.md` | Revisión fina de Yehimy a ambos guiones (marco "nacen del trabajo del equipo", interfaz HTML valorada, tono neutro GAN, claridad para el oído) + audios v06 S02–S04 generados |
 | 10 jul 2026 | `sesion_edicion-videos-05-06-fragmentos_10jul2026.md` | Acompañamiento a la edición: línea de tiempo cronológica de la grabación + identificación de cada fragmento (casos vs. descartes) + mapeo por números de imagen del V05 + tabla BDPER01.VPERMOR verificada |
+| 15 jul 2026 | `sesion_republicacion-gco-y-desbloqueo-videos_15jul2026.md` | Calendario de republicación tenant GCO detallado (vacaciones 16–24 jul, todo programado el 15) + desbloqueo Videos 01–03 (jue 16 jul con Pub 2) + posts nuevos Videos 02/03 + descripciones de canal propuestas + corrección global "Jonatan" |
 
 > Nota: `C00_timeline-semana-1-y-regla-no-inventar.md` es un documento de contexto (timeline + regla), no una sesión.

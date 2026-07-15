@@ -11,9 +11,9 @@
 - **Regla `_avoid/` en CLAUDE.md:** nueva sección documentada — carpeta excluida de git para archivos pesados/binarios; nunca referenciar ni hacer commit de su contenido
 - **`.gitignore` actualizado:** añadida entrada `_avoid/` al final
 - **Renumeración de publicaciones Semana 2:**
-  - `pub-05_mar-17jun/` → `pub-03_mar-09jun/` — Memoria/cajón · Martes 9 jun
+  - `pub-05_mar-17jun/` → `pub-03_mar-09jun_(repub-04_jue-23-jul)/` — Memoria/cajón · Martes 9 jun
   - `pub-06_jue-19jun/` → `pub-04_mar-09jun/` — Modelo según tarea · Martes 9 jun
-  - `pub-07_sem4-pendiente/` → `pub-05_jue-11jun/` — Referencias de contexto · Jueves 11 jun
+  - `pub-07_sem4-pendiente/` → `pub-05_jue-11jun_(repub-06_jue-30-jul)/` — Referencias de contexto · Jueves 11 jun
   - Archivos internos renombrados a `pub3`, `pub4`, `pub5` y encabezados actualizados
 - **Comparativo reescrito** (`semana-2_08-12jun/comparativo-plan-original-vs-hoy.md`) con numeración definitiva — Pub 6 (COBOL, acceso pendiente), Pub 7 (AMA bloqueado), Pub 8+ (ideas sobre la mesa)
 - **Convención de nombres documentada en CLAUDE.md:** sección completa — carpetas semana, carpetas pub, archivos internos, regla de numeración global correlativa sin reinicio por semana
@@ -66,9 +66,9 @@
 
 | Archivo | Para qué |
 |---------|---------|
-| `Produccion/semana-2_08-12jun/pub-03_mar-09jun/canal-primeros-pasos_pub3.md` | Pub 3 lista — Memoria/cajón · pendiente aprobación |
+| `Produccion/semana-2_08-12jun/pub-03_mar-09jun_(repub-04_jue-23-jul)/canal-primeros-pasos_pub3.md` | Pub 3 lista — Memoria/cajón · pendiente aprobación |
 | `Produccion/semana-2_08-12jun/pub-04_mar-09jun/canal-anuncios-tips_pub4.md` | Pub 4 lista — Modelo según tarea · pendiente aprobación |
-| `Produccion/semana-2_08-12jun/pub-05_jue-11jun/canal-primeros-pasos_pub5.md` | Pub 5 lista — Referencias de contexto · pendiente aprobación |
+| `Produccion/semana-2_08-12jun/pub-05_jue-11jun_(repub-06_jue-30-jul)/canal-primeros-pasos_pub5.md` | Pub 5 lista — Referencias de contexto · pendiente aprobación |
 | `Produccion/semana-2_08-12jun/comparativo-plan-original-vs-hoy.md` | Vista global actualizada — numeración definitiva, preguntas para reunión |
 | `Produccion/TABLERO.md` | Pendiente actualizar con pub 3/4/5 y nuevas fechas |
 | `Planeacion/Semana-1_primer-plan-de-contenidos/timeline-y-checklist.md` | Pendiente actualizar |

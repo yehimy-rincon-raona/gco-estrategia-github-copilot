@@ -11,16 +11,16 @@
 
 Guillermo, buenas
 
-Necesito un dato que Jonathan te pasó a ti con el usuario de GCO, entiendo que se trata del usuario o contacto responsable de crear el equipo de Teams y los seis canales en el entorno de Occident.
+Necesito un dato que Jonatan te pasó a ti con el usuario de GCO, entiendo que se trata del usuario o contacto responsable de crear el equipo de Teams y los seis canales en el entorno de Occident.
 
 Para situarte: el contenido que hemos venido produciendo (bienvenida, primeros pasos, casos de uso reales, tips, foro y reservas de tutorías) está listo para publicarse, pero todo vive en el tenant de Raona, hay que crear el equipo y los canales en el tenant de Occident para poder publicar allí.
 
 Lo que necesito de ti:
 
-- El usuario o nombre del contacto en GCO que Jonathan te pasó para gestionar la creación o el acceso al equipo
+- El usuario o nombre del contacto en GCO que Jonatan te pasó para gestionar la creación o el acceso al equipo
 - Saber si hay que coordinar algo adicional con ese contacto (permisos, aprobación interna, etc.)
 
-Si Jonathan ya gestionó la creación del equipo y los canales directamente, o lo debo gestionar yo con el contacto que me pases, no hay problema — lo importante es que me confirmes el contacto para arrancar la gestión. 
+Si Jonatan ya gestionó la creación del equipo y los canales directamente, o lo debo gestionar yo con el contacto que me pases, no hay problema — lo importante es que me confirmes el contacto para arrancar la gestión. 
 
 Gracias
 Yehimy
@@ -46,4 +46,4 @@ El equipo de Teams en el tenant de Occident con estos 6 canales:
 
 **Estado del bloqueante en el proyecto:**
 Registrado en CLAUDE.md como: "Acceso al Teams GCO (bloqueante activo — lo gestiona Catalana Occidente)".
-El desbloqueo depende de este contacto que Jonathan pasó a Guillermo.
+El desbloqueo depende de este contacto que Jonatan pasó a Guillermo.

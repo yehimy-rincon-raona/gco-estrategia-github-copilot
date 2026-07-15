@@ -8,7 +8,7 @@
 - Reunión con Nibaldo, Óscar Segura Herrera (GCO — Arquitectura) y una persona de Pasiona (nombre pendiente de confirmar)
 - Definidos los ajustes editoriales para Vídeo 1 y Vídeo 2 (ver detalle abajo)
 - Confirmados los temas de Pub 6 y Pub 7 para Semana 4
-- Registrado el feedback de Jonathan del canal colaborativo
+- Registrado el feedback de Jonatan del canal colaborativo
 - Creados dos documentos en `Seguimiento/` listos para enviar: solicitudes a Nibaldo y a Guillermo
 
 ---
@@ -67,8 +67,8 @@ La secuencia es: inputs de Nibaldo → briefs Pub 6/7 → publicación Semana 4 
 
 - Pub 6 y Pub 7 se desplazan definitivamente a Semana 4 (Mar 23 y Jue 25): los temas se confirmaron hoy, sin tiempo de producción para Semana 3
 - El Vídeo 3 queda redefinido como demo de los casos de uso reales de Pub 6 y Pub 7 — no es un vídeo de concepto
-- La card "Optimización de Tokens y Modelos" no se publica hasta confirmar con Nibaldo si GCO ya opera con el nuevo modelo de facturación (peticiones premium mensuales en lugar de multiplicadores 0x/1x/3x)
-- El post "¿GitHub Copilot no aparece en tu Visual Studio?" se ubica antes del post del cajón (segunda publicación del canal Primeros Pasos) — feedback de Jonathan
+- La tarjeta "Optimización de Tokens y Modelos" no se publica hasta confirmar con Nibaldo si GCO ya opera con el nuevo modelo de facturación (peticiones premium mensuales en lugar de multiplicadores 0x/1x/3x)
+- El post "¿GitHub Copilot no aparece en tu Visual Studio?" se ubica antes del post del cajón (segunda publicación del canal Primeros Pasos) — feedback de Jonatan
 
 ---
 
@@ -78,5 +78,5 @@ La secuencia es: inputs de Nibaldo → briefs Pub 6/7 → publicación Semana 4 
 |---------|----------|
 | `Seguimiento/reunion_ajustes-videos_16jun2026.md` | Registro completo de la reunión de hoy — referencia para aplicar ajustes en los vídeos |
 | `Seguimiento/solicitudes-nibaldo_16jun2026.md` | Mensaje listo para enviar a Nibaldo — inputs de contenido + grabaciones + confirmaciones |
-| `Seguimiento/solicitudes-guillermo_16jun2026.md` | Mensaje listo para enviar a Guillermo — contacto de Jonathan para crear el Teams de GCO |
+| `Seguimiento/solicitudes-guillermo_16jun2026.md` | Mensaje listo para enviar a Guillermo — contacto de Jonatan para crear el Teams de GCO |
 | `Produccion/TABLERO.md` | Estado actualizado — Pub 6 y 7 en S4, temas confirmados, briefs pendientes |

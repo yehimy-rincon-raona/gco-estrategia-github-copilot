@@ -10,7 +10,7 @@
 | # | Tema | Tipo | Bloquea |
 |---|------|------|---------|
 | 1 | Lenguaje del caso de bug fixing (Pub 7) | Confirmación | No — define solo el encuadre |
-| 2 | Plan de facturación real de GCO | Confirmación | No — la card ya es plan-agnóstica |
+| 2 | Plan de facturación real de GCO | Confirmación | No — la tarjeta ya es plan-agnóstica |
 | 3 | Qué ocultar en el login del Vídeo 2 | Pregunta puntual | Sí (edición Vídeo 2) |
 | 4 | Enfoque del Vídeo 2 (A/B/C) | Decisión editorial | Sí (guion Vídeo 2) |
 | 5 | Regrabaciones: Vídeo 1 + VS Code en Vídeo 2 | Bloqueo de grabación | Sí |
@@ -31,7 +31,7 @@ Armé el brief de Pub 7 con el caso de la **prima que quedaba en negativo al apl
 - Si no → dime si tienes un caso de bug fixing real en .NET, o lo publicamos como "bug fixing con contexto de negocio" sin atarlo a un lenguaje (ya está listo así).
 
 **2 · Plan de facturación de GCO**
-Confirmé por la documentación oficial que el modelo de multiplicadores **0x / 1x / 3x quedó como legacy el 1 de junio de 2026**: ahora el consumo es por **tokens contra una bolsa mensual (GitHub AI Credits)**. Reformulé la card para que funcione con cualquier plan. Solo necesito saber: **¿las licencias de GCO ya operan con el nuevo modelo por tokens, o siguen en el esquema anual legacy con multiplicadores?** Con eso afino el detalle.
+Confirmé por la documentación oficial que el modelo de multiplicadores **0x / 1x / 3x quedó como legacy el 1 de junio de 2026**: ahora el consumo es por **tokens contra una bolsa mensual (GitHub AI Credits)**. Reformulé la tarjeta para que funcione con cualquier plan. Solo necesito saber: **¿las licencias de GCO ya operan con el nuevo modelo por tokens, o siguen en el esquema anual legacy con multiplicadores?** Con eso afino el detalle.
 
 **3 · Vídeo 2 — qué ocultar en el login**
 Sobre el ajuste del login de GCO: necesito que me precises **qué dato exacto no debe verse** para hacer bien la edición. ¿Es solo el nombre de usuario, también el correo, el dominio, u otro dato visible en esa pantalla? ¿En qué momento(s) del vídeo aparece? Y para reemplazarlo, ¿usamos `_gco` o prefieres otro texto genérico?

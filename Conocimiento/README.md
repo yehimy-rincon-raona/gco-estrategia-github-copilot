@@ -25,7 +25,7 @@ Esta carpeta contiene **investigación, referencias y análisis externos** que a
 | `benchmarks-productividad-copilot.md` | Métricas y estudios de productividad con GitHub Copilot (GitHub, McKinsey, Accenture) |
 | `casos-exito-sector-financiero.md` | Empresas del sector financiero/asegurador que han adoptado IA con éxito (referencias) |
 | `glosario-tecnico-gco.md` | Glosario de términos técnicos del stack de GCO para contextualizar contenidos |
-| `facturacion-github-copilot-2026.md` | Cambio de GitHub Copilot a facturación usage-based (AI Credits) el 1 jun 2026 — fin del modelo 0x/1x/3x. Impacta la card de tokens de Pub 8/9 |
+| `facturacion-github-copilot-2026.md` | Cambio de GitHub Copilot a facturación usage-based (AI Credits) el 1 jun 2026 — fin del modelo 0x/1x/3x. Impacta la tarjeta de tokens de Pub 8/9 |
 | `gan-framework-interno-gco.md` | GAN, el framework interno de GCO (.NET/WCF) con el que se construyen las operativas: anatomía, relación con COBOL, el mito "GAN no se toca con IA" y cómo lo desmonta el caso de Luis (Videos 05–06) |
 
 ---

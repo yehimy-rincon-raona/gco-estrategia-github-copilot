@@ -329,7 +329,7 @@ Sintetizando todo lo que dice, el correcto uso de la memoria sería:
 
 ---
 
-# Frase resumen para explicar a Jonathan / Nibaldo
+# Frase resumen para explicar a Jonatan / Nibaldo
 
 Puedes decirlo así:
 

@@ -1,5 +1,5 @@
 # Seguimiento de tareas — Videos y acceso · 30 junio 2026
-> Origen: intercambio con Nibaldo (mensaje de Yehimy del jue 25 jun + respuesta de Nibaldo del 30 jun) y conversación de Nibaldo con Jonathan.
+> Origen: intercambio con Nibaldo (mensaje de Yehimy del jue 25 jun + respuesta de Nibaldo del 30 jun) y conversación de Nibaldo con Jonatan.
 > Propósito: convertir lo conversado en **tareas concretas** con responsable y estado — sin interpretar. Lo que no esté claro queda marcado "por confirmar".
 
 ---
@@ -7,7 +7,7 @@
 ## 1. Registro del intercambio (literal)
 
 ### Lo que Yehimy pidió a Nibaldo — jueves 25 jun
-- Video de la **instalación y configuración de un MCP** (tema que le comentó Jonathan).
+- Video de la **instalación y configuración de un MCP** (tema que le comentó Jonatan).
 - Una **VPN para ingresar a GCO** y publicar los contenidos.
 - El tema del **acceso** debe verse reflejado en el video → **regrabar**.
 - Faltan los **videos de los casos de uso**; entiende que Nibaldo ya tiene uno → pide **acceso para descargarlo** (no lo puede abrir).
@@ -42,7 +42,7 @@
 | **Video Caso de uso 1** | Producir el video esta semana | Yehimy | En curso — producción esta semana |
 | **Video Caso de uso 1** | Revisar que el contenido que Yehimy montó desde las grabaciones de sesión coincide con lo que Nibaldo tiene en mente (coherencia gráfica/video) | Nibaldo | Pendiente |
 | **Casos de uso "enviados"** | Confirmar cuáles son | — | ✅ Aclarado: son los de la carpeta `semana-4_22-26jun/` (caso 1 COBOL · caso 2 bug fixing) |
-| **Video MCP — instalación y configuración** | Video pedido por Jonathan; Nibaldo lo acaba de entregar | Yehimy | ✅ Entregado — producir esta semana |
+| **Video MCP — instalación y configuración** | Video pedido por Jonatan; Nibaldo lo acaba de entregar | Yehimy | ✅ Entregado — producir esta semana |
 | **Videos propios de Nibaldo** | "Los estoy haciendo, los tendré hoy" | Nibaldo | En curso — entrega hoy 30 jun |
 
 ---
@@ -51,7 +51,7 @@
 
 | Tarea | Responsable | Estado |
 |-------|-------------|--------|
-| Gestionar la **VPN de Raona** para que Yehimy pueda ingresar al usuario de GCO (desde Colombia el acceso está bloqueado) y publicar en el Teams de GCO lo que está en el Teams local | Nibaldo + equipo de sistemas | 🔄 Nibaldo entendió el requerimiento (reunión 30 jun con Jonathan) y lo gestiona con sistemas · acceso esperado esta semana o la próxima · aclarado que es la VPN de Raona, no la de GCO |
+| Gestionar la **VPN de Raona** para que Yehimy pueda ingresar al usuario de GCO (desde Colombia el acceso está bloqueado) y publicar en el Teams de GCO lo que está en el Teams local | Nibaldo + equipo de sistemas | 🔄 Nibaldo entendió el requerimiento (reunión 30 jun con Jonatan) y lo gestiona con sistemas · acceso esperado esta semana o la próxima · aclarado que es la VPN de Raona, no la de GCO |
 | **Contingencia si la VPN tarda:** Yehimy pasa el copy a Nibaldo o Víctor para que publiquen directamente en el Teams de GCO | Yehimy → Nibaldo / Víctor | Acordado en reunión 30 jun |
 | Acceso al Teams oficial de GCO (tenant Occident) | Catalana Occident | Bloqueante principal persistente |
 
@@ -68,29 +68,31 @@
 
 ---
 
-## 5. 📌 DISCLAIMER DE CORRECCIÓN — Acceso y licencia de GCO (Jonathan · reu jue 25 jun)
+## 5. 📌 DISCLAIMER DE CORRECCIÓN — Acceso y licencia de GCO (Jonatan · reu jue 25 jun)
 
 > ⚠️ **Esto es una corrección pendiente de implementar, NO un cambio ya aplicado.** Se deja aquí como referencia fácil de encontrar para cuando se actualicen el Video 1, la guía de Primeros Pasos y el ítem 9 de `resolucion-propia_reunion-23jun2026.md`. **No se ha modificado ni borrado nada del contenido existente** — la información de abajo se aplica cuando se decida, no antes.
 >
-> Datos entregados por Jonathan en la reunión del jueves 25 jun. Transcritos literalmente. Sirven para que Yehimy avance **desde acá** el contenido/guion del flujo de acceso y licencia (no requiere tener aún el acceso a GCO).
+> Datos entregados por Jonatan en la reunión del jueves 25 jun. Transcritos literalmente. Sirven para que Yehimy avance **desde acá** el contenido/guion del flujo de acceso y licencia (no requiere tener aún el acceso a GCO).
 
 **Página de soporte de GCO (documentación, pestaña Visual Studio 2022):**
 ```
 https://soporte.gco.global/pages/viewpage.action?pageId=346816700#tab-Visual+Studio+2022
 ```
 
-**Flujo de inicio de sesión / asignación de licencia (según Jonathan):**
+**Flujo de inicio de sesión / asignación de licencia (según Jonatan):**
 1. Iniciar sesión en: `https://github.com/enterprises/gco-emu/sso`
 2. Si da error → ir a `https://myprofile.microsoft.com/` y en el menú lateral: **Mi acceso → Paquetes de acceso → Solicitar el acceso a GitHub Copilot**.
 3. Pasados **40 minutos como máximo** tras la aprobación de un responsable, la licencia debería quedar asignada.
 
-> Corrección a aplicar (cuando se decida): el ítem 9 de `resolucion-propia_reunion-23jun2026.md` dejó la URL de la licencia como pendiente/`myaccess.microsoft.com`. La URL real, según Jonathan, es `myprofile.microsoft.com` + el SSO de empresa `gco-emu`. **No se ha tocado ese documento** — esta corrección se implementa cuando corresponda.
+> Corrección a aplicar (cuando se decida): el ítem 9 de `resolucion-propia_reunion-23jun2026.md` dejó la URL de la licencia como pendiente/`myaccess.microsoft.com`. La URL real, según Jonatan, es `myprofile.microsoft.com` + el SSO de empresa `gco-emu`. **No se ha tocado ese documento** — esta corrección se implementa cuando corresponda.
+>
+> ✅ **Aplicada parcialmente (15 jul):** el post de licencia "¿GitHub Copilot no aparece en tu Visual Studio?" (`Produccion/semana-2_08-12jun/triptico-licencia_(repub-03_mar-21-jul)/post-licencia_mar-21jul.md`, republicación mar 21 jul) ya lleva el enlace clicable a `myprofile.microsoft.com`. Si hay que ajustar la URL, Nibaldo puede editarla directamente en el post de Teams programado. El ítem 9 de `resolucion-propia_reunion-23jun2026.md` sigue sin tocarse.
 
 **Tarea que Yehimy puede ir haciendo desde acá (sin bloqueo):**
 
 | Tarea | Responsable | Estado |
 |-------|-------------|--------|
-| Documentar/guionizar el flujo de acceso y asignación de licencia (SSO + paquete de acceso en myprofile) a partir de la página de soporte de GCO y los pasos de Jonathan | Yehimy | Por hacer — insumo para el guion del Video 1 y para contenido de "Primeros Pasos" |
+| Documentar/guionizar el flujo de acceso y asignación de licencia (SSO + paquete de acceso en myprofile) a partir de la página de soporte de GCO y los pasos de Jonatan | Yehimy | Por hacer — insumo para el guion del Video 1 y para contenido de "Primeros Pasos" |
 
 ---
 
@@ -102,4 +104,4 @@ https://soporte.gco.global/pages/viewpage.action?pageId=346816700#tab-Visual+Stu
 
 ---
 
-> Nota: este documento solo registra y ordena en tareas lo conversado. No incorpora supuestos: cada punto sin confirmar queda marcado como tal hasta que Nibaldo o Jonathan lo precisen.
+> Nota: este documento solo registra y ordena en tareas lo conversado. No incorpora supuestos: cada punto sin confirmar queda marcado como tal hasta que Nibaldo o Jonatan lo precisen.

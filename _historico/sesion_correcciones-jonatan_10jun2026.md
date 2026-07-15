@@ -10,7 +10,7 @@
 
 - Identificación de todos los cambios solicitados por Jonatan (GCO) sobre Pub 2 y Video 1
 
-- Actualización de `Produccion/semana-1_01-05jun/pub-02_jue-04jun/infografia_instalacion-copilot-vs.md`
+- Actualización de `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/infografia_instalacion-copilot-vs.md`
   - Título: "Activa GitHub Copilot en Visual Studio"
   - Subtítulo: "Lo que necesitas antes de escribir tu primer prompt"
   - Eliminados pasos de instalación de Visual Studio
@@ -19,7 +19,7 @@
   - Nota al pie → tip del terminal
   - Specs Figma actualizadas con bloque introductorio
 
-- Creación de `Produccion/semana-1_01-05jun/pub-02_jue-04jun/guion-video1_pub2.md`
+- Creación de `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/guion-video1_pub2.md`
   - Separado de la infografía (antes estaban mezclados en el mismo archivo)
   - Guión simplificado del Video 1 con todos los cambios aplicados
 
@@ -54,7 +54,7 @@
 - [ ] **Yehimy** — Actualizar guión completo Video 1 `pildoras-agiles_configuracion-del-entorno.md`: reescribir sección 2 + añadir sección solicitud de licencia
 - [ ] **Yehimy** — Actualizar script de grabación `v01-pill01-para-grabacion_instalacion.md`: eliminar instrucción de grabar ejecutable/instalador
 - [ ] **Yehimy / Diseño** — Rediseñar en Figma `S1-Infografia_paso-a-paso.jpg`: añadir bloque intro + cambiar pasos 1 y 2
-- [ ] **Yehimy / Diseño** — Rediseñar cards `S1-Card_paso1*`: nuevo mensaje "VS ya está en tu máquina"
+- [ ] **Yehimy / Diseño** — Rediseñar tarjetas `S1-Card_paso1*`: nuevo mensaje "VS ya está en tu máquina"
 - [ ] **Nibaldo** — Confirmar que sección Portal de Empresa ya está en grabación
 - [ ] **Nibaldo** — Grabar flujo de solicitud de licencia (My Profile → 2 clics → ~40 min)
 
@@ -65,7 +65,7 @@
 | Archivo | Para qué |
 |---------|----------|
 | `Reuniones/seguimientos-semanales/seguimiento-correcciones_jonatan_09jun2026.md` | Checklist completo de correcciones — punto de entrada para continuar |
-| `Produccion/semana-1_01-05jun/pub-02_jue-04jun/infografia_instalacion-copilot-vs.md` | Brief actualizado de `S1-Infografia_paso-a-paso.jpg` — listo para Figma |
-| `Produccion/semana-1_01-05jun/pub-02_jue-04jun/guion-video1_pub2.md` | Guión simplificado Video 1 con cambios aplicados |
+| `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/infografia_instalacion-copilot-vs.md` | Brief actualizado de `S1-Infografia_paso-a-paso.jpg` — listo para Figma |
+| `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/guion-video1_pub2.md` | Guión simplificado Video 1 con cambios aplicados |
 | `Produccion/Videos/v01_configuracion-entorno/pildoras-agiles_configuracion-del-entorno.md` | Guión completo Video 1 — pendiente de actualizar |
 | `Produccion/Videos/v01_configuracion-entorno/v01-pill01-para-grabacion_instalacion.md` | Script de grabación — pendiente de actualizar |

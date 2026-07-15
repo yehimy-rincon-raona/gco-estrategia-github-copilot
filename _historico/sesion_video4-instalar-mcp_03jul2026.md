@@ -5,7 +5,7 @@
 
 ## Contexto de la sesión
 
-Jonathan había pedido un vídeo sobre la instalación de los MCP. **Víctor Gisbert** grabó una demo de pantalla completa (~16 min, archivo `gco_mcp-victor-gisbert`) mostrando cómo instalar el paquete **Copilot Dev Suite** y configurar los servidores MCP. Yehimy recolectó la grabación en **44 capturas numeradas en orden** + tres documentos de apoyo (transcripción literal, paso-a-paso reconstruido y resumen) en `Produccion/Videos/v04_instalar-mcp/`. El encargo: crear una **píldora ágil de guion** con el mismo formato que los tres vídeos anteriores, **sin inventar** nada — verificando cada dato contra las capturas.
+Jonatan había pedido un vídeo sobre la instalación de los MCP. **Víctor Gisbert** grabó una demo de pantalla completa (~16 min, archivo `gco_mcp-victor-gisbert`) mostrando cómo instalar el paquete **Copilot Dev Suite** y configurar los servidores MCP. Yehimy recolectó la grabación en **44 capturas numeradas en orden** + tres documentos de apoyo (transcripción literal, paso-a-paso reconstruido y resumen) en `Produccion/Videos/v04_instalar-mcp/`. El encargo: crear una **píldora ágil de guion** con el mismo formato que los tres vídeos anteriores, **sin inventar** nada — verificando cada dato contra las capturas.
 
 ---
 
