@@ -13,8 +13,8 @@
 | `06-` | Jueves 30 julio | Pub 5 — "¿Copias y pegas código en el chat?" + infografía de jerarquía de referencias | `02_primeros-pasos/06-pub-03_copias-y-pegas-codigo-en-el-chat.png` |
 | `07-` | Martes 4 agosto | Pub 6 — "Caso de uso #1: entender un COBOL heredado antes de tocarlo" + respuesta de prompts | `04_casos-de-uso-reales/07-pub-02_caso-de-uso-n1-entender-un-cobol-heredado-antes-de-tocarlo.png` · `04_casos-de-uso-reales/07-pub-03_prompts-listos-para-el-equipo.png` |
 | `08-` | Jueves 6 agosto | Pub 7 — "Caso de uso #2: un bug que no estaba donde parecía" + respuesta de prompts | `04_casos-de-uso-reales/08-pub-04_caso-de-uso-n2-un-bug-que-no-estaba-donde-parecia.png` · `04_casos-de-uso-reales/08-pub-05_prompts-listos-para-el-equipo.png` |
-| `09-` | Martes 11 agosto | Pub 8 — "La fórmula del prompt que funciona — parte 1" | Sin captura aún — la Pub 8 no se ha publicado en Teams; tomarla al publicar |
-| `10-` | Jueves 13 agosto | Pub 9 — "La fórmula del prompt — parte 2" | Sin captura aún — la Pub 9 no se ha publicado en Teams; tomarla al publicar |
+| `09-` | Martes 11 agosto | Pub 8 — "La fórmula del prompt que funciona: 5 piezas, no más" (✅ publicada el 3 jul en tenant Raona — capturas registradas 15 jul) | `09-pub-05_la-formula-del-prompt-que-funciona-5-piezas.png` (post principal) · `09-pub-05-a_guardate-esta-plantilla...png` (respuestas del hilo: "La diferencia no es el modelo..." + plantilla) |
+| `10-` | Jueves 13 agosto | Pub 9 — "Las dos piezas del prompt que más cambian el resultado" (✅ publicada el 3 jul en tenant Raona — capturas registradas 15 jul) | `10-pub-06_las-dos-piezas-del-prompt...png` (post principal + díptico) · `10-pub-06-a_escribe-las-reglas-una-vez.png` (respuesta del atajo `copilot-instructions.md`) |
 
 ## Notas
 

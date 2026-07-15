@@ -20,7 +20,7 @@ En este proyecto conviven **dos numeraciones distintas**:
 
 | Día | Fecha | Contenido | Dónde están las piezas |
 |-----|-------|-----------|------------------------|
-| 01 | Mar 14 jul | Pub 1 · Bienvenida (6 canales) | `semana-1_01-05jun/pub-01_mar-02jun_(repub-01_mar-14-jul)/pub-01_graficas_bienvenida-todos-los-canales/` |
+| 01 | Mar 14 jul | Pub 1 · Bienvenida (6 canales) | `semana-1_01-05jun/pub-01_mar-02jun_(repub-01_mar-14-jul)/pub-01_banners-de-bienvenida/` (`01-S1-*.jpg`, uno por canal) |
 | 02 | Jue 16 jul | Pub 2 + Videos 01–03 | `semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/` (`02-1` a `02-4`) |
 | 07 | Mar 4 ago | Pub 6 · Caso COBOL | `semana-4_22-26jun/pub-06_mar-23jun_(repub-07_mar-04-ago)/` (`07-S3-Card_pub6-*`) |
 | 08 | Jue 6 ago | Pub 7 · Caso bug | `semana-4_22-26jun/pub-07_jue-25jun_(repub-08_jue-06-ago)/` (`08-S3-Card_pub7-*`) |

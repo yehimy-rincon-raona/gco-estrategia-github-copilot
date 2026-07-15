@@ -31,7 +31,7 @@ Cada post se copia del bloque "Post listo para copiar en Teams" de su documento.
 | Foro de Ayuda / AMA | "💬 Bienvenido/a al espacio de preguntas de la comunidad" | `.../canal-foro-ama_pub1-bienvenida.md` |
 | Reservas 1:1 con Expertos | "📅 Tiempo exclusivo con quien ya sabe usarlo" | `.../canal-reservas-1a1_pub1-bienvenida.md` |
 
-- **Piezas gráficas:** los banners de bienvenida de `Produccion/semana-1_01-05jun/pub-01_mar-02jun_(repub-01_mar-14-jul)/pub-01_graficas_bienvenida-todos-los-canales/piezas_graficas/` — verificar cada una contra la captura de `Produccion/imagenes_teams/` antes de adjuntar.
+- **Piezas gráficas:** los 6 banners de bienvenida (`01-S1-...jpg`, uno por canal) en `Produccion/semana-1_01-05jun/pub-01_mar-02jun_(repub-01_mar-14-jul)/pub-01_banners-de-bienvenida/` — verificar cada uno contra la captura de `Produccion/imagenes_teams/` antes de adjuntar. Los screenshots de cómo se ven en Teams están en `.../pub-01_screenshots_de-banners-de-bienvenida/`.
 - **Después de publicar:** alta de todo el departamento de informática cuando el espacio esté presentable (estrategia del 30 jun con Jonatan).
 
 ### Jueves 16 jul — Pub 2 · Primeros Pasos (con Videos 01–03)
