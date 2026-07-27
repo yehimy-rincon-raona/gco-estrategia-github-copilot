@@ -18,7 +18,7 @@
 - [x] Grabaciones nuevas de Nibaldo entregadas (15 jul) — flujo de licencia myaccess / acceso
 - [ ] Incorporar las grabaciones nuevas a la edición (Yehimy) — al abrirlas, **verificar que incluyen el paso del SSO `gco-emu`**; si está, no hay dependencia de nadie
 - [ ] **Corrección del flujo de acceso (el "gco"):** la voz en off de la Sección 1 va directo a myprofile — ajustarla al flujo completo de Jonatan (reu 25 jun): 1) SSO `github.com/enterprises/gco-emu/sso` → 2) si falla, `myprofile.microsoft.com` → Mi acceso → Paquetes de acceso → Solicitar acceso → 3) ~40 min. Voz nueva se genera en Clipchamp (sin grabación de Yehimy). Fuente literal: `seguimiento-videos-y-acceso_30jun2026.md` §5
-- [ ] Nota: el sufijo `_GCO` del usuario NO es corrección — es contenido del Video 02 y ya está bien en guion y post
+- [ ] ~~Nota: el sufijo `_GCO` del usuario NO es corrección — es contenido del Video 02 y ya está bien en guion y post~~ **Superada el 15 jul (tarde):** sí hay corrección sobre el `_GCO` — ver Video 02
 - [ ] URL del canal corporativo para el enlace del post (Nibaldo)
 - [ ] Publicación en Teams GCO — post programado para el jue 16 jul con la Pub 2 · sumar el vídeo al post antes de la publicación
 - [ ] Captura del post publicado → `Produccion/imagenes_teams/` (prefijo `02-`)
@@ -26,6 +26,8 @@
 ### Video 02 — Autenticación en Visual Studio y VS Code
 - [x] Edición base finalizada (12 jun)
 - [x] Post propio creado (`canal-primeros-pasos_pub2-video2.md`)
+- [x] **Corrección de audio (15 jul) — ✅ APLICADA:** una persona de GCO (no fue Jonatan; nombre por confirmar) observó la mención a "guion bajo GCO" en la voz de la Sección 3 (Autenticación en Visual Studio). Se regeneró el audio sin la mención al sufijo (texto en `Produccion/Videos/v01_configuracion-entorno/pill-02_para-grabacion_autenticacion-vs-vscode.md`, sección REGENERAR AUDIO) y **se extendió la sección de autenticación en Visual Studio Code** con la grabación nueva (guion: `Produccion/Videos/v02_primeros-pasos/pill_para-grabacion_instalacion-vscode.md`). Video regrabado el 15 jul
+- [ ] ⚠️ **Revisar el post programado del jue 16 jul** (`canal-primeros-pasos_pub2-video2.md`): aún dice "El sufijo importa: … `_GCO`" — decidir si se edita antes de que salga o se corrige después
 - [ ] Incorporar las grabaciones nuevas del bloque a la edición (si el ajuste de myaccess/acceso toca sus secciones)
 - [ ] Sumar el vídeo al post programado del jue 16 jul
 - [ ] Captura del post publicado (prefijo `02-`)

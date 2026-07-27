@@ -14,6 +14,8 @@ Acompañar el **Video 02** ("Autenticación en Visual Studio y VS Code") con un 
 
 ## Post listo para copiar en Teams (tenant GCO)
 
+> ✅ **Texto corregido el 15 jul** — alineado con el video regrabado: sin mención al sufijo `_GCO` (observación de GCO) y con el flujo extendido de autenticación en Visual Studio Code. Si el post ya estaba programado en Teams con la versión anterior, **editarlo con este texto antes de que salga el jue 16 jul**.
+
 **Asunto:** `Conecta tu cuenta corporativa`
 
 ---
@@ -25,8 +27,8 @@ Acompañar el **Video 02** ("Autenticación en Visual Studio y VS Code") con un 
 ⚡ **3 claves del proceso:**
 
 - **El punto oscuro te avisa:** si el ícono de cuenta en la barra superior de Visual Studio tiene un punto oscuro, todavía no estás autenticado.
-- **El sufijo importa:** agrega tu cuenta de GitHub escribiendo tu nombre de usuario seguido de `_GCO` — eso activa el inicio de sesión corporativo.
-- **En VS Code es el mismo proceso:** el ícono que dice "Iniciar sesión" está al fondo de la pantalla; selecciona GitHub y completa el flujo.
+- **Tu cuenta corporativa:** agrega tu cuenta de GitHub e inicia sesión con tu cuenta corporativa — con eso se activa el acceso de la organización.
+- **En VS Code:** abre el chat de GitHub Copilot, inicia sesión con "Continuar con GitHub" y autoriza el acceso a las organizaciones. Solo pasa la primera vez.
 
 Cuando el ícono esté verde, GitHub Copilot está activo: abre el chat y ya puedes usarlo.
 
@@ -42,15 +44,15 @@ Funcional y cercano — mismo criterio que el post del Video 01: que nadie se qu
 
 ## Conexión con el Video 02
 
-El post hace referencia directa al Video 02 ("Autenticación en Visual Studio y VS Code"). Secciones del vídeo que sustenta este post:
-- Sección 3: Autenticación en Visual Studio (ícono de cuenta, sufijo `_GCO`, ícono verde, chat activo)
-- Sección 4: Autenticación en Visual Studio Code (ícono "Iniciar sesión", flujo con GitHub, panel de chat disponible)
+El post hace referencia directa al Video 02 ("Autenticación en Visual Studio y VS Code"), **versión regrabada el 15 jul**. Secciones del vídeo que sustenta este post:
+- Autenticación en Visual Studio (ícono de cuenta con punto oscuro, inicio de sesión con la cuenta corporativa, ícono verde, chat activo) — audio corregido, sin mención al sufijo
+- Autenticación en Visual Studio Code **extendida** (chat → "Continuar con GitHub" → autorizar organizaciones → chat activo y selección de modelos)
 
 ---
 
 ## Recursos adjuntos
 
-- **Video 02** — `[Pendiente: incorporar las grabaciones entregadas el 15 jul a la edición del vídeo antes de la publicación — confirmar con Yehimy el archivo/enlace final]`
+- **Video 02 — versión regrabada el 15 jul** (sin el audio del `_GCO` + sección de Visual Studio Code extendida). Subir el MP4 a la carpeta compartida del canal y pegar el enlace en el post (mismo procedimiento que los Videos 01 y 03). Verificar que el export es el estándar H.264 (`Configuraciones/config_exportacion-videos.md`).
 
 ---
 
@@ -59,8 +61,8 @@ El post hace referencia directa al Video 02 ("Autenticación en Visual Studio y 
 | Punto del post | Fuente |
 |----------------|--------|
 | Punto oscuro en el ícono de cuenta | Guion pill-02 · Sección 3 |
-| Usuario + sufijo `_GCO` para inicio de sesión corporativo | Guion pill-02 · Sección 3 |
+| Inicio de sesión con la cuenta corporativa (sin sufijo en la voz) | Guion pill-02 · Sección 3 (corrección 15 jul, sección REGENERAR AUDIO) |
 | Ícono verde = GitHub Copilot activo | Guion pill-02 · Sección 3 |
-| Flujo en VS Code (ícono "Iniciar sesión" al fondo de la pantalla) | Guion pill-02 · Sección 4 |
+| Flujo en VS Code (chat → Continuar con GitHub → autorizar organizaciones) | Guion `v02_primeros-pasos/pill_para-grabacion_instalacion-vscode.md` |
 
-Guion fuente: `Produccion/Videos/v01_configuracion-entorno/pill-02_para-grabacion_autenticacion-vs-vscode.md`
+Guiones fuente: `Produccion/Videos/v01_configuracion-entorno/pill-02_para-grabacion_autenticacion-vs-vscode.md` + `Produccion/Videos/v02_primeros-pasos/pill_para-grabacion_instalacion-vscode.md`

@@ -58,6 +58,7 @@ GCO ya tiene licencias activas y un proceso de formación técnica en curso, imp
 | `Configuraciones/config_canal-teams.md` | Estructura y propósito de los 6 canales del equipo de Teams de GCO (los developers) |
 | `Configuraciones/config_canal-interno.md` | Estructura y metodología del canal interno de Teams del equipo Raona |
 | `Configuraciones/config_canal-colaboracion.md` | **Canal colaborativo** (GCO + Pasiona + Raona) — estructura, canales, regla de enrutamiento de contenidos |
+| `Configuraciones/config_exportacion-videos.md` | **Estándar de exportación de videos** (DaVinci Resolve): MP4 + H.264, optimización de red, audio AAC. Consultar antes de cada export |
 | `Configuraciones/estructura_prompt.md` | Fórmula de prompting: Rol + Contexto + Tarea + Restricciones + Formato |
 | `Planeacion/Semana-1_primer-plan-de-contenidos/timeline-y-checklist.md` | Calendario de publicaciones semana a semana (Semanas 1–8) |
 | `Planeacion/Semana-0_planeacion-del-proyecto/plan_de_capacitacion.md` | Contenido de cada módulo de formación y cronograma de grupos |
