@@ -44,7 +44,7 @@ La voz en off se genera con **Clipchamp**, usando la voz **Alessio Dragon HD Lat
 > **Nota de producción:** esta intro es **compartida con el Video 06** — se graba una sola vez y el mismo audio abre ambas píldoras. Por eso el texto no menciona la cantidad de casos (tres aquí, dos en el 06): dice "estos casos", no "estos tres casos".
 
 **Voz en off:**
-> ¿Funciona GitHub Copáilot con el código real de GCO? Estos casos nacen del trabajo diario del equipo, en punto net, GAN y COBOL. No son demos: son sesiones reales de GitHub Copáilot.
+> ¿Funciona GitHub-Copáilot con el código real de GCO? Estos casos nacen del trabajo diario del equipo, en punto net, GAN y COBOL. No son demos: son sesiones reales de GitHub Copáilot.
 >
 > Para verlas usamos una interfaz en HTML creada dentro del propio equipo: lee la carpeta local donde GitHub Copáilot guarda sus sesiones y muestra cada una tal cual quedó — la petición que se le hizo, los pasos que fue ejecutando y el resultado final. Con ella vamos a recorrer cada caso.
 >
@@ -62,11 +62,15 @@ Texto en pantalla: **"Casos reales · .NET · GAN · COBOL"**, después **"Una i
 ### Sección 2 · Caso 1: la incidencia que llegó en PDF
 
 **Voz en off:**
-> Primer caso: una incidencia que llegó como PDF, con pantallas escaneadas. El prompt fue directo: revisa el PDF de la incidencia, analízalo y genérame un documento con la causa y la posible solución. Te dejo el código en las carpetas GAN y COBOL.
+> Primer caso: una incidencia que llegó como PDF, con pantallas escaneadas. La instrucción fue directa: revisa el PDF de la incidencia, analízalo y genérame un documento con la causa y la posible solución. 
+> 
+> Te dejo el código en las carpetas GAN y COBOL.
 >
-> GitHub Copáilot extrajo las imágenes del PDF, leyó la operativa punto net y los COBOL asociados, y generó un informe en español con la causa: la pantalla tiene una lista desplegable para elegir la figura — el asegurado o el perjudicado — y una tabla con sus garantías. Al cambiar de una figura a otra, la tabla no se vaciaba, y las garantías de una se acumulaban con las de la otra: por eso salían duplicadas.
+> GitHub-Copáilot extrajo las imágenes del PDF, leyó la operativa punto net y los COBOL asociados, y generó un informe en español con la causa: la pantalla tiene una lista desplegable para elegir la figura — el asegurado o el perjudicado — y una tabla con sus garantías. 
+> 
+> Al cambiar de una figura a otra, la tabla no se vaciaba, y las garantías de una se acumulaban con las de la otra: por eso salían duplicadas.
 >
-> Y no se quedó en el diagnóstico: aplicó la limpieza en el backend y además corrigió en el COBOL un dato que llegaba con caracteres extraños. Una incidencia completa, resuelta de una sola tirada.
+> Y no se quedó en el diagnóstico: aplicó la limpieza en el desarrollo y además corrigió en el COBOL un dato que llegaba con caracteres extraños. Una incidencia completa, resuelta de una sola tirada.
 
 **Qué mostrar en pantalla (en orden, sincronizado con la voz):**
 1. La sesión de la incidencia seleccionada y el documento PDF original (`07`–`16`).
