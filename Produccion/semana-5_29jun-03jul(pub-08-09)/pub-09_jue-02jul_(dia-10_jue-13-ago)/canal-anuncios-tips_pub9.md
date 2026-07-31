@@ -3,7 +3,7 @@
 > ⏱️ **Producción: Semana 5 (trabajo del 30 jun)** · **Publicación: Semana 5 — jueves 2 jul (fecha a confirmar en la reunión)**
 > Estado: ✅ Díptico producido — 2 tarjetas horizontales (`10-S5-card-contexto.jpg` · `10-S5-card-restricciones.jpg`)
 > Fuente: `Configuraciones/estructura_prompt.md` · sesiones de formación · tarjeta `5-S2` · `copilot-instructions.md` del proyecto
-> Continúa: `pub-08_mar-30jun_(repub-09_mar-11-ago)/canal-anuncios-tips_pub8.md`
+> Continúa: `pub-08_mar-30jun_(dia-09_mar-11-ago)/canal-anuncios-tips_pub8.md`
 
 ---
 

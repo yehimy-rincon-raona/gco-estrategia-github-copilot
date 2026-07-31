@@ -76,7 +76,7 @@ Jonatan identificó en la reunión del 9 de junio que estos dos problemas son lo
 ## Post que acompaña la Tarjeta T2 — movido a su carpeta de republicación
 
 > El post "¿GitHub Copilot no aparece en tu Visual Studio?" es **publicación propia del martes 21 jul** (pedido de Jonatan) y su archivo operativo vive junto al tríptico T2:
-> **`Produccion/semana-2_08-12jun/triptico-licencia_(repub-03_mar-21-jul)/post-licencia_mar-21jul.md`**
+> **`Produccion/semana-2_08-12jun(pub-03-04-05)/triptico-licencia_(dia-03_mar-21-jul)/post-licencia_mar-21jul.md`**
 > Ahí están el texto listo para copiar (con el enlace clicable a My Profile ya aplicado), las piezas a adjuntar y las verificaciones. Este documento conserva solo los briefs de diseño de las 6 tarjetas.
 
 ---
@@ -161,7 +161,7 @@ Jonatan identificó en la reunión del 9 de junio que estos dos problemas son lo
 | Tema 1 · Tarjeta 1 Portada | `S1-Card_vs-instalacion_01.jpg` |
 | Tema 1 · Tarjeta 2 Problema | `S1-Card_vs-instalacion_02.jpg` |
 | Tema 1 · Tarjeta 3 Solución | `S1-Card_vs-instalacion_03.jpg` |
-| Tema 2 · Tarjeta 1 Portada | `03-1B-S1-Card_T2-Portada.png` (en `triptico-licencia_(repub-03_mar-21-jul)/`) |
+| Tema 2 · Tarjeta 1 Portada | `03-1B-S1-Card_T2-Portada.png` (en `triptico-licencia_(dia-03_mar-21-jul)/`) |
 | Tema 2 · Tarjeta 2 Problema | `03-2B-S1-Card_T2-el_problema.png` |
 | Tema 2 · Tarjeta 3 Solución | `03-3B-S1-Card_T2-la_solucion.png` |
 

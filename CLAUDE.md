@@ -258,7 +258,8 @@ Ejemplo: `canal-primeros-pasos_pub3.md` dentro de `pub-03_mar-09jun/`.
 - La numeración es **global y correlativa** — no se salta números, no se reinicia por semana.
 - Pub 1 y 2 son de Semana 1. Pub 3, 4 y 5 son de Semana 2. Pub 6 en adelante = semanas siguientes.
 - Si dos publicaciones van el mismo día (canales distintos), llevan números consecutivos (ej: Pub 3 y Pub 4 ambos el martes 9 junio en canales diferentes).
-- Si una publicación se bloquea o desplaza, **su número no se reasigna** — queda reservado con estado "bloqueado" en el tablero.
+- Si una publicación se bloquea o desplaza, **su número no se reasigna** por defecto — queda reservado con estado "bloqueado" en el tablero.
+- **Excepción (decisión 30 jul 2026):** si el contenido bloqueado/desplazado todavía **no está producido** y aparece contenido nuevo **ya producido** que debería entrar antes en la cola, el número bloqueado sí puede cederse al contenido nuevo — el que estaba bloqueado se renumera hacia adelante (nunca se elimina el número, solo se reasigna una vez). Precedente: Pub 10 ("Skills + instructions", sin producir) cedió su número a los Videos 05 y 06 (ya producidos), que pasaron a ser Pub 10 y Pub 11; Skills + instructions pasó a Pub 12.
 
 ---
 

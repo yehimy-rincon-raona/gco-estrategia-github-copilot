@@ -147,7 +147,7 @@ Para cuando el mensaje central es **una fórmula o estructura repetible** que se
 - Logo Occident inferior derecha.
 - El ejemplo completo NO va en la pieza: vive en el texto del post. La gráfica solo fija la fórmula.
 - **Señales:** "la fórmula", "5 piezas", "Rol + Contexto + Tarea + Restricciones + Formato", "estructura repetible", "no más largo, más completo", palabras unidas por `+`, componentes de algo.
-- **Imagen de referencia:** `Produccion/semana-5_29jun-03jul/pub-08_mar-30jun_(repub-09_mar-11-ago)/09-S5-infografia_prompts.jpg` — "La fórmula del prompt que funciona" (Pub 8). Primera pieza aprobada de esta variante; es la referencia oficial de F2-D.
+- **Imagen de referencia:** `Produccion/semana-5_29jun-03jul(pub-08-09)/pub-08_mar-30jun_(dia-09_mar-11-ago)/09-S5-infografia_prompts.jpg` — "La fórmula del prompt que funciona" (Pub 8). Primera pieza aprobada de esta variante; es la referencia oficial de F2-D.
 
 **Especificaciones comunes:**
 - Bloque introductorio / nota al pie: fondo gris (`#F2F2F2` / `#F7F7F7`) con borde izquierdo rojo de 4 px.

@@ -2,7 +2,7 @@
 > Canal: Casos de Uso Reales · Tipo: Soporte de video · **Pub 10** (asignado 30 jul — va después de Pub 6/7)
 > Estado: 🔄 Post redactado (30 jul) — pendiente de video final (edición/postproducción) y de contenido gráfico para adjuntar antes de publicar
 > Programado en calendario: **martes 1 de septiembre**, en paralelo con Pub 8 (canal distinto) — ver `Planeacion/calendario-republicacion_teams-de-gco.md`
-> Fuente del guion: `v05-pill_para-grabacion_casos-de-uso-reales.md` (misma carpeta)
+> Fuente del guion: `Produccion/Videos/v05-06_casos-de-uso/v05-pill_para-grabacion_casos-de-uso-reales.md`
 
 ---
 
@@ -48,7 +48,7 @@ El post referencia directamente las secciones 2, 3 y 4 del guion (`v05-pill_para
 
 **Tipo de pieza:** `card-triptico` — 3 paneles cuadrados (1080×1080) en carrusel: **Portada → Los 3 casos → CTA**
 **Origen del contenido:** guion Video 05, secciones 2, 3 y 4 (ver `v05-pill_para-grabacion_casos-de-uso-reales.md`)
-> Algunos datos de esta pieza (cifras de tiempo, vigencia del cambio en producción) están pendientes de confirmación del equipo de Nibaldo — ver `preguntas-equipo-nibaldo_contenido-grafico.md` (misma carpeta). Mientras no lleguen, la pieza se queda con el flujo genérico, sin inventar cifras.
+> Algunos datos de esta pieza (cifras de tiempo, vigencia del cambio en producción) están pendientes de confirmación del equipo de Nibaldo — ver `Produccion/Videos/v05-06_casos-de-uso/preguntas-equipo-nibaldo_contenido-grafico.md`. Mientras no lleguen, la pieza se queda con el flujo genérico, sin inventar cifras.
 
 ### Panel 1 — Portada · `10-S7-Card_pub10-portada` · `1/3`
 

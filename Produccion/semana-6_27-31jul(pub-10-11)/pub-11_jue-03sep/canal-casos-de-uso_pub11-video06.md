@@ -2,7 +2,7 @@
 > Canal: Casos de Uso Reales · Tipo: Soporte de video · **Pub 11** (asignado 30 jul — va después de Pub 6/7 y de Pub 10)
 > Estado: 🔄 Post redactado (30 jul) — pendiente de video final (edición/postproducción) y de contenido gráfico para adjuntar antes de publicar
 > Programado en calendario: **jueves 3 de septiembre**, en paralelo con Pub 9 (canal distinto) — ver `Planeacion/calendario-republicacion_teams-de-gco.md`
-> Fuente del guion: `v06-pill_para-grabacion_casos-de-uso-debugging.md` (misma carpeta)
+> Fuente del guion: `Produccion/Videos/v05-06_casos-de-uso/v06-pill_para-grabacion_casos-de-uso-debugging.md`
 
 ---
 
@@ -48,7 +48,7 @@ El post referencia directamente las secciones 2 y 3 del guion (`v06-pill_para-gr
 
 **Tipo de pieza:** `card-triptico` — 3 paneles cuadrados (1080×1080) en carrusel: **Portada → Los 2 errores → El método**
 **Origen del contenido:** guion Video 06, secciones 2 y 3 (ver `v06-pill_para-grabacion_casos-de-uso-debugging.md`)
-> Algunos datos de esta pieza (cifras de tiempo sin resolver antes de usar GitHub Copilot) están pendientes de confirmación del equipo de Nibaldo — ver `preguntas-equipo-nibaldo_contenido-grafico.md` (misma carpeta). Mientras no lleguen, la pieza se queda con el flujo genérico, sin inventar cifras.
+> Algunos datos de esta pieza (cifras de tiempo sin resolver antes de usar GitHub Copilot) están pendientes de confirmación del equipo de Nibaldo — ver `Produccion/Videos/v05-06_casos-de-uso/preguntas-equipo-nibaldo_contenido-grafico.md`. Mientras no lleguen, la pieza se queda con el flujo genérico, sin inventar cifras.
 
 ### Panel 1 — Portada · `11-S7-Card_pub11-portada` · `1/3`
 

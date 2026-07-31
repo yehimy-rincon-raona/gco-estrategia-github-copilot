@@ -4,7 +4,7 @@
 > Adjuntar el tríptico T2 de esta misma carpeta: `03-1B-S1-Card_T2-Portada.png` · `03-2B-S1-Card_T2-el_problema.png` · `03-3B-S1-Card_T2-la_solucion.png`
 > ✅ Texto verificado contra la captura (`Produccion/imagenes_teams/02_primeros-pasos/03-pub-05_github-copilot-no-aparece-en-tu-visual-studio.png`)
 > ✅ Enlace clicable aplicado (decisión 15 jul): "My Profile de Microsoft" enlaza a `https://myprofile.microsoft.com` — URL de Jonatan (reunión 25 jun, ver `Seguimiento/seguimiento-videos-y-acceso_30jun2026.md` §5). Si hay que ajustarla, **Nibaldo puede editarla directamente en el post de Teams** ya programado.
-> Brief de diseño de las tarjetas T2: `Produccion/semana-1_01-05jun/pub-02_jue-04jun_(repub-02_jue-16-jul)/02-S1-cards_paso-a-paso.md` (Tema 2)
+> Brief de diseño de las tarjetas T2: `Produccion/semana-1_01-05jun(pub-01-02)/pub-02_jue-04jun_(dia-02_jue-16-jul)/02-S1-cards_paso-a-paso.md` (Tema 2)
 
 ---
 
