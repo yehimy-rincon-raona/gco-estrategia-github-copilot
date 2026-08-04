@@ -8,17 +8,17 @@
 
 ## Objetivo de esta publicación
 
-Acompañar el Video 05 con un post que funcione como "Caso de uso #3" del canal — continuando la numeración de Pub 6 ("Caso de uso #1") y Pub 7 ("Caso de uso #2") — mostrando con código real de GCO (.NET, GAN, COBOL) tres situaciones resueltas con GitHub Copilot. `[Confirmar con Yehimy: numeración "#3" propuesta por continuidad, no está registrada en el proyecto]`.
+Acompañar el Video 05 con un post del canal Casos de Uso Reales, mostrando con código real de GCO (.NET, GAN, COBOL) tres situaciones resueltas con GitHub Copilot. **Decisión (31 jul, Yehimy):** se retira la numeración secuencial "Caso de uso #N" para este post y el de Pub 11 — este video agrupa tres casos y numerarlo como uno solo generaba confusión al leerlo junto al video. En su lugar, el título nombra los casos directamente para generar curiosidad por ver el video. Pub 6 y Pub 7 no se tocan por ya estar publicadas con su numeración original.
 
 ---
 
 ## Post listo para copiar en Teams (tenant GCO)
 
-**Asunto:** `Caso de uso #3: código real de GCO en video`
+**Asunto:** `Tres casos, un mismo copiloto: así se resuelven con código real de GCO`
 
 ---
 
-**Caso de uso #3: tres casos reales, contados en menos de 3 minutos**
+**Tres casos, un mismo copiloto: así se resuelven con código real de GCO**
 
 **El escenario:** una incidencia que llegó en PDF, una operativa GAN completa por generar, y un backend en producción con un servicio externo que empezó a fallar.
 

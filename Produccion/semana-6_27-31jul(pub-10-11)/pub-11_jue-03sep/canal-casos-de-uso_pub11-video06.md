@@ -8,17 +8,17 @@
 
 ## Objetivo de esta publicación
 
-Acompañar el Video 06 con un post que funcione como "Caso de uso #4" del canal — continuando la numeración de Pub 6, Pub 7 y Video 05 ("Caso de uso #3") — mostrando cómo GitHub Copilot rastrea un bug desde la pantalla hasta el COBOL. `[Confirmar con Yehimy: numeración "#4" propuesta por continuidad, no está registrada en el proyecto]`.
+Acompañar el Video 06 con un post del canal Casos de Uso Reales, mostrando cómo GitHub Copilot rastrea un bug desde la pantalla hasta el COBOL. **Decisión (31 jul, Yehimy):** se retira la numeración secuencial "Caso de uso #N" para este post (ver misma decisión en Pub 10) — este video agrupa dos errores y numerarlo como un solo caso generaba confusión al leerlo junto al video. En su lugar, el título nombra los errores directamente para generar curiosidad por ver el video.
 
 ---
 
 ## Post listo para copiar en Teams (tenant GCO)
 
-**Asunto:** `Caso de uso #4: debugging del frontend al COBOL`
+**Asunto:** `Dos errores de pantalla que tenían la causa en otro lado`
 
 ---
 
-**Caso de uso #4: dos errores de pantalla, resueltos con el mismo método**
+**Dos errores de pantalla que tenían la causa en otro lado**
 
 **El escenario:** un botón de opción que se reseteaba solo al recargar la página, y una lista desplegable que cambiaba de valor al grabar — dos síntomas raros, sin causa evidente en el código visible.
 
