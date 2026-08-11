@@ -88,6 +88,7 @@ Solo acceso: Nibaldo, Guillermo y Yehimy. Detalle en `Configuraciones/config_can
 | `Manual de marca/` | Brand book de Occident + tipografías |
 | `Conocimiento/` | Investigación y referencias externas |
 
+
 ---
 
 ## TRAZABILIDAD DE SESIONES

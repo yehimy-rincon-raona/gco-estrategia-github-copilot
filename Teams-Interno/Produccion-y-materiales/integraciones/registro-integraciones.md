@@ -10,7 +10,7 @@
 
 | # | Fecha integración | Origen (ref. Nibaldo #) | Tema integrado | Archivo destino | Impacto en plan |
 |---|------------------|-------------------------|----------------|-----------------|-----------------|
-| — | — | — | — | — | Sin integraciones aún |
+| 1 | 10 ago 2026 | Nibaldo #1 | Arquitectura y propósito de gco-dev-suite (agentes, skills, MCPs) — base para replantear la serie de agosto como "primero la suite, luego cada componente" | `Produccion/semana-7_03-agos/plan-agosto_devsuite-skills-mcp-agentes.md` | Nueva fase — reemplaza el enfoque "solo Skills" de `plan-agosto_propuesta-contenidos-skills-y-booking.md` y da base a Pub 12 en adelante (serie Dev Suite) |
 
 ---
 

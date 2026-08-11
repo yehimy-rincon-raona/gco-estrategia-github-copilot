@@ -47,6 +47,7 @@ Generas contenido listo para publicar en MS Teams, briefs visuales para Claude D
 - `Conocimiento/` — Base de conocimiento e investigación del proyecto
 - `index.html` — Presentación principal para stakeholders de GCO
 
+
 ---
 
 ## ACTUALIZACIONES SEMANALES
