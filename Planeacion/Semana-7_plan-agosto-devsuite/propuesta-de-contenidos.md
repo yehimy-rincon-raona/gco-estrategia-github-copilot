@@ -27,4 +27,4 @@ Referencia previa: Jonatan decidió (15 jul) que las Skills se introducen más a
 
 ## Pendiente
 
-Insumo recibido: reunión con Esteban Serrano (Raona) del 3 de agosto — ver `resumen-de-reunion_03-08-26_raona-interno.md` en esta misma carpeta. Confirma que el eje de agosto es contenido sobre Skills, de lo básico a lo práctico. Falta el material que Esteban enviará (definición, ejemplos, contexto) para poder responder las preguntas de arriba y cerrar la propuesta antes de la reunión con GCO.
+Insumo recibido: reunión con Esteban Serrano (Raona) del 3 de agosto — ver `Reuniones/seguimientos-semanales/resumen-de-reunion_03-08-26_raona-interno.md`. Confirma que el eje de agosto es contenido sobre Skills, de lo básico a lo práctico. Falta el material que Esteban enviará (definición, ejemplos, contexto) para poder responder las preguntas de arriba y cerrar la propuesta antes de la reunión con GCO.

@@ -1,59 +1,63 @@
 # Base para reunión de seguimiento
 > Documento vivo — se actualiza antes de cada reunión de seguimiento, no se crea uno nuevo por fecha.
-> Fuentes: `Produccion/TABLERO.md` (producción) · `Planeacion/calendario-republicacion_teams-de-gco.md` (calendario) · `_historico/ESTADO.md` (estado general).
+> Fuentes: `Produccion/TABLERO.md` (producción) · `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_18-08-26.md` (última reunión) · `_historico/ESTADO.md` (estado general).
 
-**Última actualización:** 30 julio 2026
+**Última actualización:** 18 agosto 2026
 
 ---
 
-## 🔧 Corrección a tiempo: Pub 6 y Pub 7 traían fechas viejas (detectado y resuelto 30 jul)
+## 🗑️ Auto-publicación y retiro de posts en Teams GCO (18 ago)
 
-Al revisar el Teams de GCO, Pub 6 y Pub 7 aparecían programadas para **martes 4 ago** y **jueves 6 ago** — las fechas antiguas de los sufijos de carpeta, no las del calendario. Confirmado con Yehimy: **ninguna se había enviado todavía**. Quedan en sus fechas naturales del congelamiento, sin corrimiento adicional: **martes 25 y jueves 27 de agosto**. Detalle: `Planeacion/calendario-republicacion_teams-de-gco.md` (principio 9).
+Varios posts programados se publicaron solos pese al congelamiento (programación automática que siguió corriendo). En la reunión de seguimiento del 18 ago se decidió **retirarlos todos de Teams GCO** — evidencia guardada en `Produccion/elimina-post-teams-gco/`. Afecta a Pub 3, 4 (al menos una tarjeta), 5, 6, 7, 8 y su hilo "Memoria vs. Instrucciones". **La cadencia semanal (martes/jueves) se retoma la semana del 14-18 de septiembre**, republicando en el mismo orden de la cola — sin saltar ni repetir nada.
 
-## ✅ Videos 05 y 06 con número de Pub propio: Pub 10 y Pub 11 (30 jul, renumerado el mismo día)
+## ✅ Orden temático de la serie gco-dev-suite — validado (18 ago)
 
-Van *después* de Pub 6 y Pub 7 en la cola del canal Casos de Uso Reales — toman los siguientes slots: **martes 1 y jueves 3 de septiembre**, en paralelo con Pub 8 y Pub 9 (canal distinto, sin conflicto). **Renumeración:** Skills + instructions (Pub 10 original, sin producir) pasa a **Pub 12** — se prioriza el número más bajo para el contenido ya producido. Esto actualiza la regla de numeración en `CLAUDE.md`. Anglicismos corregidos en ambos guiones; posts redactados para el canal Casos de Uso Reales, listos en cola en el canal interno de Teams de Raona. Documentos: `Produccion/semana-6_27-31jul(pub-10-11)/pub-10_mar-01sep/canal-casos-de-uso_pub10-video05.md` y `Produccion/semana-6_27-31jul(pub-10-11)/pub-11_jue-03sep/canal-casos-de-uso_pub11-video06.md`.
+Jonatan y Óscar validaron el orden general→específico: Dev Suite (Pub 12) → Skills (Pub 13-15) → MCP (Pub 16-17) → Agentes (Pub 18-19). Novedad de esta reunión: **MCP y Agentes pasan de 1 a 2 publicaciones cada uno** (antes 1 sola). También se reconfirmaron los **5 conectores MCP** (Jira, Confluence, Elastic, DB2, navegador), resolviendo la discrepancia que arrastrábamos con el guion del Video 04.
 
-## ⏸️ Congelamiento de publicaciones (28 jul) — vigente
+## 📌 "Memoria vs. Instrucciones" no es una Pub numerada (18 ago, corrección)
 
-Desde el 28 jul se pausa todo lo que estaba programado desde ese martes en adelante (Pub 4, Memoria vs. Instrucciones, Pub 5, 6, 7, 8, 9). Se reprograma con un corrimiento de **+3 semanas exactas**, reanudando la **tercera semana de agosto** (martes 18 ago, confirmado 30 jul sin cambios). ⚠️ No se encontró en el proyecto un registro previo de esta directriz como pedido de Jonatan — `[Confirmar con Yehimy la fuente]` antes de comunicarlo a GCO. Detalle completo: `Planeacion/calendario-republicacion_teams-de-gco.md`.
+Es un ajuste/aclaración que siempre vivió como respuesta 4 del hilo de Pub 4 (`post-memoria-vs-instrucciones_mar-28jul.md`) — no una publicación propia. Se le había asignado por error un número (Pub 17, luego Pub 20) — queda revertido, igual que el Video 04 se publica como hilo de Pub 2 sin número propio. **La serie Dev Suite cierra en Pub 19.**
 
-## Calendario de publicaciones — estado real
+## 🔀 Intercambio Pub 14 ↔ Pub 15 (18 ago, decisión de Yehimy)
 
-| Fecha | Canal | Contenido | Estado |
-|---|---|---|---|
-| Mar 18 ago | Anuncios y Tips Ágiles | Pub 4 + "Memoria vs. Instrucciones" (1h después) | Programada (congelamiento) |
-| Jue 20 ago | Primeros Pasos | Pub 5 — jerarquía de referencias | Programada (congelamiento) |
-| Mar 25 ago | Casos de Uso Reales | Pub 6 — Caso #1: COBOL heredado + tríptico | Corregida (traía fecha vieja 4 ago) |
-| Jue 27 ago | Casos de Uso Reales | Pub 7 — Caso #2: bug fixing | Corregida (traía fecha vieja 6 ago) |
-| Mar 1 sep | Casos de Uso Reales | **Pub 10** — Video 05, "Caso de uso #3": código real de GCO en video | Post listo, falta video final y contenido gráfico |
-| Mar 1 sep | Anuncios y Tips Ágiles | Pub 8 — Fórmula del prompt, parte 1 | Programada (congelamiento) |
-| Jue 3 sep | Casos de Uso Reales | **Pub 11** — Video 06, "Caso de uso #4": debugging del frontend al COBOL | Post listo, falta video final y contenido gráfico |
-| Jue 3 sep | Anuncios y Tips Ágiles | Pub 9 — Fórmula del prompt, parte 2 | Programada (congelamiento) |
+Por sentido narrativo: primero el mapa de los 5 niveles de personalización (Pub 14, panorámico), después la anatomía real de una Skill (Pub 15, el zoom más profundo — 3 tarjetas ya producidas y corregidas). Antes era al revés.
 
-Pub 12 (Skills + instructions, renumerada de Pub 10) y AMA siguen bloqueadas sin fecha (ver bloqueantes).
+## ⚠️ Pendiente de aclarar — Copilot Memory vs. Instructions
 
-📨 **Pendiente clave para el martes:** el equipo de Nibaldo debe responder `Planeacion/pregunta-equipo-nibaldo_contenido-pub12-skills.md` a más tardar el **lunes 3 de agosto**, para tener temas listos en esta reunión.
+Óscar señaló que el post ya publicado ("Memoria vs. Instrucciones") no deja claro qué es Copilot Memory ni cómo se modifica, y mezcla ese concepto (individual) con Copilot Instructions (de equipo). Yehimy lo habla con Nibaldo a su regreso de vacaciones — posible repost anidado para profundizar, sin tocar el post original.
 
-## Videos en producción
+## Cronograma — cola de republicación (ver detalle completo en `Produccion/TABLERO.md`)
 
-| Video | Pendiente | Post de publicación (canal GCO) |
-|---|---|---|
-| 04 — Instalar/configurar MCP | Edición/postproducción (condensar a 2:30–3:00 + difuminar datos) · enlace de SharePoint | ⚠️ **Falta crear** — solo existe el post interno para el canal de Raona (`Seguimiento/post-interno_video-v04-instalar-mcp_08jul2026.md`), no el post para publicarlo en el canal de GCO |
-| 05 — Casos de uso reales (incidencias/GAN/producción) — Pub 10 | Corregir audio TTS ("prop" → "prompt") · difuminados delicados · revisión de coherencia (Nibaldo) · adjuntar video final al post · falta contenido gráfico (tarjetas) | ✅ **Post creado (30 jul)** — programado para el 1 sep |
-| 06 — Debugging (frontend a COBOL) — Pub 11 | Grabar audio de la intro (Sección 1) · revisar mismo riesgo de TTS · revisión de coherencia (Nibaldo) · adjuntar video final al post · falta contenido gráfico (tarjetas) | ✅ **Post creado (30 jul)** — programado para el 3 sep |
+| Orden | Pub | Fecha *(estimada)* | Tema | Estado |
+|---|-----|------|------|--------|
+| — | 1-2 | Ya publicadas | Bienvenida · Activa Copilot en VS (+Videos 01-03) | ✅ Se quedan, sin cambios |
+| 1 | 3 | Mar 15 sep | No tiene memoria permanente | 🗑️ Retirada, en cola |
+| 2 | 4 | Jue 17 sep | ¿Siempre usas el mismo modelo? + 4 respuestas (incluye el hilo "Memoria vs. Instrucciones") | 🗑️ Retirada, en cola — confirmar alcance con Yehimy |
+| 3 | 5 | Mar 22 sep | ¿Copias y pegas código en el chat? | 🗑️ Retirada, en cola |
+| 4 | 6 | Jue 24 sep | Caso de uso #1 — COBOL heredado | 🗑️ Retirada, en cola |
+| 5 | 7 | Mar 29 sep | Caso de uso #2 — Bug fixing | 🗑️ Retirada, en cola |
+| 6 | 8 | Jue 1 oct | Fórmula del prompt — parte 1 | 🗑️ Retirada, en cola |
+| 7 | 9 | Mar 6 oct | Fórmula del prompt — parte 2 | 🔵 Solo Teams Raona, nunca auto-publicada |
+| 8 | 10 | Jue 8 oct | Video 05 — Tres casos, un mismo copiloto | 🔵 Solo Teams Raona (prueba) |
+| 9 | 11 | Mar 13 oct | Video 06 — Dos errores de pantalla | 🔵 Solo Teams Raona (prueba) |
+| 10 | 12 | Jue 15 oct | gco-dev-suite: qué es y por qué existe | 🟡 Borrador cargado en Raona, sin publicar |
+| 11 | 13 | Mar 20 oct | ¿Qué es una Skill (y qué no es)? | 🔵 Producida, falta publicar de prueba |
 
-> Video 04 sigue sin post — falta escribirlo antes de poder programarlo, a diferencia de los Videos 05 y 06 (ya redactados) y 01-03 (ya publicados).
+**En producción, sin fecha:** Pub 14 (mapa de los 5 niveles — en producción ahora mismo), Pub 15 (anatomía, ✅ ya producida y corregida, espera a Pub 14), Pub 16-17 (MCP), Pub 18-19 (Agentes).
 
 ## Bloqueantes activos
 
 | Ítem | Responsable | Notas |
 |---|---|---|
+| Confirmar alcance real de lo auto-publicado en Pub 4 | Yehimy | ¿Post completo o solo la tarjeta "Optimización de tokens"? |
 | Fecha sesión AMA | Nibaldo + Guillermo | Sin fecha |
 | Microsoft Bookings | Yehimy | Sin configurar — bloquea Reservas 1:1 |
+| Confirmar si `dotnet-review`/`cobol-analyzer` son parte de las 32 skills reales | Nibaldo | Bloquea el cierre final de Pub 15 |
+| Confirmar si "gco-dev-suite" es la misma "Copilot Dev Suite" del Video 04 | Nibaldo | Sin respuesta todavía |
+| Material de video (instalación + 1 ejemplo por componente) | Equipo de Nibaldo | Evaluar al regreso de vacaciones |
 
 ---
 
 ## Cómo mantener este documento
 
-Antes de cada reunión de seguimiento: releer `Produccion/TABLERO.md` y `Planeacion/calendario-republicacion_teams-de-gco.md`, actualizar las tres secciones de arriba con lo que haya cambiado, y refrescar la fecha de "Última actualización". No crear un archivo nuevo por reunión — este es el único punto de entrada para preparar la reunión.
+Antes de cada reunión de seguimiento: releer `Produccion/TABLERO.md` (cronograma maestro) y el resumen de la última reunión en `Reuniones/seguimientos-semanales/`, actualizar las secciones de arriba con lo que haya cambiado, y refrescar la fecha de "Última actualización". No crear un archivo nuevo por reunión — este es el único punto de entrada para preparar la reunión.

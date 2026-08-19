@@ -1,7 +1,8 @@
 # Propuesta — Plan de agosto: serie Skills + flujo de booking
 > Para presentar en la reunión con GCO (a partir de la reunión con Esteban Serrano, 3 ago 2026)
-> Fuentes: `resumen-de-reunion_03-08-26_raona-interno.md` · `material-base_skills-que-son-y-cuando-usarlas.md` · `Produccion/TABLERO.md` · `Planeacion/calendario-republicacion_teams-de-gco.md`
+> Fuentes: `Reuniones/seguimientos-semanales/resumen-de-reunion_03-08-26_raona-interno.md` · `Conocimiento/temas_mes-agosto/material-base_skills-que-son-y-cuando-usarlas.md` · `Produccion/TABLERO.md` · `Planeacion/calendario-republicacion_teams-de-gco.md`
 > Estado: **propuesta, pendiente de validar con Nibaldo/Jonatan** antes de fijarla en el calendario oficial.
+> ⚠️ **La sección de contenidos (serie Skills, Pub 13-15) está superada por `plan-agosto_devsuite-skills-mcp-agentes.md`** — usar ese documento como referencia vigente de números y temas. **El flujo de booking (sección 7 en adelante) sigue vigente y no se ha tocado.**
 
 ---
 

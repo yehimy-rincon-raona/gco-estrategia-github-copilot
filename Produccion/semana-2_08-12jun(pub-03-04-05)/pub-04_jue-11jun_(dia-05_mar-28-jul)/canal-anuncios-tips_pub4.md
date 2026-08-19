@@ -114,6 +114,8 @@ Tres reglas que hacen diferencia: abre un hilo nuevo cuando llevas muchas pregun
 > ✅ **Decisión 15 jul (republicación tenant GCO):** este contenido ya NO va como respuesta del hilo — se publica como **publicación independiente** el **martes 28 de julio, programada una hora después del post principal**. Su archivo operativo (texto + asunto `Escríbelo una vez, aplícalo siempre` + tarjeta `5-S2`) está en esta misma carpeta:
 > **`post-memoria-vs-instrucciones_mar-28jul.md`**
 > Así el día 28 solo hay que replicar manualmente el hilo (post principal + respuestas 1–3) y este post sale solo.
+>
+> **Ampliación (18 ago, feedback de Óscar en la reunión de seguimiento):** este post no dejaba claro qué es Copilot Memory ni cómo se distingue de Instructions en la práctica. Se profundiza con el hilo **`4-a`** (`canal-anuncios-tips_pub4-a.md`, misma carpeta) — que trabaja en pareja con el hilo `14-a` (respuesta de Pub 14, el mapa de personalización): dos ángulos distintos del mismo tema, para reforzar la aclaración desde dos publicaciones.
 
 ---
 

@@ -3,49 +3,49 @@
 > **Punto de entrada de contexto. Léeme PRIMERO.** Resumen barato en tokens del estado actual.
 > Detalle de producción: `Produccion/TABLERO.md` · Reglas permanentes: `CLAUDE.md` · Detalle de sesiones: esta carpeta.
 
-**Actualizado:** Plan de agosto reescrito con la primera respuesta real de Nibaldo (nombre "Dev Suite" confirmado) · presentación lista para validar con GCO el 11 ago · 10 agosto 2026
+**Actualizado:** Serie Dev Suite ampliada de Pub 12-16 a Pub 12-19 (MCP y Agentes pasan a 2 publicaciones cada uno) · Intercambio de contenido Pub 14↔15 · Posts auto-publicados retirados de Teams GCO, cadencia se retoma la semana 14-18 sep · 18 agosto 2026
 
 ## En una frase
 
-🧭 **10 ago — Llegó la primera respuesta real sobre la Dev Suite y se reescribió todo el plan de agosto.** `Produccion/semana-7_03-agos/información-equipo-raona-gco-devsuite.md` confirma nombre y arquitectura (3 agentes, 32 skills, 5 MCPs). Con eso se armó `Produccion/semana-7_03-agos/plan-agosto_devsuite-skills-mcp-agentes.md`: **Pub 12–16**, orden DevSuit → Skills → MCP → Agentes, fechas reales 11/13/20/25/27 de agosto (los slots originales del 4 y 6 ago ya habían pasado sin publicarse). Presentación HTML reconstruida en `Presentaciones/presentacion-propuesta-agosto-devsuite_10ago2026.html` — reescrita para ser **impersonal e institucional** (sin narrativa de reuniones internas), lista para la reunión de validación con GCO del **11 de agosto**.
+🧭 **18 ago — Reunión de seguimiento con Jonatan y Óscar:** se valida el orden Dev Suite → Skills → MCP → Agentes, y **MCP y Agentes pasan de 1 a 2 publicaciones cada uno** — la serie crece de Pub 12-16 a **Pub 12-19** (cierre de la serie, sin Pub 20).
 
-📌 **10 ago — Pub 17 creada.** "Memoria vs. Instrucciones" salió del 18 ago (esa fecha ya tiene a Pub 4 en el canal) y se reprogramó con número propio — nunca lo había tenido — al **martes 8 de septiembre**. Registrado en el calendario, el tablero y la presentación.
+📌 **18 ago — Corrección: "Memoria vs. Instrucciones" no es una Pub numerada.** Es un ajuste/aclaración que siempre vivió como hilo de Pub 4, no una publicación propia. Se le había asignado por error un número (Pub 17, luego Pub 20) — queda revertido, igual que el Video 04 se publica como hilo de Pub 2 sin número propio.
 
-✂️ **10 ago — Dos puntos retirados de la presentación a pedido de Yehimy:** si "Dev Suite" es la misma "Copilot Dev Suite" del Video 04, y la discrepancia de MCPs (5 vs. 4). La sección "Puntos por confirmar" quedó en 5 (antes 7). El espacio de "Siguientes pasos" que ocupaban pasó a **Reservas 1:1**, con el contenido real acordado en la reunión del 4 ago (proceso manual por Outlook, sin herramienta automatizada, asignación de Nibaldo y Raúl).
+🔀 **18 ago — Intercambio Pub 14 ↔ Pub 15** (decisión de Yehimy, por sentido narrativo): Pub 14 pasa a ser "el mapa de los 5 niveles de personalización" (panorámico, va primero) y Pub 15 pasa a ser "la anatomía real de una Skill" (zoom, va después) — sigue el patrón general-antes-que-específico ya usado en Pub 12. Las 3 tarjetas de anatomía, ya producidas y corregidas, se movieron y renombraron de Pub 14 a Pub 15.
 
-📝 **10 ago — Guion de apoyo creado** para Yehimy: `Produccion/semana-7_03-agos/guion-apoyo_cifras-presentacion-devsuite.md`, organizado en el mismo orden que la presentación, todo redactado para poder leerse en voz alta frente a GCO.
+🗑️ **18 ago — Retiro de posts auto-publicados en Teams GCO:** varios posts se publicaron solos pese al congelamiento (Pub 3, 4, 5, 6, 7, 8, 20). Se retiraron todos (evidencia en `Produccion/elimina-post-teams-gco/`). **La cadencia semanal se retoma la semana del 14-18 de septiembre**, republicando en el mismo orden de la cola.
+
+📋 **18 ago — `Produccion/TABLERO.md` reestructurado** por quedar "muy denso y confuso": ahora tiene un resumen de 4 líneas y un cronograma maestro simple arriba, con todo el historial denso relegado a una sección de archivo más abajo.
 
 ## Decisiones vigentes
 
-- **Orden de temas de agosto:** DevSuit → Skills → MCP → Agentes (decisión de Nibaldo, reunión 4 ago) — el cronograma real se construyó tras recibir la primera respuesta del equipo (6-10 ago).
-- **La presentación para GCO no cuenta el proceso interno** — solo el plan a validar. Ningún titular ni sección debe narrar reuniones, fechas de respuestas internas, ni atribuir el orden a una persona.
-- **"Dev Suite" es el nombre que se usa en toda la presentación y el plan** (el material recibido lo confirma así) — pendiente de resolver internamente si es la misma herramienta que "Copilot Dev Suite" del Video 04, pero **no se le pregunta a GCO** en esta ronda.
-- **Reservas 1:1:** proceso manual por Outlook (no Microsoft Bookings ni herramienta automatizada), asignación de Nibaldo y Raúl, respuesta máx. 1 semana — acordado en la reunión del 4 ago con el equipo completo (Yehimy, Nibaldo, Jonatan, Óscar). Falta responsable sustituto de Raúl en vacaciones (pendiente que Nibaldo pregunte a Francesc).
-- **Renumeración:** Pub 12 (antes reservada para "Skills + instructions", sin producir) se reasigna a "Dev Suite — visión general". Pub 17 es nueva, para "Memoria vs. Instrucciones". Mismo criterio de la excepción documentada el 30 jul en `CLAUDE.md`.
-- Sigue vigente todo lo de sesiones anteriores no mencionado aquí: numeración global de Pub, congelamiento desde el 28 jul (reanudado 18 ago), sin anglicismos, español latinoamericano, "GitHub Copilot" completo siempre.
+- **Serie Dev Suite = Pub 12-19** (antes 12-16): Dev Suite (12) → Skills (13-15) → MCP (16-17) → Agentes (18-19). Cierra en Pub 19, sin Pub 20.
+- **"Memoria vs. Instrucciones" no es una Pub** — es un ajuste que vive como hilo de Pub 4 (republica junto con ella), igual que Video 04 es hilo de Pub 2.
+- **5 conectores MCP confirmados**: Jira, Confluence, Elastic, DB2, navegador — resuelve la discrepancia que arrastraba el guion del Video 04.
+- **Pub 14 = el mapa (panorámico), Pub 15 = la anatomía (zoom)** — no al revés.
+- **Cadencia semanal de Teams GCO se retoma la semana del 14-18 sep 2026**, republicando en el mismo orden de la cola de `Produccion/TABLERO.md`, sin saltar ni repetir nada.
+- Sigue vigente todo lo de sesiones anteriores no mencionado aquí: numeración global de Pub (nunca se reutiliza, excepción de renumeración documentada), sin anglicismos, español latinoamericano, "GitHub Copilot" completo siempre, no inventar información.
 
 ## En qué punto estamos
 
-- ✅ Plan de contenidos Pub 12–16 armado con material real, sin inventar nada.
-- ✅ Presentación lista, revisada varias veces con Yehimy (impersonal, sin narrativa interna, referencias a archivos fuente comentadas en el código).
-- ✅ Guion de apoyo listo para la reunión.
-- ✅ Calendario (`Planeacion/calendario-republicacion_teams-de-gco.md`) y tablero (`Produccion/TABLERO.md`) actualizados con Pub 12 y Pub 17.
-- ⏳ **Pendiente clave: reunión con GCO el 11 de agosto** — validar orden, fechas de Pub 12–16 y Pub 17, y los 5 puntos de gobernanza sin definir (proceso para proponer Skill/MCP/agente nuevo, qué pasa con un MCP sin aprobación, si hay alguna Skill propia mostrable).
-- 🔄 Si se aprueba: producir de inmediato la pieza gráfica de Pub 12.
-- 📨 Sigue sin resolver el proceso de gobernanza completo de MCP/Skills/Agentes — el material recibido no lo cubre.
+- ✅ Pub 12 y 13 completos (post + brief). Pub 15 (anatomía) tiene sus 3 piezas gráficas ya producidas y corregidas — espera a que Pub 14 esté producida para publicarse (numeración secuencial).
+- 🔄 Pub 14 (el mapa de los 5 niveles) en producción ahora mismo por Yehimy.
+- 🔄 Pub 16-19 (MCP y Agentes): briefs listos, piezas gráficas sin producir.
+- 🗑️ Pub 3, 4 (con su hilo "Memoria vs. Instrucciones"), 5, 6, 7 y 8 retirados de Teams GCO (se habían auto-publicado); vuelven a la cola para la semana del 14-18 sep.
+- ⏳ Pendiente: confirmar con Nibaldo si `dotnet-review`/`cobol-analyzer` son parte real de las 32 skills (bloquea cierre de Pub 15); aclarar con Nibaldo la confusión Copilot Memory vs. Instructions (hilo de Pub 4).
 
 ## Ojo / no repetir
 
-- No mostrar a GCO nombres de archivos internos ni narrativa de "cómo llegamos a este plan" — ya se corrigió una vez en esta misma presentación, no reintroducirlo en piezas futuras.
-- El "32" de skills es solo cifra de impacto hoy — el desglose real por 9 áreas existe pero no está en ningún post todavía. Decisión pendiente: ¿va en Pub 14 o en un post propio? (ver guion de apoyo).
-- No usar "18 sesiones" · siempre "GitHub Copilot" · español latinoamericano sin "vosotros" · sin emojis salvo petición · no inventar: marcar `[No hay información — confirmar con Yehimy]`.
-- El nombre correcto es **"Dev Suite"** en esta ronda de materiales (el equipo lo confirmó así) — ojo, en sesiones anteriores se había fijado "DevSuit" (una palabra) citando a Nibaldo por Teams; puede haber que reconciliar ambas grafías más adelante.
+- Pub 15 no puede publicarse antes que Pub 14 aunque esté lista antes — la numeración es secuencial estricta.
+- No usar "18 sesiones" · siempre "GitHub Copilot" completo · español latinoamericano sin "vosotros" · sin emojis salvo petición · no inventar: marcar `[No hay información — confirmar con Yehimy]`.
+- TABLERO.md ahora tiene un resumen simple arriba y el historial denso abajo — mantener este patrón, no revertir a una estructura monolítica.
 
 ## Para profundizar
 
-- Última sesión: `_historico/sesion_propuesta-devsuite-presentacion-gco_10ago2026.md`
-- Plan de contenidos: `Produccion/semana-7_03-agos/plan-agosto_devsuite-skills-mcp-agentes.md`
-- Presentación: `Presentaciones/presentacion-propuesta-agosto-devsuite_10ago2026.html`
-- Guion de apoyo: `Produccion/semana-7_03-agos/guion-apoyo_cifras-presentacion-devsuite.md`
-- Fuente de la Dev Suite: `Produccion/semana-7_03-agos/información-equipo-raona-gco-devsuite.md`
-- Calendario operativo: `Planeacion/calendario-republicacion_teams-de-gco.md`
+- Última sesión: `_historico/sesion_reunion-18ago-reorganizacion-pub14-19-y-retiro-posts_18ago2026.md`
+- Tablero de producción: `Produccion/TABLERO.md`
+- Plan vigente: `Planeacion/Semana-7_plan-agosto-devsuite/plan-agosto_devsuite-skills-mcp-agentes.md`
+- Documento vivo para reuniones: `Seguimiento/base-reunion-seguimiento.md`
+- Contenidos: `Produccion/semana-8_fechas-pendiente(pub-14-15)/` (Pub 14-15) · `Produccion/semana-9_fechas-pendiente(pub-16-17)/` (Pub 16-17) · `Produccion/semana-10_fechas-pendiente(pub-18-19)/` (Pub 18-19)
+- Evidencia de posts retirados: `Produccion/elimina-post-teams-gco/`
+- Acta de la reunión: `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_18-08-26.md`

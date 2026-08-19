@@ -2,6 +2,7 @@
 > Creado: 14 julio 2026 · Responsable: Yehimy
 > Fuente de contenidos: los documentos de cada publicación en `Produccion/` — los bloques "Post listo para copiar en Teams" son idénticos a lo ya publicado (capturas en `Produccion/imagenes_teams/`), con los anglicismos corregidos y el nombre completo "GitHub Copilot".
 > Método: **copiar y pegar desde los documentos** al Teams del tenant de GCO. No redactar de memoria.
+> ⚠️ **Superado por los hechos (18 ago):** varios de los posts programados en este calendario se auto-publicaron pese al congelamiento y fueron retirados de Teams GCO el 18 ago — la cadencia semanal se retoma la semana del 14-18 de septiembre, en el orden de la cola. Los principios y el criterio de este documento siguen siendo válidos como referencia metodológica, pero **para fechas y estado vigentes, usar el cronograma maestro de `Produccion/TABLERO.md`**.
 
 ---
 
@@ -99,13 +100,13 @@ Cada post se copia del bloque "Post listo para copiar en Teams" de su documento.
 | Jueves 3 sep | Casos de Uso Reales | **Pub 11** — Video 06, "Caso de uso #4: debugging del frontend al COBOL" (botón de opción + combo) — post + video adjunto (enlace pendiente de edición) | `Produccion/semana-6_27-31jul(pub-10-11)/pub-11_jue-03sep/canal-casos-de-uso_pub11-video06.md` |
 | Jueves 3 sep | Anuncios y Tips Ágiles | Pub 9 — "La fórmula del prompt — parte 2" + díptico · respuesta manual | `Produccion/semana-5_29jun-03jul(pub-08-09)/pub-09_jue-02jul_(dia-10_jue-13-ago)/canal-anuncios-tips_pub9.md` |
 
-## Semana 9 — martes 8 septiembre (Pub 17 — "Memoria vs. Instrucciones", reprogramada)
+## Semana 9 — "Memoria vs. Instrucciones" (hilo de Pub 4) — 🗑️ retirada de Teams GCO el 18 ago
 
 | Día | Canal | Contenido | Documento fuente |
 |-----|-------|-----------|------------------|
-| Martes 8 sep | Anuncios y Tips Ágiles | **Pub 17** — "Memoria vs. Instrucciones", asunto `Escríbelo una vez, aplícalo siempre` — post independiente, no forma parte de la serie Dev Suite (10-11 ago). Retoma el post que salió del 18 ago para no duplicar publicación con Pub 4 ese día | `Produccion/semana-2_08-12jun(pub-03-04-05)/pub-04_jue-11jun_(dia-05_mar-28-jul)/post-memoria-vs-instrucciones_mar-28jul.md` |
+| ~~Martes 8 sep~~ | Anuncios y Tips Ágiles | "Memoria vs. Instrucciones", asunto `Escríbelo una vez, aplícalo siempre` — **hilo de Pub 4**, no una publicación independiente. Se auto-publicó pese al congelamiento ("no se debió haber hecho y se hizo") y fue retirada el 18 ago — republica junto con Pub 4, en la cola de `Produccion/TABLERO.md` | `Produccion/semana-2_08-12jun(pub-03-04-05)/pub-04_jue-11jun_(dia-05_mar-28-jul)/post-memoria-vs-instrucciones_mar-28jul.md` |
 
-> **Renumeración (10-11 ago, decisión de Yehimy):** "Memoria vs. Instrucciones" nunca tuvo número de Pub propio — al reprogramarse en un slot fijo, toma el siguiente número disponible tras la serie Dev Suite (Pub 12–16): **Pub 17**. Sujeto a validación en la reunión del 11 ago.
+> **Corrección (18 ago, aclaración de Yehimy):** "Memoria vs. Instrucciones" nunca fue una publicación propia — es un ajuste/aclaración que vive como respuesta 4 del hilo de Pub 4. Entre el 10-11 ago y el 18 ago se le había asignado por error un número propio (Pub 17, luego Pub 20 al chocar con el nuevo Pub 17 de MCP) — eso queda revertido. No consume número de la serie ni de la cola: republica junto con Pub 4, igual que el Video 04 se publica como respuesta a Pub 2. La serie Dev Suite cierra en **Pub 19**.
 
 > ⚠️ Dos canales distintos comparten fecha el 1 y 3 de sep (Casos de Uso Reales + Anuncios y Tips Ágiles) — no hay conflicto porque son publicaciones independientes en canales separados de Teams.
 > **Importante para programar en Teams:** antes de fijar la fecha de entrega de cualquier post, verificar contra este calendario — no contra el sufijo del nombre de la carpeta (`_(dia-NN_dow-DD-mes)`), que quedó desactualizado tras el congelamiento del 28 jul (ver nota más abajo).
@@ -120,10 +121,9 @@ Cada post se copia del bloque "Post listo para copiar en Teams" de su documento.
 |-----------|------------|
 | Sesión AMA (Foro de Ayuda) | Falta fecha — Nibaldo + Guillermo |
 | Enlace de reserva en Reservas 1:1 | Falta configurar Microsoft Bookings |
-| Pub 12 — Skills + instructions (Primeros Pasos) | Desplazada — input técnico de Nibaldo pendiente (renumerada de Pub 10 a Pub 12 el 30 jul, ver principio 8). Nota: el número Pub 12 fue reasignado a la serie Dev Suite el 10-11 ago — ver `Produccion/semana-7_03-agos/plan-agosto_devsuite-skills-mcp-agentes.md` |
+| Pub 12 — Skills + instructions (Primeros Pasos) | Desplazada — input técnico de Nibaldo pendiente (renumerada de Pub 10 a Pub 12 el 30 jul, ver principio 8). Nota: el número Pub 12 fue reasignado a la serie Dev Suite el 10-11 ago — ver `Planeacion/Semana-7_plan-agosto-devsuite/plan-agosto_devsuite-skills-mcp-agentes.md` |
 | Video 04 | Publicación en el Teams de GCO pendiente de edición/postproducción y de redactar el post — ver `Produccion/TABLERO.md` sección Vídeos. Los Videos 01–03 salieron de esta lista: van el jueves 16 jul con la Pub 2 (decisión 15 jul). Los Videos 05 (Pub 10) y 06 (Pub 11) ya tienen fecha: ver Semana 8 (1 y 3 sep) |
-| ~~"Memoria vs. Instrucciones" (post sin numerar)~~ | Resuelto (10-11 ago): reprogramada como **Pub 17**, martes 8 sep — ver Semana 9 |
-| "Memoria vs. Instrucciones" (post sin numerar) | Congelada el 10 ago (decisión de Yehimy) — salió del martes 18 ago para no duplicar publicación con Pub 4 ese día. Se reprograma junto con otros posts, fecha por decidir |
+| "Memoria vs. Instrucciones" (hilo de Pub 4, no una Pub propia) | 🗑️ Se auto-publicó pese al congelamiento y fue retirada el 18 ago — republica junto con Pub 4, ver `Produccion/TABLERO.md`. Corrección 18 ago: había tomado por error un número propio (Pub 17, luego Pub 20) — revertido, ver Semana 9 |
 
 ---
 

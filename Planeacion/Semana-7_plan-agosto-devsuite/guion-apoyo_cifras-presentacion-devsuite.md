@@ -2,6 +2,7 @@
 > Uso personal de Yehimy · notas de ampliación en el mismo orden que `presentacion-propuesta-agosto-devsuite_10ago2026.html`, para leer sección por sección durante la reunión
 > Fuente de todos los datos: `información-equipo-raona-gco-devsuite.md` (salvo donde se indica otra fuente)
 > Todo lo escrito aquí es seguro de decir frente a GCO — no incluye narrativa interna de cómo se llegó a esto, solo el contenido y el criterio.
+> ⚠️ **Desactualizado (18 ago):** documento de apoyo para la reunión del 11 ago, ya pasada. La numeración y fechas que menciona (ej. "Pub 14, Skills 2/2, jue 20 ago") no reflejan la reorganización del 18 ago — para el estado vigente, consultar `Produccion/TABLERO.md`.
 
 ---
 

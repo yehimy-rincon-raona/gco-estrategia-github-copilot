@@ -1,8 +1,11 @@
 # Propuesta — Plan de agosto: gco-dev-suite (DevSuit → Skills → MCP → Agentes)
 > Para presentar en la reunión con GCO del martes 11 de agosto de 2026
 > Reemplaza el enfoque de `plan-agosto_propuesta-contenidos-skills-y-booking.md` (serie "solo Skills", 3-4 ago) — el flujo de booking de ese documento sigue vigente y no se toca aquí.
-> Fuentes: `Reuniones/seguimientos-semanales/transcripcion_reunion-semanal-GCO-y-raona-04-08-26.md` · `Planeacion/pregunta-equipo-nibaldo_contenido-suite-skills-mcp-agentes.md` · `información-equipo-raona-gco-devsuite.md` (primera respuesta del equipo de Nibaldo) · `material-base_skills-que-son-y-cuando-usarlas.md` · `Planeacion/calendario-republicacion_teams-de-gco.md`
+> Fuentes: `Reuniones/seguimientos-semanales/transcripcion_reunion-semanal-GCO-y-raona-04-08-26.md` · `pregunta-equipo-nibaldo_contenido-suite-skills-mcp-agentes.md` (en esta misma carpeta) · `Conocimiento/temas_mes-agosto/información-equipo-raona-gco-devsuite.md` (primera respuesta del equipo de Nibaldo) · `Conocimiento/temas_mes-agosto/material-base_skills-que-son-y-cuando-usarlas.md` · `Planeacion/calendario-republicacion_teams-de-gco.md`
 > Estado: **propuesta, pendiente de validar con Nibaldo/Guillermo en la reunión del 11 ago** antes de fijarla en el calendario oficial.
+
+> ## ⚠️ Actualización 18 de agosto — la serie crece de 5 a 8 publicaciones
+> La reunión de seguimiento del 18 ago (Jonatan + Óscar) validó el orden temático de este documento (DevSuite → Skills → MCP → Agentes) pero introdujo un cambio de alcance: **MCP y Agentes pasan de 1 publicación cada uno a 2** (martes y jueves), igual que ya tenía Skills. Además, Pub 14 y 15 se reorganizan para quedar en la misma semana de producción, ambas sobre Skills — Pub 15 cambia de tema (ya no es MCP). El bloqueante de conteo de MCP (sección 5, pregunta 8) **queda resuelto: 5 conectores confirmados**. Tabla y contenidos de las secciones 3-4 actualizados abajo. Detalle completo: `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_18-08-26.md` y `Produccion/TABLERO.md` (nota del 18 ago).
 
 ---
 
@@ -43,15 +46,22 @@ Canal: **Anuncios y Tips Ágiles** (mismo canal que ya alojó el primer contenid
 
 | # | Fecha | Tema (orden de Nibaldo) | Título propuesto | Basado en |
 |---|-------|---------|-------------------|-----------|
-| **Pub 12** | **Mar 11 ago** | 1. DevSuit | "gco-dev-suite: la caja de herramientas que le falta a tu Copilot en GCO" | `información-equipo-raona-gco-devsuite.md` — completo |
-| **Pub 13** | **Jue 13 ago** | 2. Skills (1/2) | "¿Qué es una Skill (y qué no es)?" | `material-base_skills-que-son-y-cuando-usarlas.md` — sección 1 |
-| **Pub 14** | **Jue 20 ago** *(paralelo Pub 5)* | 2. Skills (2/2) | "La carpeta que le enseña a GitHub Copilot cómo lo hacen aquí" | `material-base_skills...md` — secciones 1.2–1.4, 2.1, 7-8 |
-| **Pub 15** | **Mar 25 ago** *(paralelo Pub 6)* | 3. MCP | "Las llaves de los sistemas: los 5 conectores de la gco-dev-suite" | `información-equipo-raona-gco-devsuite.md` — tabla de piezas + Ejemplo 1 |
-| **Pub 16** | **Jue 27 ago** *(paralelo Pub 7)* | 4. Agentes | "Los 3 agentes que deciden, ejecutan y validan por ti" | `información-equipo-raona-gco-devsuite.md` — "Los tres agentes" + Ejemplo 2 |
+| **Pub 12** | **Mar 11 ago** | 1. DevSuit | "gco-dev-suite: la caja de herramientas que le falta a tu Copilot en GCO" | `Conocimiento/temas_mes-agosto/información-equipo-raona-gco-devsuite.md` — completo |
+| **Pub 13** | **Jue 13 ago** | 2. Skills (1/3) | "¿Qué es una Skill (y qué no es)?" | `Conocimiento/temas_mes-agosto/material-base_skills-que-son-y-cuando-usarlas.md` — sección 1 |
+| **Pub 14** | Martes, fecha pendiente | 2. Skills (2/3) | "¿Skill, instruction, prompt file, agente o MCP? El mapa de los 5 niveles" | `Conocimiento/temas_mes-agosto/material-base_skills...md` — secciones 3 y 7 |
+| **Pub 15** | Jueves, misma semana que Pub 14 | 2. Skills (3/3) | "La carpeta que le enseña a GitHub Copilot cómo lo hacen aquí" | `Conocimiento/temas_mes-agosto/material-base_skills...md` — secciones 1.2–1.4, 2.1, 7-8 |
+| **Pub 16** | Martes, fecha pendiente | 3. MCP (1/2) | "Las llaves de los sistemas: los 5 conectores de la gco-dev-suite" | `Conocimiento/temas_mes-agosto/información-equipo-raona-gco-devsuite.md` — tabla de piezas |
+| **Pub 17** | Jueves, misma semana que Pub 16 | 3. MCP (2/2) | "De cinco pestañas a una frase: MCP en acción" | `Conocimiento/temas_mes-agosto/información-equipo-raona-gco-devsuite.md` — Ejemplo 1 |
+| **Pub 18** | Martes, fecha pendiente | 4. Agentes (1/2) | "Los 3 agentes que deciden, ejecutan y validan por ti" | `Conocimiento/temas_mes-agosto/información-equipo-raona-gco-devsuite.md` — "Los tres agentes" |
+| **Pub 19** | Jueves, misma semana que Pub 18 | 4. Agentes (2/2) | "Añadir un campo: los 3 agentes en acción" | `Conocimiento/temas_mes-agosto/información-equipo-raona-gco-devsuite.md` — Ejemplo 2 |
 
-**Renumeración:** esta serie toma **Pub 12–16** — el mismo slot que ya estaba reservado para "Skills + instructions" (Pub 12, sin producir). Sigue el mismo criterio que la excepción documentada en `CLAUDE.md` el 30 jul: se prioriza el contenido que ya tiene material real. **Sujeto a validación con Nibaldo/Guillermo mañana.**
+**Renumeración (18 ago):** la serie crece de **Pub 12–16** a **Pub 12–19** — MCP y Agentes pasan de 1 a 2 publicaciones cada uno, por acuerdo en la reunión de seguimiento del 18 ago. Pub 14/15 cambian de tema (ya no es MCP, que se corrió a Pub 16-17). Todas las fechas quedan pendientes de que el equipo de Nibaldo reactive publicaciones (retoma prevista 14 sep) — ver `Produccion/TABLERO.md`.
 
-**Lo que queda para una segunda tanda (sin fecha todavía):** el resto del material de Skills (los 5 niveles de personalización, cómo escribir una skill, 8 casos de uso, errores y riesgos — secciones 3, 6, 9-11 del material base) más el proceso de gobernanza de MCP y de propuesta de agentes, en cuanto lleguen esas respuestas. No hay slots libres para ellas hasta que se liberen Anuncios y Tips el 1 o 3 de sep, o se abra un nuevo hueco — no se fijan fechas todavía.
+**Corrección — "Memoria vs. Instrucciones" no es una Pub (18 ago, aclaración de Yehimy):** este contenido nunca fue una publicación propia — es un ajuste/aclaración que vive como hilo de **Pub 4** (`post-memoria-vs-instrucciones_mar-28jul.md`), igual que el Video 04 es un hilo de Pub 2. Se le había asignado por error un número propio (Pub 17, luego Pub 20) — eso se revierte. La serie Dev Suite cierra en **Pub 19**, sin Pub 20.
+
+**Intercambio Pub 14 ↔ Pub 15 (18 ago, segunda actualización):** por sentido narrativo, "el mapa de los 5 niveles" pasa a Pub 14 y la anatomía (ya producida) pasa a Pub 15 — primero se ubica la Skill frente a los demás niveles, y solo después se entra en su anatomía, el punto más específico del zoom.
+
+**Lo que queda para una segunda tanda (sin fecha todavía):** el resto del material de Skills (cómo escribir una skill, 8 casos de uso, errores y riesgos — secciones 6, 9-11 del material base) más el proceso de gobernanza de MCP y de propuesta de agentes, en cuanto lleguen esas respuestas. No hay slots libres para ellas hasta que se libere un nuevo hueco tras Pub 19 — no se fijan fechas todavía.
 
 ---
 
@@ -65,19 +75,31 @@ La idea en una frase: es un paquete que se instala sobre GitHub Copilot y le da 
 Definición como paquete de conocimiento que enseña a GitHub Copilot a hacer una tarea a la manera del equipo. Qué NO es: ni un prompt guardado, ni documentación pasiva, ni una integración externa.
 **Pieza gráfica:** infografía comparativa (skill vs. prompt guardado vs. documentación pasiva).
 
-### Pub 14 — Anatomía y cuándo usar una Skill (20 ago)
-La carpeta, el `SKILL.md`, la carga progresiva — con los dos ejemplos reales de la plantilla `copilot-template-gco` (`dotnet-review`, `cobol-analyzer`). Cuándo sí y cuándo no usar una skill.
-**Pieza gráfica:** tarjeta con la estructura de carpeta + fragmento real del `SKILL.md`.
+### Pub 14 — El mapa de los 5 niveles de personalización (martes, fecha pendiente)
+Dónde encaja una Skill frente a Instructions, Prompt files, Agentes y MCP — una pregunta de decisión por nivel. Conecta directamente con la duda de Copilot Memory vs. Instructions que planteó Óscar en la reunión del 18 ago.
+**Pieza gráfica:** infografía comparativa de los 5 niveles + regla rápida de decisión.
+
+### Pub 15 — Anatomía y cuándo usar una Skill (jueves, misma semana que Pub 14)
+La carpeta, el `SKILL.md`, la carga progresiva — con los dos ejemplos reales de la plantilla `copilot-template-gco` (`dotnet-review`, `cobol-analyzer`). Cuándo sí y cuándo no usar una skill. Cierra la serie de Skills — el zoom más profundo.
+**Pieza gráfica:** 3 tarjetas — estructura de carpeta, metadata (`name`/`description`), y rendimiento/carga progresiva. ✅ Producidas y corregidas (18 ago).
 ⚠️ `[Confirmar con Nibaldo]`: si estas dos skills de ejemplo son parte de las 32 que ya trae la `gco-dev-suite`, o son un ejemplo distinto de la plantilla base.
 
-### Pub 15 — Los 5 conectores MCP (25 ago)
-Qué son los MCP en la suite: Jira, Confluence, Elastic, DB2 y navegador. Apoyo en el Ejemplo 1 del documento (investigar un fallo: tres búsquedas en paralelo, un informe consolidado). Principio de diseño: "la base de datos manda" — nunca se supone un dato, siempre se consulta en vivo.
+### Pub 16 — Los 5 conectores MCP (martes, fecha pendiente)
+Qué son los MCP en la suite: Jira, Confluence, Elastic, DB2 y navegador. El problema que resuelven: la información repartida en 5 sistemas distintos. Principio de diseño: "la base de datos manda" — nunca se supone un dato, siempre se consulta en vivo.
 **Pieza gráfica:** infografía de los 5 conectores con la analogía de "las llaves de cada sistema".
-⚠️ No se menciona en este post el proceso de aprobación de un MCP nuevo ni qué pasa si alguien instala uno sin autorización — sigue sin respuesta (ver sección 5).
+✅ Conteo de MCP confirmado en la reunión del 18 ago: 5 conectores vigentes (ver sección 5).
 
-### Pub 16 — Los 3 agentes (27 ago)
-Coordinador (puerta de entrada única), orquestador de cambios (reconoce 18 tipos de cambio catalogados, pone las tareas en orden), validador (12 reglas de coherencia, detecta pero no corrige). Apoyo en el Ejemplo 2 (añadir un campo: analiza, propone el plan, espera aprobación, ejecuta, resume).
+### Pub 17 — MCP en acción (jueves, misma semana que Pub 16)
+Apoyo en el Ejemplo 1 del documento (investigar un fallo: tres búsquedas en paralelo, un informe consolidado). Mismo ejemplo que sustenta el guion del Video 04.
+**Pieza gráfica:** tarjeta comparativa horizontal antes/ahora.
+
+### Pub 18 — Los 3 agentes (martes, fecha pendiente)
+Coordinador (puerta de entrada única), orquestador de cambios (reconoce 18 tipos de cambio catalogados, pone las tareas en orden), validador (12 reglas de coherencia, detecta pero no corrige).
 **Pieza gráfica:** tríptico de los 3 agentes (mismo formato que Casos de Uso Reales).
+
+### Pub 19 — Los agentes en acción (jueves, misma semana que Pub 18)
+Apoyo en el Ejemplo 2 (añadir un campo: analiza, propone el plan, espera aprobación, ejecuta, resume). Cierra la serie completa de la gco-dev-suite (Pub 12-19).
+**Pieza gráfica:** infografía del flujo de 6 pasos, con el paso 3 (espera de aprobación) destacado.
 
 ---
 
@@ -91,7 +113,7 @@ De las 12 preguntas enviadas el 30 de julio / 4 de agosto (`pregunta-equipo-niba
 | 5. Proceso real para proponer una Skill nueva | Sin respuesta |
 | 6. ¿Alguien desarrolló una Skill propia mostrable? | Sin respuesta |
 | 7. Proceso formal para proponer un MCP nuevo (checklist técnico/seguridad) | Sin respuesta |
-| 8. ¿Los MCP aprobados son los 4 del Video 04 o hay más? | Discrepancia sin resolver: la respuesta trae 5 (Jira, Confluence, **Elastic**, DB2, **navegador**), el Video 04 menciona 4 (Jira, Confluence, DB2, **SQL**) |
+| 8. ¿Los MCP aprobados son los 4 del Video 04 o hay más? | ✅ **Resuelta (18 ago):** en la reunión de seguimiento, Jonatan y Óscar validaron sin objeción los **5 conectores** (Jira, Confluence, Elastic, DB2, navegador) como la cifra vigente — ver `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_18-08-26.md`. La discrepancia con los 4 del guion del Video 04 (Jira, Confluence, DB2, SQL) queda superada por esta confirmación posterior |
 | 9. ¿Qué pasa si alguien instala un MCP sin aprobación? | Sin respuesta |
 | 12. ¿Cómo se propone un agente nuevo? | Sin respuesta |
 
@@ -104,5 +126,5 @@ De las 12 preguntas enviadas el 30 de julio / 4 de agosto (`pregunta-equipo-niba
 1. Validar en la reunión del 11 ago: la secuencia Pub 12–16, sus fechas y el cambio de canal (todo el material ya en Anuncios y Tips Ágiles).
 2. Enviar seguimiento al equipo de Nibaldo con las 6 preguntas que siguen abiertas (sección 5).
 3. Producir las piezas gráficas de la sección 4 — empezando por Pub 12, que se publicaría el mismo día de la reunión.
-4. Confirmar si las skills `dotnet-review`/`cobol-analyzer` forman parte de las 32 de la suite, antes de publicar Pub 14.
+4. Confirmar si las skills `dotnet-review`/`cobol-analyzer` forman parte de las 32 de la suite, antes de publicar Pub 15.
 5. El flujo de booking (`plan-agosto_propuesta-contenidos-skills-y-booking.md`, sección 7) sigue vigente sin cambios — es un eje independiente de esta serie.

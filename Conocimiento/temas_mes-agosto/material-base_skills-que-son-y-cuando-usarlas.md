@@ -1,7 +1,7 @@
 # Skills — Qué son, por qué se usan y cuándo tiene sentido usarlas
 > Documento informativo · Material base para elaboración de contenidos
 > Contexto: GitHub Copilot y asistentes de IA de código · Agosto 2026
-> Fuente: material enviado por Esteban Serrano (Raona) — ver `resumen-de-reunion_03-08-26_raona-interno.md`
+> Fuente: material enviado por Esteban Serrano (Raona) — ver `Reuniones/seguimientos-semanales/resumen-de-reunion_03-08-26_raona-interno.md`
 
 **Fuentes del documento original:**
 - Formación GitHub Copilot — Capítulo 3 "Personaliza tu Copilot: Skills · Agentes · MCP · Memory" (marzo 2026).

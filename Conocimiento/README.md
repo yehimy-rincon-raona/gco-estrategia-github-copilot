@@ -28,6 +28,17 @@ Esta carpeta contiene **investigación, referencias y análisis externos** que a
 | `facturacion-github-copilot-2026.md` | Cambio de GitHub Copilot a facturación usage-based (AI Credits) el 1 jun 2026 — fin del modelo 0x/1x/3x. Impacta la tarjeta de tokens de Pub 8/9 |
 | `gan-framework-interno-gco.md` | GAN, el framework interno de GCO (.NET/WCF) con el que se construyen las operativas: anatomía, relación con COBOL, el mito "GAN no se toca con IA" y cómo lo desmonta el caso de Luis (Videos 05–06) |
 
+### Subcarpeta `temas_mes-agosto/`
+
+Material fuente recibido del equipo (Nibaldo/Esteban-Pasiona) para la serie de contenidos de agosto sobre la gco-dev-suite y Skills — insumo sin filtrar, consultado directamente desde `Planeacion/Semana-7_plan-agosto-devsuite/plan-agosto_devsuite-skills-mcp-agentes.md`.
+
+| Archivo | Contenido |
+|---------|-----------|
+| `información-equipo-raona-gco-devsuite.md` (+ `.doc`) | Primera respuesta real del equipo de Nibaldo (6 ago 2026): qué es la gco-dev-suite, arquitectura (3 agentes, 32 skills, 5 MCPs), problemas que resuelve, decisiones de diseño. Registrada en `Teams-Interno/Produccion-y-materiales/nibaldo/registro-nibaldo.md` |
+| `material-base_skills-que-son-y-cuando-usarlas.md` | Material sobre Skills enviado por Esteban Serrano (Raona/Pasiona) tras la reunión del 3 ago 2026 — definición, anatomía, niveles de personalización, casos de uso |
+| `resumen-skills_Copilot_Informacion.docx` | Documento original (Word) del que se organizó el material-base anterior |
+| `[GCO] Propuesta de temas para agosto - Estrategia de adopción de Github Copilot .docx` | Propuesta de temas de agosto recibida del equipo |
+
 ---
 
 ## Cómo usar esta carpeta

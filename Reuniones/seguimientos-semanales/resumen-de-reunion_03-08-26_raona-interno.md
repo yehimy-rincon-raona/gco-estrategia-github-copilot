@@ -44,4 +44,4 @@ Yehimy propuso a Esteban implementar un sistema de reservas para sesiones con ex
 
 ## Nota
 
-El primer material recibido de Esteban sobre Skills (documento de referencia "Qué son, por qué se usan y cuándo tiene sentido usarlas") ya llegó y se organizó en `material-base_skills-que-son-y-cuando-usarlas.md`, en esta misma carpeta.
+El primer material recibido de Esteban sobre Skills (documento de referencia "Qué son, por qué se usan y cuándo tiene sentido usarlas") ya llegó y se organizó en `Conocimiento/temas_mes-agosto/material-base_skills-que-son-y-cuando-usarlas.md`.

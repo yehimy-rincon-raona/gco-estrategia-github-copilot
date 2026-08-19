@@ -33,7 +33,7 @@ Antes de armar el cronograma de publicaciones (fechas, formatos, piezas gráfica
 3. ¿Qué componentes trae exactamente, más allá de MCP, Skills y Agentes, que debamos mencionar?
 
 ### 2. Skills
-> Lo que ya tenemos: `Produccion/semana-7_03-agos/material-base_skills-que-son-y-cuando-usarlas.md` (enviado por Esteban) — cubre definición, anatomía, dos ejemplos reales (`dotnet-review`, `cobol-analyzer` de la plantilla `copilot-template-gco`) y cuándo usar/no usar una skill.
+> Lo que ya tenemos: `Conocimiento/temas_mes-agosto/material-base_skills-que-son-y-cuando-usarlas.md` (enviado por Esteban) — cubre definición, anatomía, dos ejemplos reales (`dotnet-review`, `cobol-analyzer` de la plantilla `copilot-template-gco`) y cuándo usar/no usar una skill.
 
 4. ¿Las Skills que "ya vienen incorporadas dentro de la DevSuit" (como dijo Nibaldo) son las mismas `dotnet-review` y `cobol-analyzer` del material de Esteban, o hay otras que debamos incluir?
 5. ¿Cuál es el proceso real para proponer una Skill nueva? Nibaldo mencionó "proponlo y lo podemos desarrollar" — ¿por qué canal o formato se hace esa propuesta?
@@ -64,6 +64,6 @@ Lo que responda el equipo se toma como insumo directo para: (a) confirmar o ajus
 | Punto | Fuente |
 |-------|--------|
 | Cita y orden de temas propuesto por Nibaldo | `Reuniones/seguimientos-semanales/transcripcion_reunion-semanal-GCO-y-raona-04-08-26.md`, minuto 4:23 |
-| Material ya recibido sobre Skills | `Produccion/semana-7_03-agos/material-base_skills-que-son-y-cuando-usarlas.md` |
+| Material ya recibido sobre Skills | `Conocimiento/temas_mes-agosto/material-base_skills-que-son-y-cuando-usarlas.md` |
 | Material ya recibido sobre MCP (Video 04) | `Produccion/TABLERO.md`, sección Vídeos — Video 04 |
-| Plan de Skills original (Pub 12–18), pendiente de ajustar con este nuevo orden | `Produccion/semana-7_03-agos/plan-agosto_propuesta-contenidos-skills-y-booking.md` |
+| Plan de Skills original (Pub 12–18), pendiente de ajustar con este nuevo orden | `plan-agosto_propuesta-contenidos-skills-y-booking.md` (en esta misma carpeta) |
