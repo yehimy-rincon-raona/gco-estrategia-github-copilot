@@ -4,7 +4,7 @@
 > Perspectiva: desde el mapa de personalización — por qué Memoria queda fuera de los 5 niveles, no es una omisión
 > Trabaja en pareja con el hilo **`4-a`** (`canal-anuncios-tips_pub4-a.md`, en la carpeta de Pub 4) — mismo tema, ángulo distinto: ese hilo lo aborda desde el día a día (tus hábitos), este desde el mapa (la arquitectura de personalización)
 > Origen: responde al diagnóstico de Óscar en la reunión del 18 ago sobre la confusión Copilot Memory vs. Instructions — ver `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_18-08-26.md`, tema 3
-> Estado: 🟡 Propuesta de contenido — falta producir la pieza gráfica
+> Estado: 🟠 Post cerrado y brief listo para producir (21 ago) — falta únicamente producir la tarjeta en Figma
 
 ---
 

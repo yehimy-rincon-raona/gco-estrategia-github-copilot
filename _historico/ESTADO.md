@@ -3,9 +3,17 @@
 > **Punto de entrada de contexto. Léeme PRIMERO.** Resumen barato en tokens del estado actual.
 > Detalle de producción: `Produccion/TABLERO.md` · Reglas permanentes: `CLAUDE.md` · Detalle de sesiones: esta carpeta.
 
-**Actualizado:** Serie Dev Suite ampliada de Pub 12-16 a Pub 12-19 (MCP y Agentes pasan a 2 publicaciones cada uno) · Intercambio de contenido Pub 14↔15 · Posts auto-publicados retirados de Teams GCO, cadencia se retoma la semana 14-18 sep · 18 agosto 2026
+**Actualizado:** Bloque de Skills cerrado y publicado en Teams Raona (Pub 14 + hilo `14a` + Pub 15). Pub 16-17 con post y brief listos, piezas sin producir · 21 agosto 2026
 
 ## En una frase
+
+✅ **21 ago — El bloque de Skills queda cerrado y visible en Teams Raona:** Pub 14 (el mapa de los 5 niveles) + su hilo `14a` (por qué Memoria no es un sexto nivel) + Pub 15 (la anatomía real). Con Pub 13 ya publicada, la serie de Skills está completa de punta a punta. **No en Teams GCO** — sigue congelado hasta la semana del 14-18 sep.
+
+📝 **21 ago — Criterio de copy nuevo (Yehimy):** las piezas con entrada a hilo llevan **llamada a la acción** ("síguenos en el siguiente hilo"), no solo señalar el lugar — el canal de Teams es un espacio de interacción social. Y **ningún código interno de hilo** (`14-a`, `4-a`) va en pieza o texto de cara al lector.
+
+✒️ **21 ago — El bloque Pub 14-17 queda cerrado en redacción.** Los cuatro posts están finales y los cuatro briefs tienen ya sus especificaciones Figma (formato, referencia visual, jerarquía, tipografía). **El único trabajo que queda para publicarlos son 4 piezas gráficas en Figma** — no queda nada por decidir ni redactar.
+
+🔍 **21 ago — Tres correcciones al revisar contra fuente:** Pub 14 decía "quinta pregunta" donde Memoria es la sexta (y contradecía a su propio hilo `14-a`); Pub 14 usaba "stack" (anglicismo, regla de Jonatan); Pub 17 abría con "El desarrollador escribe" (protagonista anónimo, regla del proyecto). Las tres corregidas.
 
 🧭 **18 ago — Reunión de seguimiento con Jonatan y Óscar:** se valida el orden Dev Suite → Skills → MCP → Agentes, y **MCP y Agentes pasan de 1 a 2 publicaciones cada uno** — la serie crece de Pub 12-16 a **Pub 12-19** (cierre de la serie, sin Pub 20).
 
@@ -28,9 +36,10 @@
 
 ## En qué punto estamos
 
-- ✅ Pub 12 y 13 completos (post + brief). Pub 15 (anatomía) tiene sus 3 piezas gráficas ya producidas y corregidas — espera a que Pub 14 esté producida para publicarse (numeración secuencial).
-- 🔄 Pub 14 (el mapa de los 5 niveles) en producción ahora mismo por Yehimy.
-- 🔄 Pub 16-19 (MCP y Agentes): briefs listos, piezas gráficas sin producir.
+- ✅ **Pub 13, 14, `14a` y 15 publicadas en Teams Raona** — serie de Skills completa. Pub 12 sigue como borrador cargado en Raona, sin enviar.
+- 🟠 **Pub 16 y 17 (MCP): post final + brief con especificaciones Figma (21 ago).** Falta producir 2 piezas: infografía de los 5 conectores (Pub 16) y tarjeta comparativa antes/ahora (Pub 17).
+- 🔄 Pub 18-19 (Agentes): briefs listos, sin especificaciones Figma todavía, piezas sin producir.
+- ⚠️ **Dos arreglos antes de republicar en GCO:** en el post del hilo `14a`, "le enseña a **Copilot** algo sobre ti" va sin "GitHub" (regla 7); y el post de Pub 14 se quedó sin el puente final a Pub 15.
 - 🗑️ Pub 3, 4 (con su hilo "Memoria vs. Instrucciones"), 5, 6, 7 y 8 retirados de Teams GCO (se habían auto-publicado); vuelven a la cola para la semana del 14-18 sep.
 - ⏳ Pendiente: confirmar con Nibaldo si `dotnet-review`/`cobol-analyzer` son parte real de las 32 skills (bloquea cierre de Pub 15); aclarar con Nibaldo la confusión Copilot Memory vs. Instructions (hilo de Pub 4).
 

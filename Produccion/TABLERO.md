@@ -44,10 +44,10 @@
 
 | Pub | Canal | Tema | Estado |
 |-----|-------|------|--------|
-| 14 | Anuncios y Tips | Skills 2/3 — el mapa de los 5 niveles | 🟡 Propuesta de contenido — bloquea a Pub 15 (va antes en la cola) |
-| 15 | Anuncios y Tips | Skills 3/3 — anatomía y cuándo usar | ✅ 3 piezas producidas y corregidas (18 ago), lista para Raona — pero **espera a que Pub 14 esté producida**, porque la cola respeta el orden numérico |
-| 16 | Anuncios y Tips | MCP 1/2 — los 5 conectores | 🟡 Propuesta de contenido |
-| 17 | Anuncios y Tips | MCP 2/2 — MCP en acción | 🟡 Propuesta de contenido |
+| 14 | Anuncios y Tips | Skills 2/3 — el mapa de los 5 niveles | 🔵 **Publicada en Teams Raona el 21 ago** (post + infografía + hilo `14a` con su tarjeta). No en Teams GCO |
+| 15 | Anuncios y Tips | Skills 3/3 — anatomía y cuándo usar | 🔵 **Publicada en Teams Raona el 21 ago** (post + 3 tarjetas). No en Teams GCO. Antes de GCO: confirmar con Nibaldo si `dotnet-review` es de las 32 skills reales |
+| 16 | Anuncios y Tips | MCP 1/2 — los 5 conectores | 🟠 **Post cerrado + brief con especificaciones Figma (21 ago)** — falta producir el **tríptico** (portada/problema/solución; el formato cambió de infografía a tríptico el 21 ago) |
+| 17 | Anuncios y Tips | MCP 2/2 — MCP en acción | 🟠 **Post cerrado + brief con especificaciones Figma (21 ago)** — falta producir la tarjeta comparativa |
 | 18 | Anuncios y Tips | Agentes 1/2 — los 3 que deciden | 🟡 Propuesta de contenido |
 | 19 | Anuncios y Tips | Agentes 2/2 — los agentes en acción, cierra la serie | 🟡 Propuesta de contenido |
 
@@ -95,6 +95,28 @@
 > Todo lo que sigue es el registro completo de decisiones y detalle técnico. Consúltalo cuando necesites el porqué de algo del cronograma de arriba — el cronograma es la vista rápida, esto es la memoria completa.
 
 ### Notas fechadas
+
+> **21 agosto 2026 (tercera actualización — formato de Pub 16)**
+> - **La pieza de Pub 16 pasa de infografía vertical a tríptico portada-problema-solución** (decisión de Yehimy). El post ya narraba un problema — la información repartida en cinco sistemas — antes de dar el inventario de conectores, y la infografía lo aplanaba en una lista. El tríptico le da al problema su propio panel. Nomenclatura nueva: `16-S9-Card_pub16-portada` / `-problema` / `-solucion` (antes `16-S9-infografia_5-conectores-mcp`). Precedentes del formato: Pub 6, 7, 10 y 11.
+> - ⚠️ **Solapamiento detectado entre Pub 16 y Pub 17.** El "Antes" de la tarjeta comparativa de Pub 17 (*cinco pestañas, copiar identificadores, veinte minutos*) es casi el mismo material que el panel "problema" del nuevo tríptico — y ambas salen la misma semana. **Reparto aplicado en el brief de Pub 16:** el tríptico se queda con **la dispersión** (la información vive en cinco sistemas: problema de mapa) y Pub 17 con **el flujo y el tiempo** (las pestañas, los veinte minutos, el diagnóstico paso a paso). ✅ **Reparto confirmado por Yehimy el mismo día y aplicado:** el post de Pub 16 cede el ritual de pestañas/identificadores, y la columna "Antes" de Pub 17 se reescribe como cadena de pasos manuales (fragmentación contra fluidez, en vez de repetir los cinco sistemas).
+>
+> **21 agosto 2026 (segunda actualización — publicación)**
+> - ✅ **Pub 14, su hilo `14a` y Pub 15 publicadas en Teams Raona** (prueba/preview, no Teams GCO). Con esto **el bloque de Skills queda cerrado y visible**: Pub 13 (qué es una Skill) → Pub 14 (el mapa de los 5 niveles) → `14a` (por qué Memoria no es un sexto nivel) → Pub 15 (la anatomía real).
+> - Capturas en `Produccion/imagenes_teams/01_anuncios-y-tips-agiles/`, con prefijo `pendiente-` (convención de la carpeta para lo publicado en Raona sin fecha en GCO, igual que Pub 10/11 y el Video 04).
+> - **Decisión de copy (Yehimy):** el cierre de la pieza y del post lleva **llamada a la acción** — "→ Por qué esa diferencia importa: síguenos en el siguiente hilo". Se planteó que "síguenos" suena a red social y se descartó la objeción: **el canal de Teams es un espacio de interacción social**, y una llamada a la acción rinde más que señalar un lugar. Criterio vigente para las próximas piezas con entrada a hilo.
+> - **Mejora sobre el brief (Yehimy):** el eyebrow de la tarjeta del `14a` quedó como `· MEMORIA` en vez del `· SKILLS — HILO 14-a` que pedía el brief. Es mejor: `14-a` es nomenclatura interna y no debía salir en una pieza de cara al lector. **Se adopta el criterio** — ningún código interno de hilo va en pieza pública.
+> - ⚠️ **A corregir antes de la republicación en GCO** (detectado al verificar capturas): en el post del hilo `14a`, "le enseña a **Copilot** algo sobre ti" va sin "GitHub" — rompe la regla 7. Y el post de Pub 14 se quedó sin el puente final a Pub 15 que pedía el brief ("en la próxima publicación entramos a la Skill por dentro").
+>
+
+> **21 agosto 2026**
+> - **Cierre de redacción del bloque Pub 14-17.** Los cuatro posts quedan finales (texto listo para copiar) y los cuatro briefs quedan con su sección `### Especificaciones Figma` completa — formato, referencia visual, jerarquía y tipografía — tomando dimensiones de `Configuraciones/matriz-componentes-graficos.csv`. Antes de hoy, los briefs de Pub 14, 16 y 17 no tenían especificaciones de producción y la pieza no se podía montar sin volver a decidir formato.
+> - **Tres correcciones de contenido** detectadas al revisar contra fuente:
+>   - Pub 14 decía "una **quinta** pregunta" al introducir Memoria, cuando Memoria es la sexta — las cinco anteriores son los cinco niveles. Además contradecía al propio hilo `14-a`, titulado "¿Por qué Memoria no es un **sexto** nivel?". Corregido a "sexta".
+>   - Pub 14 usaba "el stack" como ejemplo de norma permanente — anglicismo evitable (regla de Jonatan, 16 jun). Cambiado a "las tecnologías".
+>   - Pub 17 abría con "El desarrollador escribe, tal cual" — protagonista anónimo, que la regla del proyecto descarta porque la audiencia **es** el equipo. Cambiado a "La consulta es, tal cual".
+> - **Verificado contra fuente, sin cambios necesarios:** el término "coordinador" (`información-equipo-raona-gco-devsuite.md`, línea 63), los 5 conectores MCP y los 3 agentes. Pub 15 no se tocó — sus 3 piezas ya estaban producidas y correctas.
+> - **Lo que sigue bloqueando la publicación:** 4 piezas gráficas por producir en Figma (Pub 14 ×2 contando el hilo `14-a`, Pub 16 ×1, Pub 17 ×1) y la confirmación de Nibaldo sobre `dotnet-review`/`cobol-analyzer` para cerrar Pub 15.
+>
 
 > **18 agosto 2026 (segunda actualización)**
 > - **Intercambio de contenido Pub 14 ↔ Pub 15** (decisión de Yehimy, por sentido narrativo): la anatomía de una Skill (3 tarjetas ya producidas y corregidas) pasa de Pub 14 a **Pub 15**; "el mapa de los 5 niveles de personalización" pasa de Pub 15 a **Pub 14**. Razón: igual que Pub 12 da la visión general antes de que cada pieza haga su zoom, dentro del bloque de Skills conviene mostrar primero dónde encaja la Skill frente a los demás niveles (panorámico) y solo después la anatomía por dentro (lo más específico) — así el zoom cierra en el punto más profundo, en vez de volver a lo panorámico al final. Los 3 PNG se renombraron de `14-S8-card-*` a `15-S8-card-*`. Consecuencia en la cola de republicación: Pub 15 (ya producida) debe esperar a que Pub 14 (el mapa, sin producir) esté lista, porque la cola respeta el orden numérico.

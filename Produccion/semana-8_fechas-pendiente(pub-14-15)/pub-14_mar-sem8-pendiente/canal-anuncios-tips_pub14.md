@@ -3,7 +3,7 @@
 > ⏱️ **Semana de producción: siguiente disponible tras Pub 12-13** (reorganizada el 18 ago — antes tenía fecha de plan jue 20 ago, ahora pasa a martes, sin fecha real todavía)
 > 📍 **Teams GCO: sigue congelado, sin fecha real.** El día y fecha se confirman cuando el equipo de Nibaldo reactive publicaciones (ver `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_18-08-26.md` — retoma prevista 14 sep).
 > 📍 **Próximo destino, una vez esté como borrador final: Teams Raona** (visibilidad/prueba, mismo tratamiento que Pub 10 y Pub 11) — no Teams GCO, que sigue congelado.
-> Estado: 🟡 **Propuesta de contenido** — falta producir la pieza gráfica y validar con Nibaldo/Guillermo
+> Estado: 🟠 **Post cerrado y brief listo para producir (21 ago)** — texto final, especificaciones Figma completas. Falta únicamente producir la infografía en Figma y validar con Nibaldo/Guillermo
 > Fuente: `Conocimiento/temas_mes-agosto/material-base_skills-que-son-y-cuando-usarlas.md` (material enviado por Esteban Serrano, Raona/Pasiona) — secciones 3 y 7
 > Plan: `Planeacion/Semana-7_plan-agosto-devsuite/plan-agosto_devsuite-skills-mcp-agentes.md` — sección 4
 >
@@ -27,15 +27,15 @@ Segunda de tres publicaciones sobre Skills (Pub 13 explicó el concepto, esta mu
 
 Ya vimos qué es una Skill. Pero GitHub Copilot tiene 5 formas distintas de personalizarse, y cada una responde a una pregunta diferente:
 
-- **Instructions** — ¿es una norma que debe cumplirse siempre? (el stack, el idioma, la arquitectura)
+- **Instructions** — ¿es una norma que debe cumplirse siempre? (las tecnologías, el idioma, la arquitectura)
 - **Prompt files** — ¿es una tarea simple que invoco a mano, sin recursos de apoyo?
 - **Skills** — ¿es un proceso de varios pasos, con material de apoyo, que quiero que se active solo?
 - **Agentes** — ¿es un rol que debe persistir durante toda la conversación?
 - **MCP** — ¿necesito datos reales de un sistema externo, en vivo?
 
-Y una quinta pregunta que no es un nivel de personalización pero se confunde seguido: si es algo personal y temporal ("prefiero respuestas concisas"), eso es memoria — no skill ni instruction.
+Y una sexta pregunta que no es un nivel de personalización pero se confunde seguido: si es algo personal y temporal ("prefiero respuestas concisas"), eso es memoria — y no entra en ninguno de los cinco niveles.
 
-👉 ¿Memoria o Instructions? Le seguimos en el hilo. En la próxima publicación entramos a la Skill por dentro: su anatomía real.
+👉 ¿Memoria o Instructions? Por qué esa diferencia importa: síguenos en el siguiente hilo.
 
 ---
 
@@ -62,12 +62,33 @@ Y una quinta pregunta que no es un nivel de personalización pero se confunde se
 | Fila 3 | **Skills** — ¿es un proceso de varios pasos, con recursos, que se activa solo? |
 | Fila 4 | **Agentes** — ¿es un rol que debe persistir durante la conversación? |
 | Fila 5 | **MCP** — ¿necesito datos reales de un sistema externo? |
-| Nota aparte (no es un nivel de personalización) | **Memoria** — ¿es una preferencia personal mía, no del equipo? · 👉 la profundizamos en el hilo `14-a` |
+| Nota aparte — titular (no es un nivel de personalización) | **Memoria no es el sexto nivel.** |
+| Nota aparte — contraste | Los 5 niveles le enseñan a GitHub Copilot algo sobre **el proyecto**. Memoria le enseña algo sobre **ti**. |
+| Nota aparte — entrada a la respuesta | → Por qué esa diferencia importa: síguenos en el siguiente hilo. |
 | Remate | Una pregunta por nivel. Si dudas dónde va algo, esta es la lista que lo resuelve. |
 | Logo | Occident — inferior derecha |
 
 > Diseño: fondo blanco, rojo `#DC0028` como acento — sin fondos negros. Título CO Bold, texto corriente GCO Sans. Misma estructura de infografía vertical usada en Pub 13, para mantener la identidad visual de la serie.
+> **Corrección 21 ago (Yehimy) — anglicismo en el post:** "eso es memoria — no skill ni instruction" pasa a **"eso es memoria — y no entra en ninguno de los cinco niveles"**. En minúscula y en uso genérico, "skill" e "instruction" son anglicismos sueltos (regla de Jonatan) — distinto de **Instructions** o **Skills** en mayúscula, que sí son el nombre propio del componente y se mantienen. La nueva redacción además evita repetir la negación ("no es un nivel de personalización" → "no skill ni instruction") y da entrada directa al cierre.
+> **Decisión 21 ago (Yehimy) — el cierre lleva llamada a la acción:** queda **"→ Por qué esa diferencia importa: síguenos en el siguiente hilo."** El gancho "por qué esa diferencia importa" promete el *porqué*, que es literalmente lo que responde el hilo `14-a` ("¿Por qué Memoria no es un sexto nivel?").
+> Se planteó la objeción de que "síguenos" suena a red social y se descartó: **el canal de Teams es un espacio de interacción social, no un manual**, y una llamada a la acción explícita rinde más que señalar un lugar. **Criterio vigente para las próximas piezas con entrada a hilo** — usar acción, no localización.
+> **Corrección 21 ago (segunda, feedback de Yehimy):** se retira la fórmula **"le seguimos en el hilo"** de todo texto de cara al lector. "El hilo" es nomenclatura interna: en Teams el lector ve *respuestas* debajo del post, no un "hilo". Se reemplaza por **"La diferencia completa, en la primera respuesta"** — dice qué va a encontrar y en qué lugar concreto. Verificado que "en el hilo" no era fórmula establecida en publicaciones anteriores (solo aparecía en metadata interna), así que el cambio no rompe consistencia con lo ya publicado. Aplicado también al cierre del post y a la referencia interna `4-a` del hilo `14-a`.
+> **Corrección 21 ago (feedback de Yehimy — el cierre era confuso):** la nota aparte **afirma, no pregunta**. La versión anterior (`¿es una preferencia personal mía, no del equipo?`) usaba el mismo formato de pregunta que los 5 niveles, justo cuando el punto es que Memoria **no** es uno de ellos — se leía como el nivel 6, que es exactamente la confusión que la pieza debería cerrar. El titular afirmativo responde de una la pregunta que trae el lector tras leer los 5 niveles, y el contraste paralelo (*el proyecto* / *tú*) se entiende sin releer. Es la misma tesis del hilo `14-a`, así que pieza y hilo quedan alineados.
+> **En la pieza no debe aparecer "hilo `14-a`"** — es nomenclatura interna. Va como "el hilo".
 > **Importante (corrección 18 ago, feedback de Yehimy):** la nota aparte se queda corta a propósito — una sola línea, sin tabla comparativa dentro de esta pieza. Meter la comparación completa aquí competía con el propósito del mapa (ser panorámico) y no terminaba de aclararse por más que se resumiera. La comparación completa vive en su propio hilo: `14-a` (ver más abajo).
+
+---
+
+### Especificaciones Figma
+
+- **Formato:** 1080×1350 px (vertical), grupo `Infografia` de `Configuraciones/matriz-componentes-graficos.csv`
+- **Referencia directa:** las 2 infografías de Pub 13 (`13-S7-infografia_que-es-skill.png` / `13-S7-infografia_que-no-es-skill.png`) — esta pieza es la tercera del mismo bloque de Skills, debe leerse como parte del mismo juego
+- **Fondo:** blanco · acento rojo `#DC0028` en chips, números y resaltados · sin fondos negros
+- **Jerarquía de arriba a abajo:** logo + píldora de fase (`Fase 3 | Multi-entorno`) → eyebrow rojo en mayúsculas → título CO Bold → las 5 filas → nota aparte de Memoria → remate
+- **Las 5 filas:** cada una con el nombre del nivel en negrita y su pregunta al lado. El nombre puede ir como chip rojo pequeño para que las 5 se escaneen de un golpe
+- **Nota aparte de Memoria:** visualmente separada de las 5 filas — no es una sexta fila. Un separador o un fondo `#F5F5F5` la distingue sin darle el mismo peso
+- **Tipografía:** títulos CO Bold · texto corriente GCO Sans
+- **Logo:** Occident, inferior derecha
 
 ---
 
