@@ -48,9 +48,9 @@ Mostrar, con un caso real de las sesiones, cómo GitHub Copilot ayuda a **diagno
 - **Respuesta 2 (opcional):** el puente con MCP de Atlassian.
 
 **En la pieza gráfica (tríptico · carrusel de 3 paneles):**
-- **`08-S3-Card_pub7-portada`:** la pregunta-gancho — ¿dónde está el error?
-- **`08-S3-Card_pub7-problema`:** buscar el bug solo en la línea que falla es buscar donde no está.
-- **`08-S3-Card_pub7-solucion`:** el contexto completo en 4 capas — Ticket → Negocio → Código → Solución.
+- **`pub-07_s-4_triptico_1-una-prima-queda-en-negativo-al-aplicar-un-descuento`:** la pregunta-gancho — ¿dónde está el error?
+- **`pub-07_s-4_triptico_2-buscar-el-error-solo-en-la-linea-que-falla`:** buscar el bug solo en la línea que falla es buscar donde no está.
+- **`pub-07_s-4_triptico_3-dale-el-contexto-completo`:** el contexto completo en 4 capas — Ticket → Negocio → Código → Solución.
 - **No lleva prompts** — esos van en el texto, para que el equipo pueda copiarlos.
 
 > Regla: el tríptico cuenta el caso de un vistazo (pregunta → problema → solución); el texto explica y aporta los prompts copiables. No se duplica el contenido entre ambos.
@@ -128,7 +128,7 @@ Claves de credibilidad:
 
 ## Posts de hilo
 
-> **Cómo quedó publicado (verificado contra la captura):** el tríptico `08-S3-Card_pub7-portada` / `-problema` / `-solucion` va adjunto al **post principal**. La respuesta publicada en el hilo se titula **"Prompts listos para el equipo"** y contiene los 3 prompts completos de este documento (Diagnóstico con contexto completo · Arrancar desde el error del log · Proponer la corrección).
+> **Cómo quedó publicado (verificado contra la captura):** el tríptico `pub-07_s-4_triptico_1-una-prima-queda-en-negativo-al-aplicar-un-descuento` / `-problema` / `-solucion` va adjunto al **post principal**. La respuesta publicada en el hilo se titula **"Prompts listos para el equipo"** y contiene los 3 prompts completos de este documento (Diagnóstico con contexto completo · Arrancar desde el error del log · Proponer la corrección).
 > El texto de la "Respuesta 1" de abajo ("La clave del caso...") **no se publicó** — se conserva como material disponible. La Respuesta 2 (opcional) sigue pendiente.
 
 ---
@@ -146,7 +146,7 @@ Revisa este código y dime por qué el resultado no coincide
 con lo esperado.
 ```
 
-→ Adjuntar: tríptico completo — `08-S3-Card_pub7-portada`, `08-S3-Card_pub7-problema`, `08-S3-Card_pub7-solucion`
+→ Adjuntar: tríptico completo — `pub-07_s-4_triptico_1-una-prima-queda-en-negativo-al-aplicar-un-descuento`, `pub-07_s-4_triptico_2-buscar-el-error-solo-en-la-linea-que-falla`, `pub-07_s-4_triptico_3-dale-el-contexto-completo`
 
 ---
 
@@ -164,9 +164,9 @@ Es un paso más avanzado — pero muestra hacia dónde va el flujo: del prompt m
 
 | # | Nombre de archivo | Tipo | Tema |
 |---|-------------------|------|------|
-| 1 | `08-S3-Card_pub7-portada` | card-triptico · panel 1/3 · 1080×1080 px | Portada — ¿dónde está el error? |
-| 2 | `08-S3-Card_pub7-problema` | card-triptico · panel 2/3 · 1080×1080 px | Problema — buscar donde no está |
-| 3 | `08-S3-Card_pub7-solucion` | card-triptico · panel 3/3 · 1080×1080 px | Solución — contexto completo en 4 capas |
+| 1 | `pub-07_s-4_triptico_1-una-prima-queda-en-negativo-al-aplicar-un-descuento` | card-triptico · panel 1/3 · 1080×1080 px | Portada — ¿dónde está el error? |
+| 2 | `pub-07_s-4_triptico_2-buscar-el-error-solo-en-la-linea-que-falla` | card-triptico · panel 2/3 · 1080×1080 px | Problema — buscar donde no está |
+| 3 | `pub-07_s-4_triptico_3-dale-el-contexto-completo` | card-triptico · panel 3/3 · 1080×1080 px | Solución — contexto completo en 4 capas |
 
 > Los **prompts** no van en la pieza gráfica: viven en el texto del post (sección "Prompts listos para el equipo" y Respuesta 1) para que el equipo pueda copiarlos.
 
@@ -177,7 +177,7 @@ Es un paso más avanzado — pero muestra hacia dónde va el flujo: del prompt m
 **Tipo de pieza:** `card-triptico` — 3 paneles cuadrados (1080×1080) en carrusel: **Portada → Problema → Solución**
 **Origen del contenido:** "Conexión a Jira y Confluence vía MCP para Bug Fixing" (Sesión 3 · G4M)
 
-### Panel 1 — Portada · `08-S3-Card_pub7-portada` · `1/3`
+### Panel 1 — Portada · `pub-07_s-4_triptico_1-una-prima-queda-en-negativo-al-aplicar-un-descuento` · `1/3`
 
 | Elemento | Texto |
 |----------|-------|
@@ -188,7 +188,7 @@ Es un paso más avanzado — pero muestra hacia dónde va el flujo: del prompt m
 | Subtext | Se ve en el código, pero la causa real está en la regla de negocio. |
 | Numeración | `1/3` — chip esquina inferior derecha |
 
-### Panel 2 — El problema · `08-S3-Card_pub7-problema` · `2/3`
+### Panel 2 — El problema · `pub-07_s-4_triptico_2-buscar-el-error-solo-en-la-linea-que-falla` · `2/3`
 
 | Elemento | Texto |
 |----------|-------|
@@ -199,7 +199,7 @@ Es un paso más avanzado — pero muestra hacia dónde va el flujo: del prompt m
 | Dato secundario | Parchear el síntoma deja el problema vivo. |
 | Numeración | `2/3` |
 
-### Panel 3 — La solución · `08-S3-Card_pub7-solucion` · `3/3`
+### Panel 3 — La solución · `pub-07_s-4_triptico_3-dale-el-contexto-completo` · `3/3`
 
 | Elemento | Texto |
 |----------|-------|

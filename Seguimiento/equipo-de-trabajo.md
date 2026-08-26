@@ -7,7 +7,7 @@
 
 | Nombre | Correo |
 |--------|--------|
-| Jonnathan Hospital Adriao | jonatan@gco.com |
+| Jonatan Hospital Adriao | jonatan@gco.com |
 | Oscar Segura Herrera | osegura@gco.com |
 | Raul Lendinez Alvarez | raul.lendinez@colaborador.gco.com |
 | Jose Maria Rodriguez Gomez | jmrodriguezg@gco.com |

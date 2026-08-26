@@ -78,7 +78,7 @@ Esta es la **única** tabla de referencia de formatos. Total: **4 formatos base 
 | Código | Nombre exacto | Formato / dimensiones | Para qué contenido | Variantes | Imagen(es) de referencia en `uploads` |
 |--------|---------------|-----------------------|--------------------|-----------|----------------------------------------|
 | `F1` | `card-triptico` | 3 paneles 1080×1080 px (carrusel) | Caso de uso o tema narrado en 3 pasos: Portada → Problema → Solución | única (3 paneles: degradado / blanco / rojo) | `card-triptico_portada.png` · `card-triptico_problema.png` · `card-triptico_solucion.png` |
-| `F2` | `infografía` | Vertical 1080×1350 px | Jerarquía/pirámide, procedimiento largo, o fórmula desglosada en componentes | B (jerarquía/pirámide) · C (paso a paso largo) · D (fórmula/componentes) | `infografia_jerarquia-piramide.jpg` · `infografia_paso-a-paso-largo.jpg` · `09-S5-infografia_prompts.jpg` (Pub 8 — referencia F2-D) |
+| `F2` | `infografía` | Vertical 1080×1350 px | Jerarquía/pirámide, procedimiento largo, o fórmula desglosada en componentes | B (jerarquía/pirámide) · C (paso a paso largo) · D (fórmula/componentes) | `infografia_jerarquia-piramide.jpg` · `infografia_paso-a-paso-largo.jpg` · `pub-08_s-5_infografia_la-formula-del-prompt-que-funciona.jpg` (Pub 8 — referencia F2-D) |
 | `F3` | `card-minimalista` | Panel único 1080×1350 px | Un tip corto, una sola idea o regla | única | `card-minimalista.png` |
 | `F4` | `banner de canal` | Portada de canal ~1200×627 px | Portada/encabezado de un canal de Teams | Roja (canal General) · Gris (resto de canales) | `banner-canal_general-rojo.jpg` · `banner-canal_gris.jpg` |
 
@@ -147,7 +147,7 @@ Para cuando el mensaje central es **una fórmula o estructura repetible** que se
 - Logo Occident inferior derecha.
 - El ejemplo completo NO va en la pieza: vive en el texto del post. La gráfica solo fija la fórmula.
 - **Señales:** "la fórmula", "5 piezas", "Rol + Contexto + Tarea + Restricciones + Formato", "estructura repetible", "no más largo, más completo", palabras unidas por `+`, componentes de algo.
-- **Imagen de referencia:** `Produccion/semana-5_29jun-03jul(pub-08-09)/pub-08_mar-30jun_(dia-09_mar-11-ago)/09-S5-infografia_prompts.jpg` — "La fórmula del prompt que funciona" (Pub 8). Primera pieza aprobada de esta variante; es la referencia oficial de F2-D.
+- **Imagen de referencia:** `Produccion/semana-5_29jun-03jul(pub-08-09)/pub-08_mar-30jun_(dia-09_mar-11-ago)/pub-08_s-5_infografia_la-formula-del-prompt-que-funciona.jpg` — "La fórmula del prompt que funciona" (Pub 8). Primera pieza aprobada de esta variante; es la referencia oficial de F2-D.
 
 **Especificaciones comunes:**
 - Bloque introductorio / nota al pie: fondo gris (`#F2F2F2` / `#F7F7F7`) con borde izquierdo rojo de 4 px.

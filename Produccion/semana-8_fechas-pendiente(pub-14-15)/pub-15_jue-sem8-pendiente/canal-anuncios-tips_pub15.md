@@ -48,13 +48,13 @@ Y no se carga todo de golpe: primero solo el `name` y la `description` (siempre 
 
 | # | Pieza | Rol | Estado |
 |---|-------|-----|--------|
-| 1 | Tarjeta "Anatomía de una Skill" (`15-S8-card-anatomia-skill`) | Estructura de carpeta: `.github/skills/dotnet-review/` → `SKILL.md` → `references/checklist.md` | ✅ Producida y corregida |
-| 2 | Tarjeta "El cerebro de la skill — Metadata" (`15-S8-card-cerebro-skill`) | Los 2 campos que importan: `name` y `description`, y por qué la descripción es el disparador de activación | ✅ Producida y corregida |
-| 3 | Tarjeta "Rendimiento y carga progresiva" (`15-S8-card-rendimiento-y-carga-skill`) | Las 3 fases de carga: identificación rápida → cuerpo → recursos bajo demanda | ✅ Producida y corregida |
+| 1 | Tarjeta "Anatomía de una Skill" (`pub-15_s-8_tarjeta-minimalista_1-anatomia-de-una-skill`) | Estructura de carpeta: `.github/skills/dotnet-review/` → `SKILL.md` → `references/checklist.md` | ✅ Producida y corregida |
+| 2 | Tarjeta "El cerebro de la skill — Metadata" (`pub-15_s-8_tarjeta-minimalista_2-el-cerebro-de-la-skill-metadata`) | Los 2 campos que importan: `name` y `description`, y por qué la descripción es el disparador de activación | ✅ Producida y corregida |
+| 3 | Tarjeta "Rendimiento y carga progresiva" (`pub-15_s-8_tarjeta-minimalista_3-rendimiento-y-carga-progresiva`) | Las 3 fases de carga: identificación rápida → cuerpo → recursos bajo demanda | ✅ Producida y corregida |
 
 ---
 
-## Brief — Tarjetas Pub 15 (`15-S8-card-anatomia-skill` / `-cerebro-skill` / `-rendimiento-y-carga-skill`)
+## Brief — Tarjetas Pub 15 (`pub-15_s-8_tarjeta-minimalista_1-anatomia-de-una-skill` / `-cerebro-skill` / `-rendimiento-y-carga-skill`)
 
 **Tipo de pieza:** 3 tarjetas independientes, cada una 1080×1350 px aprox.
 **Origen del contenido:** `material-base_skills-que-son-y-cuando-usarlas.md`, secciones 1.2 (Anatomía), 1.3 (ejemplo `dotnet-review`), 2.1 (carga progresiva), 9.1 (la descripción como disparador)

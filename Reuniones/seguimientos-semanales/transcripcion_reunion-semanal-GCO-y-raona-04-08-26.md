@@ -19,9 +19,9 @@
 
 **[0:22] Yehimy Rincón:** Y por supuesto que sí.
 
-**[0:24] Nibaldo Alfonso Pino Araya:** Vale, muchas Jonathan, ¿cómo estás?
+**[0:24] Nibaldo Alfonso Pino Araya:** Vale, muchas Jonatan, ¿cómo estás?
 
-**[0:26] Yehimy Rincón:** Pero en este momento, hola Jonathan.
+**[0:26] Yehimy Rincón:** Pero en este momento, hola Jonatan.
 
 **[0:26] Hospital Adriao, Jonatan:** Ah.
 
@@ -67,7 +67,7 @@
 
 **[4:12] Yehimy Rincón:** Se plantea como enfocarnos un poco en el desarrollo o un poco amplificar en lo que es la de suite y también en lo que es agentes MCPs en.
 
-**[4:23] Nibaldo Alfonso Pino Araya:** Sí el tema el tema es que o sea no me parece mal abordar el tema de los skills lo que yo digo y lo que hablaba en la mañana de hecho con Esteban es darle como un sentido lógico a esto es hablemos sobre qué es lo que es la de Suite. La de Switch es un conjunto de herramientas que tiene como MCP, skills, agentes y cosas. Vale, ¿qué es un skills? Porque no quiero que el, o sea, básicamente es decirle al desarrollador, mira, aquí un skill es esto y tienes incorporado tales tales skills dentro de lo que es la web suite. Y si tienes uno que pueda ser interesante, proponlo y lo podemos desarrollar, o a lo mejor tú ya has desarrollado uno y lo podemos publicar. Vale, ¿qué más tiene el la de Suite? Tiene MCP. Oye, hablemos de los MCP. Aquí le contarle, oye, aquí no es llegar y enchufar el MCP que se te ocurra, aparte de decirlo, y el MCP es esto es para poder usar un MCP dentro de la de Suite. No nos lo tienes que proponer, lo evaluamos en temas técnicos, seguridad y cosas. Por el estilo, y si se aprueba, se añade, vale, pero que no, cada persona también vaya instalando sus MSP así como arbitrariamente. Y a gente, misma cosa, ¿qué agentes tienes? ¿Qué es lo que es un agente? ¿Tú estás usando agentes ya? ¿Cuáles? ¿Hay alguno que te interese? ¿Cómo lo añadimos y cosas por el estilo? No sé, eso es como. Es como lo que me resuena en la cabeza, no sé si te hace sentido, Jonathan.
+**[4:23] Nibaldo Alfonso Pino Araya:** Sí el tema el tema es que o sea no me parece mal abordar el tema de los skills lo que yo digo y lo que hablaba en la mañana de hecho con Esteban es darle como un sentido lógico a esto es hablemos sobre qué es lo que es la de Suite. La de Switch es un conjunto de herramientas que tiene como MCP, skills, agentes y cosas. Vale, ¿qué es un skills? Porque no quiero que el, o sea, básicamente es decirle al desarrollador, mira, aquí un skill es esto y tienes incorporado tales tales skills dentro de lo que es la web suite. Y si tienes uno que pueda ser interesante, proponlo y lo podemos desarrollar, o a lo mejor tú ya has desarrollado uno y lo podemos publicar. Vale, ¿qué más tiene el la de Suite? Tiene MCP. Oye, hablemos de los MCP. Aquí le contarle, oye, aquí no es llegar y enchufar el MCP que se te ocurra, aparte de decirlo, y el MCP es esto es para poder usar un MCP dentro de la de Suite. No nos lo tienes que proponer, lo evaluamos en temas técnicos, seguridad y cosas. Por el estilo, y si se aprueba, se añade, vale, pero que no, cada persona también vaya instalando sus MSP así como arbitrariamente. Y a gente, misma cosa, ¿qué agentes tienes? ¿Qué es lo que es un agente? ¿Tú estás usando agentes ya? ¿Cuáles? ¿Hay alguno que te interese? ¿Cómo lo añadimos y cosas por el estilo? No sé, eso es como. Es como lo que me resuena en la cabeza, no sé si te hace sentido, Jonatan.
 
 **[6:02] Hospital Adriao, Jonatan:** Sí, lo veo lógico, sobre todo para la. Gente que no ha pasado por las sesiones 12345, etcétera. ¿Sabes? Para alguien que no ha pasado por esas sesiones, ya lo sabrá.
 
@@ -143,7 +143,7 @@
 
 **[12:41] Yehimy Rincón:** ¿Que tocaría instalar o que no? Sí, para poder definirlo. Creo que eso lo podemos hacer ahorita en agosto para que en septiembre ya ahí sí se libere la el proceso.
 
-**[12:53] Nibaldo Alfonso Pino Araya:** Sí, o sea, lo que dice Jonathan, no. A priori lo gestionamos directamente Raúl, que es de Pasiona y yo, y ahí vamos derivando. Hablamos internamente y lo vamos derivando, sí.
+**[12:53] Nibaldo Alfonso Pino Araya:** Sí, o sea, lo que dice Jonatan, no. A priori lo gestionamos directamente Raúl, que es de Pasiona y yo, y ahí vamos derivando. Hablamos internamente y lo vamos derivando, sí.
 
 **[13:03] Hospital Adriao, Jonatan:** Mhm. Se ahora Raúl está vacaciones. Supongo que el segundo es Francesc. No sé quién ha dejado a cargo, Raúl.
 
@@ -191,7 +191,7 @@
 
 **[14:17] Nibaldo Alfonso Pino Araya:** Vale.
 
-**[14:19] Yehimy Rincón:** ¿Y Jonathan, tú también ibas de vacaciones, salías de vacaciones, verdad?
+**[14:19] Yehimy Rincón:** ¿Y Jonatan, tú también ibas de vacaciones, salías de vacaciones, verdad?
 
 **[14:22] Hospital Adriao, Jonatan:** Solo la semana que viene.
 
@@ -247,7 +247,7 @@
 
 **[17:13] Segura Herrera, Óscar:** Y nada, nos hablamos, nada, hasta luego, chao, chao.
 
-**[17:15] Nibaldo Alfonso Pino Araya:** gusto saludarte Oscar chao Jonathan
+**[17:15] Nibaldo Alfonso Pino Araya:** gusto saludarte Oscar chao Jonatan
 
 **[17:15] Yehimy Rincón:** Chao, gracias, amigo.
 

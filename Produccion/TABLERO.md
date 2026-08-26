@@ -1,15 +1,16 @@
 # Tablero de Producción — Estrategia de Adopción GitHub Copilot GCO
 > Punto de entrada único de seguimiento y estado del proyecto.
-> Última actualización: 18 agosto 2026
+> Última actualización: 25 agosto 2026
 
 ---
 
-## 🔴 Estado actual, en 4 líneas
+## 🔴 Estado actual, en 5 líneas
 
-- **Teams GCO sigue en pausa**, pero varios posts se **auto-publicaron por error** (programación automática que siguió corriendo pese al congelamiento). Hoy, en la reunión de seguimiento, se decidió **retirarlos todos** de la cuenta de GCO.
-- Evidencia de lo retirado: `Produccion/elimina-post-teams-gco/` (capturas de cada post borrado).
+- **Teams GCO sigue en pausa.** Los posts que se auto-publicaron por error (programación automática que siguió corriendo pese al congelamiento) se retiraron todos el 18 ago. Evidencia: `Produccion/elimina-post-teams-gco/` — 7 capturas, que corresponden a **Pub 3, 4, 5, 6, 7 y 8 más el post de "Memoria vs. Instrucciones"**.
 - **La cadencia semanal (martes y jueves) se retoma la semana del 14-18 de septiembre**, publicando en el mismo orden de la cola — no se salta ni se repite nada.
-- El resto de la serie gco-dev-suite (Pub 12-19) sigue en producción o esperando visibilidad de prueba en Teams Raona — ver el cronograma abajo.
+- **La serie gco-dev-suite está producida hasta Pub 17.** Pub 13, 14 (+ hilo `14a`) y 15 publicadas de prueba en Teams Raona el 21 ago; Pub 16 y 17 el 24 ago. Pub 12 sigue como borrador sin enviar. Faltan Pub 18-19 (Agentes).
+- **Hay 6 vídeos producidos y publicados** (01-03 en Teams GCO, 04-06 de prueba en Teams Raona) y un séptimo aprobado el 15 jul que nunca se produjo — ver "Vídeos — resumen".
+- **Fase nueva abierta el 25 ago:** Óscar pidió que cada componente lleve caso de uso concreto, ejemplo y vídeo, y que el material sirva a quien no hizo la formación. Acta: `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_25-08-26.md`.
 
 ---
 
@@ -29,7 +30,7 @@
 | Orden | Pub | Fecha *(estimada)* | Canal | Tema | Por qué está en cola |
 |---|-----|------|-------|------|----------------------|
 | 1 | 3 | Mar 15 sep | Primeros Pasos | No tiene memoria permanente. Tiene un cajón. | 🗑️ Retirada de Teams GCO (auto-publicada, borrada 18 ago) |
-| 2 | 4 | Jue 17 sep | Anuncios y Tips | ¿Siempre usas el mismo modelo en GitHub Copilot? + 4 respuestas (incluye el post-hilo "Memoria vs. Instrucciones", programado 1h después — no es una Pub aparte) | 🗑️ Retirada de Teams GCO (auto-publicada, borrada 18 ago) — confirmar con Yehimy si fue el post completo o solo la tarjeta "Optimización de tokens" |
+| 2 | 4 | Jue 17 sep | Anuncios y Tips | ¿Siempre usas el mismo modelo en GitHub Copilot? + 3 respuestas, más el post propio **"Una vez o siempre"** programado 1h después (reescritura de "Memoria vs. Instrucciones", 25 ago — no es una Pub aparte) | 🗑️ Retirada de Teams GCO (auto-publicada, borrada 18 ago). **Confirmado el 25 ago:** se auto-publicaron los dos posts, el de Pub 4 (7:00) y el de "Memoria vs. Instrucciones" (8:00) |
 | 3 | 5 | Mar 22 sep | Primeros Pasos | ¿Copias y pegas código en el chat? | 🗑️ Retirada de Teams GCO (auto-publicada, borrada 18 ago) |
 | 4 | 6 | Jue 24 sep | Casos de Uso Reales | Caso de uso #1 — Entender COBOL heredado | 🗑️ Retirada de Teams GCO (auto-publicada, borrada 18 ago) |
 | 5 | 7 | Mar 29 sep | Casos de Uso Reales | Caso de uso #2 — Bug fixing | 🗑️ Retirada de Teams GCO (auto-publicada, borrada 18 ago) |
@@ -38,7 +39,7 @@
 | 8 | 10 | Jue 8 oct | Casos de Uso Reales | Video 05 — Tres casos, un mismo copiloto | 🔵 Solo en Teams Raona (prueba, 3 ago) |
 | 9 | 11 | Mar 13 oct | Casos de Uso Reales | Video 06 — Dos errores de pantalla | 🔵 Solo en Teams Raona (prueba, 3 ago) |
 | 10 | 12 | Jue 15 oct | Anuncios y Tips | gco-dev-suite: qué es y por qué existe | 🟡 Borrador cargado en Teams Raona — falta que Yehimy lo publique ahí primero |
-| 11 | 13 | Mar 20 oct | Anuncios y Tips | ¿Qué es una Skill (y qué no es)? | 🔵 Post + 2 infografías producidas — falta publicarlo de prueba en Teams Raona |
+| 11 | 13 | Mar 20 oct | Anuncios y Tips | ¿Qué es una Skill (y qué no es)? | 🔵 Publicada de prueba en Teams Raona (21 ago) — pendiente de validación antes de GCO |
 
 ### B · En producción — falta pieza gráfica, sin fecha todavía
 
@@ -46,8 +47,8 @@
 |-----|-------|------|--------|
 | 14 | Anuncios y Tips | Skills 2/3 — el mapa de los 5 niveles | 🔵 **Publicada en Teams Raona el 21 ago** (post + infografía + hilo `14a` con su tarjeta). No en Teams GCO |
 | 15 | Anuncios y Tips | Skills 3/3 — anatomía y cuándo usar | 🔵 **Publicada en Teams Raona el 21 ago** (post + 3 tarjetas). No en Teams GCO. Antes de GCO: confirmar con Nibaldo si `dotnet-review` es de las 32 skills reales |
-| 16 | Anuncios y Tips | MCP 1/2 — los 5 conectores | 🟠 **Post cerrado + brief con especificaciones Figma (21 ago)** — falta producir el **tríptico** (portada/problema/solución; el formato cambió de infografía a tríptico el 21 ago) |
-| 17 | Anuncios y Tips | MCP 2/2 — MCP en acción | 🟠 **Post cerrado + brief con especificaciones Figma (21 ago)** — falta producir la tarjeta comparativa |
+| 16 | Anuncios y Tips | MCP 1/2 — los 5 conectores | 🔵 **Publicada en Teams Raona el 24 ago** (post + tríptico de 3 tarjetas). No en Teams GCO. Brief actualizado contra las piezas producidas |
+| 17 | Anuncios y Tips | MCP 2/2 — MCP en acción | 🔵 **Publicada en Teams Raona el 24 ago** (post + tarjeta comparativa). No en Teams GCO. Brief actualizado contra la pieza producida |
 | 18 | Anuncios y Tips | Agentes 1/2 — los 3 que deciden | 🟡 Propuesta de contenido |
 | 19 | Anuncios y Tips | Agentes 2/2 — los agentes en acción, cierra la serie | 🟡 Propuesta de contenido |
 
@@ -58,7 +59,7 @@
 | Ítem | Falta |
 |------|-------|
 | AMA (Foro de ayuda) | Fecha (Nibaldo + Guillermo) |
-| Reservas 1:1 (Microsoft Bookings) | Configurar Bookings (Yehimy) |
+| Reservas 1:1 | Configurar Microsoft Bookings (Yehimy). **Ojo (25 ago):** la dinámica acordada en reunión es el subcanal de Reservas, sin Bookings — confirmar si sustituye o convive |
 
 ---
 
@@ -66,12 +67,18 @@
 
 | Ítem | Responsable | Notas |
 |------|-------------|-------|
-| Confirmar alcance real de lo auto-publicado en Pub 4 (¿post completo o solo 1 tarjeta?) | Yehimy | Ver cola A, fila Pub 4 |
 | URL canal corporativo para enlace en Vídeo 1 | Nibaldo | Necesaria tras publicación V1 |
 | Fecha sesión AMA | Nibaldo + Guillermo | Sin fecha — desbloquea pub AMA |
-| Microsoft Bookings | Yehimy | Sin configurar — desbloquea pub Reservas 1:1 |
+| Microsoft Bookings | Yehimy | Sin configurar. **Ojo (25 ago):** la dinámica confirmada en reunión no usa Bookings — es escribir en el subcanal de Reservas. Falta confirmar si sustituye a Bookings o conviven |
 | Confirmar si `dotnet-review`/`cobol-analyzer` son parte de las 32 skills reales | Nibaldo | Bloquea el cierre final de Pub 15 |
-| Confirmar si "gco-dev-suite" es la misma "Copilot Dev Suite" del guion del Video 04 | Nibaldo | Sin respuesta todavía |
+| Confirmar si "gco-dev-suite" es la misma "Copilot Dev Suite" del guion del Video 04 | Nibaldo | Sin respuesta desde el 11 ago. **El post del Vídeo 04 usa "Copilot Dev Suite" y está publicado en Raona** — hay dos nombres vivos para el mismo producto |
+| URL de Confluence con la documentación de instalación | Nibaldo | Pedida el 18 y el 25 ago. Bloquea el post de soporte de cada vídeo nuevo |
+| ¿La Memoria de GitHub Copilot y el "cajón" de Pub 3 son la misma cosa? | Nibaldo | **Ya no bloquea Pub 4** — el post se reescribió sin depender de la respuesta. Define si Memoria entra como tema propio (Pub 20) o si ya está cubierta |
+| Plan de las licencias de GCO: ¿modelo por uso (AI Credits) o plan anual legacy con multiplicadores? | Nibaldo | Abierto desde el 21 jun. Define si la tarjeta de tokens puede llevar cifras o se queda conceptual |
+| Qué modelos concretos incluye la licencia de GCO | Nibaldo | Abierto desde el 21 jun. **Es la razón por la que las piezas dicen "ligeros/avanzados" y no nombres de modelo** — sin esto, no se listan nombres |
+| Modo auto y nivel de razonamiento en Visual Studio (no solo VS Code) | Nibaldo | Abierto desde `prop_modelo-apropiado.md`. La audiencia usa Visual Studio como entorno principal |
+
+> ✅ **Resuelto el 25 ago — alcance de lo auto-publicado en Pub 4.** Las capturas de `elimina-post-teams-gco/` muestran **dos posts raíz separados**: "¿Siempre usas el mismo modelo?" (28/7 7:00) y "Memoria vs. Instrucciones" (28/7 8:00). Ninguno con respuestas. Se auto-publicaron ambos.
 
 ---
 
@@ -83,8 +90,13 @@
 | 02 | Pub 2 (post propio) | Autenticación en Visual Studio y VS Code | ✅ Publicado en Teams GCO (16 jul) |
 | 03 | Pub 2 (post propio) | Autenticación desde la terminal | ✅ Publicado en Teams GCO (16 jul) |
 | 04 | Respuesta en hilo de Pub 2 | Instala y configura tus MCP con la gco-dev-suite | ✅ Publicado de prueba en Teams Raona (14 ago) — no en Teams GCO. Falta producir la infografía (`V04-S1-infografia_activa-tus-mcp`) |
-| 05 | Pub 10 | Tres casos, un mismo copiloto | 🔵 Publicado de prueba en Teams Raona (3 ago) — pendiente edición final (difuminados) y piezas gráficas |
-| 06 | Pub 11 | Dos errores de pantalla | 🔵 Publicado de prueba en Teams Raona (3 ago) — pendiente audio de la sección 01 y piezas gráficas |
+| 05 | Pub 10 | Tres casos, un mismo copiloto | 🔵 Publicado de prueba en Teams Raona (3 ago) — no en Teams GCO. Piezas gráficas producidas (tríptico de 3) |
+| 06 | Pub 11 | Dos errores de pantalla | 🔵 Publicado de prueba en Teams Raona (3 ago) — no en Teams GCO. Piezas gráficas producidas (tríptico de 3) |
+| — | Primeros Pasos | Primera conversación con GitHub Copilot Chat + completado inline | ⚪ **Aprobado y nunca producido.** Opción A elegida por Jonatan el 15 jul. Guion en `Videos/v02_primeros-pasos/`. Recibe número global al entrar |
+
+> **Los archivos de vídeo (`.mp4`) no viven en el proyecto** — pesan y están excluidos en `.gitignore`. La evidencia de lo publicado son las capturas de los posts en `Produccion/imagenes_teams/` (por canal) y `Produccion/elimina-post-teams-gco/` (lo retirado de Teams GCO).
+
+> ⚠️ **Sin verificar (25 ago):** antes de publicar en Raona quedaron anotadas correcciones de julio — condensar el 04 de ~16 min a 2:30-3:00, difuminados del 05 (cámara, URL de producción, JSON con datos de personas), audio de la sección 01 del 06, y el audio del 05 donde la voz lee "prop" en vez de "prompt". **No se puede comprobar desde el proyecto si se aplicaron**, porque los vídeos finales no están aquí. Preguntar al equipo.
 
 > Detalle completo de cada video (guiones, feedback, tareas pendientes): ver la sección "Vídeos — detalle" en el historial más abajo.
 
@@ -169,25 +181,31 @@
 |-----|--------|-------|-------|-----------|---------------------|-------------------|---------|
 | 1 | S1 | Mar 3 jun | Todos los canales | Posts de bienvenida — 6 canales activados | ✅ Publicada | ✅ Publicada mar 14 jul | [pub-01_mar-02jun_(dia-01_mar-14-jul)/](semana-1_01-05jun(pub-01-02)/pub-01_mar-02jun_(dia-01_mar-14-jul)/) |
 | 2 | S1 | Jue 5 jun | Primeros Pasos | Cómo activar GitHub Copilot en Visual Studio — post + infografía + tarjetas paso a paso | ✅ Post + infografía publicados · tarjetas en Figma | ✅ Publicada jue 16 jul (con Videos 01–03) | [pub-02_jue-04jun_(dia-02_jue-16-jul)/](semana-1_01-05jun(pub-01-02)/pub-02_jue-04jun_(dia-02_jue-16-jul)/) |
-| 3 | S3 | — | Primeros Pasos | No tiene memoria permanente. Tiene un cajón. | ✅ Publicada | 🗑️ **Retirada (18 ago):** se auto-publicó pese al congelamiento — borrada, en cola de republicación (ver cronograma) | `semana-3_15-19jun/` |
-| 4 | S2 | — | Anuncios y Tips Ágiles | ¿Siempre usas el mismo modelo en GitHub Copilot? + 4 respuestas del hilo (la 4ª, "Memoria vs. Instrucciones", se publica como post propio 1h después — no es una Pub aparte, ver nota abajo) | ✅ Publicada | 🗑️ **Retirada (18 ago):** al menos la tarjeta "Optimización de tokens" se auto-publicó — confirmar con Yehimy si fue el post completo | [pub-04_jue-11jun_(dia-05_mar-28-jul)/](semana-2_08-12jun(pub-03-04-05)/pub-04_jue-11jun_(dia-05_mar-28-jul)/) |
+| 3 | S2 | — | Primeros Pasos | No tiene memoria permanente. Tiene un cajón. | ✅ Publicada | 🗑️ **Retirada (18 ago):** se auto-publicó el 23/7 a las 7:00 pese al congelamiento — borrada, en cola de republicación (ver cronograma) | [pub-03_mar-09jun_(dia-04_jue-23-jul)/](semana-2_08-12jun(pub-03-04-05)/pub-03_mar-09jun_(dia-04_jue-23-jul)/) |
+| 4 | S2 | 5 jun · 11 jun · **25 ago** | Anuncios y Tips Ágiles | ¿Siempre usas el mismo modelo en GitHub Copilot? + 3 respuestas del hilo, más el post propio **"Una vez o siempre"** 1h después (ver nota abajo) | ✅ Publicada · el post propio se **reescribió y republicó el 25 ago** | 🗑️ **Retirada (18 ago):** se auto-publicaron los dos posts (7:00 y 8:00 del 28/7). **Antes de republicar:** va la versión reescrita, no la original | [pub-04_jue-11jun_(dia-05_mar-28-jul)/](semana-2_08-12jun(pub-03-04-05)/pub-04_jue-11jun_(dia-05_mar-28-jul)/) |
 | 5 | S2 | Jue 11 jun | Primeros Pasos | Hay una forma más precisa. — Jerarquía de referencias de GitHub Copilot | ✅ Post + infografía publicados · tarjeta minimalista en Figma | 🗑️ **Retirada (18 ago):** se auto-publicó pese al congelamiento — borrada, en cola de republicación | [pub-05_jue-11jun_(dia-06_jue-30-jul)/](semana-2_08-12jun(pub-03-04-05)/pub-05_jue-11jun_(dia-06_jue-30-jul)/) |
 | 6 | S4 | Mar 23 jun | Casos de Uso Reales | Caso de uso real 1 — Entender código heredado con GitHub Copilot · COBOL | ✅ Publicada — post + tríptico (3 tarjetas) + respuesta "Prompts listos para el equipo" | 🗑️ **Retirada (18 ago):** se auto-publicó pese al congelamiento — borrada, en cola de republicación | [semana-4_22-26jun(pub-06-07)/pub-06_mar-23jun_(dia-07_mar-04-ago)/](semana-4_22-26jun(pub-06-07)/pub-06_mar-23jun_(dia-07_mar-04-ago)/) |
 | 7 | S4 | Jue 25 jun | Casos de Uso Reales | Caso de uso real 2 — Bug fixing con GitHub Copilot | ✅ Publicada — post + tríptico + respuesta "Prompts listos para el equipo" · confirmar lenguaje (.NET) con Nibaldo | 🗑️ **Retirada (18 ago):** se auto-publicó pese al congelamiento — borrada, en cola de republicación | [semana-4_22-26jun(pub-06-07)/pub-07_jue-25jun_(dia-08_jue-06-ago)/](semana-4_22-26jun(pub-06-07)/pub-07_jue-25jun_(dia-08_jue-06-ago)/) |
 | 8 | S5 | Mar 30 jun | Anuncios y Tips Ágiles | La fórmula del prompt que funciona — parte 1 (caso real SQLCODE en COBOL) | ✅ Publicada 3 jul — infografía + tarjeta antes/después | 🗑️ **Retirada (18 ago):** se auto-publicó pese al congelamiento — borrada, en cola de republicación | [semana-5_29jun-03jul(pub-08-09)/pub-08_mar-30jun_(dia-09_mar-11-ago)/](semana-5_29jun-03jul(pub-08-09)/pub-08_mar-30jun_(dia-09_mar-11-ago)/) |
 | 9 | S5 | Jue 2 jul | Anuncios y Tips Ágiles | La fórmula del prompt — parte 2 (Contexto y Restricciones) | ✅ Publicada 3 jul — díptico de 2 tarjetas | 🔵 Nunca se auto-publicó — sigue solo en Teams Raona, en cola de republicación | [semana-5_29jun-03jul(pub-08-09)/pub-09_jue-02jul_(dia-10_jue-13-ago)/](semana-5_29jun-03jul(pub-08-09)/pub-09_jue-02jul_(dia-10_jue-13-ago)/) |
-| 10 | S6 | 3 ago 2026 | Casos de Uso Reales | Video 05 — Tres casos, un mismo copiloto | ✅ Publicado (prueba) — post + video + 3 piezas gráficas | 🔵 No enviado — pendiente edición final (difuminados) | [pub-10_mar-01sep/](semana-6_27-31jul(pub-10-11)/pub-10_mar-01sep/) |
-| 11 | S6 | 3 ago 2026 | Casos de Uso Reales | Video 06 — Dos errores de pantalla | ✅ Publicado (prueba) — post + video + 3 piezas gráficas | 🔵 No enviado — pendiente audio sección 01 | [pub-11_jue-03sep/](semana-6_27-31jul(pub-10-11)/pub-11_jue-03sep/) |
+| 10 | S6 | 3 ago 2026 | Casos de Uso Reales | Video 05 — Tres casos, un mismo copiloto | ✅ Publicado (prueba) — post + video + tríptico de 3 piezas | 🔵 No enviado — pendiente revisión de coherencia técnica | [pub-10_mar-01sep/](semana-6_27-31jul(pub-10-11)/pub-10_mar-01sep/) |
+| 11 | S6 | 3 ago 2026 | Casos de Uso Reales | Video 06 — Dos errores de pantalla | ✅ Publicado (prueba) — post + video + tríptico de 3 piezas | 🔵 No enviado — pendiente revisión de coherencia técnica | [pub-11_jue-03sep/](semana-6_27-31jul(pub-10-11)/pub-11_jue-03sep/) |
 | 12 | S7 | — | Anuncios y Tips Ágiles | gco-dev-suite: qué es y por qué existe | 🟡 4 piezas producidas, cargadas como borrador — falta que Yehimy presione "Publicar en el canal" | 🔵 No enviado — pendiente de Raona primero | [pub-12_mar-11ago/](semana-7_10-14ago(pub-12-13)/pub-12_mar-11ago/) |
-| 13 | S7 | — | Anuncios y Tips Ágiles | ¿Qué es una Skill (y qué no es)? — serie Skills 1/3 | 🟡 Post + 2 infografías producidas — falta publicar de prueba | 🔵 No enviado — pendiente de Raona primero | [pub-13_jue-13ago/](semana-7_10-14ago(pub-12-13)/pub-13_jue-13ago/) |
-| 14 | S8 | — | Anuncios y Tips Ágiles | Skills 2/3 — el mapa de los 5 niveles | 🟡 Propuesta de contenido | ⚪ Sin producir todavía | [pub-14_mar-sem8-pendiente/](semana-8_fechas-pendiente(pub-14-15)/pub-14_mar-sem8-pendiente/) |
-| 15 | S8 | — | Anuncios y Tips Ágiles | Skills 3/3 — anatomía y cuándo usar | ✅ 3 piezas producidas y corregidas — lista para publicar de prueba (espera a Pub 14) | ⚪ Sin producir todavía | [pub-15_jue-sem8-pendiente/](semana-8_fechas-pendiente(pub-14-15)/pub-15_jue-sem8-pendiente/) |
-| 16 | S9 | — | Anuncios y Tips Ágiles | MCP 1/2 — los 5 conectores | 🟡 Propuesta de contenido | ⚪ Sin producir todavía | [pub-16_mar-sem9-pendiente/](semana-9_fechas-pendiente(pub-16-17)/pub-16_mar-sem9-pendiente/) |
-| 17 | S9 | — | Anuncios y Tips Ágiles | MCP 2/2 — MCP en acción | 🟡 Propuesta de contenido | ⚪ Sin producir todavía | [pub-17_jue-sem9-pendiente/](semana-9_fechas-pendiente(pub-16-17)/pub-17_jue-sem9-pendiente/) |
+| 13 | S7 | 21 ago 2026 | Anuncios y Tips Ágiles | ¿Qué es una Skill (y qué no es)? — serie Skills 1/3 | ✅ Publicada (prueba) — post + 2 infografías | 🔵 No enviado — pendiente de validación | [pub-13_jue-13ago/](semana-7_10-14ago(pub-12-13)/pub-13_jue-13ago/) |
+| 14 | S8 | 21 ago 2026 | Anuncios y Tips Ágiles | Skills 2/3 — el mapa de los 5 niveles | ✅ Publicada (prueba) — post + infografía + hilo `14a` con su tarjeta | 🔵 No enviado — pendiente de validación | [pub-14_mar-sem8-pendiente/](semana-8_fechas-pendiente(pub-14-15)/pub-14_mar-sem8-pendiente/) |
+| 15 | S8 | 21 ago 2026 | Anuncios y Tips Ágiles | Skills 3/3 — anatomía y cuándo usar | ✅ Publicada (prueba) — post + 3 tarjetas | 🔵 No enviado — bloqueada hasta confirmar `dotnet-review` con Nibaldo | [pub-15_jue-sem8-pendiente/](semana-8_fechas-pendiente(pub-14-15)/pub-15_jue-sem8-pendiente/) |
+| 16 | S9 | 24 ago 2026 | Anuncios y Tips Ágiles | MCP 1/2 — los 5 conectores | ✅ Publicada (prueba) — post + tríptico de 3 tarjetas · brief actualizado contra las piezas | 🔵 No enviado — pendiente de validación | [pub-16_mar-sem9-pendiente/](semana-9_fechas-pendiente(pub-16-17)/pub-16_mar-sem9-pendiente/) |
+| 17 | S9 | 24 ago 2026 | Anuncios y Tips Ágiles | MCP 2/2 — MCP en acción | ✅ Publicada (prueba) — post + tarjeta comparativa · brief actualizado contra la pieza | 🔵 No enviado — pendiente de validación | [pub-17_jue-sem9-pendiente/](semana-9_fechas-pendiente(pub-16-17)/pub-17_jue-sem9-pendiente/) |
 | 18 | S10 | — | Anuncios y Tips Ágiles | Agentes 1/2 — los 3 que deciden | 🟡 Propuesta de contenido | ⚪ Sin producir todavía | [pub-18_mar-sem10-pendiente/](semana-10_fechas-pendiente(pub-18-19)/pub-18_mar-sem10-pendiente/) |
 | 19 | S10 | — | Anuncios y Tips Ágiles | Agentes 2/2 — cierra la serie Pub 12-19 | 🟡 Propuesta de contenido | ⚪ Sin producir todavía | [pub-19_jue-sem10-pendiente/](semana-10_fechas-pendiente(pub-18-19)/pub-19_jue-sem10-pendiente/) |
 
-> **"Memoria vs. Instrucciones" no es una Pub numerada.** Es un ajuste/aclaración que vive como hilo de **Pub 4** (`post-memoria-vs-instrucciones_mar-28jul.md`, en la carpeta de Pub 4) — igual que el Video 04 es un hilo de Pub 2, no una publicación propia. Republica junto con Pub 4, no ocupa su propio turno en la cola.
+> **El post propio de Pub 4 no es una Pub numerada.** Pertenece a **Pub 4** y republica junto con ella, sin ocupar turno propio en la cola. Desde el 25 ago su archivo es `post-una-vez-o-siempre_pub4.md`.
+>
+> ✅ **Reescrito el 25 ago 2026.** "Memoria vs. Instrucciones" pasa a llamarse **"Una vez o siempre"**. Cambia el eje: ya no compara *lo tuyo vs. lo del equipo* sino **lo que dura la conversación vs. lo que dura siempre**. Se saca "Copilot Memory" de la pieza, porque el equipo estableció el 25 ago que no es editable ni tiene un sitio donde vivir — ponerlo en una comparativa generaba la pregunta sin respuesta que levantó Óscar. El bloque de `copilot-instructions.md` se conserva íntegro. Publicado en Teams Raona el 25 ago editando el post existente. Original y motivo en `deprecados/`.
+>
+> ⚠️ **En cada tenant salió de forma distinta.** En **Teams GCO** se auto-publicó como **post raíz independiente** el 28/7 a las 8:00, una hora después de Pub 4 y sin respuestas (`elimina-post-teams-gco/post-x_memoria-vs-instrucciones.png`). En **Teams Raona** salió **dentro del hilo** del post principal, el 11 jun (`imagenes_teams/01_anuncios-y-tips-agiles/05-pub-04_anuncios-y-tips-agiles.png`). Los lectores de GCO lo vieron suelto, sin el post que lo contextualiza — **eso explica el diagnóstico de Óscar del 18 ago**. **Al republicar hay que decidir explícitamente cuál de las dos formas se usa.**
+>
+> ✅ **Resuelto el 25 ago.** El contenido quedó desalineado con lo que Jonatan y Nibaldo establecieron ese día — la Memoria **es el contexto de la conversación actual**, no un objeto editable ni algo que persista entre sesiones. Se reescribió el mismo día y se publicó en Raona. Los hilos `4-a` y `4-b`, que existían para parchear el post original, quedan deprecados: nunca se produjeron sus piezas y arrastraban la misma premisa.
 >
 > _Nota de numeración: Pub 3 y 4 estuvieron ausentes de esta tabla en versiones anteriores del tablero por un descuido — quedan restituidas el 18 ago. **Renumeración del 30 jul:** Video 05/06 toman Pub 10/11; Skills+instructions pasa a Pub 12. **Renumeración del 18 ago:** la serie gco-dev-suite crece de Pub 12-16 a **Pub 12-19** (cierre de la serie, sin Pub 20). Ningún número se elimina, solo se corren hacia adelante — ver `CLAUDE.md` ("Regla de numeración")._
 
@@ -200,16 +218,16 @@
 | Infografía jerarquía de referencias | Pub 5 | Infografía 1080×1350 px | ✅ Producida |
 | Tríptico Pub 6 — Entender COBOL heredado | Pub 6 | card-triptico · 3 paneles · 1080×1080 px | ✅ Producida |
 | Tríptico Pub 7 — Bug fixing con contexto | Pub 7 | card-triptico · 3 paneles · 1080×1080 px | ✅ Producida |
-| Infografía "La fórmula del prompt que funciona" (`09-S5-infografia_prompts`) | Pub 8 | Infografía · 1080×1350 px | ✅ Producida |
-| Tarjeta "El mismo encargo, dos resultados" (`09-S5-card-contexto`) | Pub 8 (respuesta 1) | Tarjeta comparativa horizontal | ✅ Producida |
-| Tarjeta "Contexto" del díptico (`10-S5-card-contexto`) | Pub 9 | Tarjeta horizontal ~1920×1080 px | ✅ Producida |
-| Tarjeta "Restricciones" del díptico (`10-S5-card-restricciones`) | Pub 9 | Tarjeta horizontal ~1920×1080 px | ✅ Producida |
+| Infografía "La fórmula del prompt que funciona" (`pub-08_s-5_infografia_la-formula-del-prompt-que-funciona`) | Pub 8 | Infografía · 1080×1350 px | ✅ Producida |
+| Tarjeta "El mismo encargo, dos resultados" (`pub-08_s-5_tarjeta-comparativa_el-mismo-encargo-dos-resultados`) | Pub 8 (respuesta 1) | Tarjeta comparativa horizontal | ✅ Producida |
+| Tarjeta "Contexto" del díptico (`pub-09_s-5_diptico_1-contexto-muestrale-solo-lo-que-importa`) | Pub 9 | Tarjeta horizontal ~1920×1080 px | ✅ Producida |
+| Tarjeta "Restricciones" del díptico (`pub-09_s-5_diptico_2-restricciones-dile-las-reglas-de-gco`) | Pub 9 | Tarjeta horizontal ~1920×1080 px | ✅ Producida |
 | Tarjeta minimalista "Empieza por lo más acotado" | Pub 5 | Tarjeta minimalista 1080×1350 px | 🔄 Producción Figma |
 | 1-S2 · Optimización de Tokens y Modelos | Pub 4 | Tarjeta comparativa 1920×1080 px | ✅ Reformulada (plan-agnóstica) — pendiente confirmar plan de GCO con Nibaldo |
 | 2-S2 · Diseñe la solución con un modelo Premium | Pub 4 | Tarjeta minimalista 1080×1350 px | 🔄 Producción Figma |
 | 3-S2 · Carga progresiva de Skills | Pub 4 | Tarjeta minimalista 1080×1350 px | 🔄 Producción Figma |
 | 4-S2 · Higiene de la memoria a corto plazo | Pub 4 | Tarjeta minimalista 1080×1350 px | 🔄 Producción Figma |
-| 5-S2 · Memoria vs. Instrucciones del equipo | Pub 4 | Tarjeta comparativa 1920×1080 px | 🔄 Producción Figma |
+| `pub-04_s-2_tarjeta-comparativa_una-vez-o-siempre` · Una vez o siempre | Pub 4 (post propio) | Tarjeta comparativa horizontal | ✅ Producida y publicada en Raona (25 ago). Sustituye a la de "Memoria vs. Instrucciones", en `deprecados/` |
 | Tríptico Pub 10 — Video 05, código real de GCO | Pub 10 | card-triptico · 3 paneles · 1080×1080 px | 🔄 Brief listo, cifras pendientes de Nibaldo |
 | Tríptico Pub 11 — Video 06, debugging | Pub 11 | card-triptico · 3 paneles · 1080×1080 px | 🔄 Brief listo, cifras pendientes de Nibaldo |
 | Tríptico + 3 tarjetas Pub 12 | Pub 12 | card-triptico + tarjeta minimalista | ✅ Producidas, cargadas como borrador |
@@ -220,10 +238,12 @@
 | Tarjeta "Investigar un fallo: antes / ahora" | Pub 17 | Tarjeta comparativa horizontal | 🔄 Brief listo |
 | Tríptico "Los 3 agentes" | Pub 18 | card-triptico · 3 paneles · 1080×1080 px | 🔄 Brief listo |
 | Infografía "El flujo de un cambio: 6 pasos" | Pub 19 | Infografía 1080×1350 px | 🔄 Brief listo |
-| Tarjeta "¿Esto es tuyo o del equipo?" (`4a-S2-card_memoria-o-instructions`) | Hilo `4-a` (de Pub 4) | Tarjeta comparativa horizontal | 🔄 Brief listo |
-| Tarjeta "Los 5 niveles vs. Memoria" (`14a-S8-card_memoria-no-es-nivel`) | Hilo `14-a` (de Pub 14) | Tarjeta comparativa horizontal | 🔄 Brief listo |
+| Tarjeta "¿Esto es tuyo o del equipo?" | Hilo `4-a` (de Pub 4) | Tarjeta comparativa horizontal | ⛔ **Deprecada el 25 ago** — nunca se produjo. El hilo `4-a` está en `deprecados/` |
+| Tarjeta "Los 5 niveles vs. Memoria" (`pub-14a_s-8_tarjeta-comparativa_los-5-niveles-hablan-del-proyecto-memoria-habla-de-ti-no-es-nivel`) | Hilo `14-a` (de Pub 14) | Tarjeta comparativa horizontal | 🔄 Brief listo |
 
-> **Hilos `4-a` y `14-a` (18 ago, feedback de Yehimy):** dos publicaciones distintas que profundizan la misma aclaración (Memoria vs. Instructions) desde ángulos distintos, cada una respondiendo dentro del hilo de su Pub — no llevan número de Pub propio, igual que el Video 04 es hilo de Pub 2. `4-a` lo aborda desde el día a día (tus hábitos); `14-a` desde el mapa de personalización (por qué Memoria no es un sexto nivel). Ver `canal-anuncios-tips_pub4-a.md` y `canal-anuncios-tips_pub14-a.md`.
+> **Hilos `4-a` y `14-a` (18 ago) — estado tras el 25 ago:**
+> - ⛔ **`4-a` deprecado.** Existía para parchear el post de Memoria sin tocarlo. Al reescribirse el post en origen ("Una vez o siempre"), dejó de tener sentido — y además se apoyaba en la premisa que el equipo desmintió. Nunca se produjo su pieza. En `deprecados/`.
+> - 🟠 **`14-a` pendiente de revisar.** Publicado en Teams Raona el 21 ago con su tarjeta. Dos problemas: cierra remitiendo a `4-a` (enlace roto) y se apoya en el eje *"¿esto es mío o del equipo?"*, abandonado en Pub 4. **Cómo se reescriba depende de la respuesta de Nibaldo** a si Memoria y el "cajón" de Pub 3 son la misma cosa. Ver `canal-anuncios-tips_pub14-a.md`.
 
 ### Vídeos — detalle
 
@@ -235,10 +255,10 @@
 | 01 | Configuración del entorno | Verifica tu acceso e instala las herramientas | ✅ Publicado en Teams GCO jue 16 jul (con Pub 2) — confirmado con captura (14 ago) · URL canal corporativo pendiente | [Videos/v01_configuracion-entorno/](Videos/v01_configuracion-entorno/) |
 | 02 | Configuración del entorno | Autenticación en Visual Studio y VS Code | ✅ Publicado en Teams GCO jue 16 jul (post propio) — confirmado con captura (14 ago) | [Videos/v01_configuracion-entorno/](Videos/v01_configuracion-entorno/) |
 | 03 | Configuración del entorno | Autenticación desde la terminal (`gh auth login`) | ✅ Publicado en Teams GCO jue 16 jul (post propio) — confirmado con captura (14 ago) | [Videos/v01_configuracion-entorno/](Videos/v01_configuracion-entorno/) |
-| 04 | Multientorno · MCP (Fase 3) | Instala y configura tus MCP con la gco-dev-suite | ✅ Guion listo, grabación de Víctor Gisbert (~16 min) · 🔄 pendiente edición (condensar a 2:30-3:00 + difuminar datos sensibles) · ✅ Publicado de prueba en Teams Raona (14 ago), respuesta en hilo de Pub 2 · no lleva número de Pub propio · falta producir la infografía `V04-S1-infografia_activa-tus-mcp` | [Videos/v04_instalar-mcp/](Videos/v04_instalar-mcp/) |
-| 05 (Pub 10) | Casos de uso reales | GitHub Copilot con código real de GCO | ✅ Guion listo, post redactado · 🔄 pendiente edición/postproducción (difuminados: cámara de Luis, URL de producción, JSON con datos de personas) · falta contenido gráfico · pendiente revisión de coherencia por Nibaldo · 📌 corregir audio (errores TTS tipo "prop" por "prompt") | [pub-10_mar-01sep/](semana-6_27-31jul(pub-10-11)/pub-10_mar-01sep/) |
-| 06 (Pub 11) | Casos de uso reales | Dos bugs de pantalla resueltos | ✅ Guion revisado, post redactado · 🎙️ audios secciones 02-04 generados, falta sección 01 · falta contenido gráfico · pendiente revisión de coherencia por Nibaldo | [pub-11_jue-03sep/](semana-6_27-31jul(pub-10-11)/pub-11_jue-03sep/) |
-| Por asignar | Primeros pasos | Primera conversación con GitHub Copilot Chat + completado inline (decisión de Jonatan, 15 jul: Opción A) | 🔄 Ajustes pendientes (Nibaldo): ocultar dato del login + regrabar autenticación VS Code | [Videos/v02_primeros-pasos/](Videos/v02_primeros-pasos/) |
+| 04 | Multientorno · MCP (Fase 3) | Instala y configura tus MCP con la gco-dev-suite | ✅ **Publicado de prueba en Teams Raona (14 ago)**, respuesta en hilo de Pub 2 · no lleva número de Pub propio · ⚠️ el post lo titula **"Copilot Dev Suite"**, no "gco-dev-suite" — nombre sin unificar · falta producir la infografía `V04-S1-infografia_activa-tus-mcp` · ❓ sin verificar si se aplicó el condensado a 2:30-3:00 y el difuminado de datos | [Videos/v04_instalar-mcp/](Videos/v04_instalar-mcp/) |
+| 05 (Pub 10) | Casos de uso reales | GitHub Copilot con código real de GCO | ✅ **Publicado de prueba en Teams Raona (3 ago)** — post + vídeo + tríptico de 3 piezas producido · 🔄 pendiente revisión de coherencia técnica por el equipo · ❓ sin verificar si se aplicaron los difuminados (cámara de Luis, URL de producción, JSON con datos de personas) y la corrección de audio ("prop" por "prompt") | [pub-10_mar-01sep/](semana-6_27-31jul(pub-10-11)/pub-10_mar-01sep/) |
+| 06 (Pub 11) | Casos de uso reales | Dos bugs de pantalla resueltos | ✅ **Publicado de prueba en Teams Raona (3 ago)** — post + vídeo + tríptico de 3 piezas producido · 🔄 pendiente revisión de coherencia técnica por el equipo · ❓ sin verificar si se generó el audio de la sección 01 | [pub-11_jue-03sep/](semana-6_27-31jul(pub-10-11)/pub-11_jue-03sep/) |
+| Sin número | Primeros pasos | Primera conversación con GitHub Copilot Chat + completado inline | ⚪ **Aprobado el 15 jul (Opción A, decisión de Jonatan) y nunca producido.** Guion listo. Casilla sin marcar en `Seguimiento/matriz-correcciones-videos_15jul2026.md`. Decidir si entra en la tanda de vídeos abierta el 25 ago | [Videos/v02_primeros-pasos/](Videos/v02_primeros-pasos/) |
 | V-Nibaldo | — | Videos propios de Nibaldo | 🔄 En curso | — |
 
 ### Comentarios de Jonatan en Teams (16 jun) — acciones derivadas

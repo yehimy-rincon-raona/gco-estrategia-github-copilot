@@ -2,9 +2,15 @@
 
 > Canal: Anuncios y Tips Ágiles · Tipo: Hilo/respuesta de **Pub 14** (el mapa de los 5 niveles) — no lleva número de Pub propio, igual que el Video 04 es hilo de Pub 2
 > Perspectiva: desde el mapa de personalización — por qué Memoria queda fuera de los 5 niveles, no es una omisión
-> Trabaja en pareja con el hilo **`4-a`** (`canal-anuncios-tips_pub4-a.md`, en la carpeta de Pub 4) — mismo tema, ángulo distinto: ese hilo lo aborda desde el día a día (tus hábitos), este desde el mapa (la arquitectura de personalización)
+> ⚠️ **PENDIENTE DE REESCRITURA (25 ago 2026) — no republicar tal cual.** Dos motivos:
+> 1. **El cierre del post remite al hilo `4-a`, que quedó deprecado el 25 ago** (está en `Produccion/semana-2.../pub-04.../deprecados/`). El enlace no lleva a ninguna parte.
+> 2. **El eje que usa —"¿esto es mío o es del equipo?"— es el que se abandonó en Pub 4.** En la reunión del 25 ago, Jonatan y Nibaldo establecieron que la Memoria de GitHub Copilot **es el contexto de la conversación actual**, no algo que persista sobre ti. Decir que *"le enseña a GitHub Copilot algo sobre ti"* apunta en la misma dirección que la frase que Óscar objetó. Pub 4 pasó a organizarse por **duración**, no por propiedad.
+>
+> **Qué falta para reescribirlo:** la respuesta de Nibaldo a si **la Memoria y el "cajón" de Pub 3 son la misma cosa**. Si lo son, la respuesta del post cambia (Memoria queda fuera del mapa por ser el contexto donde ocurre todo, no por ser "tuya"). Si no lo son, hace falta la diferencia real. Ver `Seguimiento/solicitudes-nibaldo_26ago2026.md`, sección 3.4.
+>
+> Está publicado **solo en Teams Raona** (21 ago), así que hay margen antes de GCO. Sustituto de Pub 4: `post-una-vez-o-siempre_pub4.md`.
 > Origen: responde al diagnóstico de Óscar en la reunión del 18 ago sobre la confusión Copilot Memory vs. Instructions — ver `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_18-08-26.md`, tema 3
-> Estado: 🟠 Post cerrado y brief listo para producir (21 ago) — falta únicamente producir la tarjeta en Figma
+> Estado: 🟠 **Publicado en Teams Raona el 21 ago** (post + tarjeta producida) — pendiente de reescritura, ver aviso arriba
 
 ---
 
@@ -36,11 +42,11 @@ Memoria vive en otro eje: le enseña a Copilot algo sobre **ti**. No sobre el pr
 
 | # | Pieza | Rol | Estado |
 |---|-------|-----|--------|
-| 1 | Tarjeta comparativa "Los 5 niveles (del proyecto) vs. Memoria (tuya)" (`14a-S8-card_memoria-no-es-nivel`) | Refuerza visualmente por qué Memoria queda fuera del mapa — un solo criterio, no una tabla completa | 🔄 Brief listo, falta producir en Figma |
+| 1 | Tarjeta comparativa "Los 5 niveles (del proyecto) vs. Memoria (tuya)" (`pub-14a_s-8_tarjeta-comparativa_los-5-niveles-hablan-del-proyecto-memoria-habla-de-ti-no-es-nivel`) | Refuerza visualmente por qué Memoria queda fuera del mapa — un solo criterio, no una tabla completa | 🔄 Brief listo, falta producir en Figma |
 
 ---
 
-## Brief — Tarjeta comparativa `14a-S8-card_memoria-no-es-nivel`
+## Brief — Tarjeta comparativa `pub-14a_s-8_tarjeta-comparativa_los-5-niveles-hablan-del-proyecto-memoria-habla-de-ti-no-es-nivel`
 
 **Tipo de pieza:** Tarjeta comparativa horizontal, panel único (ver `Configuraciones/matriz-componentes-graficos.csv`, fila "Tarjeta comparativa horizontal")
 **Origen del contenido:** `material-base_skills-que-son-y-cuando-usarlas.md` — secciones 3.1 y 3.7

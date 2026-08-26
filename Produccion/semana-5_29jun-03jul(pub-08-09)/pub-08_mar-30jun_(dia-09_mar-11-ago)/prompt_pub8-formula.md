@@ -34,4 +34,4 @@ Si algún dato de estilo no está definido en el catálogo (retícula, tamaños 
 
 - Si Claude Design pregunta por la variante, confírmale F2-D.
 - Cuando devuelva el primer diseño, revísalo contra el brief: que la fórmula sea el elemento central, que los `+` estén en rojo, que "Restricciones" tenga el acento, y que no haya colado el ejemplo de código (ese va en el texto del post, no en la pieza).
-- Producida y aprobada — exportada como `09-S5-infografia_prompts.jpg` en la carpeta de la pub. Pasa a ser la imagen de referencia oficial de la variante F2-D.
+- Producida y aprobada — exportada como `pub-08_s-5_infografia_la-formula-del-prompt-que-funciona.jpg` en la carpeta de la pub. Pasa a ser la imagen de referencia oficial de la variante F2-D.

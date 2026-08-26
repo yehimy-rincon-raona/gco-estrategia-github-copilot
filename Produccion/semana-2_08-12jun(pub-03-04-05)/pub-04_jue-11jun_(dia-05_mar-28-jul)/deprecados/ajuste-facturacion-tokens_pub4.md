@@ -1,3 +1,23 @@
+> # ⛔ DEPRECADO — archivo histórico
+>
+> **Fecha de deprecación:** 25 de agosto de 2026
+> **Archivo original:** `ajuste-facturacion-tokens_pub4.md` (carpeta de Pub 4)
+>
+> ## Por qué se deprecó
+>
+> **El cambio que registra ya está aplicado.** Documentaba el antes/después de adaptar el post y las tarjetas de Pub 4 al cambio de facturación de GitHub Copilot del 21 jun 2026 (los multiplicadores `0x`/`1x`/`3x` quedaron legacy el 1 jun 2026). Las versiones finales viven en `canal-anuncios-tips_pub4.md`; las anteriores, en `deprecado_briefs-historicos_pub4.md`.
+>
+> Se conserva por trazabilidad: aquí está el detalle de qué decía cada texto y cada tarjeta antes de corregirse, y por qué.
+>
+> ## Lo que estaba vivo y se sacó de aquí antes de deprecarlo
+>
+> | Qué | A dónde fue |
+> |---|---|
+> | Los 3 pendientes con Nibaldo (plan de licencias · modelos concretos de GCO · modo auto en Visual Studio) | Bloqueantes activos de `Produccion/TABLERO.md` y `Seguimiento/solicitudes-nibaldo_26ago2026.md` — son del proyecto, no de Pub 4 |
+> | La regla "ningún modelo es gratis" | Brief de la tarjeta de tokens, dentro de `canal-anuncios-tips_pub4.md` |
+>
+> ---
+
 # Ajuste de facturación · Post Pub 4 / tarjetas de tokens · 21 junio 2026
 
 > **Qué es este documento:** registra el cambio que hay que aplicar al post `canal-anuncios-tips_pub4.md` (y a sus tarjetas de modelos/tokens) por el cambio de facturación de GitHub Copilot. Vive en esta carpeta porque aquí está el post que se modifica.

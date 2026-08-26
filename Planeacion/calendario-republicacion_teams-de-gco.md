@@ -46,7 +46,7 @@ Cada post se copia del bloque "Post listo para copiar en Teams" de su documento.
 | Elemento | Detalle | Fuente |
 |----------|---------|--------|
 | Post (Video 01) | "Verifica que GitHub Copilot está listo en tu Visual Studio" — con el nombre completo "GitHub Copilot" en el título (corrección ya incorporada en el documento) | `Produccion/semana-1_01-05jun(pub-01-02)/pub-02_jue-04jun_(dia-02_jue-16-jul)/canal-primeros-pasos_pub2-video1.md` |
-| Infografía | "Activa GitHub Copilot en Visual Studio" (`02-4-S1-Infografia_paso-a-paso.jpg`) | misma carpeta de la Pub 2 |
+| Infografía | "Activa GitHub Copilot en Visual Studio" (`pub-02_s-1_infografia_configura-tu-entorno-visual-studio.jpg`) | misma carpeta de la Pub 2 |
 | Tríptico | Tarjetas T1 "¿Tengo que instalar Visual Studio?" (archivos `02-1-S1-Card_T1...` a `02-3-S1-Card_T1...`) | `.../pub-02_jue-04jun_(dia-02_jue-16-jul)/` · detalle en `02-S1-cards_paso-a-paso.md` |
 | Post (Video 02) | "Conecta tu cuenta corporativa" — Autenticación en Visual Studio y VS Code | `.../pub-02_jue-04jun_(dia-02_jue-16-jul)/canal-primeros-pasos_pub2-video2.md` |
 | Post (Video 03) | "GitHub Copilot también en tu terminal" — Autenticación desde la terminal | `.../pub-02_jue-04jun_(dia-02_jue-16-jul)/canal-primeros-pasos_pub2-video3.md` |

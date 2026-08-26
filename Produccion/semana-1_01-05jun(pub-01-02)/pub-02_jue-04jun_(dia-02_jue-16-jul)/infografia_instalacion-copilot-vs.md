@@ -1,5 +1,5 @@
 # Brief de infografía — Pub 2 · Activa GitHub Copilot en Visual Studio
-> Archivo gráfico: `02-4-S1-Infografia_paso-a-paso.jpg`
+> Archivo gráfico: `pub-02_s-1_infografia_configura-tu-entorno-visual-studio.jpg`
 > Canal: Primeros Pasos con GitHub Copilot · Fecha: Jueves 5 junio
 > Herramienta de diseño: Figma
 > Uso: adjunta al post de Teams · funciona de forma autónoma

@@ -1,7 +1,7 @@
 # Canal Anuncios y Tips — Pub 8 · La fórmula del prompt que funciona (parte 1)
 > Canal: Anuncios y Tips Ágiles · Tipo: Tip de uso
 > ⏱️ **Producción: Semana 5 (trabajo del 30 jun)** · **Publicación: Semana 5 — martes 30 jun (fecha a confirmar en la reunión)**
-> Estado: ✅ Ambas piezas producidas — infografía de la fórmula (`09-S5-infografia_prompts.jpg`) + imagen de apoyo del ejemplo (`09-S5-card-contexto.jpg`)
+> Estado: ✅ Ambas piezas producidas — infografía de la fórmula (`pub-08_s-5_infografia_la-formula-del-prompt-que-funciona.jpg`) + imagen de apoyo del ejemplo (`pub-08_s-5_tarjeta-comparativa_el-mismo-encargo-dos-resultados.jpg`)
 > Fuente: `Configuraciones/estructura_prompt.md` · sesiones de formación · `Planeacion/Semana-0_planeacion-del-proyecto/ejemplos_practicos_Github-Copilot.md`
 
 ---
@@ -44,8 +44,8 @@ Esta pub lleva **dos piezas gráficas** con roles distintos:
 
 | # | Pieza | Rol | Estado |
 |---|-------|-----|--------|
-| 1 | Infografía de la fórmula (`09-S5-infografia_prompts`) | Acompaña el **post principal**. Fija las 5 piezas de un vistazo. | ✅ Producida |
-| 2 | Imagen de apoyo del ejemplo (`09-S5-card-contexto`) | Acompaña el **Respuesta 1**. Muestra el mismo encargo en dos resultados: incompleto vs. con la fórmula. | ✅ Producida |
+| 1 | Infografía de la fórmula (`pub-08_s-5_infografia_la-formula-del-prompt-que-funciona`) | Acompaña el **post principal**. Fija las 5 piezas de un vistazo. | ✅ Producida |
+| 2 | Imagen de apoyo del ejemplo (`pub-08_s-5_tarjeta-comparativa_el-mismo-encargo-dos-resultados`) | Acompaña el **Respuesta 1**. Muestra el mismo encargo en dos resultados: incompleto vs. con la fórmula. | ✅ Producida |
 
 > Regla de no duplicar: la infografía fija **la fórmula**; la imagen de apoyo muestra **el ejemplo aplicado**; el texto del Respuesta 2 aporta la plantilla copiable. Cada pieza dice algo distinto.
 
@@ -131,14 +131,14 @@ No hace falta rellenar las cinco siempre — pero cuando algo no sale, revisa cu
 
 | # | Nombre de archivo | Tipo | Tema | Estado |
 |---|-------------------|------|------|--------|
-| 1 | `09-S5-infografia_prompts` | infografía · fórmula / componentes · 1080×1350 px | La fórmula de 5 piezas: Rol + Contexto + Tarea + Restricciones + Formato | ✅ Producida |
-| 2 | `09-S5-card-contexto` | tarjeta comparativa horizontal · antes/después | El mismo encargo, dos resultados: prompt incompleto vs. con la fórmula (caso SQLCODE en COBOL) | ✅ Producida |
+| 1 | `pub-08_s-5_infografia_la-formula-del-prompt-que-funciona` | infografía · fórmula / componentes · 1080×1350 px | La fórmula de 5 piezas: Rol + Contexto + Tarea + Restricciones + Formato | ✅ Producida |
+| 2 | `pub-08_s-5_tarjeta-comparativa_el-mismo-encargo-dos-resultados` | tarjeta comparativa horizontal · antes/después | El mismo encargo, dos resultados: prompt incompleto vs. con la fórmula (caso SQLCODE en COBOL) | ✅ Producida |
 
 > La **plantilla en blanco** (Respuesta 2) es solo texto para copiar. El **ejemplo antes/después** tiene su imagen de apoyo (pieza 2), además del texto del Respuesta 1.
 
 ---
 
-## Pieza 1 — Infografía de la fórmula · `09-S5-infografia_prompts` ✅ Producida
+## Pieza 1 — Infografía de la fórmula · `pub-08_s-5_infografia_la-formula-del-prompt-que-funciona` ✅ Producida
 
 **Tipo de pieza:** infografía vertical con la fórmula desglosada en sus 5 componentes (una tarjeta por pieza, con icono)
 **Origen del contenido:** `estructura_prompt.md` + caso COBOL SQLCODE de las sesiones
@@ -164,7 +164,7 @@ No hace falta rellenar las cinco siempre — pero cuando algo no sale, revisa cu
 
 ---
 
-## Pieza 2 — Imagen de apoyo del ejemplo · `09-S5-card-contexto` ✅ Producida
+## Pieza 2 — Imagen de apoyo del ejemplo · `pub-08_s-5_tarjeta-comparativa_el-mismo-encargo-dos-resultados` ✅ Producida
 
 **Tipo de pieza:** tarjeta comparativa horizontal antes/después — dos paneles (Prompt incompleto vs. Prompt con fórmula), el segundo anotado pieza por pieza
 **Origen del contenido:** control de errores tras una sentencia SQL en COBOL — Sesión 2 · G4M/G5M (`ejemplos_practicos_Github-Copilot.md`)

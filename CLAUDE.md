@@ -14,34 +14,55 @@ GCO ya tiene licencias activas y un proceso de formación técnica en curso, imp
 
 ## EQUIPO
 
-| Persona | Rol |
-|---------|-----|
+> Los roles de abajo son **lo que cada persona hace en este proyecto según los documentos y actas** — el fichero de contactos (`Seguimiento/equipo-de-trabajo.md`) solo tiene nombres y correos, sin cargos. Ahí está la lista completa, incluidas personas que aún no aparecen en ninguna decisión registrada.
+
+### Raona — quien produce
+
+| Persona | Qué hace en el proyecto |
+|---------|-------------------------|
 | **Yehimy Rincón (Jamie)** | Estratega, creadora de contenidos, interlocutora principal. Perfil UX/UI — sé muy claro en temas técnicos para que el contenido hable el idioma de los developers. |
-| **Nibaldo** | Experto técnico GitHub Copilot. Valida contenidos, define casos de uso. |
-| **Guillermo** | Lead de cuenta GCO. Relación con cliente, presenta la propuesta. |
+| **Nibaldo Alfonso Pino Araya** | Experto técnico en GitHub Copilot. Valida contenidos, define casos de uso y es quien resuelve las dudas técnicas que bloquean piezas. Lidera el equipo que aporta el material de origen. |
+| **Guillermo Tato Colomer** | Lead de cuenta GCO. Relación con cliente, presenta la propuesta. |
+| **Esteban Serrano Castillo** | Parte del equipo de Nibaldo. Aportó el material de origen de la serie gco-dev-suite. **Su material se atribuye como "equipo de Nibaldo", no como fuente externa separada.** |
+| **Salvador Ivars Suárez** ("Salva") | Soporte técnico. Atiende consultas del subcanal de Reservas. En las revisiones aporta la lectura de quien ve el contenido por primera vez. |
+| **Víctor Gisbert Climent** | Grabaciones de los vídeos (Vídeo 04, entrevista de casos de uso). |
 
----
+### GCO — quien valida
 
-## ESTADO ACTUAL (Junio 2026 — Semana 1 de ejecución)
+| Persona | Qué hace en el proyecto |
+|---------|-------------------------|
+| **Jonatan Hospital Adriao** | Interlocutor principal de GCO. Decide sobre opciones de contenido, comunica a Informática y marca reglas de estilo (de él viene la regla de no usar anglicismos). **Su nombre se escribe siempre "Jonatan" — nunca "Jonathan".** |
+| **Óscar Segura Herrera** | Revisa el contenido y lo cuestiona desde la mirada del lector. De sus diagnósticos salen las correcciones de fondo — el post de Memoria y la exigencia de que cada componente lleve caso de uso, ejemplo y vídeo. |
+| **Raul Lendinez Alvarez** | Contraparte técnica. Con Nibaldo decide qué skills concretas se muestran en los contenidos. |
 
-- ✅ Proceso de formación técnica en curso — impartido por Raona y Pasiona (el número exacto de sesiones no está centralizado; no usar "18" como cifra fija)
-- ✅ Estrategia de adopción en 4 fases definida
-- ✅ Estructura del canal Teams GCO definida (6 canales para los developers)
-- ✅ Correo enviado a helpdesk@raona.com solicitando licencia Cloud Design
-- ✅ Documento base para presentación directiva completado
-- ✅ Canal interno de Teams creado en **tenant Raona**: equipo "Estrategia de Adopción GitHub Copilot GCO" — 2 canales: **General** y **Producción y materiales** — solo acceso Nibaldo, Guillermo y Yehimy (ver `Configuraciones/config_canal-interno.md`)
-- ✅ Pub 1 (Bienvenida) — Publicada el 3 junio en los 6 canales del Teams GCO
-- ✅ Pub 2 (Primeros Pasos) — Post + Infografía publicados el 5 junio · Vídeo 1 en producción (grabaciones pendientes de Nibaldo)
-- ✅ Briefs Pub 3 y Pub 4 (Semana 2) — listos, pendiente aprobación Nibaldo/Guillermo el lunes 8 junio
-- ✅ Canal interno de equipos actualizado con estado de Semana 1
-- 🔄 Pendiente: Grabaciones de Nibaldo para completar Vídeo 1 (URL canal corporativo pendiente)
-- 🔄 Pendiente: Aprobación Pub 3 y Pub 4 (lunes 8 junio)
-- 🔄 Pendiente: Recibir manual de marca de Occident (responsable: Guillermo)
-- 🔄 Pendiente: Crear design system en Figma
-- 🔄 Pendiente: Configurar Microsoft Bookings para sesiones 1:1
-- 🔄 Pendiente: Acceso al Teams GCO (bloqueante activo — lo gestiona Catalana Occidente)
-- ⚠️ Bloqueado: Pub 5 (AMA) — falta fecha (Nibaldo + Guillermo)
-- ⚠️ Bloqueado: Pub 8 (Sesiones 1:1) — falta Microsoft Bookings
+> Otras personas de GCO figuran en el fichero de contactos pero **no aparecen todavía en ninguna decisión registrada** — no atribuirles rol ni opinión sin confirmarlo.
+
+## ESTADO ACTUAL
+
+> ⚠️ **Este bloque NO es el estado del proyecto.** El estado cambia cada semana y vive en dos sitios, que son la única fuente válida:
+> - **`_historico/ESTADO.md`** — resumen barato en tokens. **Léelo primero al abrir un chat nuevo.**
+> - **`Produccion/TABLERO.md`** — detalle de producción, cronograma y bloqueantes activos.
+>
+> Aquí abajo solo van los hechos que **no cambian de una semana a otra**. Si algo tiene fecha, número de publicación o estado de "pendiente", no va aquí: va en ESTADO.md o en el TABLERO.
+
+### Dónde está el proyecto, en una línea
+
+Fase de ejecución de contenidos. La formación técnica ya pasó; lo que se produce ahora son publicaciones, piezas gráficas y vídeos para sostener la adopción. **Para saber por qué publicación va la serie y qué está bloqueado, abre `_historico/ESTADO.md`.**
+
+### Hechos estables
+
+- **La formación técnica la impartieron Raona y Pasiona.** El número exacto de sesiones no está centralizado — **no usar "18" como cifra fija.**
+- **Estrategia de adopción en 4 fases**, en este orden: Concienciación → Visual Studio → Multi-entorno → Customización.
+- **Tres tenants de Teams, con propósitos distintos:**
+  - **Teams GCO** — los 6 canales de los developers. Es el destino final de todo el contenido.
+  - **Teams Raona (interno)** — equipo "Estrategia de Adopción GitHub Copilot GCO", 2 canales (General · Producción y materiales). Solo Nibaldo, Guillermo y Yehimy. **Todo se publica aquí primero para revisión — nunca directo a GCO.**
+  - **Canal colaborativo** — GCO + Pasiona + Raona, 3 canales. Ahí va el post de cierre semanal.
+- **El manual de marca de Occident ya está en el proyecto**, en `Manual de marca/` — tipografías CO y GCO Sans, design system y guías de speech.
+- **Los archivos pesados no viven en el repositorio.** Los `.mp4` están excluidos en `.gitignore`; la evidencia de lo publicado son las capturas de `Produccion/imagenes_teams/`.
+
+### Cómo mantener este bloque
+
+No se actualiza semana a semana — para eso están ESTADO.md y el TABLERO. Solo se toca cuando cambia algo estructural: una fase nueva, un tenant nuevo, un cambio en cómo trabaja el equipo. **Si te encuentras escribiendo aquí un número de publicación o una fecha, va en otro archivo.**
 
 ---
 
@@ -106,6 +127,8 @@ Visual Studio (principal), VS Code, terminal CLI. Lenguajes: COBOL, .NET, DB2, P
 
 ## TRAZABILIDAD DE SESIONES — `_historico/`
 
+> ⚠️ **No uses el skill `historial-sesiones` en este proyecto.** Ese skill escribe en `_historial/` y mantiene su propio `ESTADO.md`; este proyecto usa **`_historico/`** con la estructura de abajo. Invocarlo crearía una carpeta paralela con el mismo propósito. El histórico se escribe a mano siguiendo esta sección.
+
 ### Qué es
 La carpeta `_historico/` contiene el registro consecutivo de cada sesión de trabajo. Cada archivo es un punto de entrada completo para que cualquier LLM, Copilot o agente pueda retomar el proyecto sin necesidad de releer toda la conversación anterior.
 
@@ -124,6 +147,8 @@ Ejemplos:
 Los archivos son **consecutivos** — cada uno referencia el anterior en la cabecera.
 
 ### Estructura obligatoria del archivo
+
+**Las cinco secciones van en este orden exacto y no se añaden secciones nuevas.** Si aparece material que no encaja en ninguna (hallazgos, contexto, notas), se reparte dentro de las que ya existen — un bloqueante va a "Estado de dependencias externas", algo que condiciona el trabajo futuro va a "Decisiones tomadas". El formato es fijo para que cualquier agente que abra la carpeta encuentre siempre lo mismo en el mismo sitio.
 
 ```markdown
 # Resumen de sesión — [contexto] · [fecha]

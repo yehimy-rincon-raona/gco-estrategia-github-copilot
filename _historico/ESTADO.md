@@ -2,10 +2,31 @@
 
 > **Punto de entrada de contexto. Léeme PRIMERO.** Resumen barato en tokens del estado actual.
 > Detalle de producción: `Produccion/TABLERO.md` · Reglas permanentes: `CLAUDE.md` · Detalle de sesiones: esta carpeta.
+> Última sesión: `sesion_reunion-25ago-y-reescritura-pub4_25ago2026.md`
 
-**Actualizado:** Bloque de Skills cerrado y publicado en Teams Raona (Pub 14 + hilo `14a` + Pub 15). Pub 16-17 con post y brief listos, piezas sin producir · 21 agosto 2026
+**Actualizado:** Serie producida hasta Pub 17 y publicada de prueba en Teams Raona. El post de Memoria de Pub 4 se reescribio y republico el mismo dia. Se abre la fase de videos con caso de uso por componente · 25 agosto 2026
 
 ## En una frase
+
+✅ **25 ago — Pub 4 resuelta y republicada en Teams Raona.** El post "Memoria vs. Instrucciones" pasa a ser **"Una vez o siempre"**. Cambia el eje de la comparacion: ya no es *lo tuyo vs. lo del equipo* sino **lo que dura la conversacion vs. lo que dura siempre**. Se saca "Copilot Memory" de la pieza — si no se puede editar y no tiene donde vivir, no hay accion que tomar sobre ello, y ponerlo en una comparativa generaba la pregunta sin respuesta de Oscar. El bloque de `copilot-instructions.md` se conserva integro. **El encuadre aguanta las dos respuestas posibles de Nibaldo**, asi que dejo de bloquear.
+
+🗂️ **25 ago — Convencion de deprecados.** La carpeta `deprecados/` de cada publicacion guarda lo que ya no se usa **sin borrarlo**: cada `.md` lleva en su cabecera por que se deprecio y con que fecha, las imagenes se explican en el `README.md` de la carpeta, y lo deprecado desde esta fecha lleva el prefijo `deprecado_`. Primer caso completo: Pub 4 (8 archivos). **Regla que salio de aqui (Yehimy): lo que no sea de esa publicacion no baja a deprecados — se mueve a donde se vaya a leer.** Precedente: tres pendientes con Nibaldo enterrados en un documento de Pub 4 desde el 21 jun, movidos a los bloqueantes del TABLERO.
+
+🎥 **25 ago — Reunion de seguimiento con Nibaldo, Salva, Jonatan y Oscar (primera con el equipo de vuelta de vacaciones).** Se cierra el diagnostico del post de Memoria y se abre la fase de videos. Acta: `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_25-08-26.md`.
+
+🧠 **25 ago — Que es la Memoria de GitHub Copilot, en firme.** Jonatan: *"es el contexto de la conversacion actual, no algo que tu puedas editar"*. Nibaldo: *"es este espacio de ventana donde tu escribes"*, y lo que se quiere aplicar **siempre** se aterriza en `copilot-instructions.md`. **Consecuencia: el borrador del hilo `4-b` dice "la Memoria dura entre sesiones, y es tuya" — hay que reescribirlo antes de producir la pieza.**
+
+📌 **25 ago — Condicion de Oscar sobre todo el material.** La parte conceptual esta dada; ahora cada componente necesita **caso de uso concreto, ejemplo y video**, y el material debe ser autoformativo para quien no hizo la formacion, incluidos los que entren en septiembre. Nibaldo de acuerdo.
+
+📞 **25 ago — Sesiones 1:1 sin Microsoft Bookings.** La dinamica confirmada es escribir en el subcanal de Reservas y atender a medida que llegan. Informatica ya esta en el canal pero nunca se le comunico; Jonatan envia el correo al regreso de vacaciones. Ya hay un caso real: la consulta de Rafael, respondida por Salva. **Falta confirmar si esto sustituye a Bookings o convive.**
+
+🔎 **25 ago — Barrido de consistencia.** Corregido: la tabla de videos del TABLERO estaba congelada en julio (hay **6 videos publicados**, no parados) y aparecio un **septimo video aprobado el 15 jul que nunca se produjo** (Opcion A, Primeros Pasos). La matriz de componentes tampoco describia lo que se produce (triptico vertical sin numeracion, comparativa mas alta) — actualizada.
+
+📤 **24 ago — Pub 16 y Pub 17 publicadas de prueba en Teams Raona** (MCP 1/2, los 5 conectores, triptico de 3 · MCP 2/2, MCP en accion, tarjeta comparativa). Los dos briefs se reescribieron contra las piezas realmente producidas. **No en Teams GCO.**
+
+⚠️ **25 ago — Dos nombres vivos para el mismo producto.** El post del Video 04, publicado en Raona el 14 ago, lo titula **"Copilot Dev Suite"**; toda la serie Pub 12-19 lo llama **"gco-dev-suite"**. Sin resolver desde el 11 ago.
+
+📍 **25 ago — "Memoria vs. Instrucciones" no salio como hilo en Teams GCO.** La captura muestra un **post raiz independiente** el 28/7 a las 8:00, una hora despues de Pub 4 y sin respuestas. Esto resuelve el bloqueante del alcance de lo auto-publicado en Pub 4: salieron los dos posts.
 
 ✅ **21 ago — El bloque de Skills queda cerrado y visible en Teams Raona:** Pub 14 (el mapa de los 5 niveles) + su hilo `14a` (por qué Memoria no es un sexto nivel) + Pub 15 (la anatomía real). Con Pub 13 ya publicada, la serie de Skills está completa de punta a punta. **No en Teams GCO** — sigue congelado hasta la semana del 14-18 sep.
 

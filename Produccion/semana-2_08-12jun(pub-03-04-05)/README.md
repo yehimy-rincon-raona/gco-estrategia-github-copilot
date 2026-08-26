@@ -11,9 +11,9 @@ En este proyecto conviven **dos numeraciones distintas**:
 | Carpeta | Qué es (número histórico) | Día de republicación | Piezas (ya con prefijo) |
 |---------|---------------------------|----------------------|--------------------------|
 | `triptico-licencia_(dia-03_mar-21-jul)/` | Post de licencia + tríptico T2 (nació con la Pub 2 · post: `post-licencia_mar-21jul.md` en esta carpeta · brief de diseño: `semana-1.../pub-02_jue-04jun_(dia-02_jue-16-jul)/02-S1-cards_paso-a-paso.md`) | **03 · martes 21 jul** | `03-1B/2B/3B-S1-Card_T2-*.png` |
-| `pub-03_mar-09jun_(dia-04_jue-23-jul)/` | **Pub 3** — "No tiene memoria permanente. Tiene un cajón." | **04 · jueves 23 jul** | `04-S2-Card_memoria01/02/03.png` |
+| `pub-03_mar-09jun_(dia-04_jue-23-jul)/` | **Pub 3** — "No tiene memoria permanente. Tiene un cajón." | **04 · jueves 23 jul** | `pub-03_s-2_triptico_1-no-tiene-una-memoria-infinita/02/03.png` |
 | `pub-04_jue-11jun_(dia-05_mar-28-jul)/` | **Pub 4** — "¿Siempre usas el mismo modelo?" · post principal + respuestas 1–3 (manual) · "Memoria vs. Instrucciones" va como **post propio programado una hora después** (decisión 15 jul) | **05 · martes 28 jul** | `05-1-S2...` a `05-5-S2...` (hay versiones v1 y v2 — adjuntar las verificadas contra las capturas de `imagenes_teams/01_anuncios-y-tips-agiles/`) |
-| `pub-05_jue-11jun_(dia-06_jue-30-jul)/` | **Pub 5** — Jerarquía de referencias | **06 · jueves 30 jul** | `06-S2-Infografia_jerarquia-de-referencias.png` |
+| `pub-05_jue-11jun_(dia-06_jue-30-jul)/` | **Pub 5** — Jerarquía de referencias | **06 · jueves 30 jul** | `pub-05_s-2_infografia_dale-a-github-copilot-solo-lo-que-necesita.png` |
 | `propuestas-nibaldo/` | Insumos de Nibaldo (no se publica directamente) | — | — |
 
 ## El resto de la secuencia (fuera de esta carpeta)

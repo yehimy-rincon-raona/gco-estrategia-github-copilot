@@ -1,3 +1,22 @@
+> # ⛔ DEPRECADO — no usar
+>
+> **Fecha de deprecación:** 25 de agosto de 2026
+> **Archivo original:** `canal-anuncios-tips_pub4-a.md` (carpeta de Pub 4)
+> **Sustituido por:** `post-una-vez-o-siempre_pub4.md`
+>
+> ## Por qué se deprecó
+>
+> Este hilo existía para **parchear** el post de "Memoria vs. Instrucciones" sin tocarlo, porque en su momento ya estaba publicado en Teams GCO. Dos cosas lo dejaron sin sentido:
+>
+> 1. **El post ya no está publicado.** Se retiró de Teams GCO el 18 ago, así que se corrige en origen en vez de parchearlo encima. Republicar un post equivocado seguido de una corrección enseña primero el error.
+> 2. **Su contenido quedó desmentido.** En la reunión del 25 ago, Jonatan estableció que la Memoria de GitHub Copilot *"es el contexto de la conversación actual, no algo que tú puedas editar"*, y Nibaldo que *"si es siempre, ese concepto etéreo se aterriza en lo que es el instruction"*. Este hilo dice lo contrario: *"si mañana lo cambias tú solo, es Memoria"* y *"la próxima vez que le escribas una preferencia a GitHub Copilot, hazte esa pregunta antes de **guardarla**"* — presenta la Memoria como un sitio donde se guardan preferencias.
+>
+> **Nunca se produjo la pieza gráfica**, así que no hay imagen asociada que deprecar.
+>
+> Acta: `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_25-08-26.md`
+>
+> ---
+
 # Canal Anuncios y Tips — Hilo 4-a · ¿Esto es tuyo o del equipo?
 
 > Canal: Anuncios y Tips Ágiles · Tipo: Hilo/respuesta de **Pub 4** — reafirma su tarjeta original `5-S2` ("Memoria vs. Instrucciones"), no lleva número de Pub propio, igual que el Video 04 es hilo de Pub 2

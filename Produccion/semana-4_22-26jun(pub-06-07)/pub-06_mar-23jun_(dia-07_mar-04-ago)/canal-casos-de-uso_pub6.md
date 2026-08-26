@@ -47,9 +47,9 @@ Mostrar, con un caso real de las propias sesiones de GCO, que GitHub Copilot sir
 - **Respuesta 2 (opcional):** el análisis de impacto del copybook.
 
 **En la pieza gráfica (tríptico · carrusel de 3 paneles):**
-- **`07-S3-Card_pub6-portada`:** la pregunta-gancho del escenario.
-- **`07-S3-Card_pub6-problema`:** el dolor real — tocar un campo y no saber qué rompes.
-- **`07-S3-Card_pub6-solucion`:** el método (explica → planifica → valida) con el **análisis de impacto del copybook** como remate.
+- **`pub-06_s-4_triptico_1-te-asignan-un-cobol-que-nadie-ha-mirado-en-anos`:** la pregunta-gancho del escenario.
+- **`pub-06_s-4_triptico_2-el-miedo-no-es-entender-el-programa`:** el dolor real — tocar un campo y no saber qué rompes.
+- **`pub-06_s-4_triptico_3-pidele-que-lo-explique-y-que-rastree-el-impacto`:** el método (explica → planifica → valida) con el **análisis de impacto del copybook** como remate.
 - **No lleva prompts** — esos van en el texto, para que el equipo pueda copiarlos.
 
 > Regla: el tríptico cuenta el caso de un vistazo (pregunta → problema → solución); el texto explica y aporta los prompts copiables. No se duplica el contenido entre ambos.
@@ -126,7 +126,7 @@ Claves de credibilidad:
 
 ## Posts de hilo
 
-> **Cómo quedó publicado (verificado contra la captura):** el tríptico `07-S3-Card_pub6-portada` / `-problema` / `-solucion` va adjunto al **post principal**. La respuesta publicada en el hilo se titula **"Prompts listos para el equipo"** y contiene los 3 prompts completos de la sección "Prompts listos para el equipo" de este documento (Entender el programa · Analizar el impacto de un copybook · Planificar la solución).
+> **Cómo quedó publicado (verificado contra la captura):** el tríptico `pub-06_s-4_triptico_1-te-asignan-un-cobol-que-nadie-ha-mirado-en-anos` / `-problema` / `-solucion` va adjunto al **post principal**. La respuesta publicada en el hilo se titula **"Prompts listos para el equipo"** y contiene los 3 prompts completos de la sección "Prompts listos para el equipo" de este documento (Entender el programa · Analizar el impacto de un copybook · Planificar la solución).
 > El texto de la "Respuesta 1" de abajo ("La clave del caso...") **no se publicó** — se conserva como material disponible. La Respuesta 2 (opcional) sigue pendiente.
 
 ---
@@ -147,7 +147,7 @@ Si modifico este campo del copybook,
 ¿en qué programas impacta?
 ```
 
-→ Adjuntar: tríptico completo — `07-S3-Card_pub6-portada`, `07-S3-Card_pub6-problema`, `07-S3-Card_pub6-solucion`
+→ Adjuntar: tríptico completo — `pub-06_s-4_triptico_1-te-asignan-un-cobol-que-nadie-ha-mirado-en-anos`, `pub-06_s-4_triptico_2-el-miedo-no-es-entender-el-programa`, `pub-06_s-4_triptico_3-pidele-que-lo-explique-y-que-rastree-el-impacto`
 
 ---
 
@@ -165,9 +165,9 @@ No reemplaza tu criterio: te da el mapa para que decidas con seguridad.
 
 | # | Nombre de archivo | Tipo | Tema |
 |---|-------------------|------|------|
-| 1 | `07-S3-Card_pub6-portada` | card-triptico · panel 1/3 · 1080×1080 px | Portada — pregunta-gancho del escenario |
-| 2 | `07-S3-Card_pub6-problema` | card-triptico · panel 2/3 · 1080×1080 px | Problema — tocar un campo y no saber qué rompes |
-| 3 | `07-S3-Card_pub6-solucion` | card-triptico · panel 3/3 · 1080×1080 px | Solución — método + análisis de impacto del copybook |
+| 1 | `pub-06_s-4_triptico_1-te-asignan-un-cobol-que-nadie-ha-mirado-en-anos` | card-triptico · panel 1/3 · 1080×1080 px | Portada — pregunta-gancho del escenario |
+| 2 | `pub-06_s-4_triptico_2-el-miedo-no-es-entender-el-programa` | card-triptico · panel 2/3 · 1080×1080 px | Problema — tocar un campo y no saber qué rompes |
+| 3 | `pub-06_s-4_triptico_3-pidele-que-lo-explique-y-que-rastree-el-impacto` | card-triptico · panel 3/3 · 1080×1080 px | Solución — método + análisis de impacto del copybook |
 
 > Los **prompts** no van en la pieza gráfica: viven en el texto del post (sección "Prompts listos para el equipo" y Respuesta 1) para que el equipo pueda copiarlos.
 
@@ -178,7 +178,7 @@ No reemplaza tu criterio: te da el mapa para que decidas con seguridad.
 **Tipo de pieza:** `card-triptico` — 3 paneles cuadrados (1080×1080) en carrusel: **Portada → Problema → Solución**
 **Origen del contenido:** ejercicio "COBOL Evolutivo" (Sesión 1) + "Análisis de impacto en Copybooks" (Sesión 3 · G3M)
 
-### Panel 1 — Portada · `07-S3-Card_pub6-portada` · `1/3`
+### Panel 1 — Portada · `pub-06_s-4_triptico_1-te-asignan-un-cobol-que-nadie-ha-mirado-en-anos` · `1/3`
 
 | Elemento | Texto |
 |----------|-------|
@@ -189,7 +189,7 @@ No reemplaza tu criterio: te da el mapa para que decidas con seguridad.
 | Subtext | Sin documentación, cualquier cambio a ciegas puede romper algo en producción. |
 | Numeración | `1/3` — chip esquina inferior derecha |
 
-### Panel 2 — El problema · `07-S3-Card_pub6-problema` · `2/3`
+### Panel 2 — El problema · `pub-06_s-4_triptico_2-el-miedo-no-es-entender-el-programa` · `2/3`
 
 | Elemento | Texto |
 |----------|-------|
@@ -200,7 +200,7 @@ No reemplaza tu criterio: te da el mapa para que decidas con seguridad.
 | Dato secundario | Rastrearlo a mano: horas abriendo fuentes una por una. |
 | Numeración | `2/3` |
 
-### Panel 3 — La solución · `07-S3-Card_pub6-solucion` · `3/3`
+### Panel 3 — La solución · `pub-06_s-4_triptico_3-pidele-que-lo-explique-y-que-rastree-el-impacto` · `3/3`
 
 | Elemento | Texto |
 |----------|-------|

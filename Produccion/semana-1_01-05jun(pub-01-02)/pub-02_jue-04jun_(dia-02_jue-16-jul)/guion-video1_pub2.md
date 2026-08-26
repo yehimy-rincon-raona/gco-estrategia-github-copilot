@@ -1,6 +1,6 @@
 # Guión de apoyo — Video 1 · Configura tu entorno
 > Pub 2 · Canal: Primeros Pasos con GitHub Copilot · Fecha: Jueves 5 junio
-> Relacionado con: `02-4-S1-Infografia_paso-a-paso.jpg` · guión completo en `Produccion/Videos/v01_configuracion-entorno/`
+> Relacionado con: `pub-02_s-1_infografia_configura-tu-entorno-visual-studio.jpg` · guión completo en `Produccion/Videos/v01_configuracion-entorno/`
 
 ---
 

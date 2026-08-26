@@ -43,11 +43,11 @@ Y una sexta pregunta que no es un nivel de personalización pero se confunde seg
 
 | # | Pieza | Rol | Estado |
 |---|-------|-----|--------|
-| 1 | Infografía "El mapa de los 5 niveles de personalización" (`14-S8-infografia_mapa-5-niveles`) | Acompaña el post — tabla comparativa de los 5 niveles + la regla rápida de decisión | 🔄 Brief listo, falta producir en Figma |
+| 1 | Infografía "El mapa de los 5 niveles de personalización" (`pub-14_s-8_infografia_el-mapa-de-personalizacion`) | Acompaña el post — tabla comparativa de los 5 niveles + la regla rápida de decisión | 🔄 Brief listo, falta producir en Figma |
 
 ---
 
-## Brief — Infografía Pub 14 (`14-S8-infografia_mapa-5-niveles`)
+## Brief — Infografía Pub 14 (`pub-14_s-8_infografia_el-mapa-de-personalizacion`)
 
 **Tipo de pieza:** Infografía, vertical (ver `Configuraciones/matriz-componentes-graficos.csv`, fila "Infografia")
 **Origen del contenido:** `material-base_skills-que-son-y-cuando-usarlas.md`, secciones 3.1 (los cinco niveles) y 7 (regla rápida de decisión)
@@ -82,7 +82,7 @@ Y una sexta pregunta que no es un nivel de personalización pero se confunde seg
 ### Especificaciones Figma
 
 - **Formato:** 1080×1350 px (vertical), grupo `Infografia` de `Configuraciones/matriz-componentes-graficos.csv`
-- **Referencia directa:** las 2 infografías de Pub 13 (`13-S7-infografia_que-es-skill.png` / `13-S7-infografia_que-no-es-skill.png`) — esta pieza es la tercera del mismo bloque de Skills, debe leerse como parte del mismo juego
+- **Referencia directa:** las 2 infografías de Pub 13 (`pub-13_s-7_infografia_1-que-es-una-skill-en-github-copilot.png` / `pub-13_s-7_infografia_2-que-no-es-una-skill.png`) — esta pieza es la tercera del mismo bloque de Skills, debe leerse como parte del mismo juego
 - **Fondo:** blanco · acento rojo `#DC0028` en chips, números y resaltados · sin fondos negros
 - **Jerarquía de arriba a abajo:** logo + píldora de fase (`Fase 3 | Multi-entorno`) → eyebrow rojo en mayúsculas → título CO Bold → las 5 filas → nota aparte de Memoria → remate
 - **Las 5 filas:** cada una con el nombre del nivel en negrita y su pregunta al lado. El nombre puede ir como chip rojo pequeño para que las 5 se escaneen de un golpe

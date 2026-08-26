@@ -1,7 +1,7 @@
 # Canal Anuncios y Tips — Pub 9 · La fórmula del prompt (parte 2): Contexto y Restricciones
 > Canal: Anuncios y Tips Ágiles · Tipo: Tip de uso
 > ⏱️ **Producción: Semana 5 (trabajo del 30 jun)** · **Publicación: Semana 5 — jueves 2 jul (fecha a confirmar en la reunión)**
-> Estado: ✅ Díptico producido — 2 tarjetas horizontales (`10-S5-card-contexto.jpg` · `10-S5-card-restricciones.jpg`)
+> Estado: ✅ Díptico producido — 2 tarjetas horizontales (`pub-09_s-5_diptico_1-contexto-muestrale-solo-lo-que-importa.jpg` · `pub-09_s-5_diptico_2-restricciones-dile-las-reglas-de-gco.jpg`)
 > Fuente: `Configuraciones/estructura_prompt.md` · sesiones de formación · tarjeta `5-S2` · `copilot-instructions.md` del proyecto
 > Continúa: `pub-08_mar-30jun_(dia-09_mar-11-ago)/canal-anuncios-tips_pub8.md`
 
@@ -136,14 +136,14 @@ _(Solo texto — el díptico va con el post principal.)_
 
 | # | Nombre de archivo | Tipo | Tema | Estado |
 |---|-------------------|------|------|--------|
-| 1 | `10-S5-card-contexto` | tarjeta horizontal · ~1920×1080 px | Contexto: orden de referencias + menos tokens / mayor enfoque (caso SQLCODE en COBOL) | ✅ Producida |
-| 2 | `10-S5-card-restricciones` | tarjeta horizontal · ~1920×1080 px | Restricciones: estándares de código GCO (COBOL 7–72, SQL, .NET C# 12) + seguridad | ✅ Producida |
+| 1 | `pub-09_s-5_diptico_1-contexto-muestrale-solo-lo-que-importa` | tarjeta horizontal · ~1920×1080 px | Contexto: orden de referencias + menos tokens / mayor enfoque (caso SQLCODE en COBOL) | ✅ Producida |
+| 2 | `pub-09_s-5_diptico_2-restricciones-dile-las-reglas-de-gco` | tarjeta horizontal · ~1920×1080 px | Restricciones: estándares de código GCO (COBOL 7–72, SQL, .NET C# 12) + seguridad | ✅ Producida |
 
 > El detalle de `copilot-instructions.md` (el respuesta) no va en las tarjetas: vive en el texto del post.
 
 ---
 
-## Brief — Díptico `10-S5-card-contexto` + `10-S5-card-restricciones` ✅ Producido
+## Brief — Díptico `pub-09_s-5_diptico_1-contexto-muestrale-solo-lo-que-importa` + `pub-09_s-5_diptico_2-restricciones-dile-las-reglas-de-gco` ✅ Producido
 
 **Tipo de pieza:** díptico de dos tarjetas horizontales (~1920×1080 px), mismo título común; cada una destaca en rojo una de las dos piezas.
 **Origen del contenido:** orden de referencias (Pub 4) + reglas de código de GCO (tarjeta `5-S2`, `copilot-instructions.md`) + caso SQLCODE en COBOL de las sesiones.
@@ -158,7 +158,7 @@ _(Solo texto — el díptico va con el post principal.)_
 
 > En la tarjeta 1 se resalta **Contexto** en rojo dentro del título; en la tarjeta 2 se resalta **Restricciones**.
 
-### Tarjeta 1 — Contexto (`10-S5-card-contexto`)
+### Tarjeta 1 — Contexto (`pub-09_s-5_diptico_1-contexto-muestrale-solo-lo-que-importa`)
 
 | Elemento | Texto |
 |----------|-------|
@@ -170,7 +170,7 @@ _(Solo texto — el díptico va con el post principal.)_
 | Terminal (mainframe) | EXEC SQL / SELECT CUSTOMER_NAME / INTO :WS-CUSTOMER-NAME / FROM CUSTOMER_TABLE / WHERE CUSTOMER_ID = :WS-CUSTOMER-ID / END-EXEC. · SQLCODE: -911 · SQLSTATE: 40001 · ERROR: DEADLOCK OR TIMEOUT OCCURRED · ACTION: ROLLBACK TRANSACTION AND RETRY |
 | Cierre | Para un error de SQLCODE, referencia el módulo específico. |
 
-### Tarjeta 2 — Restricciones (`10-S5-card-restricciones`)
+### Tarjeta 2 — Restricciones (`pub-09_s-5_diptico_2-restricciones-dile-las-reglas-de-gco`)
 
 | Elemento | Texto |
 |----------|-------|

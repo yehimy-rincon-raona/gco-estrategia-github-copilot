@@ -2,8 +2,9 @@
 > Canal: Anuncios y Tips Ágiles · Tipo: Caso de uso (serie MCP, 2/2) · Jueves de su semana de producción — profundiza el tema de Pub 16
 > ⏱️ **Semana de producción: misma semana que Pub 16** (creada el 18 ago)
 > 📍 **Teams GCO: sigue congelado, sin fecha real.** El día y fecha se confirman cuando el equipo de Nibaldo reactive publicaciones (ver `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_18-08-26.md` — retoma prevista 14 sep).
-> 📍 **Próximo destino, una vez esté como borrador final: Teams Raona** (visibilidad/prueba, mismo tratamiento que Pub 10 y Pub 11) — no Teams GCO, que sigue congelado.
-> Estado: 🟠 **Post cerrado y brief listo para producir (21 ago)** — texto final, especificaciones Figma completas. Falta únicamente producir la tarjeta comparativa en Figma y validar con Nibaldo/Guillermo
+> 📍 **Publicada en Teams Raona (visibilidad/prueba, mismo tratamiento que Pub 10 y Pub 11) — no Teams GCO, que sigue congelado.**
+> Estado: ✅ **Publicada el 24 ago 2026** — post + tarjeta comparativa en el canal Anuncios y Tips. Captura: `Produccion/imagenes_teams/01_anuncios-y-tips-agiles/pendiente-pub-17_de-cinco-pestanas-a-una-frase.png`. Pendiente: validar con Nibaldo/Guillermo antes de la cola de republicación en Teams GCO
+> ✍️ **Brief actualizado el 24 ago** contra la pieza realmente producida — los textos y especificaciones de abajo reflejan lo publicado, no la propuesta previa. Los cambios respecto al brief del 21 ago quedan anotados bajo la tabla.
 > Fuente: `Conocimiento/temas_mes-agosto/información-equipo-raona-gco-devsuite.md` (primera respuesta del equipo de Nibaldo, 6 ago 2026)
 > Plan: `Planeacion/Semana-7_plan-agosto-devsuite/plan-agosto_devsuite-skills-mcp-agentes.md` — sección 4 (contenido nuevo, no estaba en el plan original)
 
@@ -37,11 +38,13 @@ Antes: cinco pestañas y veinte minutos de recopilación. Ahora: una sola frase.
 
 | # | Pieza | Rol | Estado |
 |---|-------|-----|--------|
-| 1 | Tarjeta comparativa horizontal "Investigar un fallo: antes / ahora" (`17-S9-card-comparativa_investigar-fallo`) | Acompaña el post — contraste directo del antes/después con el flujo de los 3 conectores en paralelo | 🔄 Brief listo, falta producir en Figma |
+| 1 | `pub-17_s-9_tarjeta-comparativa_investigar-un-fallo-antes-y-ahora.png` — Tarjeta comparativa horizontal "Investigar un fallo: antes y ahora" | Acompaña el post — contraste directo del antes/ahora con los 3 conectores consultados a la vez | ✅ Producida y publicada (24 ago) |
+
+> **Nombre de archivo (25 ago):** renombrado a la convención única del proyecto — `pub-N_s-N_componente_titulo-de-la-pieza.ext`, donde el título es el que aparece en el encabezado de la pieza. Ver `Configuraciones/convencion-nombres-piezas-graficas.md`.
 
 ---
 
-## Brief — Tarjeta comparativa horizontal Pub 17 (`17-S9-card-comparativa_investigar-fallo`)
+## Brief — Tarjeta comparativa horizontal Pub 17 (`pub-17_s-9_tarjeta-comparativa_investigar-un-fallo-antes-y-ahora`)
 
 **Tipo de pieza:** Tarjeta comparativa horizontal, panel único 1920×1080 px (ver `Configuraciones/matriz-componentes-graficos.csv`, fila "Tarjeta comparativa horizontal")
 **Origen del contenido:** `información-equipo-raona-gco-devsuite.md`, sección "Cómo se ve en el día a día" — Ejemplo 1
@@ -51,25 +54,46 @@ Antes: cinco pestañas y veinte minutos de recopilación. Ahora: una sola frase.
 | Eyebrow (overline) | GUÍA DE MAESTRÍA EN GITHUB COPILOT · MCP 2/2 |
 | Título principal | Investigar un fallo: antes y ahora |
 | Columna A — encabezado | Antes |
-| Columna A — texto | Abrir la pestaña. Buscar el error. Copiar el identificador. Pegarlo en el siguiente sistema. Volver a buscar. Y al final, redactar el ticket a mano. Veinte minutos, como mínimo. |
-| Columna B — encabezado | Ahora, con MCP |
-| Columna B — texto | Una frase: "¿por qué falla este proceso?". El coordinador consulta Elastic, Jira y Confluence a la vez, y entrega un informe consolidado. Si hace falta, redacta el ticket y pide confirmación antes de crearlo. |
+| Columna A — subtítulo | Fragmentación y pérdida de tiempo |
+| Columna A · bloque 1 — titular | Caos de las 5 pestañas |
+| Columna A · bloque 1 — cuerpo | El proceso tradicional requería tener muchas ventanas para buscar un error. |
+| Columna A · bloque 2 — titular | 20 minutos de recopilación |
+| Columna A · bloque 2 — cuerpo | Tiempo mínimo para reconstruir manualmente una historia fragmentada. |
+| Columna A · bloque 3 — titular | Trabajo manual repetitivo |
+| Columna A · bloque 3 — cuerpo | Copiar de un sistema a otro y redactar de manera artesanal. |
+| Conector central | Flecha ascendente con el rótulo TRANSFORMACIÓN CON IA |
+| Columna B — encabezado | Ahora |
+| Columna B — subtítulo | La eficiencia del MCP |
+| Columna B · bloque 1 — titular | Una sola frase |
+| Columna B · bloque 1 — cuerpo | ¿Por qué falla este proceso? |
+| Columna B · bloque 1 — visual | Los tres conectores en fila, **sin flechas entre ellos**: Elastic (Logs) · Jira (Tickets) · Confluence (Documentation) |
+| Columna B · bloque 2 — titular | Búsqueda triple en paralelo |
+| Columna B · bloque 3 — titular | Informe consolidado y ticket redactado |
+| Columna B · bloque 3 — cuerpo | Entrega datos estructurados y un informe con lo relevante. Si hace falta un ticket, lo redacta con el error real dentro y pide confirmación antes de crearlo. |
 | Logo | Occident — inferior derecha |
 
-> **Reparto con Pub 16 (21 ago, confirmado por Yehimy):** las dos publicaciones de MCP salen la misma semana y arrancaban del mismo problema. Esta tarjeta se queda con **el flujo y el tiempo** — la secuencia de pasos manuales y los veinte minutos — y el tríptico de Pub 16 se queda con **la dispersión** (la información vive en cinco sistemas distintos). Por eso la columna "Antes" se reescribió como una **cadena de pasos** en vez de describir los cinco sistemas: el ritmo entrecortado de las frases cortas ES el argumento, y no repite lo que ya dijo el martes.
-> **Consecuencia de diseño:** la columna A debe **verse** como una secuencia — pasos apilados, uno por línea — frente a la columna B, que es un solo bloque continuo. El contraste visual es fragmentación contra fluidez.
-> Diseño: fondo blanco, columnas con fondo `#F5F5F5` y esquinas redondeadas, rojo `#DC0028` como acento — sin fondos negros. Mismo tratamiento visual que las tarjetas comparativas ya producidas (Pub 8, Pub 4).
+> **Cambios respecto al brief del 21 ago (aplicados en producción, 24 ago):**
+> 1. **Las dos columnas se reestructuraron en tres bloques con titular**, en vez del párrafo corrido que proponía el brief. Se pierde algo del ritmo entrecortado de la columna "Antes", pero se gana escaneabilidad y las dos columnas quedan parejas. La sustancia se conserva íntegra: cinco pestañas, veinte minutos, copiar a mano.
+> 2. **La columna B se titula "Ahora" con subtítulo "La eficiencia del MCP"**, no "Ahora, con MCP" en una sola línea.
+> 3. **Los tres conectores van en fila sin flechas entre ellos.** En la primera versión iban encadenados con flechas (Elastic → Jira → Confluence), lo que se leía como una cosa después de otra y contradecía de frente el bloque "Búsqueda triple en paralelo" y el "a la vez" del post. Corregido. **Regla para las piezas siguientes: nada que ocurra en paralelo se dibuja con flechas en cadena.**
+> 4. **El bloque de cierre pasó de "Informe consolidado y acción instantánea" con "realiza un ticket automático" a "Informe consolidado y ticket redactado" con "pide confirmación antes de crearlo".** La formulación anterior contradecía una de las cinco decisiones de diseño de la gco-dev-suite — *nada se implementa sin aprobación* (`información-equipo-raona-gco-devsuite.md`, decisión 2). **Regla para las piezas siguientes: la suite propone y pide confirmación; nunca se describe como que actúa sola.**
+> 5. Se corrigieron dos errores de texto: *"Tamaño manual repetitivo"* → **"Trabajo manual repetitivo"**, y *"¿Porqué"* → **"¿Por qué"**.
+> 6. Se añadió la **flecha central "TRANSFORMACIÓN CON IA"** y una ilustración por bloque (ventanas, tijeras, logs, ticket, documentos, checklist), elementos que no estaban en el brief.
+
+> **Reparto con Pub 16 (21 ago, confirmado por Yehimy) — se mantiene en las piezas producidas:** las dos publicaciones de MCP salen la misma semana y arrancaban del mismo problema. Esta tarjeta se queda con **el flujo y el tiempo** — las pestañas, los veinte minutos, el copiar-pegar — y el tríptico de Pub 16 se queda con **la dispersión** (la información vive en cinco sistemas distintos). Verificado el 24 ago contra las cuatro piezas finales: ninguna de las dos invade el terreno de la otra.
 
 ---
 
-### Especificaciones Figma
+### Especificaciones Figma — tal como se produjo
 
-- **Formato:** 1920×1080 px (landscape), grupo `Tarjeta comparativa horizontal` de `Configuraciones/matriz-componentes-graficos.csv`
-- **Referencia directa:** las tarjetas comparativas ya producidas de Pub 8 ("El mismo encargo, dos resultados") y Pub 4 ("Memoria vs. Instrucciones") — mismo tratamiento visual
+- **Formato:** landscape ~16:9,5 (3830×2272 px de exportación). La matriz define el grupo `Tarjeta comparativa horizontal` como 1920×1080 px; la pieza real es algo más alta para acomodar los tres bloques por columna
+- **Referencia directa:** las tarjetas comparativas ya producidas de Pub 8 ("El mismo encargo, dos resultados") y Pub 4 ("Memoria vs. Instrucciones") — misma familia visual
 - **Fondo:** blanco · acento rojo `#DC0028` · sin fondos negros
-- **Columnas:** A (Antes) izquierda y B (Ahora, con MCP) derecha — fondo `#F5F5F5`, esquinas redondeadas, mismo ancho las dos
-- **Contraste a la vista:** la columna A debe sentirse densa y troceada (cinco fragmentos sueltos); la B, una sola línea limpia. El contraste lo hace la composición, no un color distinto por columna
-- **Eyebrow:** rojo en mayúsculas, arriba · **título:** CO Bold · texto corriente GCO Sans
+- **Columnas:** A (Antes) izquierda y B (Ahora) derecha — tres bloques apilados por columna, cada bloque con fondo `#F5F5F5` y esquinas redondeadas. **No es una columna-caja continua**, son bloques independientes
+- **Encabezados de columna:** en rojo `#DC0028`, con su subtítulo en gris debajo
+- **Ilustraciones:** trazo rojo lineal, colocadas fuera de los bloques (a los lados), no dentro — no compiten con el texto
+- **Conector central:** flecha ascendente en trazo rojo, de la columna A a la B, con el rótulo TRANSFORMACIÓN CON IA
+- **Eyebrow:** rojo en mayúsculas, arriba, con el `MCP 2/2` que encadena con Pub 16 · **título:** CO Bold · texto corriente GCO Sans
 - **Logo:** Occident, inferior derecha
 
 ---

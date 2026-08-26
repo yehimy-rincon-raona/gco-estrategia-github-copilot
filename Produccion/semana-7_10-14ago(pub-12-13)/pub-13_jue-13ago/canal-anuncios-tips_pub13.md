@@ -3,7 +3,7 @@
 > ⏱️ **Semana de producción: 10-14 ago** (trabajo hecho el 14 ago — este es el material que correspondía producir esta semana)
 > 📍 **Teams GCO: sigue congelado, sin fecha real.** "Jue 13 ago" es la fecha del plan original, no un compromiso de publicación — se confirma (o cambia) en la reunión del 18 ago.
 > 📍 **Próximo destino: Teams Raona** (visibilidad/prueba, mismo tratamiento que Pub 10 y Pub 11) — pendiente de que Yehimy lo publique ahí. No se publica en Teams GCO hasta que se levante el congelamiento.
-> Estado: ✅ **Las 2 piezas gráficas ya están producidas** (`13-S7-infografia_que-es-skill.png`, `13-S7-infografia_que-no-es-skill.png`) — falta validar con Nibaldo/Guillermo y publicar de prueba en Teams Raona
+> Estado: ✅ **Las 2 piezas gráficas ya están producidas** (`pub-13_s-7_infografia_1-que-es-una-skill-en-github-copilot.png`, `pub-13_s-7_infografia_2-que-no-es-una-skill.png`) — falta validar con Nibaldo/Guillermo y publicar de prueba en Teams Raona
 > Fuente: `Conocimiento/temas_mes-agosto/material-base_skills-que-son-y-cuando-usarlas.md` (material enviado por Esteban Serrano, Raona/Pasiona) — sección 1
 > Plan: `Planeacion/Semana-7_plan-agosto-devsuite/plan-agosto_devsuite-skills-mcp-agentes.md` — Pub 13, sección 4
 >
@@ -44,12 +44,12 @@ Lo que NO es:
 
 | # | Pieza | Rol | Estado |
 |---|-------|-----|--------|
-| 1 | Infografía "¿Qué es una skill en GitHub Copilot?" — Skills 1/2 (`13-S7-infografia_que-es-skill`) | Acompaña el post principal — explica qué es una Skill con 3 puntos: carpeta con propósito, analogía del libro de recetas, activación automática | ✅ Producida |
-| 2 | Infografía "¿Qué NO es una Skill?" — Skills 2/2 (`13-S7-infografia_que-no-es-skill`) | Pieza compañera — despeja las 3 confusiones más comunes: prompt guardado, documentación pasiva, integración externa | ✅ Producida |
+| 1 | Infografía "¿Qué es una skill en GitHub Copilot?" — Skills 1/2 (`pub-13_s-7_infografia_1-que-es-una-skill-en-github-copilot`) | Acompaña el post principal — explica qué es una Skill con 3 puntos: carpeta con propósito, analogía del libro de recetas, activación automática | ✅ Producida |
+| 2 | Infografía "¿Qué NO es una Skill?" — Skills 2/2 (`pub-13_s-7_infografia_2-que-no-es-una-skill`) | Pieza compañera — despeja las 3 confusiones más comunes: prompt guardado, documentación pasiva, integración externa | ✅ Producida |
 
 ---
 
-## Brief — Infografías Pub 13 (`13-S7-infografia_que-es-skill` / `13-S7-infografia_que-no-es-skill`)
+## Brief — Infografías Pub 13 (`pub-13_s-7_infografia_1-que-es-una-skill-en-github-copilot` / `pub-13_s-7_infografia_2-que-no-es-una-skill`)
 
 **Tipo de pieza:** Infografía, vertical (ver `Configuraciones/matriz-componentes-graficos.csv`, fila "Infografia")
 **Origen del contenido:** `material-base_skills-que-son-y-cuando-usarlas.md`, secciones 1.1 (Definición) y 1.5 (Qué NO es)

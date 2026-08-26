@@ -41,12 +41,12 @@ La regla que las une: el agente decide, la skill explica, el conector busca el d
 
 ## Piezas gráficas de esta publicación
 
-> **Cambio de diseño (14 ago, decisión de Yehimy):** la infografía original se reemplaza por un **tríptico / card-triptico** (ya en producción en Figma: `S7-Card_pub12-portada/-problema/-solucion`) — mismo formato que Pub 6/7/10/11. Se mantienen las 3 tarjetas minimalistas descargables (Agentes, Skills, MCP). Total: **4 piezas**.
+> **Cambio de diseño (14 ago, decisión de Yehimy):** la infografía original se reemplaza por un **tríptico / card-triptico** (ya en producción en Figma: `pub-12_s-7_triptico_1-la-caja-de-herramientas-que-le-falta-a-github-copilot/-problema/-solucion`) — mismo formato que Pub 6/7/10/11. Se mantienen las 3 tarjetas minimalistas descargables (Agentes, Skills, MCP). Total: **4 piezas**.
 > ⚠️ Corrección de contenido (14 ago): el panel 3 ("solución") traía texto de `PERFORM`/copybook — contenido de "entender COBOL heredado" (Pub 6), no de la gco-dev-suite. Reemplazado por el contenido de abajo, confirmado por Yehimy.
 
 | # | Pieza | Rol | Estado |
 |---|-------|-----|--------|
-| 1 | Tríptico "GCO Dev Suite" (`S7-Card_pub12-portada` · `-problema` · `-solucion`) | Acompaña el post principal — qué es, el vacío de contexto, y la solución con la regla de oro | 🔄 En producción en Figma — corregir el panel 3 y agregar el bloque complementario del panel 2 (ver brief) |
+| 1 | Tríptico "GCO Dev Suite" (`pub-12_s-7_triptico_1-la-caja-de-herramientas-que-le-falta-a-github-copilot` · `-problema` · `-solucion`) | Acompaña el post principal — qué es, el vacío de contexto, y la solución con la regla de oro | 🔄 En producción en Figma — corregir el panel 3 y agregar el bloque complementario del panel 2 (ver brief) |
 | 2 | Tarjeta minimalista "Agentes" (`12-S7-card_devsuite-agentes`, 1/3) | Pieza descargable — el criterio | 🔄 Brief listo, falta producir en Figma |
 | 3 | Tarjeta minimalista "Skills" (`12-S7-card_devsuite-skills`, 2/3) | Pieza descargable — el procedimiento | 🔄 Brief listo, falta producir en Figma |
 | 4 | Tarjeta minimalista "MCP" (`12-S7-card_devsuite-mcp`, 3/3) | Pieza descargable — el acceso | 🔄 Brief listo, falta producir en Figma |
@@ -58,7 +58,7 @@ La regla que las une: el agente decide, la skill explica, el conector busca el d
 **Tipo de pieza:** Tríptico / card-triptico, 3 paneles 1080×1080 px, carrusel (ver `Configuraciones/matriz-componentes-graficos.csv` y `Configuraciones/catalogo-de-formatos.md`, Ficha F1)
 **Origen del contenido:** `Conocimiento/temas_mes-agosto/información-equipo-raona-gco-devsuite.md`, secciones "La idea en una frase", "El problema que había detrás" y "Las decisiones de diseño que la definen"
 
-### Panel 1 — Portada (`S7-Card_pub12-portada`) — ✅ contenido correcto, ya en Figma
+### Panel 1 — Portada (`pub-12_s-7_triptico_1-la-caja-de-herramientas-que-le-falta-a-github-copilot`) — ✅ contenido correcto, ya en Figma
 
 | Elemento | Texto |
 |----------|-------|
@@ -67,7 +67,7 @@ La regla que las une: el agente decide, la skill explica, el conector busca el d
 | Título | La caja de herramientas que le falta a GitHub Copilot |
 | Logo | Occident — inferior |
 
-### Panel 2 — El problema (`S7-Card_pub12-problema`) — contenido del vacío correcto, se agrega complemento (14 ago)
+### Panel 2 — El problema (`pub-12_s-7_triptico_2-el-vacio-de-contexto`) — contenido del vacío correcto, se agrega complemento (14 ago)
 
 | Elemento | Texto |
 |----------|-------|
@@ -77,7 +77,7 @@ La regla que las une: el agente decide, la skill explica, el conector busca el d
 | **Bloque complementario (nuevo) — qué es gco-dev-suite** | **gco-dev-suite es el paquete que le da esas tres cosas que le faltaban: las llaves de los sistemas de GCO, los manuales de cómo se hacen aquí las cosas, y las normas de cuándo debe parar y preguntar.** |
 | Visual | Icono de robot con signos de pregunta |
 
-### Panel 3 — La solución (`S7-Card_pub12-solucion`) — ⚠️ CORREGIR, contenido nuevo
+### Panel 3 — La solución (`pub-12_s-7_triptico_3-el-agente-decide-la-skill-explica-el-conector-busca-el-dato-real`) — ⚠️ CORREGIR, contenido nuevo
 
 | Elemento | Texto |
 |----------|-------|

@@ -13,6 +13,8 @@ Yehimy detectó que varios posts programados se publicaron solos (programación 
 - **Acción inmediata:** Yehimy despublica o borra lo que se adelantó, y los vuelve a colocar cuando corresponda, bloque a bloque.
 - **Calendario acordado:** la primera semana tras el regreso de vacaciones del equipo de Nibaldo es de **introducción únicamente**. Las publicaciones definitivas se retoman a partir del **14 de septiembre** (segunda quincena).
 - Para el contenido de Skills específicamente, Yehimy mencionó activar desde el **15 o 16 de septiembre**.
+
+  > ⚠️ **Aclarado el 25 ago (Yehimy) — no leer esta línea como una fecha de publicación.** Al descongelar, la cola avanza **en orden de creación**: el 15 y el 17 de septiembre corresponden a **Pub 3 y Pub 4**, no a Skills. El bloque de Skills (Pub 13-15) cae a finales de octubre según el cronograma maestro. El orden no se altera porque cada post se apoya en el anterior. Fechas vigentes: `Produccion/TABLERO.md`.
 - Todo el equipo (developers de GCO) ya está agregado al canal desde hace un par de semanas — no es un bloqueante.
 - **Principio confirmado:** todo se publica primero en el canal **interno** de Raona para revisión — nunca directo al canal externo — para controlar el orden y evitar fugas.
 
