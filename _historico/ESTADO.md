@@ -2,11 +2,20 @@
 
 > **Punto de entrada de contexto. Léeme PRIMERO.** Resumen barato en tokens del estado actual.
 > Detalle de producción: `Produccion/TABLERO.md` · Reglas permanentes: `CLAUDE.md` · Detalle de sesiones: esta carpeta.
-> Última sesión: `sesion_reunion-25ago-y-reescritura-pub4_25ago2026.md`
+> Última sesión: `sesion_cierre-pub18-19-y-guion-video07_28ago2026.md`
 
-**Actualizado:** Serie producida hasta Pub 17 y publicada de prueba en Teams Raona. El post de Memoria de Pub 4 se reescribio y republico el mismo dia. Se abre la fase de videos con caso de uso por componente · 25 agosto 2026
+**Actualizado:** La serie gco-dev-suite queda terminada de punta a punta (Pub 12-19). Llego la grabacion del equipo de Nibaldo y el guion del Video 07 esta escrito. Apareció una discrepancia de cifras que afecta a piezas ya producidas · 28 agosto 2026
 
 ## En una frase
+
+**28 ago — La serie gco-dev-suite esta terminada (Pub 12-19).** Pub 18 y 19 cerradas: post final, briefs con especificaciones Figma y las 4 piezas graficas producidas, revisadas y corregidas. **Listas para publicar en Teams Raona** — no en GCO, que sigue congelado hasta la semana del 14-18 sep.
+
+**28 ago — BLOQUEANTE NUEVO Y URGENTE: las cifras de la suite no cuadran.** La grabacion que llego del equipo de Nibaldo muestra en pantalla **39 skills y 5 servidores MCP**, y enumera conectores que incluyen Kibana, SQL, SharePoint y Playwright. El material del 6 de agosto —base de toda la serie— dice **3 agentes, 32 skills y 5 conectores** con el navegador como quinto. **Esas cifras estan impresas en las piezas de Pub 14, 16, 18 y 19.** Hasta que Nibaldo lo aclare, ninguna pieza ni guion nuevo lleva cifras.
+
+**28 ago — Guion del Video 07 escrito** (`Produccion/Videos/v07-08_gco-dev-suite/v07-pill_para-grabacion_que-es-la-dev-suite.md`): 6 secciones, 2:45-3:00, montado sobre las 51 capturas de la grabacion. **Del Video 08 no hay nada** — no existe ni un plano de un agente devolviendo un plan y esperando aprobacion. Es la grabacion que hay que pedir.
+
+**28 ago — Criterio nuevo de toda la serie: la suite trabaja "contigo", nunca "por ti".** El titulo de Pub 18 se cambio por eso. "Por ti" se lee como "en tu lugar" y choca con el argumento del bloque, que es que nada se ejecuta sin tu aprobacion.
+
 
 ✅ **25 ago — Pub 4 resuelta y republicada en Teams Raona.** El post "Memoria vs. Instrucciones" pasa a ser **"Una vez o siempre"**. Cambia el eje de la comparacion: ya no es *lo tuyo vs. lo del equipo* sino **lo que dura la conversacion vs. lo que dura siempre**. Se saca "Copilot Memory" de la pieza — si no se puede editar y no tiene donde vivir, no hay accion que tomar sobre ello, y ponerlo en una comparativa generaba la pregunta sin respuesta de Oscar. El bloque de `copilot-instructions.md` se conserva integro. **El encuadre aguanta las dos respuestas posibles de Nibaldo**, asi que dejo de bloquear.
 
@@ -53,16 +62,22 @@
 - **5 conectores MCP confirmados**: Jira, Confluence, Elastic, DB2, navegador — resuelve la discrepancia que arrastraba el guion del Video 04.
 - **Pub 14 = el mapa (panorámico), Pub 15 = la anatomía (zoom)** — no al revés.
 - **Cadencia semanal de Teams GCO se retoma la semana del 14-18 sep 2026**, republicando en el mismo orden de la cola de `Produccion/TABLERO.md`, sin saltar ni repetir nada.
+- **La suite trabaja "contigo", nunca "por ti"** — aplica a titulos, CTA y guiones de video.
+- **Ninguna pieza ni guion nuevo lleva cifras de la suite** hasta que se resuelva la discrepancia (39/5 en pantalla frente a 3/32/5 en el material de origen).
+- **El nombre del archivo grafico manda sobre lo que exporta Figma:** `triptico`, no `Card`. Regla en `convencion-nombres-piezas-graficas.md`.
+- **`notebooklm.md` no se usa como fuente literal para guiones** — afirma un resultado que la grabacion no muestra.
 - Sigue vigente todo lo de sesiones anteriores no mencionado aquí: numeración global de Pub (nunca se reutiliza, excepción de renumeración documentada), sin anglicismos, español latinoamericano, "GitHub Copilot" completo siempre, no inventar información.
 
 ## En qué punto estamos
 
-- ✅ **Pub 13, 14, `14a` y 15 publicadas en Teams Raona** — serie de Skills completa. Pub 12 sigue como borrador cargado en Raona, sin enviar.
-- 🟠 **Pub 16 y 17 (MCP): post final + brief con especificaciones Figma (21 ago).** Falta producir 2 piezas: infografía de los 5 conectores (Pub 16) y tarjeta comparativa antes/ahora (Pub 17).
-- 🔄 Pub 18-19 (Agentes): briefs listos, sin especificaciones Figma todavía, piezas sin producir.
+- ✅ **Serie gco-dev-suite completa (Pub 12-19).** Pub 13, 14, `14a` y 15 publicadas en Teams Raona el 21 ago; Pub 16 y 17 el 24 ago. Pub 12 sigue como borrador cargado en Raona, sin enviar.
+- ✅ **Pub 18 y 19 (Agentes) cerradas el 28 ago** — post final, briefs con especificaciones Figma y las 4 piezas producidas y corregidas. **Listas para publicar en Teams Raona; falta hacerlo.**
+- ✍️ **Video 07: guion escrito** sobre las 51 capturas de la grabacion del equipo de Nibaldo. **Video 08: sin material** — hay que pedir la grabacion del flujo de agentes.
+- ⚠️ **Antes de montar el Video 07:** decidir el reparto con el Video 04, que ya cubre instalacion y credenciales paso a paso.
 - ⚠️ **Dos arreglos antes de republicar en GCO:** en el post del hilo `14a`, "le enseña a **Copilot** algo sobre ti" va sin "GitHub" (regla 7); y el post de Pub 14 se quedó sin el puente final a Pub 15.
 - 🗑️ Pub 3, 4 (con su hilo "Memoria vs. Instrucciones"), 5, 6, 7 y 8 retirados de Teams GCO (se habían auto-publicado); vuelven a la cola para la semana del 14-18 sep.
-- ⏳ Pendiente: confirmar con Nibaldo si `dotnet-review`/`cobol-analyzer` son parte real de las 32 skills (bloquea cierre de Pub 15); aclarar con Nibaldo la confusión Copilot Memory vs. Instructions (hilo de Pub 4).
+- ⏳ Pendiente con Nibaldo: **las cifras de la suite** (lo mas urgente); la URL de Confluence; si `dotnet-review`/`cobol-analyzer` son parte real de las skills (bloquea cierre de Pub 15); confirmar el nombre del producto — ya hay evidencia suficiente, solo falta el visto bueno.
+- 📌 Pendiente de Yehimy: decir en que canal del Teams de Raona se publican las previsualizaciones — `config_canal-interno.md` documenta tres canales y ninguno es "Anuncios y Tips", pero Pub 13 a 17 ya salieron ahi.
 
 ## Ojo / no repetir
 
@@ -72,7 +87,7 @@
 
 ## Para profundizar
 
-- Última sesión: `_historico/sesion_reunion-18ago-reorganizacion-pub14-19-y-retiro-posts_18ago2026.md`
+- Última sesión: `_historico/sesion_cierre-pub18-19-y-guion-video07_28ago2026.md`
 - Tablero de producción: `Produccion/TABLERO.md`
 - Plan vigente: `Planeacion/Semana-7_plan-agosto-devsuite/plan-agosto_devsuite-skills-mcp-agentes.md`
 - Documento vivo para reuniones: `Seguimiento/base-reunion-seguimiento.md`

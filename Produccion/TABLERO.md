@@ -1,6 +1,6 @@
 # Tablero de Producción — Estrategia de Adopción GitHub Copilot GCO
 > Punto de entrada único de seguimiento y estado del proyecto.
-> Última actualización: 25 agosto 2026
+> Última actualización: 28 agosto 2026
 
 ---
 
@@ -8,9 +8,9 @@
 
 - **Teams GCO sigue en pausa.** Los posts que se auto-publicaron por error (programación automática que siguió corriendo pese al congelamiento) se retiraron todos el 18 ago. Evidencia: `Produccion/elimina-post-teams-gco/` — 7 capturas, que corresponden a **Pub 3, 4, 5, 6, 7 y 8 más el post de "Memoria vs. Instrucciones"**.
 - **La cadencia semanal (martes y jueves) se retoma la semana del 14-18 de septiembre**, publicando en el mismo orden de la cola — no se salta ni se repite nada.
-- **La serie gco-dev-suite está producida hasta Pub 17.** Pub 13, 14 (+ hilo `14a`) y 15 publicadas de prueba en Teams Raona el 21 ago; Pub 16 y 17 el 24 ago. Pub 12 sigue como borrador sin enviar. Faltan Pub 18-19 (Agentes).
+- **La serie gco-dev-suite está terminada de punta a punta (Pub 12-19).** Pub 13, 14 (+ hilo `14a`) y 15 publicadas de prueba en Teams Raona el 21 ago; Pub 16 y 17 el 24 ago. Pub 12 sigue como borrador sin enviar. **Pub 18 y 19 cerradas el 28 ago** — post, piezas y briefs alineados entre sí, listas para publicar en Teams Raona.
 - **Hay 6 vídeos producidos y publicados** (01-03 en Teams GCO, 04-06 de prueba en Teams Raona) y un séptimo aprobado el 15 jul que nunca se produjo — ver "Vídeos — resumen".
-- **Fase nueva abierta el 25 ago:** Óscar pidió que cada componente lleve caso de uso concreto, ejemplo y vídeo, y que el material sirva a quien no hizo la formación. Acta: `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_25-08-26.md`.
+- **Fase nueva abierta el 25 ago:** Óscar pidió que cada componente lleve caso de uso concreto, ejemplo y vídeo, y que el material sirva a quien no hizo la formación. Acta: `Reuniones/seguimientos-semanales/resumen_reunion-seguimiento-semanal_25-08-26.md`. **28 ago: planteamiento de grabación de los Vídeos 07 y 08 listo** para cotejar contra la grabación que llegó del equipo de Nibaldo y llevar a la mesa del martes 1 sep — `Produccion/Videos/v07-08_gco-dev-suite/planteamiento-grabacion_videos-07-08.md`.
 
 ---
 
@@ -41,7 +41,7 @@
 | 10 | 12 | Jue 15 oct | Anuncios y Tips | gco-dev-suite: qué es y por qué existe | 🟡 Borrador cargado en Teams Raona — falta que Yehimy lo publique ahí primero |
 | 11 | 13 | Mar 20 oct | Anuncios y Tips | ¿Qué es una Skill (y qué no es)? | 🔵 Publicada de prueba en Teams Raona (21 ago) — pendiente de validación antes de GCO |
 
-### B · En producción — falta pieza gráfica, sin fecha todavía
+### B · Producidas y publicadas de prueba en Teams Raona — sin fecha en Teams GCO todavía
 
 | Pub | Canal | Tema | Estado |
 |-----|-------|------|--------|
@@ -49,8 +49,8 @@
 | 15 | Anuncios y Tips | Skills 3/3 — anatomía y cuándo usar | 🔵 **Publicada en Teams Raona el 21 ago** (post + 3 tarjetas). No en Teams GCO. Antes de GCO: confirmar con Nibaldo si `dotnet-review` es de las 32 skills reales |
 | 16 | Anuncios y Tips | MCP 1/2 — los 5 conectores | 🔵 **Publicada en Teams Raona el 24 ago** (post + tríptico de 3 tarjetas). No en Teams GCO. Brief actualizado contra las piezas producidas |
 | 17 | Anuncios y Tips | MCP 2/2 — MCP en acción | 🔵 **Publicada en Teams Raona el 24 ago** (post + tarjeta comparativa). No en Teams GCO. Brief actualizado contra la pieza producida |
-| 18 | Anuncios y Tips | Agentes 1/2 — los 3 que deciden | 🟡 Propuesta de contenido |
-| 19 | Anuncios y Tips | Agentes 2/2 — los agentes en acción, cierra la serie | 🟡 Propuesta de contenido |
+| 18 | Anuncios y Tips | Agentes 1/2 — los 3 que deciden contigo | ✅ **Lista para Teams Raona (28 ago).** Post final + los 3 paneles del tríptico producidos, revisados y corregidos. El título pasó de "por ti" a "**contigo**" — la suite trabaja contigo, no en tu lugar |
+| 19 | Anuncios y Tips | Agentes 2/2 — los agentes en acción, cierra la serie | ✅ **Lista para Teams Raona (28 ago).** Post final + infografía producida, revisada y corregida (10 correcciones aplicadas: "el desarrollador" fuera, actores nombrados, terminología alineada con Pub 18) |
 
 > Cuando 14-19 estén listas, continúan la cola A en orden desde mar 27 oct en adelante.
 
@@ -71,7 +71,7 @@
 | Fecha sesión AMA | Nibaldo + Guillermo | Sin fecha — desbloquea pub AMA |
 | Microsoft Bookings | Yehimy | Sin configurar. **Ojo (25 ago):** la dinámica confirmada en reunión no usa Bookings — es escribir en el subcanal de Reservas. Falta confirmar si sustituye a Bookings o conviven |
 | Confirmar si `dotnet-review`/`cobol-analyzer` son parte de las 32 skills reales | Nibaldo | Bloquea el cierre final de Pub 15 |
-| Confirmar si "gco-dev-suite" es la misma "Copilot Dev Suite" del guion del Video 04 | Nibaldo | Sin respuesta desde el 11 ago. **El post del Vídeo 04 usa "Copilot Dev Suite" y está publicado en Raona** — hay dos nombres vivos para el mismo producto |
+| Confirmar si "gco-dev-suite" es la misma "Copilot Dev Suite" del guion del Video 04 | Nibaldo | Sin respuesta desde el 11 ago. **El post del Vídeo 04 usa "Copilot Dev Suite" y está publicado en Raona** — hay dos nombres vivos para el mismo producto. **Hallazgo del 28 ago:** el guion del Vídeo 04 ya trae una formulación que resuelve el conflicto — *"el paquete se llama Copilot Dev Suite en el Portal de Empresa; una vez instalado, se referencia como `gco-dev-suite`. Ambos nombres son correctos y aparecen en pantalla"* (`v04/pill_para-grabacion_instalar-y-configurar-mcp.md`, línea 24). Basta con que Nibaldo confirme esa frase para cerrar el bloqueante en toda la serie |
 | URL de Confluence con la documentación de instalación | Nibaldo | Pedida el 18 y el 25 ago. Bloquea el post de soporte de cada vídeo nuevo |
 | ¿La Memoria de GitHub Copilot y el "cajón" de Pub 3 son la misma cosa? | Nibaldo | **Ya no bloquea Pub 4** — el post se reescribió sin depender de la respuesta. Define si Memoria entra como tema propio (Pub 20) o si ya está cubierta |
 | Plan de las licencias de GCO: ¿modelo por uso (AI Credits) o plan anual legacy con multiplicadores? | Nibaldo | Abierto desde el 21 jun. Define si la tarjeta de tokens puede llevar cifras o se queda conceptual |
@@ -92,7 +92,9 @@
 | 04 | Respuesta en hilo de Pub 2 | Instala y configura tus MCP con la gco-dev-suite | ✅ Publicado de prueba en Teams Raona (14 ago) — no en Teams GCO. Falta producir la infografía (`V04-S1-infografia_activa-tus-mcp`) |
 | 05 | Pub 10 | Tres casos, un mismo copiloto | 🔵 Publicado de prueba en Teams Raona (3 ago) — no en Teams GCO. Piezas gráficas producidas (tríptico de 3) |
 | 06 | Pub 11 | Dos errores de pantalla | 🔵 Publicado de prueba en Teams Raona (3 ago) — no en Teams GCO. Piezas gráficas producidas (tríptico de 3) |
-| — | Primeros Pasos | Primera conversación con GitHub Copilot Chat + completado inline | ⚪ **Aprobado y nunca producido.** Opción A elegida por Jonatan el 15 jul. Guion en `Videos/v02_primeros-pasos/`. Recibe número global al entrar |
+| 07 *(propuesto)* | Pub 12 | Qué es la Copilot Dev Suite y cómo la activas | ✍️ **Guion listo (28 ago)** — `v07-pill_para-grabacion_que-es-la-dev-suite.md`, 6 secciones, 2:45-3:00, montado sobre las 51 capturas de la grabación del equipo de Nibaldo. **La voz en off no dice ninguna cifra** hasta que Nibaldo aclare la discrepancia (la pantalla muestra 39 skills y 5 MCP; las piezas dicen 32 y 5). Falta decidir el reparto con el Vídeo 04 |
+| 08 *(propuesto)* | Pub 18-19 | Los 3 agentes en acción: añadir un campo que toca cinco capas | 📋 **Planteamiento de grabación listo (28 ago).** Grabación nueva completa — no hay nada reutilizable. Es el caso de uso que pidió Óscar para el componente Agentes |
+| — | Primeros Pasos | Primera conversación con GitHub Copilot Chat + completado inline | ⚪ **Aprobado y nunca producido.** Opción A elegida por Jonatan el 15 jul. Guion en `Videos/v02_primeros-pasos/`. **Pasaría a ser el Vídeo 09** si se confirma que la gco-dev-suite se lleva el 07 y el 08 |
 
 > **Los archivos de vídeo (`.mp4`) no viven en el proyecto** — pesan y están excluidos en `.gitignore`. La evidencia de lo publicado son las capturas de los posts en `Produccion/imagenes_teams/` (por canal) y `Produccion/elimina-post-teams-gco/` (lo retirado de Teams GCO).
 

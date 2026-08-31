@@ -30,6 +30,8 @@ Se toma de `Configuraciones/matriz-componentes-graficos.csv`, en minúsculas y s
 
 `triptico` · `tarjeta-minimalista` · `tarjeta-comparativa` · `diptico` · `infografia` · `banner`
 
+> **El nombre del grupo de Figma no viaja al nombre del archivo** (regla añadida el 28 ago 2026, a partir de Pub 18). Figma exporta con el nombre de su grupo — por ejemplo `Card` para el tríptico — y ese nombre **no está en el vocabulario de arriba**. Después de exportar hay que renombrar al término de la matriz: `pub-18_s-10_Card_1-...` → `pub-18_s-10_triptico_1-...`. El vocabulario manda sobre lo que salga de la herramienta.
+
 ---
 
 ## Piezas de varios paneles
