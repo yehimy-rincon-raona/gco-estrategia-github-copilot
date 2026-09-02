@@ -2,6 +2,9 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "../../Videos/GCO_videos/gco_video07_dev-suite"
 		}
 	]
 }
